@@ -48,9 +48,9 @@
 </style>
 <h1>api-documentation for
     <a
-        
+
         href="https://github.com/caolan/async#readme"
-        
+
     >async (v2.1.5)</a>
 </h1>
 <h4>Higher-order functions and common patterns for asynchronous code</h4>
@@ -58,1656 +58,1656 @@
     href="#apidoc.tableOfContents"
     id="apidoc.tableOfContents"
 ><h1>table of contents</h1></a><ol>
-    
+
     <li class="apidocModuleLi"><a href="#apidoc.module.async">module async</a><ol>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.all">
             function <span class="apidocSignatureSpan">async.</span>all
             <span class="apidocSignatureSpan">(obj, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.allLimit">
             function <span class="apidocSignatureSpan">async.</span>allLimit
             <span class="apidocSignatureSpan">(obj, limit, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.allSeries">
             function <span class="apidocSignatureSpan">async.</span>allSeries
             <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.any">
             function <span class="apidocSignatureSpan">async.</span>any
             <span class="apidocSignatureSpan">(obj, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.anyLimit">
             function <span class="apidocSignatureSpan">async.</span>anyLimit
             <span class="apidocSignatureSpan">(obj, limit, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.anySeries">
             function <span class="apidocSignatureSpan">async.</span>anySeries
             <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.apply">
             function <span class="apidocSignatureSpan">async.</span>apply
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.applyEach">
             function <span class="apidocSignatureSpan">async.</span>applyEach
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.applyEachSeries">
             function <span class="apidocSignatureSpan">async.</span>applyEachSeries
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.asyncify">
             function <span class="apidocSignatureSpan">async.</span>asyncify
             <span class="apidocSignatureSpan">(func)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.auto">
             function <span class="apidocSignatureSpan">async.</span>auto
             <span class="apidocSignatureSpan">(tasks, concurrency, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.autoInject">
             function <span class="apidocSignatureSpan">async.</span>autoInject
             <span class="apidocSignatureSpan">(tasks, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.cargo">
             function <span class="apidocSignatureSpan">async.</span>cargo
             <span class="apidocSignatureSpan">(worker, payload)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.compose">
             function <span class="apidocSignatureSpan">async.</span>compose
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.concat">
             function <span class="apidocSignatureSpan">async.</span>concat
             <span class="apidocSignatureSpan">(obj, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.concatSeries">
             function <span class="apidocSignatureSpan">async.</span>concatSeries
             <span class="apidocSignatureSpan">(obj, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.constant">
             function <span class="apidocSignatureSpan">async.</span>constant
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.detect">
             function <span class="apidocSignatureSpan">async.</span>detect
             <span class="apidocSignatureSpan">(obj, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.detectLimit">
             function <span class="apidocSignatureSpan">async.</span>detectLimit
             <span class="apidocSignatureSpan">(obj, limit, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.detectSeries">
             function <span class="apidocSignatureSpan">async.</span>detectSeries
             <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.dir">
             function <span class="apidocSignatureSpan">async.</span>dir
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.doDuring">
             function <span class="apidocSignatureSpan">async.</span>doDuring
             <span class="apidocSignatureSpan">(fn, test, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.doUntil">
             function <span class="apidocSignatureSpan">async.</span>doUntil
             <span class="apidocSignatureSpan">(fn, test, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.doWhilst">
             function <span class="apidocSignatureSpan">async.</span>doWhilst
             <span class="apidocSignatureSpan">(iteratee, test, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.during">
             function <span class="apidocSignatureSpan">async.</span>during
             <span class="apidocSignatureSpan">(test, fn, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.each">
             function <span class="apidocSignatureSpan">async.</span>each
             <span class="apidocSignatureSpan">(coll, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.eachLimit">
             function <span class="apidocSignatureSpan">async.</span>eachLimit
             <span class="apidocSignatureSpan">(coll, limit, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.eachOf">
             function <span class="apidocSignatureSpan">async.</span>eachOf
             <span class="apidocSignatureSpan">(coll, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.eachOfLimit">
             function <span class="apidocSignatureSpan">async.</span>eachOfLimit
             <span class="apidocSignatureSpan">(coll, limit, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.eachOfSeries">
             function <span class="apidocSignatureSpan">async.</span>eachOfSeries
             <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.eachSeries">
             function <span class="apidocSignatureSpan">async.</span>eachSeries
             <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.ensureAsync">
             function <span class="apidocSignatureSpan">async.</span>ensureAsync
             <span class="apidocSignatureSpan">(fn)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.every">
             function <span class="apidocSignatureSpan">async.</span>every
             <span class="apidocSignatureSpan">(obj, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.everyLimit">
             function <span class="apidocSignatureSpan">async.</span>everyLimit
             <span class="apidocSignatureSpan">(obj, limit, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.everySeries">
             function <span class="apidocSignatureSpan">async.</span>everySeries
             <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.filter">
             function <span class="apidocSignatureSpan">async.</span>filter
             <span class="apidocSignatureSpan">(obj, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.filterLimit">
             function <span class="apidocSignatureSpan">async.</span>filterLimit
             <span class="apidocSignatureSpan">(obj, limit, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.filterSeries">
             function <span class="apidocSignatureSpan">async.</span>filterSeries
             <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.find">
             function <span class="apidocSignatureSpan">async.</span>find
             <span class="apidocSignatureSpan">(obj, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.findLimit">
             function <span class="apidocSignatureSpan">async.</span>findLimit
             <span class="apidocSignatureSpan">(obj, limit, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.findSeries">
             function <span class="apidocSignatureSpan">async.</span>findSeries
             <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.foldl">
             function <span class="apidocSignatureSpan">async.</span>foldl
             <span class="apidocSignatureSpan">(coll, memo, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.foldr">
             function <span class="apidocSignatureSpan">async.</span>foldr
             <span class="apidocSignatureSpan">(array, memo, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.forEach">
             function <span class="apidocSignatureSpan">async.</span>forEach
             <span class="apidocSignatureSpan">(coll, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.forEachLimit">
             function <span class="apidocSignatureSpan">async.</span>forEachLimit
             <span class="apidocSignatureSpan">(coll, limit, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.forEachOf">
             function <span class="apidocSignatureSpan">async.</span>forEachOf
             <span class="apidocSignatureSpan">(coll, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.forEachOfLimit">
             function <span class="apidocSignatureSpan">async.</span>forEachOfLimit
             <span class="apidocSignatureSpan">(coll, limit, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.forEachOfSeries">
             function <span class="apidocSignatureSpan">async.</span>forEachOfSeries
             <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.forEachSeries">
             function <span class="apidocSignatureSpan">async.</span>forEachSeries
             <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.forever">
             function <span class="apidocSignatureSpan">async.</span>forever
             <span class="apidocSignatureSpan">(fn, errback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.inject">
             function <span class="apidocSignatureSpan">async.</span>inject
             <span class="apidocSignatureSpan">(coll, memo, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.log">
             function <span class="apidocSignatureSpan">async.</span>log
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.map">
             function <span class="apidocSignatureSpan">async.</span>map
             <span class="apidocSignatureSpan">(obj, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.mapLimit">
             function <span class="apidocSignatureSpan">async.</span>mapLimit
             <span class="apidocSignatureSpan">(obj, limit, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.mapSeries">
             function <span class="apidocSignatureSpan">async.</span>mapSeries
             <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.mapValues">
             function <span class="apidocSignatureSpan">async.</span>mapValues
             <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.mapValuesLimit">
             function <span class="apidocSignatureSpan">async.</span>mapValuesLimit
             <span class="apidocSignatureSpan">(obj, limit, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.mapValuesSeries">
             function <span class="apidocSignatureSpan">async.</span>mapValuesSeries
             <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.memoize">
             function <span class="apidocSignatureSpan">async.</span>memoize
             <span class="apidocSignatureSpan">(fn, hasher)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.nextTick">
             function <span class="apidocSignatureSpan">async.</span>nextTick
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.parallel">
             function <span class="apidocSignatureSpan">async.</span>parallel
             <span class="apidocSignatureSpan">(tasks, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.parallelLimit">
             function <span class="apidocSignatureSpan">async.</span>parallelLimit
             <span class="apidocSignatureSpan">(tasks, limit, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.priorityQueue">
             function <span class="apidocSignatureSpan">async.</span>priorityQueue
             <span class="apidocSignatureSpan">(worker, concurrency)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.queue">
             function <span class="apidocSignatureSpan">async.</span>queue
             <span class="apidocSignatureSpan">(worker, concurrency)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.race">
             function <span class="apidocSignatureSpan">async.</span>race
             <span class="apidocSignatureSpan">(tasks, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.reduce">
             function <span class="apidocSignatureSpan">async.</span>reduce
             <span class="apidocSignatureSpan">(coll, memo, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.reduceRight">
             function <span class="apidocSignatureSpan">async.</span>reduceRight
             <span class="apidocSignatureSpan">(array, memo, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.reflect">
             function <span class="apidocSignatureSpan">async.</span>reflect
             <span class="apidocSignatureSpan">(fn)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.reflectAll">
             function <span class="apidocSignatureSpan">async.</span>reflectAll
             <span class="apidocSignatureSpan">(tasks)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.reject">
             function <span class="apidocSignatureSpan">async.</span>reject
             <span class="apidocSignatureSpan">(obj, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.rejectLimit">
             function <span class="apidocSignatureSpan">async.</span>rejectLimit
             <span class="apidocSignatureSpan">(obj, limit, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.rejectSeries">
             function <span class="apidocSignatureSpan">async.</span>rejectSeries
             <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.retry">
             function <span class="apidocSignatureSpan">async.</span>retry
             <span class="apidocSignatureSpan">(opts, task, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.retryable">
             function <span class="apidocSignatureSpan">async.</span>retryable
             <span class="apidocSignatureSpan">(opts, task)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.select">
             function <span class="apidocSignatureSpan">async.</span>select
             <span class="apidocSignatureSpan">(obj, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.selectLimit">
             function <span class="apidocSignatureSpan">async.</span>selectLimit
             <span class="apidocSignatureSpan">(obj, limit, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.selectSeries">
             function <span class="apidocSignatureSpan">async.</span>selectSeries
             <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.seq">
             function <span class="apidocSignatureSpan">async.</span>seq
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.series">
             function <span class="apidocSignatureSpan">async.</span>series
             <span class="apidocSignatureSpan">(tasks, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.setImmediate">
             function <span class="apidocSignatureSpan">async.</span>setImmediate
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.some">
             function <span class="apidocSignatureSpan">async.</span>some
             <span class="apidocSignatureSpan">(obj, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.someLimit">
             function <span class="apidocSignatureSpan">async.</span>someLimit
             <span class="apidocSignatureSpan">(obj, limit, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.someSeries">
             function <span class="apidocSignatureSpan">async.</span>someSeries
             <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.sortBy">
             function <span class="apidocSignatureSpan">async.</span>sortBy
             <span class="apidocSignatureSpan">(coll, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.timeout">
             function <span class="apidocSignatureSpan">async.</span>timeout
             <span class="apidocSignatureSpan">(asyncFn, milliseconds, info)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.times">
             function <span class="apidocSignatureSpan">async.</span>times
             <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.timesLimit">
             function <span class="apidocSignatureSpan">async.</span>timesLimit
             <span class="apidocSignatureSpan">(count, limit, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.timesSeries">
             function <span class="apidocSignatureSpan">async.</span>timesSeries
             <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.transform">
             function <span class="apidocSignatureSpan">async.</span>transform
             <span class="apidocSignatureSpan">(coll, accumulator, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.unmemoize">
             function <span class="apidocSignatureSpan">async.</span>unmemoize
             <span class="apidocSignatureSpan">(fn)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.until">
             function <span class="apidocSignatureSpan">async.</span>until
             <span class="apidocSignatureSpan">(test, fn, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.waterfall">
             function <span class="apidocSignatureSpan">async.</span>waterfall
             <span class="apidocSignatureSpan">(tasks, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.whilst">
             function <span class="apidocSignatureSpan">async.</span>whilst
             <span class="apidocSignatureSpan">(test, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.wrapSync">
             function <span class="apidocSignatureSpan">async.</span>wrapSync
             <span class="apidocSignatureSpan">(func)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">async.</span>default</span>
-            
+
         </li>
-        
+
     </ol></li>
-    
+
     <li class="apidocModuleLi"><a href="#apidoc.module.async.default">module async.default</a><ol>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.all">
             function <span class="apidocSignatureSpan">async.default.</span>all
             <span class="apidocSignatureSpan">(obj, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.any">
             function <span class="apidocSignatureSpan">async.default.</span>any
             <span class="apidocSignatureSpan">(obj, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.apply">
             function <span class="apidocSignatureSpan">async.default.</span>apply
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.applyEach">
             function <span class="apidocSignatureSpan">async.default.</span>applyEach
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.applyEachSeries">
             function <span class="apidocSignatureSpan">async.default.</span>applyEachSeries
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.asyncify">
             function <span class="apidocSignatureSpan">async.default.</span>asyncify
             <span class="apidocSignatureSpan">(func)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.auto">
             function <span class="apidocSignatureSpan">async.default.</span>auto
             <span class="apidocSignatureSpan">(tasks, concurrency, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.autoInject">
             function <span class="apidocSignatureSpan">async.default.</span>autoInject
             <span class="apidocSignatureSpan">(tasks, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.cargo">
             function <span class="apidocSignatureSpan">async.default.</span>cargo
             <span class="apidocSignatureSpan">(worker, payload)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.compose">
             function <span class="apidocSignatureSpan">async.default.</span>compose
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.concat">
             function <span class="apidocSignatureSpan">async.default.</span>concat
             <span class="apidocSignatureSpan">(obj, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.concatSeries">
             function <span class="apidocSignatureSpan">async.default.</span>concatSeries
             <span class="apidocSignatureSpan">(obj, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.constant">
             function <span class="apidocSignatureSpan">async.default.</span>constant
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.detect">
             function <span class="apidocSignatureSpan">async.default.</span>detect
             <span class="apidocSignatureSpan">(obj, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.detectLimit">
             function <span class="apidocSignatureSpan">async.default.</span>detectLimit
             <span class="apidocSignatureSpan">(obj, limit, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.detectSeries">
             function <span class="apidocSignatureSpan">async.default.</span>detectSeries
             <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.dir">
             function <span class="apidocSignatureSpan">async.default.</span>dir
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.doDuring">
             function <span class="apidocSignatureSpan">async.default.</span>doDuring
             <span class="apidocSignatureSpan">(fn, test, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.doUntil">
             function <span class="apidocSignatureSpan">async.default.</span>doUntil
             <span class="apidocSignatureSpan">(fn, test, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.doWhilst">
             function <span class="apidocSignatureSpan">async.default.</span>doWhilst
             <span class="apidocSignatureSpan">(iteratee, test, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.during">
             function <span class="apidocSignatureSpan">async.default.</span>during
             <span class="apidocSignatureSpan">(test, fn, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.each">
             function <span class="apidocSignatureSpan">async.default.</span>each
             <span class="apidocSignatureSpan">(coll, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.eachLimit">
             function <span class="apidocSignatureSpan">async.default.</span>eachLimit
             <span class="apidocSignatureSpan">(coll, limit, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.eachOf">
             function <span class="apidocSignatureSpan">async.default.</span>eachOf
             <span class="apidocSignatureSpan">(coll, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.eachOfLimit">
             function <span class="apidocSignatureSpan">async.default.</span>eachOfLimit
             <span class="apidocSignatureSpan">(coll, limit, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.eachOfSeries">
             function <span class="apidocSignatureSpan">async.default.</span>eachOfSeries
             <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.eachSeries">
             function <span class="apidocSignatureSpan">async.default.</span>eachSeries
             <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.ensureAsync">
             function <span class="apidocSignatureSpan">async.default.</span>ensureAsync
             <span class="apidocSignatureSpan">(fn)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.every">
             function <span class="apidocSignatureSpan">async.default.</span>every
             <span class="apidocSignatureSpan">(obj, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.everyLimit">
             function <span class="apidocSignatureSpan">async.default.</span>everyLimit
             <span class="apidocSignatureSpan">(obj, limit, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.everySeries">
             function <span class="apidocSignatureSpan">async.default.</span>everySeries
             <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.filter">
             function <span class="apidocSignatureSpan">async.default.</span>filter
             <span class="apidocSignatureSpan">(obj, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.filterLimit">
             function <span class="apidocSignatureSpan">async.default.</span>filterLimit
             <span class="apidocSignatureSpan">(obj, limit, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.filterSeries">
             function <span class="apidocSignatureSpan">async.default.</span>filterSeries
             <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.foldl">
             function <span class="apidocSignatureSpan">async.default.</span>foldl
             <span class="apidocSignatureSpan">(coll, memo, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.foldr">
             function <span class="apidocSignatureSpan">async.default.</span>foldr
             <span class="apidocSignatureSpan">(array, memo, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.forEach">
             function <span class="apidocSignatureSpan">async.default.</span>forEach
             <span class="apidocSignatureSpan">(coll, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.forEachLimit">
             function <span class="apidocSignatureSpan">async.default.</span>forEachLimit
             <span class="apidocSignatureSpan">(coll, limit, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.forEachOf">
             function <span class="apidocSignatureSpan">async.default.</span>forEachOf
             <span class="apidocSignatureSpan">(coll, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.forEachOfLimit">
             function <span class="apidocSignatureSpan">async.default.</span>forEachOfLimit
             <span class="apidocSignatureSpan">(coll, limit, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.forEachOfSeries">
             function <span class="apidocSignatureSpan">async.default.</span>forEachOfSeries
             <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.forEachSeries">
             function <span class="apidocSignatureSpan">async.default.</span>forEachSeries
             <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.forever">
             function <span class="apidocSignatureSpan">async.default.</span>forever
             <span class="apidocSignatureSpan">(fn, errback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.inject">
             function <span class="apidocSignatureSpan">async.default.</span>inject
             <span class="apidocSignatureSpan">(coll, memo, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.log">
             function <span class="apidocSignatureSpan">async.default.</span>log
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.map">
             function <span class="apidocSignatureSpan">async.default.</span>map
             <span class="apidocSignatureSpan">(obj, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.mapLimit">
             function <span class="apidocSignatureSpan">async.default.</span>mapLimit
             <span class="apidocSignatureSpan">(obj, limit, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.mapSeries">
             function <span class="apidocSignatureSpan">async.default.</span>mapSeries
             <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.mapValues">
             function <span class="apidocSignatureSpan">async.default.</span>mapValues
             <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.mapValuesLimit">
             function <span class="apidocSignatureSpan">async.default.</span>mapValuesLimit
             <span class="apidocSignatureSpan">(obj, limit, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.mapValuesSeries">
             function <span class="apidocSignatureSpan">async.default.</span>mapValuesSeries
             <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.memoize">
             function <span class="apidocSignatureSpan">async.default.</span>memoize
             <span class="apidocSignatureSpan">(fn, hasher)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.nextTick">
             function <span class="apidocSignatureSpan">async.default.</span>nextTick
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.parallel">
             function <span class="apidocSignatureSpan">async.default.</span>parallel
             <span class="apidocSignatureSpan">(tasks, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.parallelLimit">
             function <span class="apidocSignatureSpan">async.default.</span>parallelLimit
             <span class="apidocSignatureSpan">(tasks, limit, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.priorityQueue">
             function <span class="apidocSignatureSpan">async.default.</span>priorityQueue
             <span class="apidocSignatureSpan">(worker, concurrency)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.queue">
             function <span class="apidocSignatureSpan">async.default.</span>queue
             <span class="apidocSignatureSpan">(worker, concurrency)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.race">
             function <span class="apidocSignatureSpan">async.default.</span>race
             <span class="apidocSignatureSpan">(tasks, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.reduce">
             function <span class="apidocSignatureSpan">async.default.</span>reduce
             <span class="apidocSignatureSpan">(coll, memo, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.reduceRight">
             function <span class="apidocSignatureSpan">async.default.</span>reduceRight
             <span class="apidocSignatureSpan">(array, memo, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.reflect">
             function <span class="apidocSignatureSpan">async.default.</span>reflect
             <span class="apidocSignatureSpan">(fn)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.reflectAll">
             function <span class="apidocSignatureSpan">async.default.</span>reflectAll
             <span class="apidocSignatureSpan">(tasks)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.reject">
             function <span class="apidocSignatureSpan">async.default.</span>reject
             <span class="apidocSignatureSpan">(obj, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.rejectLimit">
             function <span class="apidocSignatureSpan">async.default.</span>rejectLimit
             <span class="apidocSignatureSpan">(obj, limit, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.rejectSeries">
             function <span class="apidocSignatureSpan">async.default.</span>rejectSeries
             <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.retry">
             function <span class="apidocSignatureSpan">async.default.</span>retry
             <span class="apidocSignatureSpan">(opts, task, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.retryable">
             function <span class="apidocSignatureSpan">async.default.</span>retryable
             <span class="apidocSignatureSpan">(opts, task)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.select">
             function <span class="apidocSignatureSpan">async.default.</span>select
             <span class="apidocSignatureSpan">(obj, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.selectLimit">
             function <span class="apidocSignatureSpan">async.default.</span>selectLimit
             <span class="apidocSignatureSpan">(obj, limit, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.selectSeries">
             function <span class="apidocSignatureSpan">async.default.</span>selectSeries
             <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.seq">
             function <span class="apidocSignatureSpan">async.default.</span>seq
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.series">
             function <span class="apidocSignatureSpan">async.default.</span>series
             <span class="apidocSignatureSpan">(tasks, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.setImmediate">
             function <span class="apidocSignatureSpan">async.default.</span>setImmediate
             <span class="apidocSignatureSpan">()</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.some">
             function <span class="apidocSignatureSpan">async.default.</span>some
             <span class="apidocSignatureSpan">(obj, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.someLimit">
             function <span class="apidocSignatureSpan">async.default.</span>someLimit
             <span class="apidocSignatureSpan">(obj, limit, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.someSeries">
             function <span class="apidocSignatureSpan">async.default.</span>someSeries
             <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.sortBy">
             function <span class="apidocSignatureSpan">async.default.</span>sortBy
             <span class="apidocSignatureSpan">(coll, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.timeout">
             function <span class="apidocSignatureSpan">async.default.</span>timeout
             <span class="apidocSignatureSpan">(asyncFn, milliseconds, info)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.times">
             function <span class="apidocSignatureSpan">async.default.</span>times
             <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.timesLimit">
             function <span class="apidocSignatureSpan">async.default.</span>timesLimit
             <span class="apidocSignatureSpan">(count, limit, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.timesSeries">
             function <span class="apidocSignatureSpan">async.default.</span>timesSeries
             <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.transform">
             function <span class="apidocSignatureSpan">async.default.</span>transform
             <span class="apidocSignatureSpan">(coll, accumulator, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.unmemoize">
             function <span class="apidocSignatureSpan">async.default.</span>unmemoize
             <span class="apidocSignatureSpan">(fn)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.until">
             function <span class="apidocSignatureSpan">async.default.</span>until
             <span class="apidocSignatureSpan">(test, fn, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.waterfall">
             function <span class="apidocSignatureSpan">async.default.</span>waterfall
             <span class="apidocSignatureSpan">(tasks, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.whilst">
             function <span class="apidocSignatureSpan">async.default.</span>whilst
             <span class="apidocSignatureSpan">(test, iteratee, callback)</span>
             </a>
-            
+
         </li>
-        
+
         <li>
-            
+
             <a class="apidocElementLiA" href="#apidoc.element.async.default.wrapSync">
             function <span class="apidocSignatureSpan">async.default.</span>wrapSync
             <span class="apidocSignatureSpan">(func)</span>
             </a>
-            
+
         </li>
-        
+
     </ol></li>
-    
+
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.async" id="apidoc.module.async">module async</a></h1>
-    
-    
+
+
     <h2>
         <a href="#apidoc.element.async.all" id="apidoc.element.async.all">
         function <span class="apidocSignatureSpan">async.</span>all
@@ -1720,9 +1720,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.allLimit" id="apidoc.element.async.allLimit">
         function <span class="apidocSignatureSpan">async.</span>allLimit
@@ -1735,9 +1735,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.allSeries" id="apidoc.element.async.allSeries">
         function <span class="apidocSignatureSpan">async.</span>allSeries
@@ -1750,9 +1750,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.any" id="apidoc.element.async.any">
         function <span class="apidocSignatureSpan">async.</span>any
@@ -1765,9 +1765,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.anyLimit" id="apidoc.element.async.anyLimit">
         function <span class="apidocSignatureSpan">async.</span>anyLimit
@@ -1780,9 +1780,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.anySeries" id="apidoc.element.async.anySeries">
         function <span class="apidocSignatureSpan">async.</span>anySeries
@@ -1795,9 +1795,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.apply" id="apidoc.element.async.apply">
         function <span class="apidocSignatureSpan">async.</span>apply
@@ -1824,9 +1824,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.applyEach" id="apidoc.element.async.applyEach">
         function <span class="apidocSignatureSpan">async.</span>applyEach
@@ -1853,9 +1853,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.applyEachSeries" id="apidoc.element.async.applyEachSeries">
         function <span class="apidocSignatureSpan">async.</span>applyEachSeries
@@ -1882,9 +1882,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.asyncify" id="apidoc.element.async.asyncify">
         function <span class="apidocSignatureSpan">async.</span>asyncify
@@ -1914,9 +1914,9 @@
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.auto" id="apidoc.element.async.auto">
         function <span class="apidocSignatureSpan">async.</span>auto
@@ -1972,8 +1972,8 @@
 
         arrayEach(dependencies, function (dependencyName) {
             if (!tasks[dependencyName]) {
-                throw new Error(&#x27;async.auto task `&#x27; + key + &#x27;` has a non-existent dependency `&#x27; + dependencyName + &#x27;` in &#x27; + dep\
-endencies.join(&#x27;, &#x27;));
+                throw new Error(&#x27;async.auto task `&#x27; + key + &#x27;` has a non-existent dependency `&#x27; + dependencyName + &#x27;` in &#x27; + dependencies
+.join(&#x27;, &#x27;));
             }
             addListener(dependencyName, function () {
                 remainingDependencies--;
@@ -2065,9 +2065,9 @@ endencies.join(&#x27;, &#x27;));
             arrayEach(getDependents(currentTask), function (dependent) { ...</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.autoInject" id="apidoc.element.async.autoInject">
         function <span class="apidocSignatureSpan">async.</span>autoInject
@@ -2113,9 +2113,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.cargo" id="apidoc.element.async.cargo">
         function <span class="apidocSignatureSpan">async.</span>cargo
@@ -2128,9 +2128,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.compose" id="apidoc.element.async.compose">
         function <span class="apidocSignatureSpan">async.</span>compose
@@ -2157,9 +2157,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.concat" id="apidoc.element.async.concat">
         function <span class="apidocSignatureSpan">async.</span>concat
@@ -2172,9 +2172,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.concatSeries" id="apidoc.element.async.concatSeries">
         function <span class="apidocSignatureSpan">async.</span>concatSeries
@@ -2187,9 +2187,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.constant" id="apidoc.element.async.constant">
         function <span class="apidocSignatureSpan">async.</span>constant
@@ -2216,9 +2216,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.detect" id="apidoc.element.async.detect">
         function <span class="apidocSignatureSpan">async.</span>detect
@@ -2231,9 +2231,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.detectLimit" id="apidoc.element.async.detectLimit">
         function <span class="apidocSignatureSpan">async.</span>detectLimit
@@ -2246,9 +2246,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.detectSeries" id="apidoc.element.async.detectSeries">
         function <span class="apidocSignatureSpan">async.</span>detectSeries
@@ -2261,9 +2261,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.dir" id="apidoc.element.async.dir">
         function <span class="apidocSignatureSpan">async.</span>dir
@@ -2290,9 +2290,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.doDuring" id="apidoc.element.async.doDuring">
         function <span class="apidocSignatureSpan">async.</span>doDuring
@@ -2319,9 +2319,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.doUntil" id="apidoc.element.async.doUntil">
         function <span class="apidocSignatureSpan">async.</span>doUntil
@@ -2336,9 +2336,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.doWhilst" id="apidoc.element.async.doWhilst">
         function <span class="apidocSignatureSpan">async.</span>doWhilst
@@ -2357,9 +2357,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.during" id="apidoc.element.async.during">
         function <span class="apidocSignatureSpan">async.</span>during
@@ -2385,9 +2385,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.each" id="apidoc.element.async.each">
         function <span class="apidocSignatureSpan">async.</span>each
@@ -2400,9 +2400,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.eachLimit" id="apidoc.element.async.eachLimit">
         function <span class="apidocSignatureSpan">async.</span>eachLimit
@@ -2415,9 +2415,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.eachOf" id="apidoc.element.async.eachOf">
         function <span class="apidocSignatureSpan">async.</span>eachOf
@@ -2431,9 +2431,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.eachOfLimit" id="apidoc.element.async.eachOfLimit">
         function <span class="apidocSignatureSpan">async.</span>eachOfLimit
@@ -2446,9 +2446,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.eachOfSeries" id="apidoc.element.async.eachOfSeries">
         function <span class="apidocSignatureSpan">async.</span>eachOfSeries
@@ -2461,9 +2461,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.eachSeries" id="apidoc.element.async.eachSeries">
         function <span class="apidocSignatureSpan">async.</span>eachSeries
@@ -2476,9 +2476,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.ensureAsync" id="apidoc.element.async.ensureAsync">
         function <span class="apidocSignatureSpan">async.</span>ensureAsync
@@ -2505,9 +2505,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.every" id="apidoc.element.async.every">
         function <span class="apidocSignatureSpan">async.</span>every
@@ -2520,9 +2520,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.everyLimit" id="apidoc.element.async.everyLimit">
         function <span class="apidocSignatureSpan">async.</span>everyLimit
@@ -2535,9 +2535,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.everySeries" id="apidoc.element.async.everySeries">
         function <span class="apidocSignatureSpan">async.</span>everySeries
@@ -2550,9 +2550,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.filter" id="apidoc.element.async.filter">
         function <span class="apidocSignatureSpan">async.</span>filter
@@ -2565,9 +2565,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.filterLimit" id="apidoc.element.async.filterLimit">
         function <span class="apidocSignatureSpan">async.</span>filterLimit
@@ -2580,9 +2580,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.filterSeries" id="apidoc.element.async.filterSeries">
         function <span class="apidocSignatureSpan">async.</span>filterSeries
@@ -2595,9 +2595,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.find" id="apidoc.element.async.find">
         function <span class="apidocSignatureSpan">async.</span>find
@@ -2610,9 +2610,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.findLimit" id="apidoc.element.async.findLimit">
         function <span class="apidocSignatureSpan">async.</span>findLimit
@@ -2625,9 +2625,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.findSeries" id="apidoc.element.async.findSeries">
         function <span class="apidocSignatureSpan">async.</span>findSeries
@@ -2640,9 +2640,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.foldl" id="apidoc.element.async.foldl">
         function <span class="apidocSignatureSpan">async.</span>foldl
@@ -2663,9 +2663,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.foldr" id="apidoc.element.async.foldr">
         function <span class="apidocSignatureSpan">async.</span>foldr
@@ -2679,9 +2679,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.forEach" id="apidoc.element.async.forEach">
         function <span class="apidocSignatureSpan">async.</span>forEach
@@ -2694,9 +2694,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.forEachLimit" id="apidoc.element.async.forEachLimit">
         function <span class="apidocSignatureSpan">async.</span>forEachLimit
@@ -2709,9 +2709,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.forEachOf" id="apidoc.element.async.forEachOf">
         function <span class="apidocSignatureSpan">async.</span>forEachOf
@@ -2725,9 +2725,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.forEachOfLimit" id="apidoc.element.async.forEachOfLimit">
         function <span class="apidocSignatureSpan">async.</span>forEachOfLimit
@@ -2740,9 +2740,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.forEachOfSeries" id="apidoc.element.async.forEachOfSeries">
         function <span class="apidocSignatureSpan">async.</span>forEachOfSeries
@@ -2755,9 +2755,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.forEachSeries" id="apidoc.element.async.forEachSeries">
         function <span class="apidocSignatureSpan">async.</span>forEachSeries
@@ -2770,9 +2770,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.forever" id="apidoc.element.async.forever">
         function <span class="apidocSignatureSpan">async.</span>forever
@@ -2792,9 +2792,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.inject" id="apidoc.element.async.inject">
         function <span class="apidocSignatureSpan">async.</span>inject
@@ -2815,9 +2815,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.log" id="apidoc.element.async.log">
         function <span class="apidocSignatureSpan">async.</span>log
@@ -2844,9 +2844,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.map" id="apidoc.element.async.map">
         function <span class="apidocSignatureSpan">async.</span>map
@@ -2859,9 +2859,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.mapLimit" id="apidoc.element.async.mapLimit">
         function <span class="apidocSignatureSpan">async.</span>mapLimit
@@ -2874,9 +2874,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.mapSeries" id="apidoc.element.async.mapSeries">
         function <span class="apidocSignatureSpan">async.</span>mapSeries
@@ -2889,9 +2889,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.mapValues" id="apidoc.element.async.mapValues">
         function <span class="apidocSignatureSpan">async.</span>mapValues
@@ -2904,9 +2904,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.mapValuesLimit" id="apidoc.element.async.mapValuesLimit">
         function <span class="apidocSignatureSpan">async.</span>mapValuesLimit
@@ -2929,9 +2929,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.mapValuesSeries" id="apidoc.element.async.mapValuesSeries">
         function <span class="apidocSignatureSpan">async.</span>mapValuesSeries
@@ -2944,9 +2944,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.memoize" id="apidoc.element.async.memoize">
         function <span class="apidocSignatureSpan">async.</span>memoize
@@ -2984,9 +2984,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.nextTick" id="apidoc.element.async.nextTick">
         function <span class="apidocSignatureSpan">async.</span>nextTick
@@ -3013,9 +3013,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.parallel" id="apidoc.element.async.parallel">
         function <span class="apidocSignatureSpan">async.</span>parallel
@@ -3028,9 +3028,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.parallelLimit" id="apidoc.element.async.parallelLimit">
         function <span class="apidocSignatureSpan">async.</span>parallelLimit
@@ -3043,9 +3043,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.priorityQueue" id="apidoc.element.async.priorityQueue">
         function <span class="apidocSignatureSpan">async.</span>priorityQueue
@@ -3103,9 +3103,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.queue" id="apidoc.element.async.queue">
         function <span class="apidocSignatureSpan">async.</span>queue
@@ -3120,9 +3120,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.race" id="apidoc.element.async.race">
         function <span class="apidocSignatureSpan">async.</span>race
@@ -3140,9 +3140,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.reduce" id="apidoc.element.async.reduce">
         function <span class="apidocSignatureSpan">async.</span>reduce
@@ -3163,9 +3163,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.reduceRight" id="apidoc.element.async.reduceRight">
         function <span class="apidocSignatureSpan">async.</span>reduceRight
@@ -3179,9 +3179,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.reflect" id="apidoc.element.async.reflect">
         function <span class="apidocSignatureSpan">async.</span>reflect
@@ -3214,9 +3214,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.reflectAll" id="apidoc.element.async.reflectAll">
         function <span class="apidocSignatureSpan">async.</span>reflectAll
@@ -3238,9 +3238,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.reject" id="apidoc.element.async.reject">
         function <span class="apidocSignatureSpan">async.</span>reject
@@ -3253,9 +3253,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.rejectLimit" id="apidoc.element.async.rejectLimit">
         function <span class="apidocSignatureSpan">async.</span>rejectLimit
@@ -3268,9 +3268,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.rejectSeries" id="apidoc.element.async.rejectSeries">
         function <span class="apidocSignatureSpan">async.</span>rejectSeries
@@ -3283,9 +3283,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.retry" id="apidoc.element.async.retry">
         function <span class="apidocSignatureSpan">async.</span>retry
@@ -3343,9 +3343,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.retryable" id="apidoc.element.async.retryable">
         function <span class="apidocSignatureSpan">async.</span>retryable
@@ -3368,9 +3368,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.select" id="apidoc.element.async.select">
         function <span class="apidocSignatureSpan">async.</span>select
@@ -3383,9 +3383,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.selectLimit" id="apidoc.element.async.selectLimit">
         function <span class="apidocSignatureSpan">async.</span>selectLimit
@@ -3398,9 +3398,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.selectSeries" id="apidoc.element.async.selectSeries">
         function <span class="apidocSignatureSpan">async.</span>selectSeries
@@ -3413,9 +3413,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.seq" id="apidoc.element.async.seq">
         function <span class="apidocSignatureSpan">async.</span>seq
@@ -3442,9 +3442,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.series" id="apidoc.element.async.series">
         function <span class="apidocSignatureSpan">async.</span>series
@@ -3457,9 +3457,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.setImmediate" id="apidoc.element.async.setImmediate">
         function <span class="apidocSignatureSpan">async.</span>setImmediate
@@ -3486,9 +3486,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.some" id="apidoc.element.async.some">
         function <span class="apidocSignatureSpan">async.</span>some
@@ -3501,9 +3501,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.someLimit" id="apidoc.element.async.someLimit">
         function <span class="apidocSignatureSpan">async.</span>someLimit
@@ -3516,9 +3516,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.someSeries" id="apidoc.element.async.someSeries">
         function <span class="apidocSignatureSpan">async.</span>someSeries
@@ -3531,9 +3531,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.sortBy" id="apidoc.element.async.sortBy">
         function <span class="apidocSignatureSpan">async.</span>sortBy
@@ -3560,9 +3560,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.timeout" id="apidoc.element.async.timeout">
         function <span class="apidocSignatureSpan">async.</span>timeout
@@ -3601,9 +3601,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.times" id="apidoc.element.async.times">
         function <span class="apidocSignatureSpan">async.</span>times
@@ -3616,9 +3616,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.timesLimit" id="apidoc.element.async.timesLimit">
         function <span class="apidocSignatureSpan">async.</span>timesLimit
@@ -3631,9 +3631,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.timesSeries" id="apidoc.element.async.timesSeries">
         function <span class="apidocSignatureSpan">async.</span>timesSeries
@@ -3646,9 +3646,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.transform" id="apidoc.element.async.transform">
         function <span class="apidocSignatureSpan">async.</span>transform
@@ -3672,9 +3672,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.unmemoize" id="apidoc.element.async.unmemoize">
         function <span class="apidocSignatureSpan">async.</span>unmemoize
@@ -3689,9 +3689,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.until" id="apidoc.element.async.until">
         function <span class="apidocSignatureSpan">async.</span>until
@@ -3706,9 +3706,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.waterfall" id="apidoc.element.async.waterfall">
         function <span class="apidocSignatureSpan">async.</span>waterfall
@@ -3744,9 +3744,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.whilst" id="apidoc.element.async.whilst">
         function <span class="apidocSignatureSpan">async.</span>whilst
@@ -3766,9 +3766,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.wrapSync" id="apidoc.element.async.wrapSync">
         function <span class="apidocSignatureSpan">async.</span>wrapSync
@@ -3798,16 +3798,16 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
-    
+
+
+
+
 </div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.async.default" id="apidoc.module.async.default">module async.default</a></h1>
-    
-    
+
+
     <h2>
         <a href="#apidoc.element.async.default.all" id="apidoc.element.async.default.all">
         function <span class="apidocSignatureSpan">async.default.</span>all
@@ -3820,9 +3820,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.any" id="apidoc.element.async.default.any">
         function <span class="apidocSignatureSpan">async.default.</span>any
@@ -3835,9 +3835,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.apply" id="apidoc.element.async.default.apply">
         function <span class="apidocSignatureSpan">async.default.</span>apply
@@ -3864,9 +3864,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.applyEach" id="apidoc.element.async.default.applyEach">
         function <span class="apidocSignatureSpan">async.default.</span>applyEach
@@ -3893,9 +3893,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.applyEachSeries" id="apidoc.element.async.default.applyEachSeries">
         function <span class="apidocSignatureSpan">async.default.</span>applyEachSeries
@@ -3922,9 +3922,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.asyncify" id="apidoc.element.async.default.asyncify">
         function <span class="apidocSignatureSpan">async.default.</span>asyncify
@@ -3954,9 +3954,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.auto" id="apidoc.element.async.default.auto">
         function <span class="apidocSignatureSpan">async.default.</span>auto
@@ -4012,8 +4012,8 @@ endencies.join(&#x27;, &#x27;));
 
         arrayEach(dependencies, function (dependencyName) {
             if (!tasks[dependencyName]) {
-                throw new Error(&#x27;async.auto task `&#x27; + key + &#x27;` has a non-existent dependency `&#x27; + dependencyName + &#x27;` in &#x27; + dep\
-endencies.join(&#x27;, &#x27;));
+                throw new Error(&#x27;async.auto task `&#x27; + key + &#x27;` has a non-existent dependency `&#x27; + dependencyName + &#x27;` in &#x27; + dependencies
+.join(&#x27;, &#x27;));
             }
             addListener(dependencyName, function () {
                 remainingDependencies--;
@@ -4105,9 +4105,9 @@ endencies.join(&#x27;, &#x27;));
             arrayEach(getDependents(currentTask), function (dependent) { ...</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.autoInject" id="apidoc.element.async.default.autoInject">
         function <span class="apidocSignatureSpan">async.default.</span>autoInject
@@ -4153,9 +4153,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.cargo" id="apidoc.element.async.default.cargo">
         function <span class="apidocSignatureSpan">async.default.</span>cargo
@@ -4168,9 +4168,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.compose" id="apidoc.element.async.default.compose">
         function <span class="apidocSignatureSpan">async.default.</span>compose
@@ -4197,9 +4197,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.concat" id="apidoc.element.async.default.concat">
         function <span class="apidocSignatureSpan">async.default.</span>concat
@@ -4212,9 +4212,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.concatSeries" id="apidoc.element.async.default.concatSeries">
         function <span class="apidocSignatureSpan">async.default.</span>concatSeries
@@ -4227,9 +4227,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.constant" id="apidoc.element.async.default.constant">
         function <span class="apidocSignatureSpan">async.default.</span>constant
@@ -4256,9 +4256,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.detect" id="apidoc.element.async.default.detect">
         function <span class="apidocSignatureSpan">async.default.</span>detect
@@ -4271,9 +4271,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.detectLimit" id="apidoc.element.async.default.detectLimit">
         function <span class="apidocSignatureSpan">async.default.</span>detectLimit
@@ -4286,9 +4286,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.detectSeries" id="apidoc.element.async.default.detectSeries">
         function <span class="apidocSignatureSpan">async.default.</span>detectSeries
@@ -4301,9 +4301,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.dir" id="apidoc.element.async.default.dir">
         function <span class="apidocSignatureSpan">async.default.</span>dir
@@ -4330,9 +4330,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.doDuring" id="apidoc.element.async.default.doDuring">
         function <span class="apidocSignatureSpan">async.default.</span>doDuring
@@ -4359,9 +4359,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.doUntil" id="apidoc.element.async.default.doUntil">
         function <span class="apidocSignatureSpan">async.default.</span>doUntil
@@ -4376,9 +4376,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.doWhilst" id="apidoc.element.async.default.doWhilst">
         function <span class="apidocSignatureSpan">async.default.</span>doWhilst
@@ -4397,9 +4397,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.during" id="apidoc.element.async.default.during">
         function <span class="apidocSignatureSpan">async.default.</span>during
@@ -4425,9 +4425,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.each" id="apidoc.element.async.default.each">
         function <span class="apidocSignatureSpan">async.default.</span>each
@@ -4440,9 +4440,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.eachLimit" id="apidoc.element.async.default.eachLimit">
         function <span class="apidocSignatureSpan">async.default.</span>eachLimit
@@ -4455,9 +4455,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.eachOf" id="apidoc.element.async.default.eachOf">
         function <span class="apidocSignatureSpan">async.default.</span>eachOf
@@ -4471,9 +4471,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.eachOfLimit" id="apidoc.element.async.default.eachOfLimit">
         function <span class="apidocSignatureSpan">async.default.</span>eachOfLimit
@@ -4486,9 +4486,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.eachOfSeries" id="apidoc.element.async.default.eachOfSeries">
         function <span class="apidocSignatureSpan">async.default.</span>eachOfSeries
@@ -4501,9 +4501,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.eachSeries" id="apidoc.element.async.default.eachSeries">
         function <span class="apidocSignatureSpan">async.default.</span>eachSeries
@@ -4516,9 +4516,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.ensureAsync" id="apidoc.element.async.default.ensureAsync">
         function <span class="apidocSignatureSpan">async.default.</span>ensureAsync
@@ -4545,9 +4545,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.every" id="apidoc.element.async.default.every">
         function <span class="apidocSignatureSpan">async.default.</span>every
@@ -4560,9 +4560,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.everyLimit" id="apidoc.element.async.default.everyLimit">
         function <span class="apidocSignatureSpan">async.default.</span>everyLimit
@@ -4575,9 +4575,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.everySeries" id="apidoc.element.async.default.everySeries">
         function <span class="apidocSignatureSpan">async.default.</span>everySeries
@@ -4590,9 +4590,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.filter" id="apidoc.element.async.default.filter">
         function <span class="apidocSignatureSpan">async.default.</span>filter
@@ -4605,9 +4605,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.filterLimit" id="apidoc.element.async.default.filterLimit">
         function <span class="apidocSignatureSpan">async.default.</span>filterLimit
@@ -4620,9 +4620,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.filterSeries" id="apidoc.element.async.default.filterSeries">
         function <span class="apidocSignatureSpan">async.default.</span>filterSeries
@@ -4635,9 +4635,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.foldl" id="apidoc.element.async.default.foldl">
         function <span class="apidocSignatureSpan">async.default.</span>foldl
@@ -4658,9 +4658,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.foldr" id="apidoc.element.async.default.foldr">
         function <span class="apidocSignatureSpan">async.default.</span>foldr
@@ -4674,9 +4674,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.forEach" id="apidoc.element.async.default.forEach">
         function <span class="apidocSignatureSpan">async.default.</span>forEach
@@ -4689,9 +4689,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.forEachLimit" id="apidoc.element.async.default.forEachLimit">
         function <span class="apidocSignatureSpan">async.default.</span>forEachLimit
@@ -4704,9 +4704,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.forEachOf" id="apidoc.element.async.default.forEachOf">
         function <span class="apidocSignatureSpan">async.default.</span>forEachOf
@@ -4720,9 +4720,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.forEachOfLimit" id="apidoc.element.async.default.forEachOfLimit">
         function <span class="apidocSignatureSpan">async.default.</span>forEachOfLimit
@@ -4735,9 +4735,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.forEachOfSeries" id="apidoc.element.async.default.forEachOfSeries">
         function <span class="apidocSignatureSpan">async.default.</span>forEachOfSeries
@@ -4750,9 +4750,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.forEachSeries" id="apidoc.element.async.default.forEachSeries">
         function <span class="apidocSignatureSpan">async.default.</span>forEachSeries
@@ -4765,9 +4765,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.forever" id="apidoc.element.async.default.forever">
         function <span class="apidocSignatureSpan">async.default.</span>forever
@@ -4787,9 +4787,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.inject" id="apidoc.element.async.default.inject">
         function <span class="apidocSignatureSpan">async.default.</span>inject
@@ -4810,9 +4810,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.log" id="apidoc.element.async.default.log">
         function <span class="apidocSignatureSpan">async.default.</span>log
@@ -4839,9 +4839,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.map" id="apidoc.element.async.default.map">
         function <span class="apidocSignatureSpan">async.default.</span>map
@@ -4854,9 +4854,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.mapLimit" id="apidoc.element.async.default.mapLimit">
         function <span class="apidocSignatureSpan">async.default.</span>mapLimit
@@ -4869,9 +4869,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.mapSeries" id="apidoc.element.async.default.mapSeries">
         function <span class="apidocSignatureSpan">async.default.</span>mapSeries
@@ -4884,9 +4884,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.mapValues" id="apidoc.element.async.default.mapValues">
         function <span class="apidocSignatureSpan">async.default.</span>mapValues
@@ -4899,9 +4899,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.mapValuesLimit" id="apidoc.element.async.default.mapValuesLimit">
         function <span class="apidocSignatureSpan">async.default.</span>mapValuesLimit
@@ -4924,9 +4924,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.mapValuesSeries" id="apidoc.element.async.default.mapValuesSeries">
         function <span class="apidocSignatureSpan">async.default.</span>mapValuesSeries
@@ -4939,9 +4939,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.memoize" id="apidoc.element.async.default.memoize">
         function <span class="apidocSignatureSpan">async.default.</span>memoize
@@ -4979,9 +4979,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.nextTick" id="apidoc.element.async.default.nextTick">
         function <span class="apidocSignatureSpan">async.default.</span>nextTick
@@ -5008,9 +5008,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.parallel" id="apidoc.element.async.default.parallel">
         function <span class="apidocSignatureSpan">async.default.</span>parallel
@@ -5023,9 +5023,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.parallelLimit" id="apidoc.element.async.default.parallelLimit">
         function <span class="apidocSignatureSpan">async.default.</span>parallelLimit
@@ -5038,9 +5038,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.priorityQueue" id="apidoc.element.async.default.priorityQueue">
         function <span class="apidocSignatureSpan">async.default.</span>priorityQueue
@@ -5098,9 +5098,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.queue" id="apidoc.element.async.default.queue">
         function <span class="apidocSignatureSpan">async.default.</span>queue
@@ -5115,9 +5115,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.race" id="apidoc.element.async.default.race">
         function <span class="apidocSignatureSpan">async.default.</span>race
@@ -5135,9 +5135,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.reduce" id="apidoc.element.async.default.reduce">
         function <span class="apidocSignatureSpan">async.default.</span>reduce
@@ -5158,9 +5158,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.reduceRight" id="apidoc.element.async.default.reduceRight">
         function <span class="apidocSignatureSpan">async.default.</span>reduceRight
@@ -5174,9 +5174,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.reflect" id="apidoc.element.async.default.reflect">
         function <span class="apidocSignatureSpan">async.default.</span>reflect
@@ -5209,9 +5209,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.reflectAll" id="apidoc.element.async.default.reflectAll">
         function <span class="apidocSignatureSpan">async.default.</span>reflectAll
@@ -5233,9 +5233,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.reject" id="apidoc.element.async.default.reject">
         function <span class="apidocSignatureSpan">async.default.</span>reject
@@ -5248,9 +5248,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.rejectLimit" id="apidoc.element.async.default.rejectLimit">
         function <span class="apidocSignatureSpan">async.default.</span>rejectLimit
@@ -5263,9 +5263,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.rejectSeries" id="apidoc.element.async.default.rejectSeries">
         function <span class="apidocSignatureSpan">async.default.</span>rejectSeries
@@ -5278,9 +5278,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.retry" id="apidoc.element.async.default.retry">
         function <span class="apidocSignatureSpan">async.default.</span>retry
@@ -5338,9 +5338,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.retryable" id="apidoc.element.async.default.retryable">
         function <span class="apidocSignatureSpan">async.default.</span>retryable
@@ -5363,9 +5363,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.select" id="apidoc.element.async.default.select">
         function <span class="apidocSignatureSpan">async.default.</span>select
@@ -5378,9 +5378,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.selectLimit" id="apidoc.element.async.default.selectLimit">
         function <span class="apidocSignatureSpan">async.default.</span>selectLimit
@@ -5393,9 +5393,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.selectSeries" id="apidoc.element.async.default.selectSeries">
         function <span class="apidocSignatureSpan">async.default.</span>selectSeries
@@ -5408,9 +5408,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.seq" id="apidoc.element.async.default.seq">
         function <span class="apidocSignatureSpan">async.default.</span>seq
@@ -5437,9 +5437,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.series" id="apidoc.element.async.default.series">
         function <span class="apidocSignatureSpan">async.default.</span>series
@@ -5452,9 +5452,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.setImmediate" id="apidoc.element.async.default.setImmediate">
         function <span class="apidocSignatureSpan">async.default.</span>setImmediate
@@ -5481,9 +5481,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.some" id="apidoc.element.async.default.some">
         function <span class="apidocSignatureSpan">async.default.</span>some
@@ -5496,9 +5496,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.someLimit" id="apidoc.element.async.default.someLimit">
         function <span class="apidocSignatureSpan">async.default.</span>someLimit
@@ -5511,9 +5511,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.someSeries" id="apidoc.element.async.default.someSeries">
         function <span class="apidocSignatureSpan">async.default.</span>someSeries
@@ -5526,9 +5526,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.sortBy" id="apidoc.element.async.default.sortBy">
         function <span class="apidocSignatureSpan">async.default.</span>sortBy
@@ -5555,9 +5555,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.timeout" id="apidoc.element.async.default.timeout">
         function <span class="apidocSignatureSpan">async.default.</span>timeout
@@ -5596,9 +5596,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.times" id="apidoc.element.async.default.times">
         function <span class="apidocSignatureSpan">async.default.</span>times
@@ -5611,9 +5611,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.timesLimit" id="apidoc.element.async.default.timesLimit">
         function <span class="apidocSignatureSpan">async.default.</span>timesLimit
@@ -5626,9 +5626,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.timesSeries" id="apidoc.element.async.default.timesSeries">
         function <span class="apidocSignatureSpan">async.default.</span>timesSeries
@@ -5641,9 +5641,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.transform" id="apidoc.element.async.default.transform">
         function <span class="apidocSignatureSpan">async.default.</span>transform
@@ -5667,9 +5667,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.unmemoize" id="apidoc.element.async.default.unmemoize">
         function <span class="apidocSignatureSpan">async.default.</span>unmemoize
@@ -5684,9 +5684,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.until" id="apidoc.element.async.default.until">
         function <span class="apidocSignatureSpan">async.default.</span>until
@@ -5701,9 +5701,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.waterfall" id="apidoc.element.async.default.waterfall">
         function <span class="apidocSignatureSpan">async.default.</span>waterfall
@@ -5739,9 +5739,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.whilst" id="apidoc.element.async.default.whilst">
         function <span class="apidocSignatureSpan">async.default.</span>whilst
@@ -5761,9 +5761,9 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
-    
+
+
+
     <h2>
         <a href="#apidoc.element.async.default.wrapSync" id="apidoc.element.async.default.wrapSync">
         function <span class="apidocSignatureSpan">async.default.</span>wrapSync
@@ -5793,8 +5793,8 @@ endencies.join(&#x27;, &#x27;));
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
-    
-    
+
+
 </div>
 
 <div class="apidocFooterDiv">
