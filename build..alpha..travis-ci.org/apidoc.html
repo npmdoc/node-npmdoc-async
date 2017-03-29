@@ -46,12 +46,12 @@
     font-weight: bold;
 }
 </style>
-<h1>api-documentation for
+<h1>api documentation for
     <a
 
         href="https://github.com/caolan/async#readme"
 
-    >async (v2.1.5)</a>
+    >async (v2.2.0)</a>
 </h1>
 <h4>Higher-order functions and common patterns for asynchronous code</h4>
 <div class="apidocSectionDiv"><a
@@ -507,6 +507,33 @@
             <a class="apidocElementLiA" href="#apidoc.element.async.forever">
             function <span class="apidocSignatureSpan">async.</span>forever
             <span class="apidocSignatureSpan">(fn, errback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.async.groupBy">
+            function <span class="apidocSignatureSpan">async.</span>groupBy
+            <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.async.groupByLimit">
+            function <span class="apidocSignatureSpan">async.</span>groupByLimit
+            <span class="apidocSignatureSpan">(coll, limit, iteratee, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.async.groupBySeries">
+            function <span class="apidocSignatureSpan">async.</span>groupBySeries
+            <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
 
         </li>
@@ -1300,6 +1327,33 @@
             <a class="apidocElementLiA" href="#apidoc.element.async.default.forever">
             function <span class="apidocSignatureSpan">async.default.</span>forever
             <span class="apidocSignatureSpan">(fn, errback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.async.default.groupBy">
+            function <span class="apidocSignatureSpan">async.default.</span>groupBy
+            <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.async.default.groupByLimit">
+            function <span class="apidocSignatureSpan">async.default.</span>groupByLimit
+            <span class="apidocSignatureSpan">(coll, limit, iteratee, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.async.default.groupBySeries">
+            function <span class="apidocSignatureSpan">async.default.</span>groupBySeries
+            <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
             </a>
 
         </li>
@@ -2796,6 +2850,77 @@
 
 
     <h2>
+        <a href="#apidoc.element.async.groupBy" id="apidoc.element.async.groupBy">
+        function <span class="apidocSignatureSpan">async.</span>groupBy
+        <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">groupBy = function (iterable, iteratee, callback) {
+    return fn(iterable, limit, iteratee, callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.async.groupByLimit" id="apidoc.element.async.groupByLimit">
+        function <span class="apidocSignatureSpan">async.</span>groupByLimit
+        <span class="apidocSignatureSpan">(coll, limit, iteratee, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">groupByLimit = function (coll, limit, iteratee, callback) {
+    callback = callback || noop;
+
+    mapLimit(coll, limit, function (val, callback) {
+        iteratee(val, function (err, key) {
+            if (err) return callback(err);
+            return callback(null, { key: key, val: val });
+        });
+    }, function (err, mapResults) {
+        var result = {};
+        // from MDN, handle object having an `hasOwnProperty` prop
+        var hasOwnProperty = Object.prototype.hasOwnProperty;
+
+        for (var i = 0; i &#x3c; mapResults.length; i++) {
+            if (mapResults[i]) {
+                var key = mapResults[i].key;
+                var val = mapResults[i].val;
+
+                if (hasOwnProperty.call(result, key)) {
+                    result[key].push(val);
+                } else {
+                    result[key] = [val];
+                }
+            }
+        }
+
+        return callback(err, result);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.async.groupBySeries" id="apidoc.element.async.groupBySeries">
+        function <span class="apidocSignatureSpan">async.</span>groupBySeries
+        <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">groupBySeries = function (iterable, iteratee, callback) {
+    return fn(iterable, limit, iteratee, callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
         <a href="#apidoc.element.async.inject" id="apidoc.element.async.inject">
         function <span class="apidocSignatureSpan">async.</span>inject
         <span class="apidocSignatureSpan">(coll, memo, iteratee, callback)</span>
@@ -3657,7 +3782,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function transform(coll, accumulator, iteratee, callback) {
-    if (arguments.length === 3) {
+    if (arguments.length &#x3c;= 3) {
         callback = iteratee;
         iteratee = accumulator;
         accumulator = isArray(coll) ? [] : {};
@@ -4791,6 +4916,77 @@
 
 
     <h2>
+        <a href="#apidoc.element.async.default.groupBy" id="apidoc.element.async.default.groupBy">
+        function <span class="apidocSignatureSpan">async.default.</span>groupBy
+        <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">groupBy = function (iterable, iteratee, callback) {
+    return fn(iterable, limit, iteratee, callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.async.default.groupByLimit" id="apidoc.element.async.default.groupByLimit">
+        function <span class="apidocSignatureSpan">async.default.</span>groupByLimit
+        <span class="apidocSignatureSpan">(coll, limit, iteratee, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">groupByLimit = function (coll, limit, iteratee, callback) {
+    callback = callback || noop;
+
+    mapLimit(coll, limit, function (val, callback) {
+        iteratee(val, function (err, key) {
+            if (err) return callback(err);
+            return callback(null, { key: key, val: val });
+        });
+    }, function (err, mapResults) {
+        var result = {};
+        // from MDN, handle object having an `hasOwnProperty` prop
+        var hasOwnProperty = Object.prototype.hasOwnProperty;
+
+        for (var i = 0; i &#x3c; mapResults.length; i++) {
+            if (mapResults[i]) {
+                var key = mapResults[i].key;
+                var val = mapResults[i].val;
+
+                if (hasOwnProperty.call(result, key)) {
+                    result[key].push(val);
+                } else {
+                    result[key] = [val];
+                }
+            }
+        }
+
+        return callback(err, result);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.async.default.groupBySeries" id="apidoc.element.async.default.groupBySeries">
+        function <span class="apidocSignatureSpan">async.default.</span>groupBySeries
+        <span class="apidocSignatureSpan">(iterable, iteratee, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">groupBySeries = function (iterable, iteratee, callback) {
+    return fn(iterable, limit, iteratee, callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
         <a href="#apidoc.element.async.default.inject" id="apidoc.element.async.default.inject">
         function <span class="apidocSignatureSpan">async.default.</span>inject
         <span class="apidocSignatureSpan">(coll, memo, iteratee, callback)</span>
@@ -5652,7 +5848,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function transform(coll, accumulator, iteratee, callback) {
-    if (arguments.length === 3) {
+    if (arguments.length &#x3c;= 3) {
         callback = iteratee;
         iteratee = accumulator;
         accumulator = isArray(coll) ? [] : {};
