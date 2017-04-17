@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/caolan/async#readme"
-
-    >async (v2.3.0)</a>
+    <a href="https://github.com/caolan/async#readme">async (v2.3.0)</a>
 </h1>
 <h4>Higher-order functions and common patterns for asynchronous code</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.async">module async</a><ol>
 
@@ -3349,12 +3342,12 @@
       length = nativeMax(args.length - start, 0),
       array = Array(length);
 
-  while (++index &#x3c; length) {
+  while (++index &lt; length) {
     array[index] = args[start + index];
   }
   index = -1;
   var otherArgs = Array(start + 1);
-  while (++index &#x3c; start) {
+  while (++index &lt; start) {
     otherArgs[index] = args[index];
   }
   otherArgs[start] = transform(array);
@@ -3368,8 +3361,8 @@
 *
 * // using apply
 * async.parallel([
-*     async.<span class="apidocCodeKeywordSpan">apply</span>(fs.writeFile, &#x27;testfile1&#x27;, &#x27;test1&#x27;),
-*     async.apply(fs.writeFile, &#x27;testfile2&#x27;, &#x27;test2&#x27;)
+*     async.<span class="apidocCodeKeywordSpan">apply</span>(fs.writeFile, 'testfile1', 'test1'),
+*     async.apply(fs.writeFile, 'testfile2', 'test2')
 * ]);
 *
 *
@@ -3407,12 +3400,12 @@
       length = nativeMax(args.length - start, 0),
       array = Array(length);
 
-  while (++index &#x3c; length) {
+  while (++index &lt; length) {
     array[index] = args[start + index];
   }
   index = -1;
   var otherArgs = Array(start + 1);
-  while (++index &#x3c; start) {
+  while (++index &lt; start) {
     otherArgs[index] = args[index];
   }
   otherArgs[start] = transform(array);
@@ -3426,7 +3419,7 @@
 * arguments, `callback` is required.
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">applyEach</span>([enableSearch, updateSchema], &#x27;bucket&#x27;, callback);
+* async.<span class="apidocCodeKeywordSpan">applyEach</span>([enableSearch, updateSchema], 'bucket', callback);
 *
 * // partial application example:
 * async.each(
@@ -3452,12 +3445,12 @@
       length = nativeMax(args.length - start, 0),
       array = Array(length);
 
-  while (++index &#x3c; length) {
+  while (++index &lt; length) {
     array[index] = args[start + index];
   }
   index = -1;
   var otherArgs = Array(start + 1);
-  while (++index &#x3c; start) {
+  while (++index &lt; start) {
     otherArgs[index] = args[index];
   }
   otherArgs[start] = transform(array);
@@ -3484,7 +3477,7 @@
             return callback(e);
         }
         // if result is Promise object
-        if (isObject(result) &#x26;&#x26; typeof result.then === &#x27;function&#x27;) {
+        if (isObject(result) &amp;&amp; typeof result.then === 'function') {
             result.then(function (value) {
                 callback(null, value);
             }, function (err) {
@@ -3502,7 +3495,7 @@
 *
 * // passing a regular synchronous function
 * async.waterfall([
-*     async.apply(fs.readFile, filename, &#x22;utf8&#x22;),
+*     async.apply(fs.readFile, filename, "utf8"),
 *     async.<span class="apidocCodeKeywordSpan">asyncify</span>(JSON.parse),
 *     function (data, next) {
 *         // data is the result of parsing the text.
@@ -3524,7 +3517,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">auto = function (tasks, concurrency, callback) {
-    if (typeof concurrency === &#x27;function&#x27;) {
+    if (typeof concurrency === 'function') {
         // concurrency is optional, shift the args.
         callback = concurrency;
         concurrency = null;
@@ -3571,8 +3564,8 @@
 
         arrayEach(dependencies, function (dependencyName) {
             if (!tasks[dependencyName]) {
-                throw new Error(&#x27;async.auto task `&#x27; + key + &#x27;` has a non-existent dependency `&#x27; + dependencyName + &#x27;` in &#x27; + dependencies
-.join(&#x27;, &#x27;));
+                throw new Error('async.auto task `' + key + '` has a non-existent dependency `' + dependencyName + '` in ' + dependencies
+.join(', '));
             }
             addListener(dependencyName, function () {
                 remainingDependencies--;
@@ -3593,10 +3586,10 @@
     }
 
     function processQueue() {
-        if (readyTasks.length === 0 &#x26;&#x26; runningTasks === 0) {
+        if (readyTasks.length === 0 &amp;&amp; runningTasks === 0) {
             return callback(null, results);
         }
-        while (readyTasks.length &#x26;&#x26; runningTasks &#x3c; concurrency) {
+        while (readyTasks.length &amp;&amp; runningTasks &lt; concurrency) {
             var run = readyTasks.shift();
             run();
         }
@@ -3624,7 +3617,7 @@
 
         var taskCallback = onlyOnce(rest(function (err, args) {
             runningTasks--;
-            if (args.length &#x3c;= 1) {
+            if (args.length &lt;= 1) {
                 args = args[0];
             }
             if (err) {
@@ -3645,7 +3638,7 @@
 
         runningTasks++;
         var taskFn = wrapAsync$1(task[task.length - 1]);
-        if (task.length &#x3e; 1) {
+        if (task.length &gt; 1) {
             taskFn(results, taskCallback);
         } else {
             taskFn(taskCallback);
@@ -3653,7 +3646,7 @@
     }
 
     function checkForDeadlocks() {
-        // Kahn&#x27;s algorithm
+        // Kahn's algorithm
         // https://en.wikipedia.org/wiki/Topological_sorting#Kahn.27s_algorithm
         // http://connalle.blogspot.com/2013/10/topological-sortingkahn-algorithm.html
         var currentTask;
@@ -3672,9 +3665,9 @@
 *
 * async.<span class="apidocCodeKeywordSpan">auto</span>({
 *     // this function will just be passed a callback
-*     readData: async.apply(fs.readFile, &#x27;data.txt&#x27;, &#x27;utf-8&#x27;),
-*     showData: [&#x27;readData&#x27;, function(results, cb) {
-*         // results.readData is the file&#x27;s contents
+*     readData: async.apply(fs.readFile, 'data.txt', 'utf-8'),
+*     showData: ['readData', function(results, cb) {
+*         // results.readData is the file's contents
 *         // ...
 *     }]
 * }, callback);
@@ -3696,20 +3689,20 @@
     baseForOwn(tasks, function (taskFn, key) {
         var params;
         var fnIsAsync = isAsync(taskFn);
-        var hasNoDeps = !fnIsAsync &#x26;&#x26; taskFn.length === 1 || fnIsAsync &#x26;&#x26; taskFn.length === 0;
+        var hasNoDeps = !fnIsAsync &amp;&amp; taskFn.length === 1 || fnIsAsync &amp;&amp; taskFn.length === 0;
 
         if (isArray(taskFn)) {
             params = taskFn.slice(0, -1);
             taskFn = taskFn[taskFn.length - 1];
 
-            newTasks[key] = params.concat(params.length &#x3e; 0 ? newTask : taskFn);
+            newTasks[key] = params.concat(params.length &gt; 0 ? newTask : taskFn);
         } else if (hasNoDeps) {
             // no dependencies, use the function as-is
             newTasks[key] = taskFn;
         } else {
             params = parseParams(taskFn);
-            if (taskFn.length === 0 &#x26;&#x26; !fnIsAsync &#x26;&#x26; params.length === 0) {
-                throw new Error(&#x22;autoInject task functions require explicit parameters.&#x22;);
+            if (taskFn.length === 0 &amp;&amp; !fnIsAsync &amp;&amp; params.length === 0) {
+                throw new Error("autoInject task functions require explicit parameters.");
             }
 
             // remove callback param
@@ -3740,7 +3733,7 @@
 * async.<span class="apidocCodeKeywordSpan">autoInject</span>({
 *     get_data: function(callback) {
 *         // async code to get some data
-*         callback(null, &#x27;data&#x27;, &#x27;converted to array&#x27;);
+*         callback(null, 'data', 'converted to array');
 *     },
 *     make_folder: function(callback) {
 *         // async code to create a directory to store a file in
@@ -3769,8 +3762,8 @@
 *
 * // create a cargo object with payload 2
 * var cargo = async.<span class="apidocCodeKeywordSpan">cargo</span>(function(tasks, callback) {
-*     for (var i=0; i&#x3c;tasks.length; i++) {
-*         console.log(&#x27;hello &#x27; + tasks[i].name);
+*     for (var i=0; i&lt;tasks.length; i++) {
+*         console.log('hello ' + tasks[i].name);
 *     }
 *     callback();
 * }, 2);
@@ -3794,12 +3787,12 @@
       length = nativeMax(args.length - start, 0),
       array = Array(length);
 
-  while (++index &#x3c; length) {
+  while (++index &lt; length) {
     array[index] = args[start + index];
   }
   index = -1;
   var otherArgs = Array(start + 1);
-  while (++index &#x3c; start) {
+  while (++index &lt; start) {
     otherArgs[index] = args[index];
   }
   otherArgs[start] = transform(array);
@@ -3837,7 +3830,7 @@ exports.default = (0, _rest2.default)(function (args) {
     return fn(eachOf, obj, wrapAsync$1(iteratee), callback);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
- * node&#x3e; fn(&#x27;two&#x27;, &#x27;three&#x27;);
+ * node&gt; fn('two', 'three');
  * one
  * two
  * three
@@ -3847,7 +3840,7 @@ exports.default = (0, _rest2.default)(function (fn, args) {
         return fn.apply(null, args.<span class="apidocCodeKeywordSpan">concat</span>(callArgs));
     });
 });
-module.exports = exports[&#x27;default&#x27;];
+module.exports = exports['default'];
 ...</pre></li>
     </ul>
 
@@ -3878,7 +3871,7 @@ module.exports = exports[&#x27;default&#x27;];
     <li>description and source-code<pre class="apidocCodePre">function consoleFunc(name) {
     return (0, _rest2.default)(function (fn, args) {
         (0, _wrapAsync2.default)(fn).apply(null, args.concat((0, _rest2.default)(function (err, args) {
-            if (typeof console === &#x27;object&#x27;) {
+            if (typeof console === 'object') {
                 if (err) {
                     if (console.error) {
                         console.error(err);
@@ -3910,12 +3903,12 @@ module.exports = exports[&#x27;default&#x27;];
       length = nativeMax(args.length - start, 0),
       array = Array(length);
 
-  while (++index &#x3c; length) {
+  while (++index &lt; length) {
     array[index] = args[start + index];
   }
   index = -1;
   var otherArgs = Array(start + 1);
-  while (++index &#x3c; start) {
+  while (++index &lt; start) {
     otherArgs[index] = args[index];
   }
   otherArgs[start] = transform(array);
@@ -3958,7 +3951,7 @@ module.exports = exports[&#x27;default&#x27;];
             iteratee(value, function (err, result) {
                 if (err) {
                     callback(err);
-                } else if (check(result) &#x26;&#x26; !testResult) {
+                } else if (check(result) &amp;&amp; !testResult) {
                     testPassed = true;
                     testResult = getResult(true, value);
                     callback(null, _breakLoop2.default);
@@ -3998,7 +3991,7 @@ module.exports = exports[&#x27;default&#x27;];
 * (err, result).
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">detect</span>([&#x27;file1&#x27;,&#x27;file2&#x27;,&#x27;file3&#x27;], function(filePath
+* async.<span class="apidocCodeKeywordSpan">detect</span>(['file1','file2','file3'], function(filePath
 , callback) {
 *     fs.access(filePath, function(err) {
 *         callback(null, !err)
@@ -4055,12 +4048,12 @@ module.exports = exports[&#x27;default&#x27;];
       length = nativeMax(args.length - start, 0),
       array = Array(length);
 
-  while (++index &#x3c; length) {
+  while (++index &lt; length) {
     array[index] = args[start + index];
   }
   index = -1;
   var otherArgs = Array(start + 1);
-  while (++index &#x3c; start) {
+  while (++index &lt; start) {
     otherArgs[index] = args[index];
   }
   otherArgs[start] = transform(array);
@@ -4074,11 +4067,11 @@ module.exports = exports[&#x27;default&#x27;];
  * };
  *
  * // in the node repl
- * node&#x3e; async.<span class="apidocCodeKeywordSpan">dir</span>(hello, &#x27;world&#x27;);
- * {hello: &#x27;world&#x27;}
+ * node&gt; async.<span class="apidocCodeKeywordSpan">dir</span>(hello, 'world');
+ * {hello: 'world'}
  */
-exports.default = (0, _consoleFunc2.default)(&#x27;dir&#x27;);
-module.exports = exports[&#x27;default&#x27;];
+exports.default = (0, _consoleFunc2.default)('dir');
+module.exports = exports['default'];
 ...</pre></li>
     </ul>
 
@@ -4257,7 +4250,7 @@ module.exports = exports[&#x27;default&#x27;];
 *
 * async.<span class="apidocCodeKeywordSpan">during</span>(
 *     function (callback) {
-*         return callback(null, count &#x3c; 5);
+*         return callback(null, count &lt; 5);
 *     },
 *     function (callback) {
 *         count++;
@@ -4283,7 +4276,7 @@ module.exports = exports[&#x27;default&#x27;];
  * arguments, `callback` is required.
  * @example
  *
- * async.applyEach([enableSearch, updateSchema], &#x27;bucket&#x27;, callback);
+ * async.applyEach([enableSearch, updateSchema], 'bucket', callback);
  *
  * // partial application example:
  * async.<span class="apidocCodeKeywordSpan">each</span>(
@@ -4293,7 +4286,7 @@ module.exports = exports[&#x27;default&#x27;];
  * );
  */
 exports.default = (0, _applyEach2.default)(_map2.default);
-module.exports = exports[&#x27;default&#x27;];
+module.exports = exports['default'];
 ...</pre></li>
     </ul>
 
@@ -4406,7 +4399,7 @@ module.exports = exports[&#x27;default&#x27;];
  * // this has a risk of stack overflows if many results are cached in a row
  * async.mapSeries(args, sometimesAsync, done);
  *
- * // this will defer sometimesAsync&#x27;s callback if necessary,
+ * // this will defer sometimesAsync's callback if necessary,
  * // preventing stack overflows
  * async.mapSeries(args, async.<span class="apidocCodeKeywordSpan">ensureAsync</span>(sometimesAsync), done);
  */
@@ -4439,7 +4432,7 @@ return (0, _initialParams2.default)(function (args, callback) {
 * depending on the values of the async tests. Invoked with (err, result).
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">every</span>([&#x27;file1&#x27;,&#x27;file2&#x27;,&#x27;file3&#x27;], function(filePath
+* async.<span class="apidocCodeKeywordSpan">every</span>(['file1','file2','file3'], function(filePath
 , callback) {
 *     fs.access(filePath, function(err) {
 *         callback(null, !err)
@@ -4501,7 +4494,7 @@ return (0, _initialParams2.default)(function (args, callback) {
 * `iteratee` functions have finished. Invoked with (err, results).
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">filter</span>([&#x27;file1&#x27;,&#x27;file2&#x27;,&#x27;file3&#x27;], function(filePath
+* async.<span class="apidocCodeKeywordSpan">filter</span>(['file1','file2','file3'], function(filePath
 , callback) {
 *     fs.access(filePath, function(err) {
 *         callback(null, !err)
@@ -4691,11 +4684,11 @@ return (0, _initialParams2.default)(function (args, callback) {
 * `iteratee` functions have finished, or an error occurs. Invoked with (err).
 * @example
 *
-* var obj = {dev: &#x22;/dev.json&#x22;, test: &#x22;/test.json&#x22;, prod: &#x22;/prod.json&#x22;};
+* var obj = {dev: "/dev.json", test: "/test.json", prod: "/prod.json"};
 * var configs = {};
 *
 * async.<span class="apidocCodeKeywordSpan">forEachOf</span>(obj, function (value, key, callback) {
-*     fs.readFile(__dirname + value, &#x22;utf8&#x22;, function (err, data) {
+*     fs.readFile(__dirname + value, "utf8", function (err, data) {
 *         if (err) return callback(err);
 *         try {
 *             configs[key] = JSON.parse(data);
@@ -4773,7 +4766,7 @@ return (0, _initialParams2.default)(function (args, callback) {
 * @category Control Flow
 * @param {AsyncFunction} fn - an async function to call repeatedly.
 * Invoked with (next).
-* @param {Function} [errback] - when `fn` passes an error to it&#x27;s callback,
+* @param {Function} [errback] - when `fn` passes an error to it's callback,
 * this function will be called, and execution stops. Invoked with (err).
 * @example
 *
@@ -4784,7 +4777,7 @@ return (0, _initialParams2.default)(function (args, callback) {
 *     },
 *     function(err) {
 *         // if next is called with a value in its first parameter, it will appear
-*         // in here as &#x27;err&#x27;, and execution will stop.
+*         // in here as 'err', and execution will stop.
 ...</pre></li>
     </ul>
 
@@ -4798,7 +4791,7 @@ return (0, _initialParams2.default)(function (args, callback) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getIterator = function (coll) {
-    return iteratorSymbol &#x26;&#x26; coll[iteratorSymbol] &#x26;&#x26; coll[iteratorSymbol]();
+    return iteratorSymbol &amp;&amp; coll[iteratorSymbol] &amp;&amp; coll[iteratorSymbol]();
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -4823,7 +4816,7 @@ return (0, _initialParams2.default)(function (args, callback) {
 * properties are arrays of values which returned the corresponding key.
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">groupBy</span>([&#x27;userId1&#x27;, &#x27;userId2&#x27;, &#x27;userId3&#x27;], function
+* async.<span class="apidocCodeKeywordSpan">groupBy</span>(['userId1', 'userId2', 'userId3'], function
 (userId, callback) {
 *     db.findById(userId, function(err, user) {
 *         if (err) return callback(err);
@@ -4831,7 +4824,7 @@ return (0, _initialParams2.default)(function (args, callback) {
 *     });
 * }, function(err, result) {
 *     // result is object containing the userIds grouped by age
-*     // e.g. { 30: [&#x27;userId1&#x27;, &#x27;userId3&#x27;], 42: [&#x27;userId2&#x27;]};
+*     // e.g. { 30: ['userId1', 'userId3'], 42: ['userId2']};
 ...</pre></li>
     </ul>
 
@@ -4857,7 +4850,7 @@ return (0, _initialParams2.default)(function (args, callback) {
         // from MDN, handle object having an `hasOwnProperty` prop
         var hasOwnProperty = Object.prototype.hasOwnProperty;
 
-        for (var i = 0; i &#x3c; mapResults.length; i++) {
+        for (var i = 0; i &lt; mapResults.length; i++) {
             if (mapResults[i]) {
                 var key = mapResults[i].key;
                 var val = mapResults[i].val;
@@ -4968,31 +4961,31 @@ return (0, _initialParams2.default)(function (args, callback) {
       length = nativeMax(args.length - start, 0),
       array = Array(length);
 
-  while (++index &#x3c; length) {
+  while (++index &lt; length) {
     array[index] = args[start + index];
   }
   index = -1;
   var otherArgs = Array(start + 1);
-  while (++index &#x3c; start) {
+  while (++index &lt; start) {
     otherArgs[index] = args[index];
   }
   otherArgs[start] = transform(array);
   return apply(func, this, otherArgs);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-*         // results.readData is the file&#x27;s contents
+*         // results.readData is the file's contents
 *         // ...
 *     }]
 * }, callback);
 *
 * async.auto({
 *     get_data: function(callback) {
-*         console.<span class="apidocCodeKeywordSpan">log</span>(&#x27;in get_data&#x27;);
+*         console.<span class="apidocCodeKeywordSpan">log</span>('in get_data');
 *         // async code to get some data
-*         callback(null, &#x27;data&#x27;, &#x27;converted to array&#x27;);
+*         callback(null, 'data', 'converted to array');
 *     },
 *     make_folder: function(callback) {
-*         console.log(&#x27;in make_folder&#x27;);
+*         console.log('in make_folder');
 *         // async code to create a directory to store a file in
 *         // this is run at the same time as getting the data
 ...</pre></li>
@@ -5015,11 +5008,11 @@ var FN_ARG = /(=.+)?(\s*)$/;
 var STRIP_COMMENTS = /((\/\/.*$)|(\/\*[\s\S]*?\*\/))/mg;
 
 function parseParams(func) {
-   func = func.toString().replace(STRIP_COMMENTS, &#x27;&#x27;);
-   func = func.match(FN_ARGS)[2].replace(&#x27; &#x27;, &#x27;&#x27;);
+   func = func.toString().replace(STRIP_COMMENTS, '');
+   func = func.match(FN_ARGS)[2].replace(' ', '');
    func = func ? func.split(FN_ARG_SPLIT) : [];
    func = func.<span class="apidocCodeKeywordSpan">map</span>(function (arg) {
-       return (0, _trim2.default)(arg.replace(FN_ARG, &#x27;&#x27;));
+       return (0, _trim2.default)(arg.replace(FN_ARG, ''));
    });
    return func;
 }
@@ -5066,7 +5059,7 @@ function parseParams(func) {
  * // this has a risk of stack overflows if many results are cached in a row
  * async.<span class="apidocCodeKeywordSpan">mapSeries</span>(args, sometimesAsync, done);
  *
- * // this will defer sometimesAsync&#x27;s callback if necessary,
+ * // this will defer sometimesAsync's callback if necessary,
  * // preventing stack overflows
  * async.mapSeries(args, async.ensureAsync(sometimesAsync), done);
  */
@@ -5096,9 +5089,9 @@ if ((0, _wrapAsync.isAsync)(fn)) return fn;
 * @example
 *
 * async.<span class="apidocCodeKeywordSpan">mapValues</span>({
-*     f1: &#x27;file1&#x27;,
-*     f2: &#x27;file2&#x27;,
-*     f3: &#x27;file3&#x27;
+*     f1: 'file1',
+*     f2: 'file2',
+*     f3: 'file3'
 * }, function (file, key, callback) {
 *   fs.stat(file, callback);
 * }, function(err, result) {
@@ -5175,7 +5168,7 @@ if ((0, _wrapAsync.isAsync)(fn)) return fn;
                 memo[key] = args;
                 var q = queues[key];
                 delete queues[key];
-                for (var i = 0, l = q.length; i &#x3c; l; i++) {
+                for (var i = 0, l = q.length; i &lt; l; i++) {
                     q[i].apply(null, args);
                 }
             })));
@@ -5196,7 +5189,7 @@ if ((0, _wrapAsync.isAsync)(fn)) return fn;
  * var fn = async.<span class="apidocCodeKeywordSpan">memoize</span>(slow_fn);
  *
  * // fn can now be used as if it were slow_fn
- * fn(&#x27;some name&#x27;, function() {
+ * fn('some name', function() {
  *     // callback
  * });
  */
@@ -5219,12 +5212,12 @@ function memoize(fn, hasher) {
       length = nativeMax(args.length - start, 0),
       array = Array(length);
 
-  while (++index &#x3c; length) {
+  while (++index &lt; length) {
     array[index] = args[start + index];
   }
   index = -1;
   var otherArgs = Array(start + 1);
-  while (++index &#x3c; start) {
+  while (++index &lt; start) {
     otherArgs[index] = args[index];
   }
   otherArgs[start] = transform(array);
@@ -5239,10 +5232,10 @@ function memoize(fn, hasher) {
 *
 * var call_order = [];
 * async.<span class="apidocCodeKeywordSpan">nextTick</span>(function() {
-*     call_order.push(&#x27;two&#x27;);
-*     // call_order now equals [&#x27;one&#x27;,&#x27;two&#x27;]
+*     call_order.push('two');
+*     // call_order now equals ['one','two']
 * });
-* call_order.push(&#x27;one&#x27;);
+* call_order.push('one');
 *
 * async.setImmediate(function (a, b, c) {
 *     // a, b, and c equal 1, 2, and 3
@@ -5295,7 +5288,7 @@ function memoize(fn, hasher) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function onlyOnce(fn) {
     return function () {
-        if (fn === null) throw new Error(&#x22;Callback was already called.&#x22;);
+        if (fn === null) throw new Error("Callback was already called.");
         var callFn = fn;
         fn = null;
         callFn.apply(this, arguments);
@@ -5325,8 +5318,8 @@ function memoize(fn, hasher) {
 *
 * // using apply
 * async.<span class="apidocCodeKeywordSpan">parallel</span>([
-*     async.apply(fs.writeFile, &#x27;testfile1&#x27;, &#x27;test1&#x27;),
-*     async.apply(fs.writeFile, &#x27;testfile2&#x27;, &#x27;test2&#x27;)
+*     async.apply(fs.writeFile, 'testfile1', 'test1'),
+*     async.apply(fs.writeFile, 'testfile2', 'test2')
 * ]);
 *
 *
@@ -5366,8 +5359,8 @@ function memoize(fn, hasher) {
     // Override push to accept second parameter representing priority
     q.push = function (data, priority, callback) {
         if (callback == null) callback = noop;
-        if (typeof callback !== &#x27;function&#x27;) {
-            throw new Error(&#x27;task callback must be a function&#x27;);
+        if (typeof callback !== 'function') {
+            throw new Error('task callback must be a function');
         }
         q.started = true;
         if (!isArray(data)) {
@@ -5382,11 +5375,11 @@ function memoize(fn, hasher) {
 
         priority = priority || 0;
         var nextNode = q._tasks.head;
-        while (nextNode &#x26;&#x26; priority &#x3e;= nextNode.priority) {
+        while (nextNode &amp;&amp; priority &gt;= nextNode.priority) {
             nextNode = nextNode.next;
         }
 
-        for (var i = 0, l = data.length; i &#x3c; l; i++) {
+        for (var i = 0, l = data.length; i &lt; l; i++) {
             var item = {
                 data: data[i],
                 priority: priority,
@@ -5455,20 +5448,20 @@ function asyncify(func) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function race(tasks, callback) {
     callback = once(callback || noop);
-    if (!isArray(tasks)) return callback(new TypeError(&#x27;First argument to race must be an array of functions&#x27;));
+    if (!isArray(tasks)) return callback(new TypeError('First argument to race must be an array of functions'));
     if (!tasks.length) return callback();
-    for (var i = 0, l = tasks.length; i &#x3c; l; i++) {
+    for (var i = 0, l = tasks.length; i &lt; l; i++) {
         wrapAsync$1(tasks[i])(callback);
     }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj &amp;&amp; obj.__esModule ? obj : { default: obj }; }
 
 /**
 * Runs the `tasks` array of functions in parallel, without waiting until the
 * previous function has completed. Once any of the `tasks` complete or pass an
-* error to its callback, the main `callback` is immediately called. It&#x27;s
+* error to its callback, the main `callback` is immediately called. It's
 * equivalent to `Promise.<span class="apidocCodeKeywordSpan">race</span>()`.
 *
 * @name race
@@ -5557,7 +5550,7 @@ function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? 
                 var value = null;
                 if (cbArgs.length === 1) {
                     value = cbArgs[0];
-                } else if (cbArgs.length &#x3e; 1) {
+                } else if (cbArgs.length &gt; 1) {
                     value = cbArgs;
                 }
                 reflectCallback(null, {
@@ -5571,7 +5564,7 @@ function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? 
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 * @param {AsyncFunction} fn - The async function you want to wrap
-* @returns {Function} - A function that always passes null to it&#x27;s callback as
+* @returns {Function} - A function that always passes null to it's callback as
 * the error. The second argument to the callback will be an `object` with
 * either an `error` or a `value` property.
 * @example
@@ -5579,11 +5572,11 @@ function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? 
 * async.parallel([
 *     async.<span class="apidocCodeKeywordSpan">reflect</span>(function(callback) {
 *         // do some stuff ...
-*         callback(null, &#x27;one&#x27;);
+*         callback(null, 'one');
 *     }),
 *     async.reflect(function(callback) {
 *         // do some more stuff but error ...
-*         callback(&#x27;bad stuff happened&#x27;);
+*         callback('bad stuff happened');
 *     }),
 ...</pre></li>
     </ul>
@@ -5612,7 +5605,7 @@ function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? 
     <li>example usage<pre class="apidocCodePre">...
 *     function(callback) {
 *         setTimeout(function() {
-*             callback(null, &#x27;two&#x27;);
+*             callback(null, 'two');
 *         }, 100);
 *     }
 * ];
@@ -5621,9 +5614,9 @@ function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? 
 * // optional callback
 * function(err, results) {
 *     // values
-*     // results[0].value = &#x27;one&#x27;
-*     // results[1].error = Error(&#x27;bad stuff happened&#x27;)
-*     // results[2].value = &#x27;two&#x27;
+*     // results[0].value = 'one'
+*     // results[1].error = Error('bad stuff happened')
+*     // results[2].value = 'two'
 * });
 ...</pre></li>
     </ul>
@@ -5707,20 +5700,20 @@ function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? 
     };
 
     function parseTimes(acc, t) {
-        if (typeof t === &#x27;object&#x27;) {
+        if (typeof t === 'object') {
             acc.times = +t.times || DEFAULT_TIMES;
 
-            acc.intervalFunc = typeof t.interval === &#x27;function&#x27; ? t.interval : constant$1(+t.interval || DEFAULT_INTERVAL);
+            acc.intervalFunc = typeof t.interval === 'function' ? t.interval : constant$1(+t.interval || DEFAULT_INTERVAL);
 
             acc.errorFilter = t.errorFilter;
-        } else if (typeof t === &#x27;number&#x27; || typeof t === &#x27;string&#x27;) {
+        } else if (typeof t === 'number' || typeof t === 'string') {
             acc.times = +t || DEFAULT_TIMES;
         } else {
-            throw new Error(&#x22;Invalid arguments for async.retry&#x22;);
+            throw new Error("Invalid arguments for async.retry");
         }
     }
 
-    if (arguments.length &#x3c; 3 &#x26;&#x26; typeof opts === &#x27;function&#x27;) {
+    if (arguments.length &lt; 3 &amp;&amp; typeof opts === 'function') {
         callback = task || noop;
         task = opts;
     } else {
@@ -5728,8 +5721,8 @@ function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? 
         callback = callback || noop;
     }
 
-    if (typeof task !== &#x27;function&#x27;) {
-        throw new Error(&#x22;Invalid arguments for async.retry&#x22;);
+    if (typeof task !== 'function') {
+        throw new Error("Invalid arguments for async.retry");
     }
 
     var _task = wrapAsync$1(task);
@@ -5737,7 +5730,7 @@ function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? 
     var attempt = 1;
     function retryAttempt() {
         _task(function (err) {
-            if (err &#x26;&#x26; attempt++ &#x3c; options.times &#x26;&#x26; (typeof options.errorFilter != &#x27;function&#x27; || options.errorFilter(err))) {
+            if (err &amp;&amp; attempt++ &lt; options.times &amp;&amp; (typeof options.errorFilter != 'function' || options.errorFilter(err))) {
                 setTimeout(retryAttempt, options.intervalFunc(attempt));
             } else {
                 callback.apply(null, arguments);
@@ -5868,12 +5861,12 @@ var DEFAULT_TIMES = 5;
       length = nativeMax(args.length - start, 0),
       array = Array(length);
 
-  while (++index &#x3c; length) {
+  while (++index &lt; length) {
     array[index] = args[start + index];
   }
   index = -1;
   var otherArgs = Array(start + 1);
-  while (++index &#x3c; start) {
+  while (++index &lt; start) {
     otherArgs[index] = args[index];
   }
   otherArgs[start] = transform(array);
@@ -5881,16 +5874,16 @@ var DEFAULT_TIMES = 5;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 *
-* // Requires lodash (or underscore), express3 and dresende&#x27;s orm2.
+* // Requires lodash (or underscore), express3 and dresende's orm2.
 * // Part of an app, that fetches cats of the logged user.
 * // This example uses `seq` function to avoid overnesting and error
 * // handling clutter.
-* app.get(&#x27;/cats&#x27;, function(request, response) {
+* app.get('/cats', function(request, response) {
 *     var User = request.models.User;
 *     async.<span class="apidocCodeKeywordSpan">seq</span>(
-*         _.bind(User.get, User),  // &#x27;User.get&#x27; has signature (id, callback(err, data))
+*         _.bind(User.get, User),  // 'User.get' has signature (id, callback(err, data))
 *         function(user, fn) {
-*             user.getCats(fn);      // &#x27;getCats&#x27; has signature (callback(err, data))
+*             user.getCats(fn);      // 'getCats' has signature (callback(err, data))
 *         }
 *     )(req.session.user_id, function (err, cats) {
 *         if (err) {
@@ -5921,11 +5914,11 @@ var DEFAULT_TIMES = 5;
 * async.<span class="apidocCodeKeywordSpan">series</span>([
 *     function(callback) {
 *         // do some stuff ...
-*         callback(null, &#x27;one&#x27;);
+*         callback(null, 'one');
 *     },
 *     function(callback) {
 *         // do some more stuff ...
-*         callback(null, &#x27;two&#x27;);
+*         callback(null, 'two');
 ...</pre></li>
     </ul>
 
@@ -5944,12 +5937,12 @@ var DEFAULT_TIMES = 5;
       length = nativeMax(args.length - start, 0),
       array = Array(length);
 
-  while (++index &#x3c; length) {
+  while (++index &lt; length) {
     array[index] = args[start + index];
   }
   index = -1;
   var otherArgs = Array(start + 1);
-  while (++index &#x3c; start) {
+  while (++index &lt; start) {
     otherArgs[index] = args[index];
   }
   otherArgs[start] = transform(array);
@@ -5958,10 +5951,10 @@ var DEFAULT_TIMES = 5;
     <li>example usage<pre class="apidocCodePre">...
  * var call_order = [];
  * async.nextTick(function() {
- *     call_order.push(&#x27;two&#x27;);
- *     // call_order now equals [&#x27;one&#x27;,&#x27;two&#x27;]
+ *     call_order.push('two');
+ *     // call_order now equals ['one','two']
  * });
- * call_order.push(&#x27;one&#x27;);
+ * call_order.push('one');
  *
  * async.<span class="apidocCodeKeywordSpan">setImmediate</span>(function (a, b, c) {
  *     // a, b, and c equal 1, 2, and 3
@@ -5994,7 +5987,7 @@ _defer = process.nextTick;
 * tests. Invoked with (err, result).
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">some</span>([&#x27;file1&#x27;,&#x27;file2&#x27;,&#x27;file3&#x27;], function(filePath
+* async.<span class="apidocCodeKeywordSpan">some</span>(['file1','file2','file3'], function(filePath
 , callback) {
 *     fs.access(filePath, function(err) {
 *         callback(null, !err)
@@ -6054,13 +6047,13 @@ _defer = process.nextTick;
         });
     }, function (err, results) {
         if (err) return callback(err);
-        callback(null, arrayMap(results.sort(comparator), baseProperty(&#x27;value&#x27;)));
+        callback(null, arrayMap(results.sort(comparator), baseProperty('value')));
     });
 
     function comparator(left, right) {
         var a = left.criteria,
             b = right.criteria;
-        return a &#x3c; b ? -1 : a &#x3e; b ? 1 : 0;
+        return a &lt; b ? -1 : a &gt; b ? 1 : 0;
     }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
@@ -6071,7 +6064,7 @@ _defer = process.nextTick;
 * calls. Invoked with (err, results).
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">sortBy</span>([&#x27;file1&#x27;,&#x27;file2&#x27;,&#x27;file3&#x27;], function(file
+* async.<span class="apidocCodeKeywordSpan">sortBy</span>(['file1','file2','file3'], function(file
 , callback) {
 *     fs.stat(file, function(err, stats) {
 *         callback(err, stats.mtime);
@@ -6104,9 +6097,9 @@ _defer = process.nextTick;
     }
 
     function timeoutCallback() {
-        var name = asyncFn.name || &#x27;anonymous&#x27;;
-        var error = new Error(&#x27;Callback function &#x22;&#x27; + name + &#x27;&#x22; timed out.&#x27;);
-        error.code = &#x27;ETIMEDOUT&#x27;;
+        var name = asyncFn.name || 'anonymous';
+        var error = new Error('Callback function "' + name + '" timed out.');
+        error.code = 'ETIMEDOUT';
         if (info) {
             error.info = info;
         }
@@ -6134,11 +6127,11 @@ _defer = process.nextTick;
 * var wrapped = async.<span class="apidocCodeKeywordSpan">timeout</span>(myFunction, 1000);
 *
 * // call `wrapped` as you would `myFunction`
-* wrapped({ bar: &#x27;bar&#x27; }, function(err, data) {
-*     // if `myFunction` takes &#x3c; 1000 ms to execute, `err`
+* wrapped({ bar: 'bar' }, function(err, data) {
+*     // if `myFunction` takes &lt; 1000 ms to execute, `err`
 *     // and `data` will have their expected values
 *
-*     // else `err` will be an Error with the code &#x27;ETIMEDOUT&#x27;
+*     // else `err` will be an Error with the code 'ETIMEDOUT'
 ...</pre></li>
     </ul>
 
@@ -6157,7 +6150,7 @@ _defer = process.nextTick;
     <li>example usage<pre class="apidocCodePre">...
 * var createUser = function(id, callback) {
 *     callback(null, {
-*         id: &#x27;user&#x27; + id
+*         id: 'user' + id
 *     });
 * };
 *
@@ -6214,7 +6207,7 @@ _defer = process.nextTick;
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function transform(coll, accumulator, iteratee, callback) {
-    if (arguments.length &#x3c;= 3) {
+    if (arguments.length &lt;= 3) {
         callback = iteratee;
         iteratee = accumulator;
         accumulator = isArray(coll) ? [] : {};
@@ -6292,7 +6285,7 @@ _defer = process.nextTick;
     <ul>
     <li>description and source-code<pre class="apidocCodePre">waterfall = function (tasks, callback) {
     callback = once(callback || noop);
-    if (!isArray(tasks)) return callback(new Error(&#x27;First argument to waterfall must be an array of functions&#x27;));
+    if (!isArray(tasks)) return callback(new Error('First argument to waterfall must be an array of functions'));
     if (!tasks.length) return callback();
     var taskIndex = 0;
 
@@ -6325,7 +6318,7 @@ _defer = process.nextTick;
 *
 * // passing a regular synchronous function
 * async.<span class="apidocCodeKeywordSpan">waterfall</span>([
-*     async.apply(fs.readFile, filename, &#x22;utf8&#x22;),
+*     async.apply(fs.readFile, filename, "utf8"),
 *     async.asyncify(JSON.parse),
 *     function (data, next) {
 *         // data is the result of parsing the text.
@@ -6357,14 +6350,14 @@ _defer = process.nextTick;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 * function has failed and repeated execution of `iteratee` has stopped. `callback`
-* will be passed an error and any arguments passed to the final `iteratee`&#x27;s
+* will be passed an error and any arguments passed to the final `iteratee`'s
 * callback. Invoked with (err, [results]);
 * @returns undefined
 * @example
 *
 * var count = 0;
 * async.<span class="apidocCodeKeywordSpan">whilst</span>(
-*     function() { return count &#x3c; 5; },
+*     function() { return count &lt; 5; },
 *     function(callback) {
 *         count++;
 *         setTimeout(function() {
@@ -6409,7 +6402,7 @@ _defer = process.nextTick;
             return callback(e);
         }
         // if result is Promise object
-        if (isObject(result) &#x26;&#x26; typeof result.then === &#x27;function&#x27;) {
+        if (isObject(result) &amp;&amp; typeof result.then === 'function') {
             result.then(function (value) {
                 callback(null, value);
             }, function (err) {
@@ -6515,7 +6508,7 @@ DLL.prototype.push = function (node) {
 };
 
 DLL.prototype.shift = function () {
-    return this.head &#x26;&#x26; this.removeLink(this.head);
+    return this.head &amp;&amp; this.removeLink(this.head);
 };
 
 DLL.prototype.pop = function () {
@@ -6567,11 +6560,11 @@ DLL.prototype.shift = function () {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">pop = function () {
-    return this.tail &#x26;&#x26; this.removeLink(this.tail);
+    return this.tail &amp;&amp; this.removeLink(this.tail);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
     function checkForDeadlocks() {
-// Kahn&#x27;s algorithm
+// Kahn's algorithm
 // https://en.wikipedia.org/wiki/Topological_sorting#Kahn.27s_algorithm
 // http://connalle.blogspot.com/2013/10/topological-sortingkahn-algorithm.html
 var currentTask;
@@ -6644,13 +6637,13 @@ DLL.prototype.push = function (node) {
 };
 
 DLL.prototype.shift = function () {
-    return this.head &#x26;&#x26; this.<span class="apidocCodeKeywordSpan">removeLink</span>(this.head);
+    return this.head &amp;&amp; this.<span class="apidocCodeKeywordSpan">removeLink</span>(this.head);
 };
 
 DLL.prototype.pop = function () {
-    return this.tail &#x26;&#x26; this.removeLink(this.tail);
+    return this.tail &amp;&amp; this.removeLink(this.tail);
 };
-module.exports = exports[&#x22;default&#x22;];
+module.exports = exports["default"];
 ...</pre></li>
     </ul>
 
@@ -6664,16 +6657,16 @@ module.exports = exports[&#x22;default&#x22;];
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">shift = function () {
-    return this.head &#x26;&#x26; this.removeLink(this.head);
+    return this.head &amp;&amp; this.removeLink(this.head);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 }
 
 function processQueue() {
-    if (readyTasks.length === 0 &#x26;&#x26; runningTasks === 0) {
+    if (readyTasks.length === 0 &amp;&amp; runningTasks === 0) {
         return callback(null, results);
     }
-    while (readyTasks.length &#x26;&#x26; runningTasks &#x3c; concurrency) {
+    while (readyTasks.length &amp;&amp; runningTasks &lt; concurrency) {
         var run = readyTasks.<span class="apidocCodeKeywordSpan">shift</span>();
         run();
     }
@@ -6698,7 +6691,7 @@ function addListener(taskName, fn) {
     if (this.head) this.insertBefore(this.head, node);else setInitial(this, node);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-    for (var i = 0, l = data.length; i &#x3c; l; i++) {
+    for (var i = 0, l = data.length; i &lt; l; i++) {
         var item = {
             data: data[i],
             callback: callback || _noop2.default
@@ -6738,8 +6731,8 @@ function addListener(taskName, fn) {
 *
 * // using apply
 * async.parallel([
-*     async.<span class="apidocCodeKeywordSpan">apply</span>(fs.writeFile, &#x27;testfile1&#x27;, &#x27;test1&#x27;),
-*     async.apply(fs.writeFile, &#x27;testfile2&#x27;, &#x27;test2&#x27;)
+*     async.<span class="apidocCodeKeywordSpan">apply</span>(fs.writeFile, 'testfile1', 'test1'),
+*     async.apply(fs.writeFile, 'testfile2', 'test2')
 * ]);
 *
 *
@@ -6772,8 +6765,8 @@ function addListener(taskName, fn) {
 *
 * // using apply
 * async.parallel([
-*     async.<span class="apidocCodeKeywordSpan">apply</span>(fs.writeFile, &#x27;testfile1&#x27;, &#x27;test1&#x27;),
-*     async.apply(fs.writeFile, &#x27;testfile2&#x27;, &#x27;test2&#x27;)
+*     async.<span class="apidocCodeKeywordSpan">apply</span>(fs.writeFile, 'testfile1', 'test1'),
+*     async.apply(fs.writeFile, 'testfile2', 'test2')
 * ]);
 *
 *
@@ -6803,12 +6796,12 @@ function addListener(taskName, fn) {
       length = nativeMax(args.length - start, 0),
       array = Array(length);
 
-  while (++index &#x3c; length) {
+  while (++index &lt; length) {
     array[index] = args[start + index];
   }
   index = -1;
   var otherArgs = Array(start + 1);
-  while (++index &#x3c; start) {
+  while (++index &lt; start) {
     otherArgs[index] = args[index];
   }
   otherArgs[start] = transform(array);
@@ -6822,7 +6815,7 @@ function addListener(taskName, fn) {
 * arguments, `callback` is required.
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">applyEach</span>([enableSearch, updateSchema], &#x27;bucket&#x27;, callback);
+* async.<span class="apidocCodeKeywordSpan">applyEach</span>([enableSearch, updateSchema], 'bucket', callback);
 *
 * // partial application example:
 * async.each(
@@ -6853,12 +6846,12 @@ function addListener(taskName, fn) {
       length = nativeMax(args.length - start, 0),
       array = Array(length);
 
-  while (++index &#x3c; length) {
+  while (++index &lt; length) {
     array[index] = args[start + index];
   }
   index = -1;
   var otherArgs = Array(start + 1);
-  while (++index &#x3c; start) {
+  while (++index &lt; start) {
     otherArgs[index] = args[index];
   }
   otherArgs[start] = transform(array);
@@ -6890,7 +6883,7 @@ function addListener(taskName, fn) {
             return callback(e);
         }
         // if result is Promise object
-        if (isObject(result) &#x26;&#x26; typeof result.then === &#x27;function&#x27;) {
+        if (isObject(result) &amp;&amp; typeof result.then === 'function') {
             result.then(function (value) {
                 callback(null, value);
             }, function (err) {
@@ -6908,7 +6901,7 @@ function addListener(taskName, fn) {
 *
 * // passing a regular synchronous function
 * async.waterfall([
-*     async.apply(fs.readFile, filename, &#x22;utf8&#x22;),
+*     async.apply(fs.readFile, filename, "utf8"),
 *     async.<span class="apidocCodeKeywordSpan">asyncify</span>(JSON.parse),
 *     function (data, next) {
 *         // data is the result of parsing the text.
@@ -6935,7 +6928,7 @@ function addListener(taskName, fn) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">auto = function (tasks, concurrency, callback) {
-    if (typeof concurrency === &#x27;function&#x27;) {
+    if (typeof concurrency === 'function') {
         // concurrency is optional, shift the args.
         callback = concurrency;
         concurrency = null;
@@ -6982,8 +6975,8 @@ function addListener(taskName, fn) {
 
         arrayEach(dependencies, function (dependencyName) {
             if (!tasks[dependencyName]) {
-                throw new Error(&#x27;async.auto task `&#x27; + key + &#x27;` has a non-existent dependency `&#x27; + dependencyName + &#x27;` in &#x27; + dependencies
-.join(&#x27;, &#x27;));
+                throw new Error('async.auto task `' + key + '` has a non-existent dependency `' + dependencyName + '` in ' + dependencies
+.join(', '));
             }
             addListener(dependencyName, function () {
                 remainingDependencies--;
@@ -7004,10 +6997,10 @@ function addListener(taskName, fn) {
     }
 
     function processQueue() {
-        if (readyTasks.length === 0 &#x26;&#x26; runningTasks === 0) {
+        if (readyTasks.length === 0 &amp;&amp; runningTasks === 0) {
             return callback(null, results);
         }
-        while (readyTasks.length &#x26;&#x26; runningTasks &#x3c; concurrency) {
+        while (readyTasks.length &amp;&amp; runningTasks &lt; concurrency) {
             var run = readyTasks.shift();
             run();
         }
@@ -7035,7 +7028,7 @@ function addListener(taskName, fn) {
 
         var taskCallback = onlyOnce(rest(function (err, args) {
             runningTasks--;
-            if (args.length &#x3c;= 1) {
+            if (args.length &lt;= 1) {
                 args = args[0];
             }
             if (err) {
@@ -7056,7 +7049,7 @@ function addListener(taskName, fn) {
 
         runningTasks++;
         var taskFn = wrapAsync$1(task[task.length - 1]);
-        if (task.length &#x3e; 1) {
+        if (task.length &gt; 1) {
             taskFn(results, taskCallback);
         } else {
             taskFn(taskCallback);
@@ -7064,7 +7057,7 @@ function addListener(taskName, fn) {
     }
 
     function checkForDeadlocks() {
-        // Kahn&#x27;s algorithm
+        // Kahn's algorithm
         // https://en.wikipedia.org/wiki/Topological_sorting#Kahn.27s_algorithm
         // http://connalle.blogspot.com/2013/10/topological-sortingkahn-algorithm.html
         var currentTask;
@@ -7083,9 +7076,9 @@ function addListener(taskName, fn) {
 *
 * async.<span class="apidocCodeKeywordSpan">auto</span>({
 *     // this function will just be passed a callback
-*     readData: async.apply(fs.readFile, &#x27;data.txt&#x27;, &#x27;utf-8&#x27;),
-*     showData: [&#x27;readData&#x27;, function(results, cb) {
-*         // results.readData is the file&#x27;s contents
+*     readData: async.apply(fs.readFile, 'data.txt', 'utf-8'),
+*     showData: ['readData', function(results, cb) {
+*         // results.readData is the file's contents
 *         // ...
 *     }]
 * }, callback);
@@ -7112,20 +7105,20 @@ function addListener(taskName, fn) {
     baseForOwn(tasks, function (taskFn, key) {
         var params;
         var fnIsAsync = isAsync(taskFn);
-        var hasNoDeps = !fnIsAsync &#x26;&#x26; taskFn.length === 1 || fnIsAsync &#x26;&#x26; taskFn.length === 0;
+        var hasNoDeps = !fnIsAsync &amp;&amp; taskFn.length === 1 || fnIsAsync &amp;&amp; taskFn.length === 0;
 
         if (isArray(taskFn)) {
             params = taskFn.slice(0, -1);
             taskFn = taskFn[taskFn.length - 1];
 
-            newTasks[key] = params.concat(params.length &#x3e; 0 ? newTask : taskFn);
+            newTasks[key] = params.concat(params.length &gt; 0 ? newTask : taskFn);
         } else if (hasNoDeps) {
             // no dependencies, use the function as-is
             newTasks[key] = taskFn;
         } else {
             params = parseParams(taskFn);
-            if (taskFn.length === 0 &#x26;&#x26; !fnIsAsync &#x26;&#x26; params.length === 0) {
-                throw new Error(&#x22;autoInject task functions require explicit parameters.&#x22;);
+            if (taskFn.length === 0 &amp;&amp; !fnIsAsync &amp;&amp; params.length === 0) {
+                throw new Error("autoInject task functions require explicit parameters.");
             }
 
             // remove callback param
@@ -7156,7 +7149,7 @@ function addListener(taskName, fn) {
 * async.<span class="apidocCodeKeywordSpan">autoInject</span>({
 *     get_data: function(callback) {
 *         // async code to get some data
-*         callback(null, &#x27;data&#x27;, &#x27;converted to array&#x27;);
+*         callback(null, 'data', 'converted to array');
 *     },
 *     make_folder: function(callback) {
 *         // async code to create a directory to store a file in
@@ -7190,8 +7183,8 @@ function addListener(taskName, fn) {
 *
 * // create a cargo object with payload 2
 * var cargo = async.<span class="apidocCodeKeywordSpan">cargo</span>(function(tasks, callback) {
-*     for (var i=0; i&#x3c;tasks.length; i++) {
-*         console.log(&#x27;hello &#x27; + tasks[i].name);
+*     for (var i=0; i&lt;tasks.length; i++) {
+*         console.log('hello ' + tasks[i].name);
 *     }
 *     callback();
 * }, 2);
@@ -7220,12 +7213,12 @@ function addListener(taskName, fn) {
       length = nativeMax(args.length - start, 0),
       array = Array(length);
 
-  while (++index &#x3c; length) {
+  while (++index &lt; length) {
     array[index] = args[start + index];
   }
   index = -1;
   var otherArgs = Array(start + 1);
-  while (++index &#x3c; start) {
+  while (++index &lt; start) {
     otherArgs[index] = args[index];
   }
   otherArgs[start] = transform(array);
@@ -7268,7 +7261,7 @@ exports.default = (0, _rest2.default)(function (args) {
     return fn(eachOf, obj, wrapAsync$1(iteratee), callback);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
- * node&#x3e; fn(&#x27;two&#x27;, &#x27;three&#x27;);
+ * node&gt; fn('two', 'three');
  * one
  * two
  * three
@@ -7278,7 +7271,7 @@ exports.default = (0, _rest2.default)(function (fn, args) {
         return fn.apply(null, args.<span class="apidocCodeKeywordSpan">concat</span>(callArgs));
     });
 });
-module.exports = exports[&#x27;default&#x27;];
+module.exports = exports['default'];
 ...</pre></li>
     </ul>
 
@@ -7319,7 +7312,7 @@ module.exports = exports[&#x27;default&#x27;];
     <li>description and source-code<pre class="apidocCodePre">function consoleFunc(name) {
     return (0, _rest2.default)(function (fn, args) {
         (0, _wrapAsync2.default)(fn).apply(null, args.concat((0, _rest2.default)(function (err, args) {
-            if (typeof console === &#x27;object&#x27;) {
+            if (typeof console === 'object') {
                 if (err) {
                     if (console.error) {
                         console.error(err);
@@ -7356,12 +7349,12 @@ module.exports = exports[&#x27;default&#x27;];
       length = nativeMax(args.length - start, 0),
       array = Array(length);
 
-  while (++index &#x3c; length) {
+  while (++index &lt; length) {
     array[index] = args[start + index];
   }
   index = -1;
   var otherArgs = Array(start + 1);
-  while (++index &#x3c; start) {
+  while (++index &lt; start) {
     otherArgs[index] = args[index];
   }
   otherArgs[start] = transform(array);
@@ -7409,7 +7402,7 @@ module.exports = exports[&#x27;default&#x27;];
             iteratee(value, function (err, result) {
                 if (err) {
                     callback(err);
-                } else if (check(result) &#x26;&#x26; !testResult) {
+                } else if (check(result) &amp;&amp; !testResult) {
                     testPassed = true;
                     testResult = getResult(true, value);
                     callback(null, _breakLoop2.default);
@@ -7479,12 +7472,12 @@ module.exports = exports[&#x27;default&#x27;];
       length = nativeMax(args.length - start, 0),
       array = Array(length);
 
-  while (++index &#x3c; length) {
+  while (++index &lt; length) {
     array[index] = args[start + index];
   }
   index = -1;
   var otherArgs = Array(start + 1);
-  while (++index &#x3c; start) {
+  while (++index &lt; start) {
     otherArgs[index] = args[index];
   }
   otherArgs[start] = transform(array);
@@ -7498,8 +7491,8 @@ module.exports = exports[&#x27;default&#x27;];
 *
 * // using apply
 * async.parallel([
-*     async.<span class="apidocCodeKeywordSpan">apply</span>(fs.writeFile, &#x27;testfile1&#x27;, &#x27;test1&#x27;),
-*     async.apply(fs.writeFile, &#x27;testfile2&#x27;, &#x27;test2&#x27;)
+*     async.<span class="apidocCodeKeywordSpan">apply</span>(fs.writeFile, 'testfile1', 'test1'),
+*     async.apply(fs.writeFile, 'testfile2', 'test2')
 * ]);
 *
 *
@@ -7524,12 +7517,12 @@ module.exports = exports[&#x27;default&#x27;];
       length = nativeMax(args.length - start, 0),
       array = Array(length);
 
-  while (++index &#x3c; length) {
+  while (++index &lt; length) {
     array[index] = args[start + index];
   }
   index = -1;
   var otherArgs = Array(start + 1);
-  while (++index &#x3c; start) {
+  while (++index &lt; start) {
     otherArgs[index] = args[index];
   }
   otherArgs[start] = transform(array);
@@ -7543,7 +7536,7 @@ module.exports = exports[&#x27;default&#x27;];
 * arguments, `callback` is required.
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">applyEach</span>([enableSearch, updateSchema], &#x27;bucket&#x27;, callback);
+* async.<span class="apidocCodeKeywordSpan">applyEach</span>([enableSearch, updateSchema], 'bucket', callback);
 *
 * // partial application example:
 * async.each(
@@ -7569,12 +7562,12 @@ module.exports = exports[&#x27;default&#x27;];
       length = nativeMax(args.length - start, 0),
       array = Array(length);
 
-  while (++index &#x3c; length) {
+  while (++index &lt; length) {
     array[index] = args[start + index];
   }
   index = -1;
   var otherArgs = Array(start + 1);
-  while (++index &#x3c; start) {
+  while (++index &lt; start) {
     otherArgs[index] = args[index];
   }
   otherArgs[start] = transform(array);
@@ -7601,7 +7594,7 @@ module.exports = exports[&#x27;default&#x27;];
             return callback(e);
         }
         // if result is Promise object
-        if (isObject(result) &#x26;&#x26; typeof result.then === &#x27;function&#x27;) {
+        if (isObject(result) &amp;&amp; typeof result.then === 'function') {
             result.then(function (value) {
                 callback(null, value);
             }, function (err) {
@@ -7619,7 +7612,7 @@ module.exports = exports[&#x27;default&#x27;];
 *
 * // passing a regular synchronous function
 * async.waterfall([
-*     async.apply(fs.readFile, filename, &#x22;utf8&#x22;),
+*     async.apply(fs.readFile, filename, "utf8"),
 *     async.<span class="apidocCodeKeywordSpan">asyncify</span>(JSON.parse),
 *     function (data, next) {
 *         // data is the result of parsing the text.
@@ -7641,7 +7634,7 @@ module.exports = exports[&#x27;default&#x27;];
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">auto = function (tasks, concurrency, callback) {
-    if (typeof concurrency === &#x27;function&#x27;) {
+    if (typeof concurrency === 'function') {
         // concurrency is optional, shift the args.
         callback = concurrency;
         concurrency = null;
@@ -7688,8 +7681,8 @@ module.exports = exports[&#x27;default&#x27;];
 
         arrayEach(dependencies, function (dependencyName) {
             if (!tasks[dependencyName]) {
-                throw new Error(&#x27;async.auto task `&#x27; + key + &#x27;` has a non-existent dependency `&#x27; + dependencyName + &#x27;` in &#x27; + dependencies
-.join(&#x27;, &#x27;));
+                throw new Error('async.auto task `' + key + '` has a non-existent dependency `' + dependencyName + '` in ' + dependencies
+.join(', '));
             }
             addListener(dependencyName, function () {
                 remainingDependencies--;
@@ -7710,10 +7703,10 @@ module.exports = exports[&#x27;default&#x27;];
     }
 
     function processQueue() {
-        if (readyTasks.length === 0 &#x26;&#x26; runningTasks === 0) {
+        if (readyTasks.length === 0 &amp;&amp; runningTasks === 0) {
             return callback(null, results);
         }
-        while (readyTasks.length &#x26;&#x26; runningTasks &#x3c; concurrency) {
+        while (readyTasks.length &amp;&amp; runningTasks &lt; concurrency) {
             var run = readyTasks.shift();
             run();
         }
@@ -7741,7 +7734,7 @@ module.exports = exports[&#x27;default&#x27;];
 
         var taskCallback = onlyOnce(rest(function (err, args) {
             runningTasks--;
-            if (args.length &#x3c;= 1) {
+            if (args.length &lt;= 1) {
                 args = args[0];
             }
             if (err) {
@@ -7762,7 +7755,7 @@ module.exports = exports[&#x27;default&#x27;];
 
         runningTasks++;
         var taskFn = wrapAsync$1(task[task.length - 1]);
-        if (task.length &#x3e; 1) {
+        if (task.length &gt; 1) {
             taskFn(results, taskCallback);
         } else {
             taskFn(taskCallback);
@@ -7770,7 +7763,7 @@ module.exports = exports[&#x27;default&#x27;];
     }
 
     function checkForDeadlocks() {
-        // Kahn&#x27;s algorithm
+        // Kahn's algorithm
         // https://en.wikipedia.org/wiki/Topological_sorting#Kahn.27s_algorithm
         // http://connalle.blogspot.com/2013/10/topological-sortingkahn-algorithm.html
         var currentTask;
@@ -7789,9 +7782,9 @@ module.exports = exports[&#x27;default&#x27;];
 *
 * async.<span class="apidocCodeKeywordSpan">auto</span>({
 *     // this function will just be passed a callback
-*     readData: async.apply(fs.readFile, &#x27;data.txt&#x27;, &#x27;utf-8&#x27;),
-*     showData: [&#x27;readData&#x27;, function(results, cb) {
-*         // results.readData is the file&#x27;s contents
+*     readData: async.apply(fs.readFile, 'data.txt', 'utf-8'),
+*     showData: ['readData', function(results, cb) {
+*         // results.readData is the file's contents
 *         // ...
 *     }]
 * }, callback);
@@ -7813,20 +7806,20 @@ module.exports = exports[&#x27;default&#x27;];
     baseForOwn(tasks, function (taskFn, key) {
         var params;
         var fnIsAsync = isAsync(taskFn);
-        var hasNoDeps = !fnIsAsync &#x26;&#x26; taskFn.length === 1 || fnIsAsync &#x26;&#x26; taskFn.length === 0;
+        var hasNoDeps = !fnIsAsync &amp;&amp; taskFn.length === 1 || fnIsAsync &amp;&amp; taskFn.length === 0;
 
         if (isArray(taskFn)) {
             params = taskFn.slice(0, -1);
             taskFn = taskFn[taskFn.length - 1];
 
-            newTasks[key] = params.concat(params.length &#x3e; 0 ? newTask : taskFn);
+            newTasks[key] = params.concat(params.length &gt; 0 ? newTask : taskFn);
         } else if (hasNoDeps) {
             // no dependencies, use the function as-is
             newTasks[key] = taskFn;
         } else {
             params = parseParams(taskFn);
-            if (taskFn.length === 0 &#x26;&#x26; !fnIsAsync &#x26;&#x26; params.length === 0) {
-                throw new Error(&#x22;autoInject task functions require explicit parameters.&#x22;);
+            if (taskFn.length === 0 &amp;&amp; !fnIsAsync &amp;&amp; params.length === 0) {
+                throw new Error("autoInject task functions require explicit parameters.");
             }
 
             // remove callback param
@@ -7857,7 +7850,7 @@ module.exports = exports[&#x27;default&#x27;];
 * async.<span class="apidocCodeKeywordSpan">autoInject</span>({
 *     get_data: function(callback) {
 *         // async code to get some data
-*         callback(null, &#x27;data&#x27;, &#x27;converted to array&#x27;);
+*         callback(null, 'data', 'converted to array');
 *     },
 *     make_folder: function(callback) {
 *         // async code to create a directory to store a file in
@@ -7886,8 +7879,8 @@ module.exports = exports[&#x27;default&#x27;];
 *
 * // create a cargo object with payload 2
 * var cargo = async.<span class="apidocCodeKeywordSpan">cargo</span>(function(tasks, callback) {
-*     for (var i=0; i&#x3c;tasks.length; i++) {
-*         console.log(&#x27;hello &#x27; + tasks[i].name);
+*     for (var i=0; i&lt;tasks.length; i++) {
+*         console.log('hello ' + tasks[i].name);
 *     }
 *     callback();
 * }, 2);
@@ -7911,12 +7904,12 @@ module.exports = exports[&#x27;default&#x27;];
       length = nativeMax(args.length - start, 0),
       array = Array(length);
 
-  while (++index &#x3c; length) {
+  while (++index &lt; length) {
     array[index] = args[start + index];
   }
   index = -1;
   var otherArgs = Array(start + 1);
-  while (++index &#x3c; start) {
+  while (++index &lt; start) {
     otherArgs[index] = args[index];
   }
   otherArgs[start] = transform(array);
@@ -7954,7 +7947,7 @@ exports.default = (0, _rest2.default)(function (args) {
     return fn(eachOf, obj, wrapAsync$1(iteratee), callback);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
- * node&#x3e; fn(&#x27;two&#x27;, &#x27;three&#x27;);
+ * node&gt; fn('two', 'three');
  * one
  * two
  * three
@@ -7964,7 +7957,7 @@ exports.default = (0, _rest2.default)(function (fn, args) {
         return fn.apply(null, args.<span class="apidocCodeKeywordSpan">concat</span>(callArgs));
     });
 });
-module.exports = exports[&#x27;default&#x27;];
+module.exports = exports['default'];
 ...</pre></li>
     </ul>
 
@@ -7998,12 +7991,12 @@ module.exports = exports[&#x27;default&#x27;];
       length = nativeMax(args.length - start, 0),
       array = Array(length);
 
-  while (++index &#x3c; length) {
+  while (++index &lt; length) {
     array[index] = args[start + index];
   }
   index = -1;
   var otherArgs = Array(start + 1);
-  while (++index &#x3c; start) {
+  while (++index &lt; start) {
     otherArgs[index] = args[index];
   }
   otherArgs[start] = transform(array);
@@ -8048,7 +8041,7 @@ module.exports = exports[&#x27;default&#x27;];
 * (err, result).
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">detect</span>([&#x27;file1&#x27;,&#x27;file2&#x27;,&#x27;file3&#x27;], function(filePath
+* async.<span class="apidocCodeKeywordSpan">detect</span>(['file1','file2','file3'], function(filePath
 , callback) {
 *     fs.access(filePath, function(err) {
 *         callback(null, !err)
@@ -8105,12 +8098,12 @@ module.exports = exports[&#x27;default&#x27;];
       length = nativeMax(args.length - start, 0),
       array = Array(length);
 
-  while (++index &#x3c; length) {
+  while (++index &lt; length) {
     array[index] = args[start + index];
   }
   index = -1;
   var otherArgs = Array(start + 1);
-  while (++index &#x3c; start) {
+  while (++index &lt; start) {
     otherArgs[index] = args[index];
   }
   otherArgs[start] = transform(array);
@@ -8124,11 +8117,11 @@ module.exports = exports[&#x27;default&#x27;];
  * };
  *
  * // in the node repl
- * node&#x3e; async.<span class="apidocCodeKeywordSpan">dir</span>(hello, &#x27;world&#x27;);
- * {hello: &#x27;world&#x27;}
+ * node&gt; async.<span class="apidocCodeKeywordSpan">dir</span>(hello, 'world');
+ * {hello: 'world'}
  */
-exports.default = (0, _consoleFunc2.default)(&#x27;dir&#x27;);
-module.exports = exports[&#x27;default&#x27;];
+exports.default = (0, _consoleFunc2.default)('dir');
+module.exports = exports['default'];
 ...</pre></li>
     </ul>
 
@@ -8239,7 +8232,7 @@ module.exports = exports[&#x27;default&#x27;];
 *
 * async.<span class="apidocCodeKeywordSpan">during</span>(
 *     function (callback) {
-*         return callback(null, count &#x3c; 5);
+*         return callback(null, count &lt; 5);
 *     },
 *     function (callback) {
 *         count++;
@@ -8265,7 +8258,7 @@ module.exports = exports[&#x27;default&#x27;];
  * arguments, `callback` is required.
  * @example
  *
- * async.applyEach([enableSearch, updateSchema], &#x27;bucket&#x27;, callback);
+ * async.applyEach([enableSearch, updateSchema], 'bucket', callback);
  *
  * // partial application example:
  * async.<span class="apidocCodeKeywordSpan">each</span>(
@@ -8275,7 +8268,7 @@ module.exports = exports[&#x27;default&#x27;];
  * );
  */
 exports.default = (0, _applyEach2.default)(_map2.default);
-module.exports = exports[&#x27;default&#x27;];
+module.exports = exports['default'];
 ...</pre></li>
     </ul>
 
@@ -8388,7 +8381,7 @@ module.exports = exports[&#x27;default&#x27;];
  * // this has a risk of stack overflows if many results are cached in a row
  * async.mapSeries(args, sometimesAsync, done);
  *
- * // this will defer sometimesAsync&#x27;s callback if necessary,
+ * // this will defer sometimesAsync's callback if necessary,
  * // preventing stack overflows
  * async.mapSeries(args, async.<span class="apidocCodeKeywordSpan">ensureAsync</span>(sometimesAsync), done);
  */
@@ -8421,7 +8414,7 @@ return (0, _initialParams2.default)(function (args, callback) {
 * depending on the values of the async tests. Invoked with (err, result).
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">every</span>([&#x27;file1&#x27;,&#x27;file2&#x27;,&#x27;file3&#x27;], function(filePath
+* async.<span class="apidocCodeKeywordSpan">every</span>(['file1','file2','file3'], function(filePath
 , callback) {
 *     fs.access(filePath, function(err) {
 *         callback(null, !err)
@@ -8483,7 +8476,7 @@ return (0, _initialParams2.default)(function (args, callback) {
 * `iteratee` functions have finished. Invoked with (err, results).
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">filter</span>([&#x27;file1&#x27;,&#x27;file2&#x27;,&#x27;file3&#x27;], function(filePath
+* async.<span class="apidocCodeKeywordSpan">filter</span>(['file1','file2','file3'], function(filePath
 , callback) {
 *     fs.access(filePath, function(err) {
 *         callback(null, !err)
@@ -8613,11 +8606,11 @@ return (0, _initialParams2.default)(function (args, callback) {
 * `iteratee` functions have finished, or an error occurs. Invoked with (err).
 * @example
 *
-* var obj = {dev: &#x22;/dev.json&#x22;, test: &#x22;/test.json&#x22;, prod: &#x22;/prod.json&#x22;};
+* var obj = {dev: "/dev.json", test: "/test.json", prod: "/prod.json"};
 * var configs = {};
 *
 * async.<span class="apidocCodeKeywordSpan">forEachOf</span>(obj, function (value, key, callback) {
-*     fs.readFile(__dirname + value, &#x22;utf8&#x22;, function (err, data) {
+*     fs.readFile(__dirname + value, "utf8", function (err, data) {
 *         if (err) return callback(err);
 *         try {
 *             configs[key] = JSON.parse(data);
@@ -8695,7 +8688,7 @@ return (0, _initialParams2.default)(function (args, callback) {
 * @category Control Flow
 * @param {AsyncFunction} fn - an async function to call repeatedly.
 * Invoked with (next).
-* @param {Function} [errback] - when `fn` passes an error to it&#x27;s callback,
+* @param {Function} [errback] - when `fn` passes an error to it's callback,
 * this function will be called, and execution stops. Invoked with (err).
 * @example
 *
@@ -8706,7 +8699,7 @@ return (0, _initialParams2.default)(function (args, callback) {
 *     },
 *     function(err) {
 *         // if next is called with a value in its first parameter, it will appear
-*         // in here as &#x27;err&#x27;, and execution will stop.
+*         // in here as 'err', and execution will stop.
 ...</pre></li>
     </ul>
 
@@ -8730,7 +8723,7 @@ return (0, _initialParams2.default)(function (args, callback) {
 * properties are arrays of values which returned the corresponding key.
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">groupBy</span>([&#x27;userId1&#x27;, &#x27;userId2&#x27;, &#x27;userId3&#x27;], function
+* async.<span class="apidocCodeKeywordSpan">groupBy</span>(['userId1', 'userId2', 'userId3'], function
 (userId, callback) {
 *     db.findById(userId, function(err, user) {
 *         if (err) return callback(err);
@@ -8738,7 +8731,7 @@ return (0, _initialParams2.default)(function (args, callback) {
 *     });
 * }, function(err, result) {
 *     // result is object containing the userIds grouped by age
-*     // e.g. { 30: [&#x27;userId1&#x27;, &#x27;userId3&#x27;], 42: [&#x27;userId2&#x27;]};
+*     // e.g. { 30: ['userId1', 'userId3'], 42: ['userId2']};
 ...</pre></li>
     </ul>
 
@@ -8764,7 +8757,7 @@ return (0, _initialParams2.default)(function (args, callback) {
         // from MDN, handle object having an `hasOwnProperty` prop
         var hasOwnProperty = Object.prototype.hasOwnProperty;
 
-        for (var i = 0; i &#x3c; mapResults.length; i++) {
+        for (var i = 0; i &lt; mapResults.length; i++) {
             if (mapResults[i]) {
                 var key = mapResults[i].key;
                 var val = mapResults[i].val;
@@ -8837,31 +8830,31 @@ return (0, _initialParams2.default)(function (args, callback) {
       length = nativeMax(args.length - start, 0),
       array = Array(length);
 
-  while (++index &#x3c; length) {
+  while (++index &lt; length) {
     array[index] = args[start + index];
   }
   index = -1;
   var otherArgs = Array(start + 1);
-  while (++index &#x3c; start) {
+  while (++index &lt; start) {
     otherArgs[index] = args[index];
   }
   otherArgs[start] = transform(array);
   return apply(func, this, otherArgs);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-*         // results.readData is the file&#x27;s contents
+*         // results.readData is the file's contents
 *         // ...
 *     }]
 * }, callback);
 *
 * async.auto({
 *     get_data: function(callback) {
-*         console.<span class="apidocCodeKeywordSpan">log</span>(&#x27;in get_data&#x27;);
+*         console.<span class="apidocCodeKeywordSpan">log</span>('in get_data');
 *         // async code to get some data
-*         callback(null, &#x27;data&#x27;, &#x27;converted to array&#x27;);
+*         callback(null, 'data', 'converted to array');
 *     },
 *     make_folder: function(callback) {
-*         console.log(&#x27;in make_folder&#x27;);
+*         console.log('in make_folder');
 *         // async code to create a directory to store a file in
 *         // this is run at the same time as getting the data
 ...</pre></li>
@@ -8884,11 +8877,11 @@ var FN_ARG = /(=.+)?(\s*)$/;
 var STRIP_COMMENTS = /((\/\/.*$)|(\/\*[\s\S]*?\*\/))/mg;
 
 function parseParams(func) {
-   func = func.toString().replace(STRIP_COMMENTS, &#x27;&#x27;);
-   func = func.match(FN_ARGS)[2].replace(&#x27; &#x27;, &#x27;&#x27;);
+   func = func.toString().replace(STRIP_COMMENTS, '');
+   func = func.match(FN_ARGS)[2].replace(' ', '');
    func = func ? func.split(FN_ARG_SPLIT) : [];
    func = func.<span class="apidocCodeKeywordSpan">map</span>(function (arg) {
-       return (0, _trim2.default)(arg.replace(FN_ARG, &#x27;&#x27;));
+       return (0, _trim2.default)(arg.replace(FN_ARG, ''));
    });
    return func;
 }
@@ -8935,7 +8928,7 @@ function parseParams(func) {
  * // this has a risk of stack overflows if many results are cached in a row
  * async.<span class="apidocCodeKeywordSpan">mapSeries</span>(args, sometimesAsync, done);
  *
- * // this will defer sometimesAsync&#x27;s callback if necessary,
+ * // this will defer sometimesAsync's callback if necessary,
  * // preventing stack overflows
  * async.mapSeries(args, async.ensureAsync(sometimesAsync), done);
  */
@@ -8965,9 +8958,9 @@ if ((0, _wrapAsync.isAsync)(fn)) return fn;
 * @example
 *
 * async.<span class="apidocCodeKeywordSpan">mapValues</span>({
-*     f1: &#x27;file1&#x27;,
-*     f2: &#x27;file2&#x27;,
-*     f3: &#x27;file3&#x27;
+*     f1: 'file1',
+*     f2: 'file2',
+*     f3: 'file3'
 * }, function (file, key, callback) {
 *   fs.stat(file, callback);
 * }, function(err, result) {
@@ -9044,7 +9037,7 @@ if ((0, _wrapAsync.isAsync)(fn)) return fn;
                 memo[key] = args;
                 var q = queues[key];
                 delete queues[key];
-                for (var i = 0, l = q.length; i &#x3c; l; i++) {
+                for (var i = 0, l = q.length; i &lt; l; i++) {
                     q[i].apply(null, args);
                 }
             })));
@@ -9065,7 +9058,7 @@ if ((0, _wrapAsync.isAsync)(fn)) return fn;
  * var fn = async.<span class="apidocCodeKeywordSpan">memoize</span>(slow_fn);
  *
  * // fn can now be used as if it were slow_fn
- * fn(&#x27;some name&#x27;, function() {
+ * fn('some name', function() {
  *     // callback
  * });
  */
@@ -9088,12 +9081,12 @@ function memoize(fn, hasher) {
       length = nativeMax(args.length - start, 0),
       array = Array(length);
 
-  while (++index &#x3c; length) {
+  while (++index &lt; length) {
     array[index] = args[start + index];
   }
   index = -1;
   var otherArgs = Array(start + 1);
-  while (++index &#x3c; start) {
+  while (++index &lt; start) {
     otherArgs[index] = args[index];
   }
   otherArgs[start] = transform(array);
@@ -9108,10 +9101,10 @@ function memoize(fn, hasher) {
 *
 * var call_order = [];
 * async.<span class="apidocCodeKeywordSpan">nextTick</span>(function() {
-*     call_order.push(&#x27;two&#x27;);
-*     // call_order now equals [&#x27;one&#x27;,&#x27;two&#x27;]
+*     call_order.push('two');
+*     // call_order now equals ['one','two']
 * });
-* call_order.push(&#x27;one&#x27;);
+* call_order.push('one');
 *
 * async.setImmediate(function (a, b, c) {
 *     // a, b, and c equal 1, 2, and 3
@@ -9139,8 +9132,8 @@ function memoize(fn, hasher) {
 *
 * // using apply
 * async.<span class="apidocCodeKeywordSpan">parallel</span>([
-*     async.apply(fs.writeFile, &#x27;testfile1&#x27;, &#x27;test1&#x27;),
-*     async.apply(fs.writeFile, &#x27;testfile2&#x27;, &#x27;test2&#x27;)
+*     async.apply(fs.writeFile, 'testfile1', 'test1'),
+*     async.apply(fs.writeFile, 'testfile2', 'test2')
 * ]);
 *
 *
@@ -9180,8 +9173,8 @@ function memoize(fn, hasher) {
     // Override push to accept second parameter representing priority
     q.push = function (data, priority, callback) {
         if (callback == null) callback = noop;
-        if (typeof callback !== &#x27;function&#x27;) {
-            throw new Error(&#x27;task callback must be a function&#x27;);
+        if (typeof callback !== 'function') {
+            throw new Error('task callback must be a function');
         }
         q.started = true;
         if (!isArray(data)) {
@@ -9196,11 +9189,11 @@ function memoize(fn, hasher) {
 
         priority = priority || 0;
         var nextNode = q._tasks.head;
-        while (nextNode &#x26;&#x26; priority &#x3e;= nextNode.priority) {
+        while (nextNode &amp;&amp; priority &gt;= nextNode.priority) {
             nextNode = nextNode.next;
         }
 
-        for (var i = 0, l = data.length; i &#x3c; l; i++) {
+        for (var i = 0, l = data.length; i &lt; l; i++) {
             var item = {
                 data: data[i],
                 priority: priority,
@@ -9269,20 +9262,20 @@ function asyncify(func) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function race(tasks, callback) {
     callback = once(callback || noop);
-    if (!isArray(tasks)) return callback(new TypeError(&#x27;First argument to race must be an array of functions&#x27;));
+    if (!isArray(tasks)) return callback(new TypeError('First argument to race must be an array of functions'));
     if (!tasks.length) return callback();
-    for (var i = 0, l = tasks.length; i &#x3c; l; i++) {
+    for (var i = 0, l = tasks.length; i &lt; l; i++) {
         wrapAsync$1(tasks[i])(callback);
     }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj &amp;&amp; obj.__esModule ? obj : { default: obj }; }
 
 /**
 * Runs the `tasks` array of functions in parallel, without waiting until the
 * previous function has completed. Once any of the `tasks` complete or pass an
-* error to its callback, the main `callback` is immediately called. It&#x27;s
+* error to its callback, the main `callback` is immediately called. It's
 * equivalent to `Promise.<span class="apidocCodeKeywordSpan">race</span>()`.
 *
 * @name race
@@ -9371,7 +9364,7 @@ function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? 
                 var value = null;
                 if (cbArgs.length === 1) {
                     value = cbArgs[0];
-                } else if (cbArgs.length &#x3e; 1) {
+                } else if (cbArgs.length &gt; 1) {
                     value = cbArgs;
                 }
                 reflectCallback(null, {
@@ -9385,7 +9378,7 @@ function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? 
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 * @param {AsyncFunction} fn - The async function you want to wrap
-* @returns {Function} - A function that always passes null to it&#x27;s callback as
+* @returns {Function} - A function that always passes null to it's callback as
 * the error. The second argument to the callback will be an `object` with
 * either an `error` or a `value` property.
 * @example
@@ -9393,11 +9386,11 @@ function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? 
 * async.parallel([
 *     async.<span class="apidocCodeKeywordSpan">reflect</span>(function(callback) {
 *         // do some stuff ...
-*         callback(null, &#x27;one&#x27;);
+*         callback(null, 'one');
 *     }),
 *     async.reflect(function(callback) {
 *         // do some more stuff but error ...
-*         callback(&#x27;bad stuff happened&#x27;);
+*         callback('bad stuff happened');
 *     }),
 ...</pre></li>
     </ul>
@@ -9426,7 +9419,7 @@ function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? 
     <li>example usage<pre class="apidocCodePre">...
 *     function(callback) {
 *         setTimeout(function() {
-*             callback(null, &#x27;two&#x27;);
+*             callback(null, 'two');
 *         }, 100);
 *     }
 * ];
@@ -9435,9 +9428,9 @@ function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? 
 * // optional callback
 * function(err, results) {
 *     // values
-*     // results[0].value = &#x27;one&#x27;
-*     // results[1].error = Error(&#x27;bad stuff happened&#x27;)
-*     // results[2].value = &#x27;two&#x27;
+*     // results[0].value = 'one'
+*     // results[1].error = Error('bad stuff happened')
+*     // results[2].value = 'two'
 * });
 ...</pre></li>
     </ul>
@@ -9506,20 +9499,20 @@ function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? 
     };
 
     function parseTimes(acc, t) {
-        if (typeof t === &#x27;object&#x27;) {
+        if (typeof t === 'object') {
             acc.times = +t.times || DEFAULT_TIMES;
 
-            acc.intervalFunc = typeof t.interval === &#x27;function&#x27; ? t.interval : constant$1(+t.interval || DEFAULT_INTERVAL);
+            acc.intervalFunc = typeof t.interval === 'function' ? t.interval : constant$1(+t.interval || DEFAULT_INTERVAL);
 
             acc.errorFilter = t.errorFilter;
-        } else if (typeof t === &#x27;number&#x27; || typeof t === &#x27;string&#x27;) {
+        } else if (typeof t === 'number' || typeof t === 'string') {
             acc.times = +t || DEFAULT_TIMES;
         } else {
-            throw new Error(&#x22;Invalid arguments for async.retry&#x22;);
+            throw new Error("Invalid arguments for async.retry");
         }
     }
 
-    if (arguments.length &#x3c; 3 &#x26;&#x26; typeof opts === &#x27;function&#x27;) {
+    if (arguments.length &lt; 3 &amp;&amp; typeof opts === 'function') {
         callback = task || noop;
         task = opts;
     } else {
@@ -9527,8 +9520,8 @@ function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? 
         callback = callback || noop;
     }
 
-    if (typeof task !== &#x27;function&#x27;) {
-        throw new Error(&#x22;Invalid arguments for async.retry&#x22;);
+    if (typeof task !== 'function') {
+        throw new Error("Invalid arguments for async.retry");
     }
 
     var _task = wrapAsync$1(task);
@@ -9536,7 +9529,7 @@ function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? 
     var attempt = 1;
     function retryAttempt() {
         _task(function (err) {
-            if (err &#x26;&#x26; attempt++ &#x3c; options.times &#x26;&#x26; (typeof options.errorFilter != &#x27;function&#x27; || options.errorFilter(err))) {
+            if (err &amp;&amp; attempt++ &lt; options.times &amp;&amp; (typeof options.errorFilter != 'function' || options.errorFilter(err))) {
                 setTimeout(retryAttempt, options.intervalFunc(attempt));
             } else {
                 callback.apply(null, arguments);
@@ -9667,12 +9660,12 @@ var DEFAULT_TIMES = 5;
       length = nativeMax(args.length - start, 0),
       array = Array(length);
 
-  while (++index &#x3c; length) {
+  while (++index &lt; length) {
     array[index] = args[start + index];
   }
   index = -1;
   var otherArgs = Array(start + 1);
-  while (++index &#x3c; start) {
+  while (++index &lt; start) {
     otherArgs[index] = args[index];
   }
   otherArgs[start] = transform(array);
@@ -9680,16 +9673,16 @@ var DEFAULT_TIMES = 5;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 *
-* // Requires lodash (or underscore), express3 and dresende&#x27;s orm2.
+* // Requires lodash (or underscore), express3 and dresende's orm2.
 * // Part of an app, that fetches cats of the logged user.
 * // This example uses `seq` function to avoid overnesting and error
 * // handling clutter.
-* app.get(&#x27;/cats&#x27;, function(request, response) {
+* app.get('/cats', function(request, response) {
 *     var User = request.models.User;
 *     async.<span class="apidocCodeKeywordSpan">seq</span>(
-*         _.bind(User.get, User),  // &#x27;User.get&#x27; has signature (id, callback(err, data))
+*         _.bind(User.get, User),  // 'User.get' has signature (id, callback(err, data))
 *         function(user, fn) {
-*             user.getCats(fn);      // &#x27;getCats&#x27; has signature (callback(err, data))
+*             user.getCats(fn);      // 'getCats' has signature (callback(err, data))
 *         }
 *     )(req.session.user_id, function (err, cats) {
 *         if (err) {
@@ -9720,11 +9713,11 @@ var DEFAULT_TIMES = 5;
 * async.<span class="apidocCodeKeywordSpan">series</span>([
 *     function(callback) {
 *         // do some stuff ...
-*         callback(null, &#x27;one&#x27;);
+*         callback(null, 'one');
 *     },
 *     function(callback) {
 *         // do some more stuff ...
-*         callback(null, &#x27;two&#x27;);
+*         callback(null, 'two');
 ...</pre></li>
     </ul>
 
@@ -9743,12 +9736,12 @@ var DEFAULT_TIMES = 5;
       length = nativeMax(args.length - start, 0),
       array = Array(length);
 
-  while (++index &#x3c; length) {
+  while (++index &lt; length) {
     array[index] = args[start + index];
   }
   index = -1;
   var otherArgs = Array(start + 1);
-  while (++index &#x3c; start) {
+  while (++index &lt; start) {
     otherArgs[index] = args[index];
   }
   otherArgs[start] = transform(array);
@@ -9757,10 +9750,10 @@ var DEFAULT_TIMES = 5;
     <li>example usage<pre class="apidocCodePre">...
  * var call_order = [];
  * async.nextTick(function() {
- *     call_order.push(&#x27;two&#x27;);
- *     // call_order now equals [&#x27;one&#x27;,&#x27;two&#x27;]
+ *     call_order.push('two');
+ *     // call_order now equals ['one','two']
  * });
- * call_order.push(&#x27;one&#x27;);
+ * call_order.push('one');
  *
  * async.<span class="apidocCodeKeywordSpan">setImmediate</span>(function (a, b, c) {
  *     // a, b, and c equal 1, 2, and 3
@@ -9793,7 +9786,7 @@ _defer = process.nextTick;
 * tests. Invoked with (err, result).
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">some</span>([&#x27;file1&#x27;,&#x27;file2&#x27;,&#x27;file3&#x27;], function(filePath
+* async.<span class="apidocCodeKeywordSpan">some</span>(['file1','file2','file3'], function(filePath
 , callback) {
 *     fs.access(filePath, function(err) {
 *         callback(null, !err)
@@ -9853,13 +9846,13 @@ _defer = process.nextTick;
         });
     }, function (err, results) {
         if (err) return callback(err);
-        callback(null, arrayMap(results.sort(comparator), baseProperty(&#x27;value&#x27;)));
+        callback(null, arrayMap(results.sort(comparator), baseProperty('value')));
     });
 
     function comparator(left, right) {
         var a = left.criteria,
             b = right.criteria;
-        return a &#x3c; b ? -1 : a &#x3e; b ? 1 : 0;
+        return a &lt; b ? -1 : a &gt; b ? 1 : 0;
     }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
@@ -9870,7 +9863,7 @@ _defer = process.nextTick;
 * calls. Invoked with (err, results).
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">sortBy</span>([&#x27;file1&#x27;,&#x27;file2&#x27;,&#x27;file3&#x27;], function(file
+* async.<span class="apidocCodeKeywordSpan">sortBy</span>(['file1','file2','file3'], function(file
 , callback) {
 *     fs.stat(file, function(err, stats) {
 *         callback(err, stats.mtime);
@@ -9903,9 +9896,9 @@ _defer = process.nextTick;
     }
 
     function timeoutCallback() {
-        var name = asyncFn.name || &#x27;anonymous&#x27;;
-        var error = new Error(&#x27;Callback function &#x22;&#x27; + name + &#x27;&#x22; timed out.&#x27;);
-        error.code = &#x27;ETIMEDOUT&#x27;;
+        var name = asyncFn.name || 'anonymous';
+        var error = new Error('Callback function "' + name + '" timed out.');
+        error.code = 'ETIMEDOUT';
         if (info) {
             error.info = info;
         }
@@ -9933,11 +9926,11 @@ _defer = process.nextTick;
 * var wrapped = async.<span class="apidocCodeKeywordSpan">timeout</span>(myFunction, 1000);
 *
 * // call `wrapped` as you would `myFunction`
-* wrapped({ bar: &#x27;bar&#x27; }, function(err, data) {
-*     // if `myFunction` takes &#x3c; 1000 ms to execute, `err`
+* wrapped({ bar: 'bar' }, function(err, data) {
+*     // if `myFunction` takes &lt; 1000 ms to execute, `err`
 *     // and `data` will have their expected values
 *
-*     // else `err` will be an Error with the code &#x27;ETIMEDOUT&#x27;
+*     // else `err` will be an Error with the code 'ETIMEDOUT'
 ...</pre></li>
     </ul>
 
@@ -9956,7 +9949,7 @@ _defer = process.nextTick;
     <li>example usage<pre class="apidocCodePre">...
 * var createUser = function(id, callback) {
 *     callback(null, {
-*         id: &#x27;user&#x27; + id
+*         id: 'user' + id
 *     });
 * };
 *
@@ -10013,7 +10006,7 @@ _defer = process.nextTick;
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function transform(coll, accumulator, iteratee, callback) {
-    if (arguments.length &#x3c;= 3) {
+    if (arguments.length &lt;= 3) {
         callback = iteratee;
         iteratee = accumulator;
         accumulator = isArray(coll) ? [] : {};
@@ -10091,7 +10084,7 @@ _defer = process.nextTick;
     <ul>
     <li>description and source-code<pre class="apidocCodePre">waterfall = function (tasks, callback) {
     callback = once(callback || noop);
-    if (!isArray(tasks)) return callback(new Error(&#x27;First argument to waterfall must be an array of functions&#x27;));
+    if (!isArray(tasks)) return callback(new Error('First argument to waterfall must be an array of functions'));
     if (!tasks.length) return callback();
     var taskIndex = 0;
 
@@ -10124,7 +10117,7 @@ _defer = process.nextTick;
 *
 * // passing a regular synchronous function
 * async.<span class="apidocCodeKeywordSpan">waterfall</span>([
-*     async.apply(fs.readFile, filename, &#x22;utf8&#x22;),
+*     async.apply(fs.readFile, filename, "utf8"),
 *     async.asyncify(JSON.parse),
 *     function (data, next) {
 *         // data is the result of parsing the text.
@@ -10156,14 +10149,14 @@ _defer = process.nextTick;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 * function has failed and repeated execution of `iteratee` has stopped. `callback`
-* will be passed an error and any arguments passed to the final `iteratee`&#x27;s
+* will be passed an error and any arguments passed to the final `iteratee`'s
 * callback. Invoked with (err, [results]);
 * @returns undefined
 * @example
 *
 * var count = 0;
 * async.<span class="apidocCodeKeywordSpan">whilst</span>(
-*     function() { return count &#x3c; 5; },
+*     function() { return count &lt; 5; },
 *     function(callback) {
 *         count++;
 *         setTimeout(function() {
@@ -10191,7 +10184,7 @@ _defer = process.nextTick;
             return callback(e);
         }
         // if result is Promise object
-        if (isObject(result) &#x26;&#x26; typeof result.then === &#x27;function&#x27;) {
+        if (isObject(result) &amp;&amp; typeof result.then === 'function') {
             result.then(function (value) {
                 callback(null, value);
             }, function (err) {
@@ -10230,7 +10223,7 @@ _defer = process.nextTick;
 * (err, result).
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">detect</span>([&#x27;file1&#x27;,&#x27;file2&#x27;,&#x27;file3&#x27;], function(filePath
+* async.<span class="apidocCodeKeywordSpan">detect</span>(['file1','file2','file3'], function(filePath
 , callback) {
 *     fs.access(filePath, function(err) {
 *         callback(null, !err)
@@ -10302,12 +10295,12 @@ _defer = process.nextTick;
       length = nativeMax(args.length - start, 0),
       array = Array(length);
 
-  while (++index &#x3c; length) {
+  while (++index &lt; length) {
     array[index] = args[start + index];
   }
   index = -1;
   var otherArgs = Array(start + 1);
-  while (++index &#x3c; start) {
+  while (++index &lt; start) {
     otherArgs[index] = args[index];
   }
   otherArgs[start] = transform(array);
@@ -10321,11 +10314,11 @@ _defer = process.nextTick;
  * };
  *
  * // in the node repl
- * node&#x3e; async.<span class="apidocCodeKeywordSpan">dir</span>(hello, &#x27;world&#x27;);
- * {hello: &#x27;world&#x27;}
+ * node&gt; async.<span class="apidocCodeKeywordSpan">dir</span>(hello, 'world');
+ * {hello: 'world'}
  */
-exports.default = (0, _consoleFunc2.default)(&#x27;dir&#x27;);
-module.exports = exports[&#x27;default&#x27;];
+exports.default = (0, _consoleFunc2.default)('dir');
+module.exports = exports['default'];
 ...</pre></li>
     </ul>
 
@@ -10544,7 +10537,7 @@ module.exports = exports[&#x27;default&#x27;];
 *
 * async.<span class="apidocCodeKeywordSpan">during</span>(
 *     function (callback) {
-*         return callback(null, count &#x3c; 5);
+*         return callback(null, count &lt; 5);
 *     },
 *     function (callback) {
 *         count++;
@@ -10575,7 +10568,7 @@ module.exports = exports[&#x27;default&#x27;];
  * arguments, `callback` is required.
  * @example
  *
- * async.applyEach([enableSearch, updateSchema], &#x27;bucket&#x27;, callback);
+ * async.applyEach([enableSearch, updateSchema], 'bucket', callback);
  *
  * // partial application example:
  * async.<span class="apidocCodeKeywordSpan">each</span>(
@@ -10585,7 +10578,7 @@ module.exports = exports[&#x27;default&#x27;];
  * );
  */
 exports.default = (0, _applyEach2.default)(_map2.default);
-module.exports = exports[&#x27;default&#x27;];
+module.exports = exports['default'];
 ...</pre></li>
     </ul>
 
@@ -10728,7 +10721,7 @@ module.exports = exports[&#x27;default&#x27;];
  * // this has a risk of stack overflows if many results are cached in a row
  * async.mapSeries(args, sometimesAsync, done);
  *
- * // this will defer sometimesAsync&#x27;s callback if necessary,
+ * // this will defer sometimesAsync's callback if necessary,
  * // preventing stack overflows
  * async.mapSeries(args, async.<span class="apidocCodeKeywordSpan">ensureAsync</span>(sometimesAsync), done);
  */
@@ -10766,7 +10759,7 @@ return (0, _initialParams2.default)(function (args, callback) {
 * depending on the values of the async tests. Invoked with (err, result).
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">every</span>([&#x27;file1&#x27;,&#x27;file2&#x27;,&#x27;file3&#x27;], function(filePath
+* async.<span class="apidocCodeKeywordSpan">every</span>(['file1','file2','file3'], function(filePath
 , callback) {
 *     fs.access(filePath, function(err) {
 *         callback(null, !err)
@@ -10843,7 +10836,7 @@ return (0, _initialParams2.default)(function (args, callback) {
 * `iteratee` functions have finished. Invoked with (err, results).
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">filter</span>([&#x27;file1&#x27;,&#x27;file2&#x27;,&#x27;file3&#x27;], function(filePath
+* async.<span class="apidocCodeKeywordSpan">filter</span>(['file1','file2','file3'], function(filePath
 , callback) {
 *     fs.access(filePath, function(err) {
 *         callback(null, !err)
@@ -10943,7 +10936,7 @@ return (0, _initialParams2.default)(function (args, callback) {
 * @category Control Flow
 * @param {AsyncFunction} fn - an async function to call repeatedly.
 * Invoked with (next).
-* @param {Function} [errback] - when `fn` passes an error to it&#x27;s callback,
+* @param {Function} [errback] - when `fn` passes an error to it's callback,
 * this function will be called, and execution stops. Invoked with (err).
 * @example
 *
@@ -10954,7 +10947,7 @@ return (0, _initialParams2.default)(function (args, callback) {
 *     },
 *     function(err) {
 *         // if next is called with a value in its first parameter, it will appear
-*         // in here as &#x27;err&#x27;, and execution will stop.
+*         // in here as 'err', and execution will stop.
 ...</pre></li>
     </ul>
 
@@ -10973,7 +10966,7 @@ return (0, _initialParams2.default)(function (args, callback) {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">getIterator = function (coll) {
-    return iteratorSymbol &#x26;&#x26; coll[iteratorSymbol] &#x26;&#x26; coll[iteratorSymbol]();
+    return iteratorSymbol &amp;&amp; coll[iteratorSymbol] &amp;&amp; coll[iteratorSymbol]();
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -11003,7 +10996,7 @@ return (0, _initialParams2.default)(function (args, callback) {
 * properties are arrays of values which returned the corresponding key.
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">groupBy</span>([&#x27;userId1&#x27;, &#x27;userId2&#x27;, &#x27;userId3&#x27;], function
+* async.<span class="apidocCodeKeywordSpan">groupBy</span>(['userId1', 'userId2', 'userId3'], function
 (userId, callback) {
 *     db.findById(userId, function(err, user) {
 *         if (err) return callback(err);
@@ -11011,7 +11004,7 @@ return (0, _initialParams2.default)(function (args, callback) {
 *     });
 * }, function(err, result) {
 *     // result is object containing the userIds grouped by age
-*     // e.g. { 30: [&#x27;userId1&#x27;, &#x27;userId3&#x27;], 42: [&#x27;userId2&#x27;]};
+*     // e.g. { 30: ['userId1', 'userId3'], 42: ['userId2']};
 ...</pre></li>
     </ul>
 
@@ -11042,7 +11035,7 @@ return (0, _initialParams2.default)(function (args, callback) {
         // from MDN, handle object having an `hasOwnProperty` prop
         var hasOwnProperty = Object.prototype.hasOwnProperty;
 
-        for (var i = 0; i &#x3c; mapResults.length; i++) {
+        for (var i = 0; i &lt; mapResults.length; i++) {
             if (mapResults[i]) {
                 var key = mapResults[i].key;
                 var val = mapResults[i].val;
@@ -11149,31 +11142,31 @@ return (0, _initialParams2.default)(function (args, callback) {
       length = nativeMax(args.length - start, 0),
       array = Array(length);
 
-  while (++index &#x3c; length) {
+  while (++index &lt; length) {
     array[index] = args[start + index];
   }
   index = -1;
   var otherArgs = Array(start + 1);
-  while (++index &#x3c; start) {
+  while (++index &lt; start) {
     otherArgs[index] = args[index];
   }
   otherArgs[start] = transform(array);
   return apply(func, this, otherArgs);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-*         // results.readData is the file&#x27;s contents
+*         // results.readData is the file's contents
 *         // ...
 *     }]
 * }, callback);
 *
 * async.auto({
 *     get_data: function(callback) {
-*         console.<span class="apidocCodeKeywordSpan">log</span>(&#x27;in get_data&#x27;);
+*         console.<span class="apidocCodeKeywordSpan">log</span>('in get_data');
 *         // async code to get some data
-*         callback(null, &#x27;data&#x27;, &#x27;converted to array&#x27;);
+*         callback(null, 'data', 'converted to array');
 *     },
 *     make_folder: function(callback) {
-*         console.log(&#x27;in make_folder&#x27;);
+*         console.log('in make_folder');
 *         // async code to create a directory to store a file in
 *         // this is run at the same time as getting the data
 ...</pre></li>
@@ -11201,11 +11194,11 @@ var FN_ARG = /(=.+)?(\s*)$/;
 var STRIP_COMMENTS = /((\/\/.*$)|(\/\*[\s\S]*?\*\/))/mg;
 
 function parseParams(func) {
-   func = func.toString().replace(STRIP_COMMENTS, &#x27;&#x27;);
-   func = func.match(FN_ARGS)[2].replace(&#x27; &#x27;, &#x27;&#x27;);
+   func = func.toString().replace(STRIP_COMMENTS, '');
+   func = func.match(FN_ARGS)[2].replace(' ', '');
    func = func ? func.split(FN_ARG_SPLIT) : [];
    func = func.<span class="apidocCodeKeywordSpan">map</span>(function (arg) {
-       return (0, _trim2.default)(arg.replace(FN_ARG, &#x27;&#x27;));
+       return (0, _trim2.default)(arg.replace(FN_ARG, ''));
    });
    return func;
 }
@@ -11262,7 +11255,7 @@ function parseParams(func) {
  * // this has a risk of stack overflows if many results are cached in a row
  * async.<span class="apidocCodeKeywordSpan">mapSeries</span>(args, sometimesAsync, done);
  *
- * // this will defer sometimesAsync&#x27;s callback if necessary,
+ * // this will defer sometimesAsync's callback if necessary,
  * // preventing stack overflows
  * async.mapSeries(args, async.ensureAsync(sometimesAsync), done);
  */
@@ -11297,9 +11290,9 @@ if ((0, _wrapAsync.isAsync)(fn)) return fn;
 * @example
 *
 * async.<span class="apidocCodeKeywordSpan">mapValues</span>({
-*     f1: &#x27;file1&#x27;,
-*     f2: &#x27;file2&#x27;,
-*     f3: &#x27;file3&#x27;
+*     f1: 'file1',
+*     f2: 'file2',
+*     f3: 'file3'
 * }, function (file, key, callback) {
 *   fs.stat(file, callback);
 * }, function(err, result) {
@@ -11391,7 +11384,7 @@ if ((0, _wrapAsync.isAsync)(fn)) return fn;
                 memo[key] = args;
                 var q = queues[key];
                 delete queues[key];
-                for (var i = 0, l = q.length; i &#x3c; l; i++) {
+                for (var i = 0, l = q.length; i &lt; l; i++) {
                     q[i].apply(null, args);
                 }
             })));
@@ -11412,7 +11405,7 @@ if ((0, _wrapAsync.isAsync)(fn)) return fn;
  * var fn = async.<span class="apidocCodeKeywordSpan">memoize</span>(slow_fn);
  *
  * // fn can now be used as if it were slow_fn
- * fn(&#x27;some name&#x27;, function() {
+ * fn('some name', function() {
  *     // callback
  * });
  */
@@ -11440,12 +11433,12 @@ function memoize(fn, hasher) {
       length = nativeMax(args.length - start, 0),
       array = Array(length);
 
-  while (++index &#x3c; length) {
+  while (++index &lt; length) {
     array[index] = args[start + index];
   }
   index = -1;
   var otherArgs = Array(start + 1);
-  while (++index &#x3c; start) {
+  while (++index &lt; start) {
     otherArgs[index] = args[index];
   }
   otherArgs[start] = transform(array);
@@ -11460,10 +11453,10 @@ function memoize(fn, hasher) {
 *
 * var call_order = [];
 * async.<span class="apidocCodeKeywordSpan">nextTick</span>(function() {
-*     call_order.push(&#x27;two&#x27;);
-*     // call_order now equals [&#x27;one&#x27;,&#x27;two&#x27;]
+*     call_order.push('two');
+*     // call_order now equals ['one','two']
 * });
-* call_order.push(&#x27;one&#x27;);
+* call_order.push('one');
 *
 * async.setImmediate(function (a, b, c) {
 *     // a, b, and c equal 1, 2, and 3
@@ -11531,7 +11524,7 @@ function memoize(fn, hasher) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function onlyOnce(fn) {
     return function () {
-        if (fn === null) throw new Error(&#x22;Callback was already called.&#x22;);
+        if (fn === null) throw new Error("Callback was already called.");
         var callFn = fn;
         fn = null;
         callFn.apply(this, arguments);
@@ -11566,8 +11559,8 @@ function memoize(fn, hasher) {
 *
 * // using apply
 * async.<span class="apidocCodeKeywordSpan">parallel</span>([
-*     async.apply(fs.writeFile, &#x27;testfile1&#x27;, &#x27;test1&#x27;),
-*     async.apply(fs.writeFile, &#x27;testfile2&#x27;, &#x27;test2&#x27;)
+*     async.apply(fs.writeFile, 'testfile1', 'test1'),
+*     async.apply(fs.writeFile, 'testfile2', 'test2')
 * ]);
 *
 *
@@ -11617,8 +11610,8 @@ function memoize(fn, hasher) {
     // Override push to accept second parameter representing priority
     q.push = function (data, priority, callback) {
         if (callback == null) callback = noop;
-        if (typeof callback !== &#x27;function&#x27;) {
-            throw new Error(&#x27;task callback must be a function&#x27;);
+        if (typeof callback !== 'function') {
+            throw new Error('task callback must be a function');
         }
         q.started = true;
         if (!isArray(data)) {
@@ -11633,11 +11626,11 @@ function memoize(fn, hasher) {
 
         priority = priority || 0;
         var nextNode = q._tasks.head;
-        while (nextNode &#x26;&#x26; priority &#x3e;= nextNode.priority) {
+        while (nextNode &amp;&amp; priority &gt;= nextNode.priority) {
             nextNode = nextNode.next;
         }
 
-        for (var i = 0, l = data.length; i &#x3c; l; i++) {
+        for (var i = 0, l = data.length; i &lt; l; i++) {
             var item = {
                 data: data[i],
                 priority: priority,
@@ -11716,20 +11709,20 @@ function asyncify(func) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function race(tasks, callback) {
     callback = once(callback || noop);
-    if (!isArray(tasks)) return callback(new TypeError(&#x27;First argument to race must be an array of functions&#x27;));
+    if (!isArray(tasks)) return callback(new TypeError('First argument to race must be an array of functions'));
     if (!tasks.length) return callback();
-    for (var i = 0, l = tasks.length; i &#x3c; l; i++) {
+    for (var i = 0, l = tasks.length; i &lt; l; i++) {
         wrapAsync$1(tasks[i])(callback);
     }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) { return obj &amp;&amp; obj.__esModule ? obj : { default: obj }; }
 
 /**
 * Runs the `tasks` array of functions in parallel, without waiting until the
 * previous function has completed. Once any of the `tasks` complete or pass an
-* error to its callback, the main `callback` is immediately called. It&#x27;s
+* error to its callback, the main `callback` is immediately called. It's
 * equivalent to `Promise.<span class="apidocCodeKeywordSpan">race</span>()`.
 *
 * @name race
@@ -11833,7 +11826,7 @@ function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? 
                 var value = null;
                 if (cbArgs.length === 1) {
                     value = cbArgs[0];
-                } else if (cbArgs.length &#x3e; 1) {
+                } else if (cbArgs.length &gt; 1) {
                     value = cbArgs;
                 }
                 reflectCallback(null, {
@@ -11847,7 +11840,7 @@ function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? 
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 * @param {AsyncFunction} fn - The async function you want to wrap
-* @returns {Function} - A function that always passes null to it&#x27;s callback as
+* @returns {Function} - A function that always passes null to it's callback as
 * the error. The second argument to the callback will be an `object` with
 * either an `error` or a `value` property.
 * @example
@@ -11855,11 +11848,11 @@ function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? 
 * async.parallel([
 *     async.<span class="apidocCodeKeywordSpan">reflect</span>(function(callback) {
 *         // do some stuff ...
-*         callback(null, &#x27;one&#x27;);
+*         callback(null, 'one');
 *     }),
 *     async.reflect(function(callback) {
 *         // do some more stuff but error ...
-*         callback(&#x27;bad stuff happened&#x27;);
+*         callback('bad stuff happened');
 *     }),
 ...</pre></li>
     </ul>
@@ -11893,7 +11886,7 @@ function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? 
     <li>example usage<pre class="apidocCodePre">...
 *     function(callback) {
 *         setTimeout(function() {
-*             callback(null, &#x27;two&#x27;);
+*             callback(null, 'two');
 *         }, 100);
 *     }
 * ];
@@ -11902,9 +11895,9 @@ function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? 
 * // optional callback
 * function(err, results) {
 *     // values
-*     // results[0].value = &#x27;one&#x27;
-*     // results[1].error = Error(&#x27;bad stuff happened&#x27;)
-*     // results[2].value = &#x27;two&#x27;
+*     // results[0].value = 'one'
+*     // results[1].error = Error('bad stuff happened')
+*     // results[2].value = 'two'
 * });
 ...</pre></li>
     </ul>
@@ -12013,20 +12006,20 @@ function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? 
     };
 
     function parseTimes(acc, t) {
-        if (typeof t === &#x27;object&#x27;) {
+        if (typeof t === 'object') {
             acc.times = +t.times || DEFAULT_TIMES;
 
-            acc.intervalFunc = typeof t.interval === &#x27;function&#x27; ? t.interval : constant$1(+t.interval || DEFAULT_INTERVAL);
+            acc.intervalFunc = typeof t.interval === 'function' ? t.interval : constant$1(+t.interval || DEFAULT_INTERVAL);
 
             acc.errorFilter = t.errorFilter;
-        } else if (typeof t === &#x27;number&#x27; || typeof t === &#x27;string&#x27;) {
+        } else if (typeof t === 'number' || typeof t === 'string') {
             acc.times = +t || DEFAULT_TIMES;
         } else {
-            throw new Error(&#x22;Invalid arguments for async.retry&#x22;);
+            throw new Error("Invalid arguments for async.retry");
         }
     }
 
-    if (arguments.length &#x3c; 3 &#x26;&#x26; typeof opts === &#x27;function&#x27;) {
+    if (arguments.length &lt; 3 &amp;&amp; typeof opts === 'function') {
         callback = task || noop;
         task = opts;
     } else {
@@ -12034,8 +12027,8 @@ function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? 
         callback = callback || noop;
     }
 
-    if (typeof task !== &#x27;function&#x27;) {
-        throw new Error(&#x22;Invalid arguments for async.retry&#x22;);
+    if (typeof task !== 'function') {
+        throw new Error("Invalid arguments for async.retry");
     }
 
     var _task = wrapAsync$1(task);
@@ -12043,7 +12036,7 @@ function _interopRequireDefault(obj) { return obj &#x26;&#x26; obj.__esModule ? 
     var attempt = 1;
     function retryAttempt() {
         _task(function (err) {
-            if (err &#x26;&#x26; attempt++ &#x3c; options.times &#x26;&#x26; (typeof options.errorFilter != &#x27;function&#x27; || options.errorFilter(err))) {
+            if (err &amp;&amp; attempt++ &lt; options.times &amp;&amp; (typeof options.errorFilter != 'function' || options.errorFilter(err))) {
                 setTimeout(retryAttempt, options.intervalFunc(attempt));
             } else {
                 callback.apply(null, arguments);
@@ -12139,12 +12132,12 @@ var DEFAULT_TIMES = 5;
       length = nativeMax(args.length - start, 0),
       array = Array(length);
 
-  while (++index &#x3c; length) {
+  while (++index &lt; length) {
     array[index] = args[start + index];
   }
   index = -1;
   var otherArgs = Array(start + 1);
-  while (++index &#x3c; start) {
+  while (++index &lt; start) {
     otherArgs[index] = args[index];
   }
   otherArgs[start] = transform(array);
@@ -12152,16 +12145,16 @@ var DEFAULT_TIMES = 5;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 *
-* // Requires lodash (or underscore), express3 and dresende&#x27;s orm2.
+* // Requires lodash (or underscore), express3 and dresende's orm2.
 * // Part of an app, that fetches cats of the logged user.
 * // This example uses `seq` function to avoid overnesting and error
 * // handling clutter.
-* app.get(&#x27;/cats&#x27;, function(request, response) {
+* app.get('/cats', function(request, response) {
 *     var User = request.models.User;
 *     async.<span class="apidocCodeKeywordSpan">seq</span>(
-*         _.bind(User.get, User),  // &#x27;User.get&#x27; has signature (id, callback(err, data))
+*         _.bind(User.get, User),  // 'User.get' has signature (id, callback(err, data))
 *         function(user, fn) {
-*             user.getCats(fn);      // &#x27;getCats&#x27; has signature (callback(err, data))
+*             user.getCats(fn);      // 'getCats' has signature (callback(err, data))
 *         }
 *     )(req.session.user_id, function (err, cats) {
 *         if (err) {
@@ -12197,11 +12190,11 @@ var DEFAULT_TIMES = 5;
 * async.<span class="apidocCodeKeywordSpan">series</span>([
 *     function(callback) {
 *         // do some stuff ...
-*         callback(null, &#x27;one&#x27;);
+*         callback(null, 'one');
 *     },
 *     function(callback) {
 *         // do some more stuff ...
-*         callback(null, &#x27;two&#x27;);
+*         callback(null, 'two');
 ...</pre></li>
     </ul>
 
@@ -12225,12 +12218,12 @@ var DEFAULT_TIMES = 5;
       length = nativeMax(args.length - start, 0),
       array = Array(length);
 
-  while (++index &#x3c; length) {
+  while (++index &lt; length) {
     array[index] = args[start + index];
   }
   index = -1;
   var otherArgs = Array(start + 1);
-  while (++index &#x3c; start) {
+  while (++index &lt; start) {
     otherArgs[index] = args[index];
   }
   otherArgs[start] = transform(array);
@@ -12239,10 +12232,10 @@ var DEFAULT_TIMES = 5;
     <li>example usage<pre class="apidocCodePre">...
  * var call_order = [];
  * async.nextTick(function() {
- *     call_order.push(&#x27;two&#x27;);
- *     // call_order now equals [&#x27;one&#x27;,&#x27;two&#x27;]
+ *     call_order.push('two');
+ *     // call_order now equals ['one','two']
  * });
- * call_order.push(&#x27;one&#x27;);
+ * call_order.push('one');
  *
  * async.<span class="apidocCodeKeywordSpan">setImmediate</span>(function (a, b, c) {
  *     // a, b, and c equal 1, 2, and 3
@@ -12280,7 +12273,7 @@ _defer = process.nextTick;
 * tests. Invoked with (err, result).
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">some</span>([&#x27;file1&#x27;,&#x27;file2&#x27;,&#x27;file3&#x27;], function(filePath
+* async.<span class="apidocCodeKeywordSpan">some</span>(['file1','file2','file3'], function(filePath
 , callback) {
 *     fs.access(filePath, function(err) {
 *         callback(null, !err)
@@ -12355,13 +12348,13 @@ _defer = process.nextTick;
         });
     }, function (err, results) {
         if (err) return callback(err);
-        callback(null, arrayMap(results.sort(comparator), baseProperty(&#x27;value&#x27;)));
+        callback(null, arrayMap(results.sort(comparator), baseProperty('value')));
     });
 
     function comparator(left, right) {
         var a = left.criteria,
             b = right.criteria;
-        return a &#x3c; b ? -1 : a &#x3e; b ? 1 : 0;
+        return a &lt; b ? -1 : a &gt; b ? 1 : 0;
     }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
@@ -12372,7 +12365,7 @@ _defer = process.nextTick;
 * calls. Invoked with (err, results).
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">sortBy</span>([&#x27;file1&#x27;,&#x27;file2&#x27;,&#x27;file3&#x27;], function(file
+* async.<span class="apidocCodeKeywordSpan">sortBy</span>(['file1','file2','file3'], function(file
 , callback) {
 *     fs.stat(file, function(err, stats) {
 *         callback(err, stats.mtime);
@@ -12410,9 +12403,9 @@ _defer = process.nextTick;
     }
 
     function timeoutCallback() {
-        var name = asyncFn.name || &#x27;anonymous&#x27;;
-        var error = new Error(&#x27;Callback function &#x22;&#x27; + name + &#x27;&#x22; timed out.&#x27;);
-        error.code = &#x27;ETIMEDOUT&#x27;;
+        var name = asyncFn.name || 'anonymous';
+        var error = new Error('Callback function "' + name + '" timed out.');
+        error.code = 'ETIMEDOUT';
         if (info) {
             error.info = info;
         }
@@ -12440,11 +12433,11 @@ _defer = process.nextTick;
 * var wrapped = async.<span class="apidocCodeKeywordSpan">timeout</span>(myFunction, 1000);
 *
 * // call `wrapped` as you would `myFunction`
-* wrapped({ bar: &#x27;bar&#x27; }, function(err, data) {
-*     // if `myFunction` takes &#x3c; 1000 ms to execute, `err`
+* wrapped({ bar: 'bar' }, function(err, data) {
+*     // if `myFunction` takes &lt; 1000 ms to execute, `err`
 *     // and `data` will have their expected values
 *
-*     // else `err` will be an Error with the code &#x27;ETIMEDOUT&#x27;
+*     // else `err` will be an Error with the code 'ETIMEDOUT'
 ...</pre></li>
     </ul>
 
@@ -12468,7 +12461,7 @@ _defer = process.nextTick;
     <li>example usage<pre class="apidocCodePre">...
 * var createUser = function(id, callback) {
 *     callback(null, {
-*         id: &#x27;user&#x27; + id
+*         id: 'user' + id
 *     });
 * };
 *
@@ -12540,7 +12533,7 @@ _defer = process.nextTick;
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function transform(coll, accumulator, iteratee, callback) {
-    if (arguments.length &#x3c;= 3) {
+    if (arguments.length &lt;= 3) {
         callback = iteratee;
         iteratee = accumulator;
         accumulator = isArray(coll) ? [] : {};
@@ -12633,7 +12626,7 @@ _defer = process.nextTick;
     <ul>
     <li>description and source-code<pre class="apidocCodePre">waterfall = function (tasks, callback) {
     callback = once(callback || noop);
-    if (!isArray(tasks)) return callback(new Error(&#x27;First argument to waterfall must be an array of functions&#x27;));
+    if (!isArray(tasks)) return callback(new Error('First argument to waterfall must be an array of functions'));
     if (!tasks.length) return callback();
     var taskIndex = 0;
 
@@ -12666,7 +12659,7 @@ _defer = process.nextTick;
 *
 * // passing a regular synchronous function
 * async.<span class="apidocCodeKeywordSpan">waterfall</span>([
-*     async.apply(fs.readFile, filename, &#x22;utf8&#x22;),
+*     async.apply(fs.readFile, filename, "utf8"),
 *     async.asyncify(JSON.parse),
 *     function (data, next) {
 *         // data is the result of parsing the text.
@@ -12703,14 +12696,14 @@ _defer = process.nextTick;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 * function has failed and repeated execution of `iteratee` has stopped. `callback`
-* will be passed an error and any arguments passed to the final `iteratee`&#x27;s
+* will be passed an error and any arguments passed to the final `iteratee`'s
 * callback. Invoked with (err, [results]);
 * @returns undefined
 * @example
 *
 * var count = 0;
 * async.<span class="apidocCodeKeywordSpan">whilst</span>(
-*     function() { return count &#x3c; 5; },
+*     function() { return count &lt; 5; },
 *     function(callback) {
 *         count++;
 *         setTimeout(function() {
@@ -12788,7 +12781,7 @@ var q = {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function isAsync(fn) {
-    return supportsSymbol &#x26;&#x26; fn[Symbol.toStringTag] === &#x27;AsyncFunction&#x27;;
+    return supportsSymbol &amp;&amp; fn[Symbol.toStringTag] === 'AsyncFunction';
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -12806,7 +12799,7 @@ var q = {
     var supported;
     try {
 <span class="apidocCodeCommentSpan">        /* eslint no-eval: 0 */
-</span>        supported = isAsync(eval(&#x27;(async function () {})&#x27;));
+</span>        supported = isAsync(eval('(async function () {})'));
     } catch (e) {
         supported = false;
     }
@@ -12824,3 +12817,4 @@ var q = {
     ]
 </div>
 </div>
+</body></html>
