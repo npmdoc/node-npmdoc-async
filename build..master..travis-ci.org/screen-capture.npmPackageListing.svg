@@ -1,0 +1,112 @@
+<svg height="1742" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="1742" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26">  1.  2017-03-25 09:16:57 +0000    16194 byte  CHANGELOG.md</tspan>
+<tspan x="10" y="42">  2.  2017-03-25 09:16:57 +0000     1063 byte  LICENSE</tspan>
+<tspan x="10" y="58">  3.  2017-03-25 09:16:57 +0000     1261 byte  README.md</tspan>
+<tspan x="10" y="74">  4.  2017-03-25 09:16:57 +0000     1710 byte  apply.js</tspan>
+<tspan x="10" y="90">  5.  2017-03-25 09:16:57 +0000     1779 byte  applyEach.js</tspan>
+<tspan x="10" y="106">  6.  2017-03-25 09:16:57 +0000     1285 byte  applyEachSeries.js</tspan>
+<tspan x="10" y="122">  7.  2017-03-25 09:16:57 +0000     2984 byte  asyncify.js</tspan>
+<tspan x="10" y="138">  8.  2017-03-25 09:16:57 +0000     9638 byte  auto.js</tspan>
+<tspan x="10" y="154">  9.  2017-03-25 09:16:57 +0000     6113 byte  autoInject.js</tspan>
+<tspan x="10" y="170"> 10.  2017-03-25 09:16:57 +0000      245 byte  bower.json</tspan>
+<tspan x="10" y="186"> 11.  2017-03-25 09:16:57 +0000     4742 byte  cargo.js</tspan>
+<tspan x="10" y="202"> 12.  2017-03-25 09:16:57 +0000     1535 byte  compose.js</tspan>
+<tspan x="10" y="218"> 13.  2017-03-25 09:16:57 +0000     1691 byte  concat.js</tspan>
+<tspan x="10" y="234"> 14.  2017-03-25 09:16:57 +0000     1346 byte  concatSeries.js</tspan>
+<tspan x="10" y="250"> 15.  2017-03-25 09:16:57 +0000     1800 byte  constant.js</tspan>
+<tspan x="10" y="266"> 16.  2017-03-25 09:16:57 +0000     2261 byte  detect.js</tspan>
+<tspan x="10" y="282"> 17.  2017-03-25 09:16:57 +0000     1813 byte  detectLimit.js</tspan>
+<tspan x="10" y="298"> 18.  2017-03-25 09:16:57 +0000     1406 byte  detectSeries.js</tspan>
+<tspan x="10" y="314"> 19.  2017-03-25 09:16:57 +0000     1263 byte  dir.js</tspan>
+<tspan x="10" y="330"> 20.  2017-03-25 09:16:57 +0000   175684 byte  dist/async.js</tspan>
+<tspan x="10" y="346"> 21.  2017-03-25 09:16:57 +0000    22438 byte  dist/async.min.js</tspan>
+<tspan x="10" y="362"> 22.  2017-03-25 09:16:57 +0000     2047 byte  doDuring.js</tspan>
+<tspan x="10" y="378"> 23.  2017-03-25 09:16:57 +0000     1438 byte  doUntil.js</tspan>
+<tspan x="10" y="394"> 24.  2017-03-25 09:16:57 +0000     1971 byte  doWhilst.js</tspan>
+<tspan x="10" y="410"> 25.  2017-03-25 09:16:57 +0000     2103 byte  during.js</tspan>
+<tspan x="10" y="426"> 26.  2017-03-25 09:16:57 +0000     2893 byte  each.js</tspan>
+<tspan x="10" y="442"> 27.  2017-03-25 09:16:57 +0000     1622 byte  eachLimit.js</tspan>
+<tspan x="10" y="458"> 28.  2017-03-25 09:16:57 +0000     3430 byte  eachOf.js</tspan>
+<tspan x="10" y="474"> 29.  2017-03-25 09:16:57 +0000     1473 byte  eachOfLimit.js</tspan>
+<tspan x="10" y="490"> 30.  2017-03-25 09:16:57 +0000     1387 byte  eachOfSeries.js</tspan>
+<tspan x="10" y="506"> 31.  2017-03-25 09:16:57 +0000     1392 byte  eachSeries.js</tspan>
+<tspan x="10" y="522"> 32.  2017-03-25 09:16:57 +0000     2266 byte  ensureAsync.js</tspan>
+<tspan x="10" y="538"> 33.  2017-03-25 09:16:57 +0000     1734 byte  every.js</tspan>
+<tspan x="10" y="554"> 34.  2017-03-25 09:16:57 +0000     1599 byte  everyLimit.js</tspan>
+<tspan x="10" y="570"> 35.  2017-03-25 09:16:57 +0000     1331 byte  everySeries.js</tspan>
+<tspan x="10" y="586"> 36.  2017-03-25 09:16:57 +0000     1524 byte  filter.js</tspan>
+<tspan x="10" y="602"> 37.  2017-03-25 09:16:57 +0000     1344 byte  filterLimit.js</tspan>
+<tspan x="10" y="618"> 38.  2017-03-25 09:16:57 +0000     1236 byte  filterSeries.js</tspan>
+<tspan x="10" y="634"> 39.  2017-03-25 09:16:57 +0000     1797 byte  forever.js</tspan>
+<tspan x="10" y="650"> 40.  2017-03-25 09:16:57 +0000    15979 byte  index.js</tspan>
+<tspan x="10" y="666"> 41.  2017-03-25 09:16:57 +0000     1804 byte  internal/DoublyLinkedList.js</tspan>
+<tspan x="10" y="682"> 42.  2017-03-25 09:16:57 +0000      887 byte  internal/applyEach.js</tspan>
+<tspan x="10" y="698"> 43.  2017-03-25 09:16:57 +0000      226 byte  internal/breakLoop.js</tspan>
+<tspan x="10" y="714"> 44.  2017-03-25 09:16:57 +0000      429 byte  internal/concat.js</tspan>
+<tspan x="10" y="730"> 45.  2017-03-25 09:16:57 +0000     1000 byte  internal/consoleFunc.js</tspan>
+<tspan x="10" y="746"> 46.  2017-03-25 09:16:57 +0000     1284 byte  internal/createTester.js</tspan>
+<tspan x="10" y="762"> 47.  2017-03-25 09:16:57 +0000      293 byte  internal/doLimit.js</tspan>
+<tspan x="10" y="778"> 48.  2017-03-25 09:16:57 +0000      477 byte  internal/doParallel.js</tspan>
+<tspan x="10" y="794"> 49.  2017-03-25 09:16:57 +0000      530 byte  internal/doParallelLimit.js</tspan>
+<tspan x="10" y="810"> 50.  2017-03-25 09:16:57 +0000      503 byte  internal/doSeries.js</tspan>
+<tspan x="10" y="826"> 51.  2017-03-25 09:16:57 +0000     1912 byte  internal/eachOfLimit.js</tspan>
+<tspan x="10" y="842"> 52.  2017-03-25 09:16:57 +0000     2051 byte  internal/filter.js</tspan>
+<tspan x="10" y="858"> 53.  2017-03-25 09:16:57 +0000      200 byte  internal/findGetResult.js</tspan>
+<tspan x="10" y="874"> 54.  2017-03-25 09:16:57 +0000      307 byte  internal/getIterator.js</tspan>
+<tspan x="10" y="890"> 55.  2017-03-25 09:16:57 +0000      480 byte  internal/initialParams.js</tspan>
+<tspan x="10" y="906"> 56.  2017-03-25 09:16:57 +0000     1462 byte  internal/iterator.js</tspan>
+<tspan x="10" y="922"> 57.  2017-03-25 09:16:57 +0000      749 byte  internal/map.js</tspan>
+<tspan x="10" y="938"> 58.  2017-03-25 09:16:57 +0000      180 byte  internal/notId.js</tspan>
+<tspan x="10" y="954"> 59.  2017-03-25 09:16:57 +0000      312 byte  internal/once.js</tspan>
+<tspan x="10" y="970"> 60.  2017-03-25 09:16:57 +0000      361 byte  internal/onlyOnce.js</tspan>
+<tspan x="10" y="986"> 61.  2017-03-25 09:16:57 +0000      995 byte  internal/parallel.js</tspan>
+<tspan x="10" y="1002"> 62.  2017-03-25 09:16:57 +0000     5316 byte  internal/queue.js</tspan>
+<tspan x="10" y="1018"> 63.  2017-03-25 09:16:57 +0000      541 byte  internal/reject.js</tspan>
+<tspan x="10" y="1034"> 64.  2017-03-25 09:16:57 +0000      605 byte  internal/rest.js</tspan>
+<tspan x="10" y="1050"> 65.  2017-03-25 09:16:57 +0000      975 byte  internal/setImmediate.js</tspan>
+<tspan x="10" y="1066"> 66.  2017-03-25 09:16:57 +0000      284 byte  internal/withoutIndex.js</tspan>
+<tspan x="10" y="1082"> 67.  2017-03-25 09:16:57 +0000     1189 byte  log.js</tspan>
+<tspan x="10" y="1098"> 68.  2017-03-25 09:16:57 +0000     2169 byte  map.js</tspan>
+<tspan x="10" y="1114"> 69.  2017-03-25 09:16:57 +0000     1403 byte  mapLimit.js</tspan>
+<tspan x="10" y="1130"> 70.  2017-03-25 09:16:57 +0000     1298 byte  mapSeries.js</tspan>
+<tspan x="10" y="1146"> 71.  2017-03-25 09:16:57 +0000     2323 byte  mapValues.js</tspan>
+<tspan x="10" y="1162"> 72.  2017-03-25 09:16:57 +0000     1947 byte  mapValuesLimit.js</tspan>
+<tspan x="10" y="1178"> 73.  2017-03-25 09:16:57 +0000     1401 byte  mapValuesSeries.js</tspan>
+<tspan x="10" y="1194"> 74.  2017-03-25 09:16:57 +0000     3020 byte  memoize.js</tspan>
+<tspan x="10" y="1210"> 75.  2017-03-25 09:16:57 +0000     1404 byte  nextTick.js</tspan>
+<tspan x="10" y="1226"> 76.  2017-03-25 09:16:57 +0000     4189 byte  package.json</tspan>
+<tspan x="10" y="1242"> 77.  2017-03-25 09:16:57 +0000     3035 byte  parallel.js</tspan>
+<tspan x="10" y="1258"> 78.  2017-03-25 09:16:57 +0000     1478 byte  parallelLimit.js</tspan>
+<tspan x="10" y="1274"> 79.  2017-03-25 09:16:57 +0000     3211 byte  priorityQueue.js</tspan>
+<tspan x="10" y="1290"> 80.  2017-03-25 09:16:57 +0000     5333 byte  queue.js</tspan>
+<tspan x="10" y="1306"> 81.  2017-03-25 09:16:57 +0000     2101 byte  race.js</tspan>
+<tspan x="10" y="1322"> 82.  2017-03-25 09:16:57 +0000     2593 byte  reduce.js</tspan>
+<tspan x="10" y="1338"> 83.  2017-03-25 09:16:57 +0000     1552 byte  reduceRight.js</tspan>
+<tspan x="10" y="1354"> 84.  2017-03-25 09:16:57 +0000     2282 byte  reflect.js</tspan>
+<tspan x="10" y="1370"> 85.  2017-03-25 09:16:57 +0000     2743 byte  reflectAll.js</tspan>
+<tspan x="10" y="1386"> 86.  2017-03-25 09:16:57 +0000     1504 byte  reject.js</tspan>
+<tspan x="10" y="1402"> 87.  2017-03-25 09:16:57 +0000     1322 byte  rejectLimit.js</tspan>
+<tspan x="10" y="1418"> 88.  2017-03-25 09:16:57 +0000     1214 byte  rejectSeries.js</tspan>
+<tspan x="10" y="1434"> 89.  2017-03-25 09:16:57 +0000     5522 byte  retry.js</tspan>
+<tspan x="10" y="1450"> 90.  2017-03-25 09:16:57 +0000     1682 byte  retryable.js</tspan>
+<tspan x="10" y="1466"> 91.  2017-03-25 09:16:57 +0000     2611 byte  seq.js</tspan>
+<tspan x="10" y="1482"> 92.  2017-03-25 09:16:57 +0000     2977 byte  series.js</tspan>
+<tspan x="10" y="1498"> 93.  2017-03-25 09:16:57 +0000     1354 byte  setImmediate.js</tspan>
+<tspan x="10" y="1514"> 94.  2017-03-25 09:16:57 +0000     1801 byte  some.js</tspan>
+<tspan x="10" y="1530"> 95.  2017-03-25 09:16:57 +0000     1635 byte  someLimit.js</tspan>
+<tspan x="10" y="1546"> 96.  2017-03-25 09:16:57 +0000     1359 byte  someSeries.js</tspan>
+<tspan x="10" y="1562"> 97.  2017-03-25 09:16:57 +0000     2736 byte  sortBy.js</tspan>
+<tspan x="10" y="1578"> 98.  2017-03-25 09:16:57 +0000     2676 byte  timeout.js</tspan>
+<tspan x="10" y="1594"> 99.  2017-03-25 09:16:57 +0000     1447 byte  times.js</tspan>
+<tspan x="10" y="1610">100.  2017-03-25 09:16:57 +0000     1220 byte  timesLimit.js</tspan>
+<tspan x="10" y="1626">101.  2017-03-25 09:16:57 +0000     1009 byte  timesSeries.js</tspan>
+<tspan x="10" y="1642">102.  2017-03-25 09:16:57 +0000     2781 byte  transform.js</tspan>
+<tspan x="10" y="1658">103.  2017-03-25 09:16:57 +0000      671 byte  unmemoize.js</tspan>
+<tspan x="10" y="1674">104.  2017-03-25 09:16:57 +0000     1507 byte  until.js</tspan>
+<tspan x="10" y="1690">105.  2017-03-25 09:16:57 +0000     3388 byte  waterfall.js</tspan>
+<tspan x="10" y="1706">106.  2017-03-25 09:16:57 +0000     2090 byte  whilst.js</tspan>
+<tspan x="10" y="1722">107.  2017-03-25 09:16:57 +0000   418157 byte  .</tspan>
+</text>
+</svg>
