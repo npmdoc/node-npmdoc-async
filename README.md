@@ -1,6 +1,6 @@
 # npmdoc-async
 
-#### api documentation for  [async (v2.3.0)](https://github.com/caolan/async#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-async.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-async) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-async.svg)](https://travis-ci.org/npmdoc/node-npmdoc-async)
+#### basic api documentation for  [async (v2.3.0)](https://github.com/caolan/async#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-async.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-async) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-async.svg)](https://travis-ci.org/npmdoc/node-npmdoc-async)
 
 #### Higher-order functions and common patterns for asynchronous code
 
@@ -123,7 +123,8 @@
         "mocha-test": "npm run mocha-node-test && npm run mocha-browser-test",
         "test": "npm run lint && npm run mocha-node-test"
     },
-    "version": "2.3.0"
+    "version": "2.3.0",
+    "bin": {}
 }
 ```
 
