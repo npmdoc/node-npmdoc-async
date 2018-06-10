@@ -33229,7 +33229,7 @@ local.stateInit({
             "npm_package_homepage": "https://github.com/npmdoc/node-npmdoc-async",
             "npm_package_name": "npmdoc-async",
             "npm_package_nameLib": "npmdoc_async",
-            "npm_package_version": "2017.4.27"
+            "npm_package_version": "2018.6.10"
         }
     }
 });
