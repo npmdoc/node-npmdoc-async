@@ -1,0 +1,2743 @@
+<svg height="26398" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="26398" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26"></tspan>
+
+<tspan x="10" y="42">[MODE_BUILD=npmTest] - 2018-06-10T18:16:52.465Z - npm-testing /home/travis/build/npmdoc/node-npm\</tspan>
+<tspan x="10" y="58">doc-async</tspan>
+
+<tspan x="10" y="74"></tspan>
+
+<tspan x="10" y="90"></tspan>
+
+<tspan x="10" y="106">npmTest - merged test-report from file /home/travis/build/npmdoc/node-npmdoc-async/tmp/build/tes\</tspan>
+<tspan x="10" y="122">t-report.json</tspan>
+
+<tspan x="10" y="138">&gt; server listening on http-port 39407</tspan>
+
+<tspan x="10" y="154">[node test-case 1 of 8 passed] - testCase_buildApidoc_default</tspan>
+
+<tspan x="10" y="170">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/packag\</tspan>
+<tspan x="10" y="186">e.json</tspan>
+
+<tspan x="10" y="202">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/all.js</tspan>
+
+<tspan x="10" y="218">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/allLim\</tspan>
+<tspan x="10" y="234">it.js</tspan>
+
+<tspan x="10" y="250">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/allSer\</tspan>
+<tspan x="10" y="266">ies.js</tspan>
+
+<tspan x="10" y="282">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/any.js</tspan>
+
+<tspan x="10" y="298">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/anyLim\</tspan>
+<tspan x="10" y="314">it.js</tspan>
+
+<tspan x="10" y="330">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/anySer\</tspan>
+<tspan x="10" y="346">ies.js</tspan>
+
+<tspan x="10" y="362">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/applyE\</tspan>
+<tspan x="10" y="378">ach.js</tspan>
+
+<tspan x="10" y="394">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/applyE\</tspan>
+<tspan x="10" y="410">achSeries.js</tspan>
+
+<tspan x="10" y="426">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/apply.\</tspan>
+<tspan x="10" y="442">js</tspan>
+
+<tspan x="10" y="458">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/asynci\</tspan>
+<tspan x="10" y="474">fy.js</tspan>
+
+<tspan x="10" y="490">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/autoIn\</tspan>
+<tspan x="10" y="506">ject.js</tspan>
+
+<tspan x="10" y="522">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/auto.j\</tspan>
+<tspan x="10" y="538">s</tspan>
+
+<tspan x="10" y="554">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/bower.\</tspan>
+<tspan x="10" y="570">json</tspan>
+
+<tspan x="10" y="586">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/cargo.\</tspan>
+<tspan x="10" y="602">js</tspan>
+
+<tspan x="10" y="618">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/CHANGE\</tspan>
+<tspan x="10" y="634">LOG.md</tspan>
+
+<tspan x="10" y="650">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/compos\</tspan>
+<tspan x="10" y="666">e.js</tspan>
+
+<tspan x="10" y="682">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/concat\</tspan>
+<tspan x="10" y="698">.js</tspan>
+
+<tspan x="10" y="714">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/concat\</tspan>
+<tspan x="10" y="730">Limit.js</tspan>
+
+<tspan x="10" y="746">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/concat\</tspan>
+<tspan x="10" y="762">Series.js</tspan>
+
+<tspan x="10" y="778">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/consta\</tspan>
+<tspan x="10" y="794">nt.js</tspan>
+
+<tspan x="10" y="810">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/detect\</tspan>
+<tspan x="10" y="826">.js</tspan>
+
+<tspan x="10" y="842">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/detect\</tspan>
+<tspan x="10" y="858">Limit.js</tspan>
+
+<tspan x="10" y="874">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/detect\</tspan>
+<tspan x="10" y="890">Series.js</tspan>
+
+<tspan x="10" y="906">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/dir.js</tspan>
+
+<tspan x="10" y="922">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/doDuri\</tspan>
+<tspan x="10" y="938">ng.js</tspan>
+
+<tspan x="10" y="954">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/doUnti\</tspan>
+<tspan x="10" y="970">l.js</tspan>
+
+<tspan x="10" y="986">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/doWhil\</tspan>
+<tspan x="10" y="1002">st.js</tspan>
+
+<tspan x="10" y="1018">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/during\</tspan>
+<tspan x="10" y="1034">.js</tspan>
+
+<tspan x="10" y="1050">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/each.j\</tspan>
+<tspan x="10" y="1066">s</tspan>
+
+<tspan x="10" y="1082">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/eachLi\</tspan>
+<tspan x="10" y="1098">mit.js</tspan>
+
+<tspan x="10" y="1114">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/eachOf\</tspan>
+<tspan x="10" y="1130">.js</tspan>
+
+<tspan x="10" y="1146">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/eachOf\</tspan>
+<tspan x="10" y="1162">Limit.js</tspan>
+
+<tspan x="10" y="1178">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/eachOf\</tspan>
+<tspan x="10" y="1194">Series.js</tspan>
+
+<tspan x="10" y="1210">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/eachSe\</tspan>
+<tspan x="10" y="1226">ries.js</tspan>
+
+<tspan x="10" y="1242">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/ensure\</tspan>
+<tspan x="10" y="1258">Async.js</tspan>
+
+<tspan x="10" y="1274">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/every.\</tspan>
+<tspan x="10" y="1290">js</tspan>
+
+<tspan x="10" y="1306">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/everyL\</tspan>
+<tspan x="10" y="1322">imit.js</tspan>
+
+<tspan x="10" y="1338">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/everyS\</tspan>
+<tspan x="10" y="1354">eries.js</tspan>
+
+<tspan x="10" y="1370">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/filter\</tspan>
+<tspan x="10" y="1386">.js</tspan>
+
+<tspan x="10" y="1402">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/filter\</tspan>
+<tspan x="10" y="1418">Limit.js</tspan>
+
+<tspan x="10" y="1434">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/filter\</tspan>
+<tspan x="10" y="1450">Series.js</tspan>
+
+<tspan x="10" y="1466">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/find.j\</tspan>
+<tspan x="10" y="1482">s</tspan>
+
+<tspan x="10" y="1498">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/findLi\</tspan>
+<tspan x="10" y="1514">mit.js</tspan>
+
+<tspan x="10" y="1530">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/findSe\</tspan>
+<tspan x="10" y="1546">ries.js</tspan>
+
+<tspan x="10" y="1562">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/foldl.\</tspan>
+<tspan x="10" y="1578">js</tspan>
+
+<tspan x="10" y="1594">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/foldr.\</tspan>
+<tspan x="10" y="1610">js</tspan>
+
+<tspan x="10" y="1626">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/forEac\</tspan>
+<tspan x="10" y="1642">h.js</tspan>
+
+<tspan x="10" y="1658">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/forEac\</tspan>
+<tspan x="10" y="1674">hLimit.js</tspan>
+
+<tspan x="10" y="1690">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/forEac\</tspan>
+<tspan x="10" y="1706">hOf.js</tspan>
+
+<tspan x="10" y="1722">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/forEac\</tspan>
+<tspan x="10" y="1738">hOfLimit.js</tspan>
+
+<tspan x="10" y="1754">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/forEac\</tspan>
+<tspan x="10" y="1770">hOfSeries.js</tspan>
+
+<tspan x="10" y="1786">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/forEac\</tspan>
+<tspan x="10" y="1802">hSeries.js</tspan>
+
+<tspan x="10" y="1818">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/foreve\</tspan>
+<tspan x="10" y="1834">r.js</tspan>
+
+<tspan x="10" y="1850">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/groupB\</tspan>
+<tspan x="10" y="1866">y.js</tspan>
+
+<tspan x="10" y="1882">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/groupB\</tspan>
+<tspan x="10" y="1898">yLimit.js</tspan>
+
+<tspan x="10" y="1914">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/groupB\</tspan>
+<tspan x="10" y="1930">ySeries.js</tspan>
+
+<tspan x="10" y="1946">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/index.\</tspan>
+<tspan x="10" y="1962">js</tspan>
+
+<tspan x="10" y="1978">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/inject\</tspan>
+<tspan x="10" y="1994">.js</tspan>
+
+<tspan x="10" y="2010">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/LICENS\</tspan>
+<tspan x="10" y="2026">E</tspan>
+
+<tspan x="10" y="2042">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/log.js</tspan>
+
+<tspan x="10" y="2058">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/map.js</tspan>
+
+<tspan x="10" y="2074">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/mapLim\</tspan>
+<tspan x="10" y="2090">it.js</tspan>
+
+<tspan x="10" y="2106">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/mapSer\</tspan>
+<tspan x="10" y="2122">ies.js</tspan>
+
+<tspan x="10" y="2138">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/mapVal\</tspan>
+<tspan x="10" y="2154">ues.js</tspan>
+
+<tspan x="10" y="2170">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/mapVal\</tspan>
+<tspan x="10" y="2186">uesLimit.js</tspan>
+
+<tspan x="10" y="2202">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/mapVal\</tspan>
+<tspan x="10" y="2218">uesSeries.js</tspan>
+
+<tspan x="10" y="2234">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/memoiz\</tspan>
+<tspan x="10" y="2250">e.js</tspan>
+
+<tspan x="10" y="2266">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/nextTi\</tspan>
+<tspan x="10" y="2282">ck.js</tspan>
+
+<tspan x="10" y="2298">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/packag\</tspan>
+<tspan x="10" y="2314">e.json</tspan>
+
+<tspan x="10" y="2330">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/parall\</tspan>
+<tspan x="10" y="2346">el.js</tspan>
+
+<tspan x="10" y="2362">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/parall\</tspan>
+<tspan x="10" y="2378">elLimit.js</tspan>
+
+<tspan x="10" y="2394">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/priori\</tspan>
+<tspan x="10" y="2410">tyQueue.js</tspan>
+
+<tspan x="10" y="2426">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/queue.\</tspan>
+<tspan x="10" y="2442">js</tspan>
+
+<tspan x="10" y="2458">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/race.j\</tspan>
+<tspan x="10" y="2474">s</tspan>
+
+<tspan x="10" y="2490">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/README\</tspan>
+<tspan x="10" y="2506">.md</tspan>
+
+<tspan x="10" y="2522">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/reduce\</tspan>
+<tspan x="10" y="2538">.js</tspan>
+
+<tspan x="10" y="2554">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/reduce\</tspan>
+<tspan x="10" y="2570">Right.js</tspan>
+
+<tspan x="10" y="2586">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/reflec\</tspan>
+<tspan x="10" y="2602">tAll.js</tspan>
+
+<tspan x="10" y="2618">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/reflec\</tspan>
+<tspan x="10" y="2634">t.js</tspan>
+
+<tspan x="10" y="2650">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/reject\</tspan>
+<tspan x="10" y="2666">.js</tspan>
+
+<tspan x="10" y="2682">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/reject\</tspan>
+<tspan x="10" y="2698">Limit.js</tspan>
+
+<tspan x="10" y="2714">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/reject\</tspan>
+<tspan x="10" y="2730">Series.js</tspan>
+
+<tspan x="10" y="2746">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/retrya\</tspan>
+<tspan x="10" y="2762">ble.js</tspan>
+
+<tspan x="10" y="2778">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/retry.\</tspan>
+<tspan x="10" y="2794">js</tspan>
+
+<tspan x="10" y="2810">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/select\</tspan>
+<tspan x="10" y="2826">.js</tspan>
+
+<tspan x="10" y="2842">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/select\</tspan>
+<tspan x="10" y="2858">Limit.js</tspan>
+
+<tspan x="10" y="2874">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/select\</tspan>
+<tspan x="10" y="2890">Series.js</tspan>
+
+<tspan x="10" y="2906">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/seq.js</tspan>
+
+<tspan x="10" y="2922">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/series\</tspan>
+<tspan x="10" y="2938">.js</tspan>
+
+<tspan x="10" y="2954">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/setImm\</tspan>
+<tspan x="10" y="2970">ediate.js</tspan>
+
+<tspan x="10" y="2986">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/some.j\</tspan>
+<tspan x="10" y="3002">s</tspan>
+
+<tspan x="10" y="3018">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/someLi\</tspan>
+<tspan x="10" y="3034">mit.js</tspan>
+
+<tspan x="10" y="3050">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/someSe\</tspan>
+<tspan x="10" y="3066">ries.js</tspan>
+
+<tspan x="10" y="3082">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/sortBy\</tspan>
+<tspan x="10" y="3098">.js</tspan>
+
+<tspan x="10" y="3114">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/timeou\</tspan>
+<tspan x="10" y="3130">t.js</tspan>
+
+<tspan x="10" y="3146">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/times.\</tspan>
+<tspan x="10" y="3162">js</tspan>
+
+<tspan x="10" y="3178">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/timesL\</tspan>
+<tspan x="10" y="3194">imit.js</tspan>
+
+<tspan x="10" y="3210">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/timesS\</tspan>
+<tspan x="10" y="3226">eries.js</tspan>
+
+<tspan x="10" y="3242">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/transf\</tspan>
+<tspan x="10" y="3258">orm.js</tspan>
+
+<tspan x="10" y="3274">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/tryEac\</tspan>
+<tspan x="10" y="3290">h.js</tspan>
+
+<tspan x="10" y="3306">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/unmemo\</tspan>
+<tspan x="10" y="3322">ize.js</tspan>
+
+<tspan x="10" y="3338">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/until.\</tspan>
+<tspan x="10" y="3354">js</tspan>
+
+<tspan x="10" y="3370">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/waterf\</tspan>
+<tspan x="10" y="3386">all.js</tspan>
+
+<tspan x="10" y="3402">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/whilst\</tspan>
+<tspan x="10" y="3418">.js</tspan>
+
+<tspan x="10" y="3434">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/wrapSy\</tspan>
+<tspan x="10" y="3450">nc.js</tspan>
+
+<tspan x="10" y="3466">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/dist/a\</tspan>
+<tspan x="10" y="3482">sync.js</tspan>
+
+<tspan x="10" y="3498">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="3514">al/applyEach.js</tspan>
+
+<tspan x="10" y="3530">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="3546">al/breakLoop.js</tspan>
+
+<tspan x="10" y="3562">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="3578">al/consoleFunc.js</tspan>
+
+<tspan x="10" y="3594">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="3610">al/createTester.js</tspan>
+
+<tspan x="10" y="3626">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="3642">al/doLimit.js</tspan>
+
+<tspan x="10" y="3658">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="3674">al/doParallel.js</tspan>
+
+<tspan x="10" y="3690">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="3706">al/doParallelLimit.js</tspan>
+
+<tspan x="10" y="3722">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="3738">al/DoublyLinkedList.js</tspan>
+
+<tspan x="10" y="3754">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="3770">al/eachOfLimit.js</tspan>
+
+<tspan x="10" y="3786">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="3802">al/filter.js</tspan>
+
+<tspan x="10" y="3818">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="3834">al/findGetResult.js</tspan>
+
+<tspan x="10" y="3850">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="3866">al/getIterator.js</tspan>
+
+<tspan x="10" y="3882">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="3898">al/initialParams.js</tspan>
+
+<tspan x="10" y="3914">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="3930">al/iterator.js</tspan>
+
+<tspan x="10" y="3946">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="3962">al/map.js</tspan>
+
+<tspan x="10" y="3978">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="3994">al/notId.js</tspan>
+
+<tspan x="10" y="4010">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="4026">al/once.js</tspan>
+
+<tspan x="10" y="4042">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="4058">al/onlyOnce.js</tspan>
+
+<tspan x="10" y="4074">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="4090">al/parallel.js</tspan>
+
+<tspan x="10" y="4106">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="4122">al/queue.js</tspan>
+
+<tspan x="10" y="4138">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="4154">al/reject.js</tspan>
+
+<tspan x="10" y="4170">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="4186">al/setImmediate.js</tspan>
+
+<tspan x="10" y="4202">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="4218">al/slice.js</tspan>
+
+<tspan x="10" y="4234">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="4250">al/withoutIndex.js</tspan>
+
+<tspan x="10" y="4266">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="4282">al/wrapAsync.js</tspan>
+
+<tspan x="10" y="4298">apidocCreate - requiring /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async ...</tspan>
+
+<tspan x="10" y="4314">apidocCreate - ... required /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async</tspan>
+
+<tspan x="10" y="4330">apidocCreate - libFile all.js</tspan>
+
+<tspan x="10" y="4346">apidocCreate - libFile allLimit.js</tspan>
+
+<tspan x="10" y="4362">apidocCreate - libFile allSeries.js</tspan>
+
+<tspan x="10" y="4378">apidocCreate - libFile any.js</tspan>
+
+<tspan x="10" y="4394">apidocCreate - libFile anyLimit.js</tspan>
+
+<tspan x="10" y="4410">apidocCreate - libFile anySeries.js</tspan>
+
+<tspan x="10" y="4426">apidocCreate - libFile applyEach.js</tspan>
+
+<tspan x="10" y="4442">apidocCreate - libFile applyEachSeries.js</tspan>
+
+<tspan x="10" y="4458">apidocCreate - libFile apply.js</tspan>
+
+<tspan x="10" y="4474">apidocCreate - libFile asyncify.js</tspan>
+
+<tspan x="10" y="4490">apidocCreate - libFile autoInject.js</tspan>
+
+<tspan x="10" y="4506">apidocCreate - libFile auto.js</tspan>
+
+<tspan x="10" y="4522">apidocCreate - libFile cargo.js</tspan>
+
+<tspan x="10" y="4538">apidocCreate - libFile compose.js</tspan>
+
+<tspan x="10" y="4554">apidocCreate - libFile concat.js</tspan>
+
+<tspan x="10" y="4570">apidocCreate - libFile concatLimit.js</tspan>
+
+<tspan x="10" y="4586">apidocCreate - libFile concatSeries.js</tspan>
+
+<tspan x="10" y="4602">apidocCreate - libFile constant.js</tspan>
+
+<tspan x="10" y="4618">apidocCreate - libFile detect.js</tspan>
+
+<tspan x="10" y="4634">apidocCreate - libFile detectLimit.js</tspan>
+
+<tspan x="10" y="4650">apidocCreate - libFile detectSeries.js</tspan>
+
+<tspan x="10" y="4666">apidocCreate - libFile dir.js</tspan>
+
+<tspan x="10" y="4682">apidocCreate - libFile doDuring.js</tspan>
+
+<tspan x="10" y="4698">apidocCreate - libFile doUntil.js</tspan>
+
+<tspan x="10" y="4714">apidocCreate - libFile doWhilst.js</tspan>
+
+<tspan x="10" y="4730">apidocCreate - libFile during.js</tspan>
+
+<tspan x="10" y="4746">apidocCreate - libFile each.js</tspan>
+
+<tspan x="10" y="4762">apidocCreate - libFile eachLimit.js</tspan>
+
+<tspan x="10" y="4778">apidocCreate - libFile eachOf.js</tspan>
+
+<tspan x="10" y="4794">apidocCreate - libFile eachOfLimit.js</tspan>
+
+<tspan x="10" y="4810">apidocCreate - libFile eachOfSeries.js</tspan>
+
+<tspan x="10" y="4826">apidocCreate - libFile eachSeries.js</tspan>
+
+<tspan x="10" y="4842">apidocCreate - libFile ensureAsync.js</tspan>
+
+<tspan x="10" y="4858">apidocCreate - libFile every.js</tspan>
+
+<tspan x="10" y="4874">apidocCreate - libFile everyLimit.js</tspan>
+
+<tspan x="10" y="4890">apidocCreate - libFile everySeries.js</tspan>
+
+<tspan x="10" y="4906">apidocCreate - libFile filter.js</tspan>
+
+<tspan x="10" y="4922">apidocCreate - libFile filterLimit.js</tspan>
+
+<tspan x="10" y="4938">apidocCreate - libFile filterSeries.js</tspan>
+
+<tspan x="10" y="4954">apidocCreate - libFile find.js</tspan>
+
+<tspan x="10" y="4970">apidocCreate - libFile findLimit.js</tspan>
+
+<tspan x="10" y="4986">apidocCreate - libFile findSeries.js</tspan>
+
+<tspan x="10" y="5002">apidocCreate - libFile foldl.js</tspan>
+
+<tspan x="10" y="5018">apidocCreate - libFile foldr.js</tspan>
+
+<tspan x="10" y="5034">apidocCreate - libFile forEach.js</tspan>
+
+<tspan x="10" y="5050">apidocCreate - libFile forEachLimit.js</tspan>
+
+<tspan x="10" y="5066">apidocCreate - libFile forEachOf.js</tspan>
+
+<tspan x="10" y="5082">apidocCreate - libFile forEachOfLimit.js</tspan>
+
+<tspan x="10" y="5098">apidocCreate - libFile forEachOfSeries.js</tspan>
+
+<tspan x="10" y="5114">apidocCreate - libFile forEachSeries.js</tspan>
+
+<tspan x="10" y="5130">apidocCreate - libFile forever.js</tspan>
+
+<tspan x="10" y="5146">apidocCreate - libFile groupBy.js</tspan>
+
+<tspan x="10" y="5162">apidocCreate - libFile groupByLimit.js</tspan>
+
+<tspan x="10" y="5178">apidocCreate - libFile groupBySeries.js</tspan>
+
+<tspan x="10" y="5194">apidocCreate - libFile index.js</tspan>
+
+<tspan x="10" y="5210">apidocCreate - libFile inject.js</tspan>
+
+<tspan x="10" y="5226">apidocCreate - libFile map.js</tspan>
+
+<tspan x="10" y="5242">apidocCreate - libFile mapLimit.js</tspan>
+
+<tspan x="10" y="5258">apidocCreate - libFile mapSeries.js</tspan>
+
+<tspan x="10" y="5274">apidocCreate - libFile mapValues.js</tspan>
+
+<tspan x="10" y="5290">apidocCreate - libFile mapValuesLimit.js</tspan>
+
+<tspan x="10" y="5306">apidocCreate - libFile mapValuesSeries.js</tspan>
+
+<tspan x="10" y="5322">apidocCreate - libFile memoize.js</tspan>
+
+<tspan x="10" y="5338">apidocCreate - libFile nextTick.js</tspan>
+
+<tspan x="10" y="5354">apidocCreate - libFile parallel.js</tspan>
+
+<tspan x="10" y="5370">apidocCreate - libFile parallelLimit.js</tspan>
+
+<tspan x="10" y="5386">apidocCreate - libFile priorityQueue.js</tspan>
+
+<tspan x="10" y="5402">apidocCreate - libFile queue.js</tspan>
+
+<tspan x="10" y="5418">apidocCreate - libFile race.js</tspan>
+
+<tspan x="10" y="5434">apidocCreate - libFile reduce.js</tspan>
+
+<tspan x="10" y="5450">apidocCreate - libFile reduceRight.js</tspan>
+
+<tspan x="10" y="5466">apidocCreate - libFile reflectAll.js</tspan>
+
+<tspan x="10" y="5482">apidocCreate - libFile reflect.js</tspan>
+
+<tspan x="10" y="5498">apidocCreate - libFile reject.js</tspan>
+
+<tspan x="10" y="5514">apidocCreate - libFile rejectLimit.js</tspan>
+
+<tspan x="10" y="5530">apidocCreate - libFile rejectSeries.js</tspan>
+
+<tspan x="10" y="5546">apidocCreate - libFile retryable.js</tspan>
+
+<tspan x="10" y="5562">apidocCreate - libFile retry.js</tspan>
+
+<tspan x="10" y="5578">apidocCreate - libFile select.js</tspan>
+
+<tspan x="10" y="5594">apidocCreate - libFile selectLimit.js</tspan>
+
+<tspan x="10" y="5610">apidocCreate - libFile selectSeries.js</tspan>
+
+<tspan x="10" y="5626">apidocCreate - libFile seq.js</tspan>
+
+<tspan x="10" y="5642">apidocCreate - libFile series.js</tspan>
+
+<tspan x="10" y="5658">apidocCreate - libFile setImmediate.js</tspan>
+
+<tspan x="10" y="5674">apidocCreate - libFile some.js</tspan>
+
+<tspan x="10" y="5690">apidocCreate - libFile someLimit.js</tspan>
+
+<tspan x="10" y="5706">apidocCreate - libFile someSeries.js</tspan>
+
+<tspan x="10" y="5722">apidocCreate - libFile sortBy.js</tspan>
+
+<tspan x="10" y="5738">apidocCreate - libFile timeout.js</tspan>
+
+<tspan x="10" y="5754">apidocCreate - libFile times.js</tspan>
+
+<tspan x="10" y="5770">apidocCreate - libFile timesLimit.js</tspan>
+
+<tspan x="10" y="5786">apidocCreate - libFile timesSeries.js</tspan>
+
+<tspan x="10" y="5802">apidocCreate - libFile transform.js</tspan>
+
+<tspan x="10" y="5818">apidocCreate - libFile tryEach.js</tspan>
+
+<tspan x="10" y="5834">apidocCreate - libFile unmemoize.js</tspan>
+
+<tspan x="10" y="5850">apidocCreate - libFile until.js</tspan>
+
+<tspan x="10" y="5866">apidocCreate - libFile waterfall.js</tspan>
+
+<tspan x="10" y="5882">apidocCreate - libFile whilst.js</tspan>
+
+<tspan x="10" y="5898">apidocCreate - libFile wrapSync.js</tspan>
+
+<tspan x="10" y="5914">apidocCreate - libFile internal/breakLoop.js</tspan>
+
+<tspan x="10" y="5930">apidocCreate - libFile internal/consoleFunc.js</tspan>
+
+<tspan x="10" y="5946">apidocCreate - libFile internal/createTester.js</tspan>
+
+<tspan x="10" y="5962">apidocCreate - libFile internal/doLimit.js</tspan>
+
+<tspan x="10" y="5978">apidocCreate - libFile internal/doParallel.js</tspan>
+
+<tspan x="10" y="5994">apidocCreate - libFile internal/doParallelLimit.js</tspan>
+
+<tspan x="10" y="6010">apidocCreate - libFile internal/DoublyLinkedList.js</tspan>
+
+<tspan x="10" y="6026">apidocCreate - libFile internal/findGetResult.js</tspan>
+
+<tspan x="10" y="6042">apidocCreate - libFile internal/getIterator.js</tspan>
+
+<tspan x="10" y="6058">apidocCreate - libFile internal/initialParams.js</tspan>
+
+<tspan x="10" y="6074">apidocCreate - libFile internal/iterator.js</tspan>
+
+<tspan x="10" y="6090">apidocCreate - libFile internal/notId.js</tspan>
+
+<tspan x="10" y="6106">apidocCreate - libFile internal/once.js</tspan>
+
+<tspan x="10" y="6122">apidocCreate - libFile internal/onlyOnce.js</tspan>
+
+<tspan x="10" y="6138">apidocCreate - libFile internal/slice.js</tspan>
+
+<tspan x="10" y="6154">apidocCreate - libFile internal/withoutIndex.js</tspan>
+
+<tspan x="10" y="6170">apidocCreate - libFile internal/wrapAsync.js</tspan>
+
+<tspan x="10" y="6186">created apidoc file /home/travis/build/npmdoc/node-npmdoc-async/tmp/build/apidoc.html</tspan>
+
+<tspan x="10" y="6202"></tspan>
+
+<tspan x="10" y="6218">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/packag\</tspan>
+<tspan x="10" y="6234">e.json</tspan>
+
+<tspan x="10" y="6250">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/all.js</tspan>
+
+<tspan x="10" y="6266">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/allLim\</tspan>
+<tspan x="10" y="6282">it.js</tspan>
+
+<tspan x="10" y="6298">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/allSer\</tspan>
+<tspan x="10" y="6314">ies.js</tspan>
+
+<tspan x="10" y="6330">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/any.js</tspan>
+
+<tspan x="10" y="6346">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/anyLim\</tspan>
+<tspan x="10" y="6362">it.js</tspan>
+
+<tspan x="10" y="6378">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/anySer\</tspan>
+<tspan x="10" y="6394">ies.js</tspan>
+
+<tspan x="10" y="6410">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/applyE\</tspan>
+<tspan x="10" y="6426">ach.js</tspan>
+
+<tspan x="10" y="6442">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/applyE\</tspan>
+<tspan x="10" y="6458">achSeries.js</tspan>
+
+<tspan x="10" y="6474">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/apply.\</tspan>
+<tspan x="10" y="6490">js</tspan>
+
+<tspan x="10" y="6506">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/asynci\</tspan>
+<tspan x="10" y="6522">fy.js</tspan>
+
+<tspan x="10" y="6538">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/autoIn\</tspan>
+<tspan x="10" y="6554">ject.js</tspan>
+
+<tspan x="10" y="6570">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/auto.j\</tspan>
+<tspan x="10" y="6586">s</tspan>
+
+<tspan x="10" y="6602">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/bower.\</tspan>
+<tspan x="10" y="6618">json</tspan>
+
+<tspan x="10" y="6634">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/cargo.\</tspan>
+<tspan x="10" y="6650">js</tspan>
+
+<tspan x="10" y="6666">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/CHANGE\</tspan>
+<tspan x="10" y="6682">LOG.md</tspan>
+
+<tspan x="10" y="6698">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/compos\</tspan>
+<tspan x="10" y="6714">e.js</tspan>
+
+<tspan x="10" y="6730">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/concat\</tspan>
+<tspan x="10" y="6746">.js</tspan>
+
+<tspan x="10" y="6762">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/concat\</tspan>
+<tspan x="10" y="6778">Limit.js</tspan>
+
+<tspan x="10" y="6794">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/concat\</tspan>
+<tspan x="10" y="6810">Series.js</tspan>
+
+<tspan x="10" y="6826">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/consta\</tspan>
+<tspan x="10" y="6842">nt.js</tspan>
+
+<tspan x="10" y="6858">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/detect\</tspan>
+<tspan x="10" y="6874">.js</tspan>
+
+<tspan x="10" y="6890">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/detect\</tspan>
+<tspan x="10" y="6906">Limit.js</tspan>
+
+<tspan x="10" y="6922">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/detect\</tspan>
+<tspan x="10" y="6938">Series.js</tspan>
+
+<tspan x="10" y="6954">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/dir.js</tspan>
+
+<tspan x="10" y="6970">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/doDuri\</tspan>
+<tspan x="10" y="6986">ng.js</tspan>
+
+<tspan x="10" y="7002">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/doUnti\</tspan>
+<tspan x="10" y="7018">l.js</tspan>
+
+<tspan x="10" y="7034">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/doWhil\</tspan>
+<tspan x="10" y="7050">st.js</tspan>
+
+<tspan x="10" y="7066">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/during\</tspan>
+<tspan x="10" y="7082">.js</tspan>
+
+<tspan x="10" y="7098">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/each.j\</tspan>
+<tspan x="10" y="7114">s</tspan>
+
+<tspan x="10" y="7130">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/eachLi\</tspan>
+<tspan x="10" y="7146">mit.js</tspan>
+
+<tspan x="10" y="7162">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/eachOf\</tspan>
+<tspan x="10" y="7178">.js</tspan>
+
+<tspan x="10" y="7194">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/eachOf\</tspan>
+<tspan x="10" y="7210">Limit.js</tspan>
+
+<tspan x="10" y="7226">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/eachOf\</tspan>
+<tspan x="10" y="7242">Series.js</tspan>
+
+<tspan x="10" y="7258">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/eachSe\</tspan>
+<tspan x="10" y="7274">ries.js</tspan>
+
+<tspan x="10" y="7290">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/ensure\</tspan>
+<tspan x="10" y="7306">Async.js</tspan>
+
+<tspan x="10" y="7322">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/every.\</tspan>
+<tspan x="10" y="7338">js</tspan>
+
+<tspan x="10" y="7354">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/everyL\</tspan>
+<tspan x="10" y="7370">imit.js</tspan>
+
+<tspan x="10" y="7386">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/everyS\</tspan>
+<tspan x="10" y="7402">eries.js</tspan>
+
+<tspan x="10" y="7418">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/filter\</tspan>
+<tspan x="10" y="7434">.js</tspan>
+
+<tspan x="10" y="7450">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/filter\</tspan>
+<tspan x="10" y="7466">Limit.js</tspan>
+
+<tspan x="10" y="7482">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/filter\</tspan>
+<tspan x="10" y="7498">Series.js</tspan>
+
+<tspan x="10" y="7514">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/find.j\</tspan>
+<tspan x="10" y="7530">s</tspan>
+
+<tspan x="10" y="7546">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/findLi\</tspan>
+<tspan x="10" y="7562">mit.js</tspan>
+
+<tspan x="10" y="7578">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/findSe\</tspan>
+<tspan x="10" y="7594">ries.js</tspan>
+
+<tspan x="10" y="7610">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/foldl.\</tspan>
+<tspan x="10" y="7626">js</tspan>
+
+<tspan x="10" y="7642">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/foldr.\</tspan>
+<tspan x="10" y="7658">js</tspan>
+
+<tspan x="10" y="7674">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/forEac\</tspan>
+<tspan x="10" y="7690">h.js</tspan>
+
+<tspan x="10" y="7706">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/forEac\</tspan>
+<tspan x="10" y="7722">hLimit.js</tspan>
+
+<tspan x="10" y="7738">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/forEac\</tspan>
+<tspan x="10" y="7754">hOf.js</tspan>
+
+<tspan x="10" y="7770">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/forEac\</tspan>
+<tspan x="10" y="7786">hOfLimit.js</tspan>
+
+<tspan x="10" y="7802">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/forEac\</tspan>
+<tspan x="10" y="7818">hOfSeries.js</tspan>
+
+<tspan x="10" y="7834">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/forEac\</tspan>
+<tspan x="10" y="7850">hSeries.js</tspan>
+
+<tspan x="10" y="7866">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/foreve\</tspan>
+<tspan x="10" y="7882">r.js</tspan>
+
+<tspan x="10" y="7898">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/groupB\</tspan>
+<tspan x="10" y="7914">y.js</tspan>
+
+<tspan x="10" y="7930">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/groupB\</tspan>
+<tspan x="10" y="7946">yLimit.js</tspan>
+
+<tspan x="10" y="7962">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/groupB\</tspan>
+<tspan x="10" y="7978">ySeries.js</tspan>
+
+<tspan x="10" y="7994">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/index.\</tspan>
+<tspan x="10" y="8010">js</tspan>
+
+<tspan x="10" y="8026">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/inject\</tspan>
+<tspan x="10" y="8042">.js</tspan>
+
+<tspan x="10" y="8058">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/LICENS\</tspan>
+<tspan x="10" y="8074">E</tspan>
+
+<tspan x="10" y="8090">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/log.js</tspan>
+
+<tspan x="10" y="8106">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/map.js</tspan>
+
+<tspan x="10" y="8122">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/mapLim\</tspan>
+<tspan x="10" y="8138">it.js</tspan>
+
+<tspan x="10" y="8154">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/mapSer\</tspan>
+<tspan x="10" y="8170">ies.js</tspan>
+
+<tspan x="10" y="8186">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/mapVal\</tspan>
+<tspan x="10" y="8202">ues.js</tspan>
+
+<tspan x="10" y="8218">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/mapVal\</tspan>
+<tspan x="10" y="8234">uesLimit.js</tspan>
+
+<tspan x="10" y="8250">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/mapVal\</tspan>
+<tspan x="10" y="8266">uesSeries.js</tspan>
+
+<tspan x="10" y="8282">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/memoiz\</tspan>
+<tspan x="10" y="8298">e.js</tspan>
+
+<tspan x="10" y="8314">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/nextTi\</tspan>
+<tspan x="10" y="8330">ck.js</tspan>
+
+<tspan x="10" y="8346">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/packag\</tspan>
+<tspan x="10" y="8362">e.json</tspan>
+
+<tspan x="10" y="8378">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/parall\</tspan>
+<tspan x="10" y="8394">el.js</tspan>
+
+<tspan x="10" y="8410">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/parall\</tspan>
+<tspan x="10" y="8426">elLimit.js</tspan>
+
+<tspan x="10" y="8442">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/priori\</tspan>
+<tspan x="10" y="8458">tyQueue.js</tspan>
+
+<tspan x="10" y="8474">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/queue.\</tspan>
+<tspan x="10" y="8490">js</tspan>
+
+<tspan x="10" y="8506">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/race.j\</tspan>
+<tspan x="10" y="8522">s</tspan>
+
+<tspan x="10" y="8538">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/README\</tspan>
+<tspan x="10" y="8554">.md</tspan>
+
+<tspan x="10" y="8570">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/reduce\</tspan>
+<tspan x="10" y="8586">.js</tspan>
+
+<tspan x="10" y="8602">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/reduce\</tspan>
+<tspan x="10" y="8618">Right.js</tspan>
+
+<tspan x="10" y="8634">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/reflec\</tspan>
+<tspan x="10" y="8650">tAll.js</tspan>
+
+<tspan x="10" y="8666">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/reflec\</tspan>
+<tspan x="10" y="8682">t.js</tspan>
+
+<tspan x="10" y="8698">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/reject\</tspan>
+<tspan x="10" y="8714">.js</tspan>
+
+<tspan x="10" y="8730">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/reject\</tspan>
+<tspan x="10" y="8746">Limit.js</tspan>
+
+<tspan x="10" y="8762">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/reject\</tspan>
+<tspan x="10" y="8778">Series.js</tspan>
+
+<tspan x="10" y="8794">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/retrya\</tspan>
+<tspan x="10" y="8810">ble.js</tspan>
+
+<tspan x="10" y="8826">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/retry.\</tspan>
+<tspan x="10" y="8842">js</tspan>
+
+<tspan x="10" y="8858">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/select\</tspan>
+<tspan x="10" y="8874">.js</tspan>
+
+<tspan x="10" y="8890">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/select\</tspan>
+<tspan x="10" y="8906">Limit.js</tspan>
+
+<tspan x="10" y="8922">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/select\</tspan>
+<tspan x="10" y="8938">Series.js</tspan>
+
+<tspan x="10" y="8954">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/seq.js</tspan>
+
+<tspan x="10" y="8970">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/series\</tspan>
+<tspan x="10" y="8986">.js</tspan>
+
+<tspan x="10" y="9002">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/setImm\</tspan>
+<tspan x="10" y="9018">ediate.js</tspan>
+
+<tspan x="10" y="9034">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/some.j\</tspan>
+<tspan x="10" y="9050">s</tspan>
+
+<tspan x="10" y="9066">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/someLi\</tspan>
+<tspan x="10" y="9082">mit.js</tspan>
+
+<tspan x="10" y="9098">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/someSe\</tspan>
+<tspan x="10" y="9114">ries.js</tspan>
+
+<tspan x="10" y="9130">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/sortBy\</tspan>
+<tspan x="10" y="9146">.js</tspan>
+
+<tspan x="10" y="9162">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/timeou\</tspan>
+<tspan x="10" y="9178">t.js</tspan>
+
+<tspan x="10" y="9194">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/times.\</tspan>
+<tspan x="10" y="9210">js</tspan>
+
+<tspan x="10" y="9226">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/timesL\</tspan>
+<tspan x="10" y="9242">imit.js</tspan>
+
+<tspan x="10" y="9258">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/timesS\</tspan>
+<tspan x="10" y="9274">eries.js</tspan>
+
+<tspan x="10" y="9290">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/transf\</tspan>
+<tspan x="10" y="9306">orm.js</tspan>
+
+<tspan x="10" y="9322">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/tryEac\</tspan>
+<tspan x="10" y="9338">h.js</tspan>
+
+<tspan x="10" y="9354">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/unmemo\</tspan>
+<tspan x="10" y="9370">ize.js</tspan>
+
+<tspan x="10" y="9386">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/until.\</tspan>
+<tspan x="10" y="9402">js</tspan>
+
+<tspan x="10" y="9418">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/waterf\</tspan>
+<tspan x="10" y="9434">all.js</tspan>
+
+<tspan x="10" y="9450">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/whilst\</tspan>
+<tspan x="10" y="9466">.js</tspan>
+
+<tspan x="10" y="9482">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/wrapSy\</tspan>
+<tspan x="10" y="9498">nc.js</tspan>
+
+<tspan x="10" y="9514">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/dist/a\</tspan>
+<tspan x="10" y="9530">sync.js</tspan>
+
+<tspan x="10" y="9546">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="9562">al/applyEach.js</tspan>
+
+<tspan x="10" y="9578">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="9594">al/breakLoop.js</tspan>
+
+<tspan x="10" y="9610">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="9626">al/consoleFunc.js</tspan>
+
+<tspan x="10" y="9642">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="9658">al/createTester.js</tspan>
+
+<tspan x="10" y="9674">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="9690">al/doLimit.js</tspan>
+
+<tspan x="10" y="9706">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="9722">al/doParallel.js</tspan>
+
+<tspan x="10" y="9738">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="9754">al/doParallelLimit.js</tspan>
+
+<tspan x="10" y="9770">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="9786">al/DoublyLinkedList.js</tspan>
+
+<tspan x="10" y="9802">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="9818">al/eachOfLimit.js</tspan>
+
+<tspan x="10" y="9834">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="9850">al/filter.js</tspan>
+
+<tspan x="10" y="9866">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="9882">al/findGetResult.js</tspan>
+
+<tspan x="10" y="9898">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="9914">al/getIterator.js</tspan>
+
+<tspan x="10" y="9930">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="9946">al/initialParams.js</tspan>
+
+<tspan x="10" y="9962">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="9978">al/iterator.js</tspan>
+
+<tspan x="10" y="9994">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="10010">al/map.js</tspan>
+
+<tspan x="10" y="10026">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="10042">al/notId.js</tspan>
+
+<tspan x="10" y="10058">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="10074">al/once.js</tspan>
+
+<tspan x="10" y="10090">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="10106">al/onlyOnce.js</tspan>
+
+<tspan x="10" y="10122">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="10138">al/parallel.js</tspan>
+
+<tspan x="10" y="10154">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="10170">al/queue.js</tspan>
+
+<tspan x="10" y="10186">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="10202">al/reject.js</tspan>
+
+<tspan x="10" y="10218">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="10234">al/setImmediate.js</tspan>
+
+<tspan x="10" y="10250">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="10266">al/slice.js</tspan>
+
+<tspan x="10" y="10282">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="10298">al/withoutIndex.js</tspan>
+
+<tspan x="10" y="10314">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="10330">al/wrapAsync.js</tspan>
+
+<tspan x="10" y="10346">apidocCreate - requiring /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async ...</tspan>
+
+<tspan x="10" y="10362">apidocCreate - ... required /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async</tspan>
+
+<tspan x="10" y="10378">apidocCreate - libFile all.js</tspan>
+
+<tspan x="10" y="10394">apidocCreate - libFile allLimit.js</tspan>
+
+<tspan x="10" y="10410">apidocCreate - libFile allSeries.js</tspan>
+
+<tspan x="10" y="10426">apidocCreate - libFile any.js</tspan>
+
+<tspan x="10" y="10442">apidocCreate - libFile anyLimit.js</tspan>
+
+<tspan x="10" y="10458">apidocCreate - libFile anySeries.js</tspan>
+
+<tspan x="10" y="10474">apidocCreate - libFile applyEach.js</tspan>
+
+<tspan x="10" y="10490">apidocCreate - libFile applyEachSeries.js</tspan>
+
+<tspan x="10" y="10506">apidocCreate - libFile apply.js</tspan>
+
+<tspan x="10" y="10522">apidocCreate - libFile asyncify.js</tspan>
+
+<tspan x="10" y="10538">apidocCreate - libFile autoInject.js</tspan>
+
+<tspan x="10" y="10554">apidocCreate - libFile auto.js</tspan>
+
+<tspan x="10" y="10570">apidocCreate - libFile cargo.js</tspan>
+
+<tspan x="10" y="10586">apidocCreate - libFile compose.js</tspan>
+
+<tspan x="10" y="10602">apidocCreate - libFile concat.js</tspan>
+
+<tspan x="10" y="10618">apidocCreate - libFile concatLimit.js</tspan>
+
+<tspan x="10" y="10634">apidocCreate - libFile concatSeries.js</tspan>
+
+<tspan x="10" y="10650">apidocCreate - libFile constant.js</tspan>
+
+<tspan x="10" y="10666">apidocCreate - libFile detect.js</tspan>
+
+<tspan x="10" y="10682">apidocCreate - libFile detectLimit.js</tspan>
+
+<tspan x="10" y="10698">apidocCreate - libFile detectSeries.js</tspan>
+
+<tspan x="10" y="10714">apidocCreate - libFile dir.js</tspan>
+
+<tspan x="10" y="10730">apidocCreate - libFile doDuring.js</tspan>
+
+<tspan x="10" y="10746">apidocCreate - libFile doUntil.js</tspan>
+
+<tspan x="10" y="10762">apidocCreate - libFile doWhilst.js</tspan>
+
+<tspan x="10" y="10778">apidocCreate - libFile during.js</tspan>
+
+<tspan x="10" y="10794">apidocCreate - libFile each.js</tspan>
+
+<tspan x="10" y="10810">apidocCreate - libFile eachLimit.js</tspan>
+
+<tspan x="10" y="10826">apidocCreate - libFile eachOf.js</tspan>
+
+<tspan x="10" y="10842">apidocCreate - libFile eachOfLimit.js</tspan>
+
+<tspan x="10" y="10858">apidocCreate - libFile eachOfSeries.js</tspan>
+
+<tspan x="10" y="10874">apidocCreate - libFile eachSeries.js</tspan>
+
+<tspan x="10" y="10890">apidocCreate - libFile ensureAsync.js</tspan>
+
+<tspan x="10" y="10906">apidocCreate - libFile every.js</tspan>
+
+<tspan x="10" y="10922">apidocCreate - libFile everyLimit.js</tspan>
+
+<tspan x="10" y="10938">apidocCreate - libFile everySeries.js</tspan>
+
+<tspan x="10" y="10954">apidocCreate - libFile filter.js</tspan>
+
+<tspan x="10" y="10970">apidocCreate - libFile filterLimit.js</tspan>
+
+<tspan x="10" y="10986">apidocCreate - libFile filterSeries.js</tspan>
+
+<tspan x="10" y="11002">apidocCreate - libFile find.js</tspan>
+
+<tspan x="10" y="11018">apidocCreate - libFile findLimit.js</tspan>
+
+<tspan x="10" y="11034">apidocCreate - libFile findSeries.js</tspan>
+
+<tspan x="10" y="11050">apidocCreate - libFile foldl.js</tspan>
+
+<tspan x="10" y="11066">apidocCreate - libFile foldr.js</tspan>
+
+<tspan x="10" y="11082">apidocCreate - libFile forEach.js</tspan>
+
+<tspan x="10" y="11098">apidocCreate - libFile forEachLimit.js</tspan>
+
+<tspan x="10" y="11114">apidocCreate - libFile forEachOf.js</tspan>
+
+<tspan x="10" y="11130">apidocCreate - libFile forEachOfLimit.js</tspan>
+
+<tspan x="10" y="11146">apidocCreate - libFile forEachOfSeries.js</tspan>
+
+<tspan x="10" y="11162">apidocCreate - libFile forEachSeries.js</tspan>
+
+<tspan x="10" y="11178">apidocCreate - libFile forever.js</tspan>
+
+<tspan x="10" y="11194">apidocCreate - libFile groupBy.js</tspan>
+
+<tspan x="10" y="11210">apidocCreate - libFile groupByLimit.js</tspan>
+
+<tspan x="10" y="11226">apidocCreate - libFile groupBySeries.js</tspan>
+
+<tspan x="10" y="11242">apidocCreate - libFile index.js</tspan>
+
+<tspan x="10" y="11258">apidocCreate - libFile inject.js</tspan>
+
+<tspan x="10" y="11274">apidocCreate - libFile map.js</tspan>
+
+<tspan x="10" y="11290">apidocCreate - libFile mapLimit.js</tspan>
+
+<tspan x="10" y="11306">apidocCreate - libFile mapSeries.js</tspan>
+
+<tspan x="10" y="11322">apidocCreate - libFile mapValues.js</tspan>
+
+<tspan x="10" y="11338">apidocCreate - libFile mapValuesLimit.js</tspan>
+
+<tspan x="10" y="11354">apidocCreate - libFile mapValuesSeries.js</tspan>
+
+<tspan x="10" y="11370">apidocCreate - libFile memoize.js</tspan>
+
+<tspan x="10" y="11386">apidocCreate - libFile nextTick.js</tspan>
+
+<tspan x="10" y="11402">apidocCreate - libFile parallel.js</tspan>
+
+<tspan x="10" y="11418">apidocCreate - libFile parallelLimit.js</tspan>
+
+<tspan x="10" y="11434">apidocCreate - libFile priorityQueue.js</tspan>
+
+<tspan x="10" y="11450">apidocCreate - libFile queue.js</tspan>
+
+<tspan x="10" y="11466">apidocCreate - libFile race.js</tspan>
+
+<tspan x="10" y="11482">apidocCreate - libFile reduce.js</tspan>
+
+<tspan x="10" y="11498">apidocCreate - libFile reduceRight.js</tspan>
+
+<tspan x="10" y="11514">apidocCreate - libFile reflectAll.js</tspan>
+
+<tspan x="10" y="11530">apidocCreate - libFile reflect.js</tspan>
+
+<tspan x="10" y="11546">apidocCreate - libFile reject.js</tspan>
+
+<tspan x="10" y="11562">apidocCreate - libFile rejectLimit.js</tspan>
+
+<tspan x="10" y="11578">apidocCreate - libFile rejectSeries.js</tspan>
+
+<tspan x="10" y="11594">apidocCreate - libFile retryable.js</tspan>
+
+<tspan x="10" y="11610">apidocCreate - libFile retry.js</tspan>
+
+<tspan x="10" y="11626">apidocCreate - libFile select.js</tspan>
+
+<tspan x="10" y="11642">apidocCreate - libFile selectLimit.js</tspan>
+
+<tspan x="10" y="11658">apidocCreate - libFile selectSeries.js</tspan>
+
+<tspan x="10" y="11674">apidocCreate - libFile seq.js</tspan>
+
+<tspan x="10" y="11690">apidocCreate - libFile series.js</tspan>
+
+<tspan x="10" y="11706">apidocCreate - libFile setImmediate.js</tspan>
+
+<tspan x="10" y="11722">apidocCreate - libFile some.js</tspan>
+
+<tspan x="10" y="11738">apidocCreate - libFile someLimit.js</tspan>
+
+<tspan x="10" y="11754">apidocCreate - libFile someSeries.js</tspan>
+
+<tspan x="10" y="11770">apidocCreate - libFile sortBy.js</tspan>
+
+<tspan x="10" y="11786">apidocCreate - libFile timeout.js</tspan>
+
+<tspan x="10" y="11802">apidocCreate - libFile times.js</tspan>
+
+<tspan x="10" y="11818">apidocCreate - libFile timesLimit.js</tspan>
+
+<tspan x="10" y="11834">apidocCreate - libFile timesSeries.js</tspan>
+
+<tspan x="10" y="11850">apidocCreate - libFile transform.js</tspan>
+
+<tspan x="10" y="11866">apidocCreate - libFile tryEach.js</tspan>
+
+<tspan x="10" y="11882">apidocCreate - libFile unmemoize.js</tspan>
+
+<tspan x="10" y="11898">apidocCreate - libFile until.js</tspan>
+
+<tspan x="10" y="11914">apidocCreate - libFile waterfall.js</tspan>
+
+<tspan x="10" y="11930">apidocCreate - libFile whilst.js</tspan>
+
+<tspan x="10" y="11946">apidocCreate - libFile wrapSync.js</tspan>
+
+<tspan x="10" y="11962">apidocCreate - libFile internal/breakLoop.js</tspan>
+
+<tspan x="10" y="11978">apidocCreate - libFile internal/consoleFunc.js</tspan>
+
+<tspan x="10" y="11994">apidocCreate - libFile internal/createTester.js</tspan>
+
+<tspan x="10" y="12010">apidocCreate - libFile internal/doLimit.js</tspan>
+
+<tspan x="10" y="12026">apidocCreate - libFile internal/doParallel.js</tspan>
+
+<tspan x="10" y="12042">apidocCreate - libFile internal/doParallelLimit.js</tspan>
+
+<tspan x="10" y="12058">apidocCreate - libFile internal/DoublyLinkedList.js</tspan>
+
+<tspan x="10" y="12074">apidocCreate - libFile internal/findGetResult.js</tspan>
+
+<tspan x="10" y="12090">apidocCreate - libFile internal/getIterator.js</tspan>
+
+<tspan x="10" y="12106">apidocCreate - libFile internal/initialParams.js</tspan>
+
+<tspan x="10" y="12122">apidocCreate - libFile internal/iterator.js</tspan>
+
+<tspan x="10" y="12138">apidocCreate - libFile internal/notId.js</tspan>
+
+<tspan x="10" y="12154">apidocCreate - libFile internal/once.js</tspan>
+
+<tspan x="10" y="12170">apidocCreate - libFile internal/onlyOnce.js</tspan>
+
+<tspan x="10" y="12186">apidocCreate - libFile internal/slice.js</tspan>
+
+<tspan x="10" y="12202">apidocCreate - libFile internal/withoutIndex.js</tspan>
+
+<tspan x="10" y="12218">apidocCreate - libFile internal/wrapAsync.js</tspan>
+
+<tspan x="10" y="12234">created customOrg file /home/travis/build/npmdoc/node-npmdoc-async/README.md</tspan>
+
+<tspan x="10" y="12250"></tspan>
+
+<tspan x="10" y="12266">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/packag\</tspan>
+<tspan x="10" y="12282">e.json</tspan>
+
+<tspan x="10" y="12298">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/all.js</tspan>
+
+<tspan x="10" y="12314">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/allLim\</tspan>
+<tspan x="10" y="12330">it.js</tspan>
+
+<tspan x="10" y="12346">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/allSer\</tspan>
+<tspan x="10" y="12362">ies.js</tspan>
+
+<tspan x="10" y="12378">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/any.js</tspan>
+
+<tspan x="10" y="12394">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/anyLim\</tspan>
+<tspan x="10" y="12410">it.js</tspan>
+
+<tspan x="10" y="12426">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/anySer\</tspan>
+<tspan x="10" y="12442">ies.js</tspan>
+
+<tspan x="10" y="12458">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/applyE\</tspan>
+<tspan x="10" y="12474">ach.js</tspan>
+
+<tspan x="10" y="12490">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/applyE\</tspan>
+<tspan x="10" y="12506">achSeries.js</tspan>
+
+<tspan x="10" y="12522">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/apply.\</tspan>
+<tspan x="10" y="12538">js</tspan>
+
+<tspan x="10" y="12554">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/asynci\</tspan>
+<tspan x="10" y="12570">fy.js</tspan>
+
+<tspan x="10" y="12586">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/autoIn\</tspan>
+<tspan x="10" y="12602">ject.js</tspan>
+
+<tspan x="10" y="12618">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/auto.j\</tspan>
+<tspan x="10" y="12634">s</tspan>
+
+<tspan x="10" y="12650">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/bower.\</tspan>
+<tspan x="10" y="12666">json</tspan>
+
+<tspan x="10" y="12682">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/cargo.\</tspan>
+<tspan x="10" y="12698">js</tspan>
+
+<tspan x="10" y="12714">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/CHANGE\</tspan>
+<tspan x="10" y="12730">LOG.md</tspan>
+
+<tspan x="10" y="12746">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/compos\</tspan>
+<tspan x="10" y="12762">e.js</tspan>
+
+<tspan x="10" y="12778">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/concat\</tspan>
+<tspan x="10" y="12794">.js</tspan>
+
+<tspan x="10" y="12810">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/concat\</tspan>
+<tspan x="10" y="12826">Limit.js</tspan>
+
+<tspan x="10" y="12842">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/concat\</tspan>
+<tspan x="10" y="12858">Series.js</tspan>
+
+<tspan x="10" y="12874">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/consta\</tspan>
+<tspan x="10" y="12890">nt.js</tspan>
+
+<tspan x="10" y="12906">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/detect\</tspan>
+<tspan x="10" y="12922">.js</tspan>
+
+<tspan x="10" y="12938">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/detect\</tspan>
+<tspan x="10" y="12954">Limit.js</tspan>
+
+<tspan x="10" y="12970">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/detect\</tspan>
+<tspan x="10" y="12986">Series.js</tspan>
+
+<tspan x="10" y="13002">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/dir.js</tspan>
+
+<tspan x="10" y="13018">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/doDuri\</tspan>
+<tspan x="10" y="13034">ng.js</tspan>
+
+<tspan x="10" y="13050">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/doUnti\</tspan>
+<tspan x="10" y="13066">l.js</tspan>
+
+<tspan x="10" y="13082">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/doWhil\</tspan>
+<tspan x="10" y="13098">st.js</tspan>
+
+<tspan x="10" y="13114">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/during\</tspan>
+<tspan x="10" y="13130">.js</tspan>
+
+<tspan x="10" y="13146">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/each.j\</tspan>
+<tspan x="10" y="13162">s</tspan>
+
+<tspan x="10" y="13178">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/eachLi\</tspan>
+<tspan x="10" y="13194">mit.js</tspan>
+
+<tspan x="10" y="13210">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/eachOf\</tspan>
+<tspan x="10" y="13226">.js</tspan>
+
+<tspan x="10" y="13242">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/eachOf\</tspan>
+<tspan x="10" y="13258">Limit.js</tspan>
+
+<tspan x="10" y="13274">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/eachOf\</tspan>
+<tspan x="10" y="13290">Series.js</tspan>
+
+<tspan x="10" y="13306">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/eachSe\</tspan>
+<tspan x="10" y="13322">ries.js</tspan>
+
+<tspan x="10" y="13338">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/ensure\</tspan>
+<tspan x="10" y="13354">Async.js</tspan>
+
+<tspan x="10" y="13370">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/every.\</tspan>
+<tspan x="10" y="13386">js</tspan>
+
+<tspan x="10" y="13402">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/everyL\</tspan>
+<tspan x="10" y="13418">imit.js</tspan>
+
+<tspan x="10" y="13434">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/everyS\</tspan>
+<tspan x="10" y="13450">eries.js</tspan>
+
+<tspan x="10" y="13466">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/filter\</tspan>
+<tspan x="10" y="13482">.js</tspan>
+
+<tspan x="10" y="13498">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/filter\</tspan>
+<tspan x="10" y="13514">Limit.js</tspan>
+
+<tspan x="10" y="13530">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/filter\</tspan>
+<tspan x="10" y="13546">Series.js</tspan>
+
+<tspan x="10" y="13562">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/find.j\</tspan>
+<tspan x="10" y="13578">s</tspan>
+
+<tspan x="10" y="13594">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/findLi\</tspan>
+<tspan x="10" y="13610">mit.js</tspan>
+
+<tspan x="10" y="13626">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/findSe\</tspan>
+<tspan x="10" y="13642">ries.js</tspan>
+
+<tspan x="10" y="13658">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/foldl.\</tspan>
+<tspan x="10" y="13674">js</tspan>
+
+<tspan x="10" y="13690">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/foldr.\</tspan>
+<tspan x="10" y="13706">js</tspan>
+
+<tspan x="10" y="13722">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/forEac\</tspan>
+<tspan x="10" y="13738">h.js</tspan>
+
+<tspan x="10" y="13754">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/forEac\</tspan>
+<tspan x="10" y="13770">hLimit.js</tspan>
+
+<tspan x="10" y="13786">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/forEac\</tspan>
+<tspan x="10" y="13802">hOf.js</tspan>
+
+<tspan x="10" y="13818">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/forEac\</tspan>
+<tspan x="10" y="13834">hOfLimit.js</tspan>
+
+<tspan x="10" y="13850">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/forEac\</tspan>
+<tspan x="10" y="13866">hOfSeries.js</tspan>
+
+<tspan x="10" y="13882">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/forEac\</tspan>
+<tspan x="10" y="13898">hSeries.js</tspan>
+
+<tspan x="10" y="13914">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/foreve\</tspan>
+<tspan x="10" y="13930">r.js</tspan>
+
+<tspan x="10" y="13946">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/groupB\</tspan>
+<tspan x="10" y="13962">y.js</tspan>
+
+<tspan x="10" y="13978">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/groupB\</tspan>
+<tspan x="10" y="13994">yLimit.js</tspan>
+
+<tspan x="10" y="14010">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/groupB\</tspan>
+<tspan x="10" y="14026">ySeries.js</tspan>
+
+<tspan x="10" y="14042">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/index.\</tspan>
+<tspan x="10" y="14058">js</tspan>
+
+<tspan x="10" y="14074">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/inject\</tspan>
+<tspan x="10" y="14090">.js</tspan>
+
+<tspan x="10" y="14106">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/LICENS\</tspan>
+<tspan x="10" y="14122">E</tspan>
+
+<tspan x="10" y="14138">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/log.js</tspan>
+
+<tspan x="10" y="14154">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/map.js</tspan>
+
+<tspan x="10" y="14170">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/mapLim\</tspan>
+<tspan x="10" y="14186">it.js</tspan>
+
+<tspan x="10" y="14202">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/mapSer\</tspan>
+<tspan x="10" y="14218">ies.js</tspan>
+
+<tspan x="10" y="14234">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/mapVal\</tspan>
+<tspan x="10" y="14250">ues.js</tspan>
+
+<tspan x="10" y="14266">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/mapVal\</tspan>
+<tspan x="10" y="14282">uesLimit.js</tspan>
+
+<tspan x="10" y="14298">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/mapVal\</tspan>
+<tspan x="10" y="14314">uesSeries.js</tspan>
+
+<tspan x="10" y="14330">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/memoiz\</tspan>
+<tspan x="10" y="14346">e.js</tspan>
+
+<tspan x="10" y="14362">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/nextTi\</tspan>
+<tspan x="10" y="14378">ck.js</tspan>
+
+<tspan x="10" y="14394">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/packag\</tspan>
+<tspan x="10" y="14410">e.json</tspan>
+
+<tspan x="10" y="14426">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/parall\</tspan>
+<tspan x="10" y="14442">el.js</tspan>
+
+<tspan x="10" y="14458">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/parall\</tspan>
+<tspan x="10" y="14474">elLimit.js</tspan>
+
+<tspan x="10" y="14490">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/priori\</tspan>
+<tspan x="10" y="14506">tyQueue.js</tspan>
+
+<tspan x="10" y="14522">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/queue.\</tspan>
+<tspan x="10" y="14538">js</tspan>
+
+<tspan x="10" y="14554">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/race.j\</tspan>
+<tspan x="10" y="14570">s</tspan>
+
+<tspan x="10" y="14586">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/README\</tspan>
+<tspan x="10" y="14602">.md</tspan>
+
+<tspan x="10" y="14618">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/reduce\</tspan>
+<tspan x="10" y="14634">.js</tspan>
+
+<tspan x="10" y="14650">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/reduce\</tspan>
+<tspan x="10" y="14666">Right.js</tspan>
+
+<tspan x="10" y="14682">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/reflec\</tspan>
+<tspan x="10" y="14698">tAll.js</tspan>
+
+<tspan x="10" y="14714">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/reflec\</tspan>
+<tspan x="10" y="14730">t.js</tspan>
+
+<tspan x="10" y="14746">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/reject\</tspan>
+<tspan x="10" y="14762">.js</tspan>
+
+<tspan x="10" y="14778">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/reject\</tspan>
+<tspan x="10" y="14794">Limit.js</tspan>
+
+<tspan x="10" y="14810">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/reject\</tspan>
+<tspan x="10" y="14826">Series.js</tspan>
+
+<tspan x="10" y="14842">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/retrya\</tspan>
+<tspan x="10" y="14858">ble.js</tspan>
+
+<tspan x="10" y="14874">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/retry.\</tspan>
+<tspan x="10" y="14890">js</tspan>
+
+<tspan x="10" y="14906">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/select\</tspan>
+<tspan x="10" y="14922">.js</tspan>
+
+<tspan x="10" y="14938">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/select\</tspan>
+<tspan x="10" y="14954">Limit.js</tspan>
+
+<tspan x="10" y="14970">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/select\</tspan>
+<tspan x="10" y="14986">Series.js</tspan>
+
+<tspan x="10" y="15002">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/seq.js</tspan>
+
+<tspan x="10" y="15018">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/series\</tspan>
+<tspan x="10" y="15034">.js</tspan>
+
+<tspan x="10" y="15050">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/setImm\</tspan>
+<tspan x="10" y="15066">ediate.js</tspan>
+
+<tspan x="10" y="15082">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/some.j\</tspan>
+<tspan x="10" y="15098">s</tspan>
+
+<tspan x="10" y="15114">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/someLi\</tspan>
+<tspan x="10" y="15130">mit.js</tspan>
+
+<tspan x="10" y="15146">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/someSe\</tspan>
+<tspan x="10" y="15162">ries.js</tspan>
+
+<tspan x="10" y="15178">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/sortBy\</tspan>
+<tspan x="10" y="15194">.js</tspan>
+
+<tspan x="10" y="15210">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/timeou\</tspan>
+<tspan x="10" y="15226">t.js</tspan>
+
+<tspan x="10" y="15242">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/times.\</tspan>
+<tspan x="10" y="15258">js</tspan>
+
+<tspan x="10" y="15274">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/timesL\</tspan>
+<tspan x="10" y="15290">imit.js</tspan>
+
+<tspan x="10" y="15306">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/timesS\</tspan>
+<tspan x="10" y="15322">eries.js</tspan>
+
+<tspan x="10" y="15338">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/transf\</tspan>
+<tspan x="10" y="15354">orm.js</tspan>
+
+<tspan x="10" y="15370">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/tryEac\</tspan>
+<tspan x="10" y="15386">h.js</tspan>
+
+<tspan x="10" y="15402">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/unmemo\</tspan>
+<tspan x="10" y="15418">ize.js</tspan>
+
+<tspan x="10" y="15434">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/until.\</tspan>
+<tspan x="10" y="15450">js</tspan>
+
+<tspan x="10" y="15466">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/waterf\</tspan>
+<tspan x="10" y="15482">all.js</tspan>
+
+<tspan x="10" y="15498">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/whilst\</tspan>
+<tspan x="10" y="15514">.js</tspan>
+
+<tspan x="10" y="15530">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/wrapSy\</tspan>
+<tspan x="10" y="15546">nc.js</tspan>
+
+<tspan x="10" y="15562">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/dist/a\</tspan>
+<tspan x="10" y="15578">sync.js</tspan>
+
+<tspan x="10" y="15594">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="15610">al/applyEach.js</tspan>
+
+<tspan x="10" y="15626">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="15642">al/breakLoop.js</tspan>
+
+<tspan x="10" y="15658">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="15674">al/consoleFunc.js</tspan>
+
+<tspan x="10" y="15690">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="15706">al/createTester.js</tspan>
+
+<tspan x="10" y="15722">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="15738">al/doLimit.js</tspan>
+
+<tspan x="10" y="15754">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="15770">al/doParallel.js</tspan>
+
+<tspan x="10" y="15786">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="15802">al/doParallelLimit.js</tspan>
+
+<tspan x="10" y="15818">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="15834">al/DoublyLinkedList.js</tspan>
+
+<tspan x="10" y="15850">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="15866">al/eachOfLimit.js</tspan>
+
+<tspan x="10" y="15882">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="15898">al/filter.js</tspan>
+
+<tspan x="10" y="15914">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="15930">al/findGetResult.js</tspan>
+
+<tspan x="10" y="15946">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="15962">al/getIterator.js</tspan>
+
+<tspan x="10" y="15978">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="15994">al/initialParams.js</tspan>
+
+<tspan x="10" y="16010">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="16026">al/iterator.js</tspan>
+
+<tspan x="10" y="16042">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="16058">al/map.js</tspan>
+
+<tspan x="10" y="16074">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="16090">al/notId.js</tspan>
+
+<tspan x="10" y="16106">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="16122">al/once.js</tspan>
+
+<tspan x="10" y="16138">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="16154">al/onlyOnce.js</tspan>
+
+<tspan x="10" y="16170">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="16186">al/parallel.js</tspan>
+
+<tspan x="10" y="16202">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="16218">al/queue.js</tspan>
+
+<tspan x="10" y="16234">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="16250">al/reject.js</tspan>
+
+<tspan x="10" y="16266">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="16282">al/setImmediate.js</tspan>
+
+<tspan x="10" y="16298">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="16314">al/slice.js</tspan>
+
+<tspan x="10" y="16330">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="16346">al/withoutIndex.js</tspan>
+
+<tspan x="10" y="16362">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="16378">al/wrapAsync.js</tspan>
+
+<tspan x="10" y="16394">apidocCreate - requiring /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async ...</tspan>
+
+<tspan x="10" y="16410">apidocCreate - ... required /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async</tspan>
+
+<tspan x="10" y="16426">apidocCreate - libFile all.js</tspan>
+
+<tspan x="10" y="16442">apidocCreate - libFile allLimit.js</tspan>
+
+<tspan x="10" y="16458">apidocCreate - libFile allSeries.js</tspan>
+
+<tspan x="10" y="16474">apidocCreate - libFile any.js</tspan>
+
+<tspan x="10" y="16490">apidocCreate - libFile anyLimit.js</tspan>
+
+<tspan x="10" y="16506">apidocCreate - libFile anySeries.js</tspan>
+
+<tspan x="10" y="16522">apidocCreate - libFile applyEach.js</tspan>
+
+<tspan x="10" y="16538">apidocCreate - libFile applyEachSeries.js</tspan>
+
+<tspan x="10" y="16554">apidocCreate - libFile apply.js</tspan>
+
+<tspan x="10" y="16570">apidocCreate - libFile asyncify.js</tspan>
+
+<tspan x="10" y="16586">apidocCreate - libFile autoInject.js</tspan>
+
+<tspan x="10" y="16602">apidocCreate - libFile auto.js</tspan>
+
+<tspan x="10" y="16618">apidocCreate - libFile cargo.js</tspan>
+
+<tspan x="10" y="16634">apidocCreate - libFile compose.js</tspan>
+
+<tspan x="10" y="16650">apidocCreate - libFile concat.js</tspan>
+
+<tspan x="10" y="16666">apidocCreate - libFile concatLimit.js</tspan>
+
+<tspan x="10" y="16682">apidocCreate - libFile concatSeries.js</tspan>
+
+<tspan x="10" y="16698">apidocCreate - libFile constant.js</tspan>
+
+<tspan x="10" y="16714">apidocCreate - libFile detect.js</tspan>
+
+<tspan x="10" y="16730">apidocCreate - libFile detectLimit.js</tspan>
+
+<tspan x="10" y="16746">apidocCreate - libFile detectSeries.js</tspan>
+
+<tspan x="10" y="16762">apidocCreate - libFile dir.js</tspan>
+
+<tspan x="10" y="16778">apidocCreate - libFile doDuring.js</tspan>
+
+<tspan x="10" y="16794">apidocCreate - libFile doUntil.js</tspan>
+
+<tspan x="10" y="16810">apidocCreate - libFile doWhilst.js</tspan>
+
+<tspan x="10" y="16826">apidocCreate - libFile during.js</tspan>
+
+<tspan x="10" y="16842">apidocCreate - libFile each.js</tspan>
+
+<tspan x="10" y="16858">apidocCreate - libFile eachLimit.js</tspan>
+
+<tspan x="10" y="16874">apidocCreate - libFile eachOf.js</tspan>
+
+<tspan x="10" y="16890">apidocCreate - libFile eachOfLimit.js</tspan>
+
+<tspan x="10" y="16906">apidocCreate - libFile eachOfSeries.js</tspan>
+
+<tspan x="10" y="16922">apidocCreate - libFile eachSeries.js</tspan>
+
+<tspan x="10" y="16938">apidocCreate - libFile ensureAsync.js</tspan>
+
+<tspan x="10" y="16954">apidocCreate - libFile every.js</tspan>
+
+<tspan x="10" y="16970">apidocCreate - libFile everyLimit.js</tspan>
+
+<tspan x="10" y="16986">apidocCreate - libFile everySeries.js</tspan>
+
+<tspan x="10" y="17002">apidocCreate - libFile filter.js</tspan>
+
+<tspan x="10" y="17018">apidocCreate - libFile filterLimit.js</tspan>
+
+<tspan x="10" y="17034">apidocCreate - libFile filterSeries.js</tspan>
+
+<tspan x="10" y="17050">apidocCreate - libFile find.js</tspan>
+
+<tspan x="10" y="17066">apidocCreate - libFile findLimit.js</tspan>
+
+<tspan x="10" y="17082">apidocCreate - libFile findSeries.js</tspan>
+
+<tspan x="10" y="17098">apidocCreate - libFile foldl.js</tspan>
+
+<tspan x="10" y="17114">apidocCreate - libFile foldr.js</tspan>
+
+<tspan x="10" y="17130">apidocCreate - libFile forEach.js</tspan>
+
+<tspan x="10" y="17146">apidocCreate - libFile forEachLimit.js</tspan>
+
+<tspan x="10" y="17162">apidocCreate - libFile forEachOf.js</tspan>
+
+<tspan x="10" y="17178">apidocCreate - libFile forEachOfLimit.js</tspan>
+
+<tspan x="10" y="17194">apidocCreate - libFile forEachOfSeries.js</tspan>
+
+<tspan x="10" y="17210">apidocCreate - libFile forEachSeries.js</tspan>
+
+<tspan x="10" y="17226">apidocCreate - libFile forever.js</tspan>
+
+<tspan x="10" y="17242">apidocCreate - libFile groupBy.js</tspan>
+
+<tspan x="10" y="17258">apidocCreate - libFile groupByLimit.js</tspan>
+
+<tspan x="10" y="17274">apidocCreate - libFile groupBySeries.js</tspan>
+
+<tspan x="10" y="17290">apidocCreate - libFile index.js</tspan>
+
+<tspan x="10" y="17306">apidocCreate - libFile inject.js</tspan>
+
+<tspan x="10" y="17322">apidocCreate - libFile map.js</tspan>
+
+<tspan x="10" y="17338">apidocCreate - libFile mapLimit.js</tspan>
+
+<tspan x="10" y="17354">apidocCreate - libFile mapSeries.js</tspan>
+
+<tspan x="10" y="17370">apidocCreate - libFile mapValues.js</tspan>
+
+<tspan x="10" y="17386">apidocCreate - libFile mapValuesLimit.js</tspan>
+
+<tspan x="10" y="17402">apidocCreate - libFile mapValuesSeries.js</tspan>
+
+<tspan x="10" y="17418">apidocCreate - libFile memoize.js</tspan>
+
+<tspan x="10" y="17434">apidocCreate - libFile nextTick.js</tspan>
+
+<tspan x="10" y="17450">apidocCreate - libFile parallel.js</tspan>
+
+<tspan x="10" y="17466">apidocCreate - libFile parallelLimit.js</tspan>
+
+<tspan x="10" y="17482">apidocCreate - libFile priorityQueue.js</tspan>
+
+<tspan x="10" y="17498">apidocCreate - libFile queue.js</tspan>
+
+<tspan x="10" y="17514">apidocCreate - libFile race.js</tspan>
+
+<tspan x="10" y="17530">apidocCreate - libFile reduce.js</tspan>
+
+<tspan x="10" y="17546">apidocCreate - libFile reduceRight.js</tspan>
+
+<tspan x="10" y="17562">apidocCreate - libFile reflectAll.js</tspan>
+
+<tspan x="10" y="17578">apidocCreate - libFile reflect.js</tspan>
+
+<tspan x="10" y="17594">apidocCreate - libFile reject.js</tspan>
+
+<tspan x="10" y="17610">apidocCreate - libFile rejectLimit.js</tspan>
+
+<tspan x="10" y="17626">apidocCreate - libFile rejectSeries.js</tspan>
+
+<tspan x="10" y="17642">apidocCreate - libFile retryable.js</tspan>
+
+<tspan x="10" y="17658">apidocCreate - libFile retry.js</tspan>
+
+<tspan x="10" y="17674">apidocCreate - libFile select.js</tspan>
+
+<tspan x="10" y="17690">apidocCreate - libFile selectLimit.js</tspan>
+
+<tspan x="10" y="17706">apidocCreate - libFile selectSeries.js</tspan>
+
+<tspan x="10" y="17722">apidocCreate - libFile seq.js</tspan>
+
+<tspan x="10" y="17738">apidocCreate - libFile series.js</tspan>
+
+<tspan x="10" y="17754">apidocCreate - libFile setImmediate.js</tspan>
+
+<tspan x="10" y="17770">apidocCreate - libFile some.js</tspan>
+
+<tspan x="10" y="17786">apidocCreate - libFile someLimit.js</tspan>
+
+<tspan x="10" y="17802">apidocCreate - libFile someSeries.js</tspan>
+
+<tspan x="10" y="17818">apidocCreate - libFile sortBy.js</tspan>
+
+<tspan x="10" y="17834">apidocCreate - libFile timeout.js</tspan>
+
+<tspan x="10" y="17850">apidocCreate - libFile times.js</tspan>
+
+<tspan x="10" y="17866">apidocCreate - libFile timesLimit.js</tspan>
+
+<tspan x="10" y="17882">apidocCreate - libFile timesSeries.js</tspan>
+
+<tspan x="10" y="17898">apidocCreate - libFile transform.js</tspan>
+
+<tspan x="10" y="17914">apidocCreate - libFile tryEach.js</tspan>
+
+<tspan x="10" y="17930">apidocCreate - libFile unmemoize.js</tspan>
+
+<tspan x="10" y="17946">apidocCreate - libFile until.js</tspan>
+
+<tspan x="10" y="17962">apidocCreate - libFile waterfall.js</tspan>
+
+<tspan x="10" y="17978">apidocCreate - libFile whilst.js</tspan>
+
+<tspan x="10" y="17994">apidocCreate - libFile wrapSync.js</tspan>
+
+<tspan x="10" y="18010">apidocCreate - libFile internal/breakLoop.js</tspan>
+
+<tspan x="10" y="18026">apidocCreate - libFile internal/consoleFunc.js</tspan>
+
+<tspan x="10" y="18042">apidocCreate - libFile internal/createTester.js</tspan>
+
+<tspan x="10" y="18058">apidocCreate - libFile internal/doLimit.js</tspan>
+
+<tspan x="10" y="18074">apidocCreate - libFile internal/doParallel.js</tspan>
+
+<tspan x="10" y="18090">apidocCreate - libFile internal/doParallelLimit.js</tspan>
+
+<tspan x="10" y="18106">apidocCreate - libFile internal/DoublyLinkedList.js</tspan>
+
+<tspan x="10" y="18122">apidocCreate - libFile internal/findGetResult.js</tspan>
+
+<tspan x="10" y="18138">apidocCreate - libFile internal/getIterator.js</tspan>
+
+<tspan x="10" y="18154">apidocCreate - libFile internal/initialParams.js</tspan>
+
+<tspan x="10" y="18170">apidocCreate - libFile internal/iterator.js</tspan>
+
+<tspan x="10" y="18186">apidocCreate - libFile internal/notId.js</tspan>
+
+<tspan x="10" y="18202">apidocCreate - libFile internal/once.js</tspan>
+
+<tspan x="10" y="18218">apidocCreate - libFile internal/onlyOnce.js</tspan>
+
+<tspan x="10" y="18234">apidocCreate - libFile internal/slice.js</tspan>
+
+<tspan x="10" y="18250">apidocCreate - libFile internal/withoutIndex.js</tspan>
+
+<tspan x="10" y="18266">apidocCreate - libFile internal/wrapAsync.js</tspan>
+
+<tspan x="10" y="18282">created apidoc file /home/travis/build/npmdoc/node-npmdoc-async/tmp/build/apidoc.html</tspan>
+
+<tspan x="10" y="18298"></tspan>
+
+<tspan x="10" y="18314">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/packag\</tspan>
+<tspan x="10" y="18330">e.json</tspan>
+
+<tspan x="10" y="18346">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/all.js</tspan>
+
+<tspan x="10" y="18362">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/allLim\</tspan>
+<tspan x="10" y="18378">it.js</tspan>
+
+<tspan x="10" y="18394">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/allSer\</tspan>
+<tspan x="10" y="18410">ies.js</tspan>
+
+<tspan x="10" y="18426">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/any.js</tspan>
+
+<tspan x="10" y="18442">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/anyLim\</tspan>
+<tspan x="10" y="18458">it.js</tspan>
+
+<tspan x="10" y="18474">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/anySer\</tspan>
+<tspan x="10" y="18490">ies.js</tspan>
+
+<tspan x="10" y="18506">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/applyE\</tspan>
+<tspan x="10" y="18522">ach.js</tspan>
+
+<tspan x="10" y="18538">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/applyE\</tspan>
+<tspan x="10" y="18554">achSeries.js</tspan>
+
+<tspan x="10" y="18570">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/apply.\</tspan>
+<tspan x="10" y="18586">js</tspan>
+
+<tspan x="10" y="18602">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/asynci\</tspan>
+<tspan x="10" y="18618">fy.js</tspan>
+
+<tspan x="10" y="18634">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/autoIn\</tspan>
+<tspan x="10" y="18650">ject.js</tspan>
+
+<tspan x="10" y="18666">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/auto.j\</tspan>
+<tspan x="10" y="18682">s</tspan>
+
+<tspan x="10" y="18698">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/bower.\</tspan>
+<tspan x="10" y="18714">json</tspan>
+
+<tspan x="10" y="18730">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/cargo.\</tspan>
+<tspan x="10" y="18746">js</tspan>
+
+<tspan x="10" y="18762">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/CHANGE\</tspan>
+<tspan x="10" y="18778">LOG.md</tspan>
+
+<tspan x="10" y="18794">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/compos\</tspan>
+<tspan x="10" y="18810">e.js</tspan>
+
+<tspan x="10" y="18826">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/concat\</tspan>
+<tspan x="10" y="18842">.js</tspan>
+
+<tspan x="10" y="18858">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/concat\</tspan>
+<tspan x="10" y="18874">Limit.js</tspan>
+
+<tspan x="10" y="18890">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/concat\</tspan>
+<tspan x="10" y="18906">Series.js</tspan>
+
+<tspan x="10" y="18922">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/consta\</tspan>
+<tspan x="10" y="18938">nt.js</tspan>
+
+<tspan x="10" y="18954">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/detect\</tspan>
+<tspan x="10" y="18970">.js</tspan>
+
+<tspan x="10" y="18986">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/detect\</tspan>
+<tspan x="10" y="19002">Limit.js</tspan>
+
+<tspan x="10" y="19018">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/detect\</tspan>
+<tspan x="10" y="19034">Series.js</tspan>
+
+<tspan x="10" y="19050">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/dir.js</tspan>
+
+<tspan x="10" y="19066">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/doDuri\</tspan>
+<tspan x="10" y="19082">ng.js</tspan>
+
+<tspan x="10" y="19098">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/doUnti\</tspan>
+<tspan x="10" y="19114">l.js</tspan>
+
+<tspan x="10" y="19130">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/doWhil\</tspan>
+<tspan x="10" y="19146">st.js</tspan>
+
+<tspan x="10" y="19162">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/during\</tspan>
+<tspan x="10" y="19178">.js</tspan>
+
+<tspan x="10" y="19194">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/each.j\</tspan>
+<tspan x="10" y="19210">s</tspan>
+
+<tspan x="10" y="19226">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/eachLi\</tspan>
+<tspan x="10" y="19242">mit.js</tspan>
+
+<tspan x="10" y="19258">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/eachOf\</tspan>
+<tspan x="10" y="19274">.js</tspan>
+
+<tspan x="10" y="19290">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/eachOf\</tspan>
+<tspan x="10" y="19306">Limit.js</tspan>
+
+<tspan x="10" y="19322">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/eachOf\</tspan>
+<tspan x="10" y="19338">Series.js</tspan>
+
+<tspan x="10" y="19354">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/eachSe\</tspan>
+<tspan x="10" y="19370">ries.js</tspan>
+
+<tspan x="10" y="19386">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/ensure\</tspan>
+<tspan x="10" y="19402">Async.js</tspan>
+
+<tspan x="10" y="19418">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/every.\</tspan>
+<tspan x="10" y="19434">js</tspan>
+
+<tspan x="10" y="19450">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/everyL\</tspan>
+<tspan x="10" y="19466">imit.js</tspan>
+
+<tspan x="10" y="19482">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/everyS\</tspan>
+<tspan x="10" y="19498">eries.js</tspan>
+
+<tspan x="10" y="19514">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/filter\</tspan>
+<tspan x="10" y="19530">.js</tspan>
+
+<tspan x="10" y="19546">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/filter\</tspan>
+<tspan x="10" y="19562">Limit.js</tspan>
+
+<tspan x="10" y="19578">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/filter\</tspan>
+<tspan x="10" y="19594">Series.js</tspan>
+
+<tspan x="10" y="19610">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/find.j\</tspan>
+<tspan x="10" y="19626">s</tspan>
+
+<tspan x="10" y="19642">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/findLi\</tspan>
+<tspan x="10" y="19658">mit.js</tspan>
+
+<tspan x="10" y="19674">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/findSe\</tspan>
+<tspan x="10" y="19690">ries.js</tspan>
+
+<tspan x="10" y="19706">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/foldl.\</tspan>
+<tspan x="10" y="19722">js</tspan>
+
+<tspan x="10" y="19738">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/foldr.\</tspan>
+<tspan x="10" y="19754">js</tspan>
+
+<tspan x="10" y="19770">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/forEac\</tspan>
+<tspan x="10" y="19786">h.js</tspan>
+
+<tspan x="10" y="19802">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/forEac\</tspan>
+<tspan x="10" y="19818">hLimit.js</tspan>
+
+<tspan x="10" y="19834">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/forEac\</tspan>
+<tspan x="10" y="19850">hOf.js</tspan>
+
+<tspan x="10" y="19866">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/forEac\</tspan>
+<tspan x="10" y="19882">hOfLimit.js</tspan>
+
+<tspan x="10" y="19898">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/forEac\</tspan>
+<tspan x="10" y="19914">hOfSeries.js</tspan>
+
+<tspan x="10" y="19930">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/forEac\</tspan>
+<tspan x="10" y="19946">hSeries.js</tspan>
+
+<tspan x="10" y="19962">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/foreve\</tspan>
+<tspan x="10" y="19978">r.js</tspan>
+
+<tspan x="10" y="19994">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/groupB\</tspan>
+<tspan x="10" y="20010">y.js</tspan>
+
+<tspan x="10" y="20026">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/groupB\</tspan>
+<tspan x="10" y="20042">yLimit.js</tspan>
+
+<tspan x="10" y="20058">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/groupB\</tspan>
+<tspan x="10" y="20074">ySeries.js</tspan>
+
+<tspan x="10" y="20090">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/index.\</tspan>
+<tspan x="10" y="20106">js</tspan>
+
+<tspan x="10" y="20122">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/inject\</tspan>
+<tspan x="10" y="20138">.js</tspan>
+
+<tspan x="10" y="20154">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/LICENS\</tspan>
+<tspan x="10" y="20170">E</tspan>
+
+<tspan x="10" y="20186">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/log.js</tspan>
+
+<tspan x="10" y="20202">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/map.js</tspan>
+
+<tspan x="10" y="20218">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/mapLim\</tspan>
+<tspan x="10" y="20234">it.js</tspan>
+
+<tspan x="10" y="20250">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/mapSer\</tspan>
+<tspan x="10" y="20266">ies.js</tspan>
+
+<tspan x="10" y="20282">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/mapVal\</tspan>
+<tspan x="10" y="20298">ues.js</tspan>
+
+<tspan x="10" y="20314">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/mapVal\</tspan>
+<tspan x="10" y="20330">uesLimit.js</tspan>
+
+<tspan x="10" y="20346">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/mapVal\</tspan>
+<tspan x="10" y="20362">uesSeries.js</tspan>
+
+<tspan x="10" y="20378">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/memoiz\</tspan>
+<tspan x="10" y="20394">e.js</tspan>
+
+<tspan x="10" y="20410">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/nextTi\</tspan>
+<tspan x="10" y="20426">ck.js</tspan>
+
+<tspan x="10" y="20442">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/packag\</tspan>
+<tspan x="10" y="20458">e.json</tspan>
+
+<tspan x="10" y="20474">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/parall\</tspan>
+<tspan x="10" y="20490">el.js</tspan>
+
+<tspan x="10" y="20506">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/parall\</tspan>
+<tspan x="10" y="20522">elLimit.js</tspan>
+
+<tspan x="10" y="20538">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/priori\</tspan>
+<tspan x="10" y="20554">tyQueue.js</tspan>
+
+<tspan x="10" y="20570">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/queue.\</tspan>
+<tspan x="10" y="20586">js</tspan>
+
+<tspan x="10" y="20602">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/race.j\</tspan>
+<tspan x="10" y="20618">s</tspan>
+
+<tspan x="10" y="20634">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/README\</tspan>
+<tspan x="10" y="20650">.md</tspan>
+
+<tspan x="10" y="20666">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/reduce\</tspan>
+<tspan x="10" y="20682">.js</tspan>
+
+<tspan x="10" y="20698">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/reduce\</tspan>
+<tspan x="10" y="20714">Right.js</tspan>
+
+<tspan x="10" y="20730">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/reflec\</tspan>
+<tspan x="10" y="20746">tAll.js</tspan>
+
+<tspan x="10" y="20762">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/reflec\</tspan>
+<tspan x="10" y="20778">t.js</tspan>
+
+<tspan x="10" y="20794">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/reject\</tspan>
+<tspan x="10" y="20810">.js</tspan>
+
+<tspan x="10" y="20826">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/reject\</tspan>
+<tspan x="10" y="20842">Limit.js</tspan>
+
+<tspan x="10" y="20858">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/reject\</tspan>
+<tspan x="10" y="20874">Series.js</tspan>
+
+<tspan x="10" y="20890">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/retrya\</tspan>
+<tspan x="10" y="20906">ble.js</tspan>
+
+<tspan x="10" y="20922">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/retry.\</tspan>
+<tspan x="10" y="20938">js</tspan>
+
+<tspan x="10" y="20954">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/select\</tspan>
+<tspan x="10" y="20970">.js</tspan>
+
+<tspan x="10" y="20986">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/select\</tspan>
+<tspan x="10" y="21002">Limit.js</tspan>
+
+<tspan x="10" y="21018">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/select\</tspan>
+<tspan x="10" y="21034">Series.js</tspan>
+
+<tspan x="10" y="21050">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/seq.js</tspan>
+
+<tspan x="10" y="21066">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/series\</tspan>
+<tspan x="10" y="21082">.js</tspan>
+
+<tspan x="10" y="21098">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/setImm\</tspan>
+<tspan x="10" y="21114">ediate.js</tspan>
+
+<tspan x="10" y="21130">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/some.j\</tspan>
+<tspan x="10" y="21146">s</tspan>
+
+<tspan x="10" y="21162">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/someLi\</tspan>
+<tspan x="10" y="21178">mit.js</tspan>
+
+<tspan x="10" y="21194">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/someSe\</tspan>
+<tspan x="10" y="21210">ries.js</tspan>
+
+<tspan x="10" y="21226">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/sortBy\</tspan>
+<tspan x="10" y="21242">.js</tspan>
+
+<tspan x="10" y="21258">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/timeou\</tspan>
+<tspan x="10" y="21274">t.js</tspan>
+
+<tspan x="10" y="21290">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/times.\</tspan>
+<tspan x="10" y="21306">js</tspan>
+
+<tspan x="10" y="21322">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/timesL\</tspan>
+<tspan x="10" y="21338">imit.js</tspan>
+
+<tspan x="10" y="21354">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/timesS\</tspan>
+<tspan x="10" y="21370">eries.js</tspan>
+
+<tspan x="10" y="21386">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/transf\</tspan>
+<tspan x="10" y="21402">orm.js</tspan>
+
+<tspan x="10" y="21418">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/tryEac\</tspan>
+<tspan x="10" y="21434">h.js</tspan>
+
+<tspan x="10" y="21450">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/unmemo\</tspan>
+<tspan x="10" y="21466">ize.js</tspan>
+
+<tspan x="10" y="21482">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/until.\</tspan>
+<tspan x="10" y="21498">js</tspan>
+
+<tspan x="10" y="21514">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/waterf\</tspan>
+<tspan x="10" y="21530">all.js</tspan>
+
+<tspan x="10" y="21546">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/whilst\</tspan>
+<tspan x="10" y="21562">.js</tspan>
+
+<tspan x="10" y="21578">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/wrapSy\</tspan>
+<tspan x="10" y="21594">nc.js</tspan>
+
+<tspan x="10" y="21610">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/dist/a\</tspan>
+<tspan x="10" y="21626">sync.js</tspan>
+
+<tspan x="10" y="21642">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="21658">al/applyEach.js</tspan>
+
+<tspan x="10" y="21674">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="21690">al/breakLoop.js</tspan>
+
+<tspan x="10" y="21706">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="21722">al/consoleFunc.js</tspan>
+
+<tspan x="10" y="21738">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="21754">al/createTester.js</tspan>
+
+<tspan x="10" y="21770">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="21786">al/doLimit.js</tspan>
+
+<tspan x="10" y="21802">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="21818">al/doParallel.js</tspan>
+
+<tspan x="10" y="21834">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="21850">al/doParallelLimit.js</tspan>
+
+<tspan x="10" y="21866">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="21882">al/DoublyLinkedList.js</tspan>
+
+<tspan x="10" y="21898">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="21914">al/eachOfLimit.js</tspan>
+
+<tspan x="10" y="21930">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="21946">al/filter.js</tspan>
+
+<tspan x="10" y="21962">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="21978">al/findGetResult.js</tspan>
+
+<tspan x="10" y="21994">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="22010">al/getIterator.js</tspan>
+
+<tspan x="10" y="22026">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="22042">al/initialParams.js</tspan>
+
+<tspan x="10" y="22058">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="22074">al/iterator.js</tspan>
+
+<tspan x="10" y="22090">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="22106">al/map.js</tspan>
+
+<tspan x="10" y="22122">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="22138">al/notId.js</tspan>
+
+<tspan x="10" y="22154">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="22170">al/once.js</tspan>
+
+<tspan x="10" y="22186">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="22202">al/onlyOnce.js</tspan>
+
+<tspan x="10" y="22218">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="22234">al/parallel.js</tspan>
+
+<tspan x="10" y="22250">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="22266">al/queue.js</tspan>
+
+<tspan x="10" y="22282">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="22298">al/reject.js</tspan>
+
+<tspan x="10" y="22314">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="22330">al/setImmediate.js</tspan>
+
+<tspan x="10" y="22346">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="22362">al/slice.js</tspan>
+
+<tspan x="10" y="22378">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="22394">al/withoutIndex.js</tspan>
+
+<tspan x="10" y="22410">apidocCreate - readExample /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async/intern\</tspan>
+<tspan x="10" y="22426">al/wrapAsync.js</tspan>
+
+<tspan x="10" y="22442">apidocCreate - requiring /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async ...</tspan>
+
+<tspan x="10" y="22458">apidocCreate - ... required /home/travis/build/npmdoc/node-npmdoc-async/node_modules/async</tspan>
+
+<tspan x="10" y="22474">apidocCreate - libFile all.js</tspan>
+
+<tspan x="10" y="22490">apidocCreate - libFile allLimit.js</tspan>
+
+<tspan x="10" y="22506">apidocCreate - libFile allSeries.js</tspan>
+
+<tspan x="10" y="22522">apidocCreate - libFile any.js</tspan>
+
+<tspan x="10" y="22538">apidocCreate - libFile anyLimit.js</tspan>
+
+<tspan x="10" y="22554">apidocCreate - libFile anySeries.js</tspan>
+
+<tspan x="10" y="22570">apidocCreate - libFile applyEach.js</tspan>
+
+<tspan x="10" y="22586">apidocCreate - libFile applyEachSeries.js</tspan>
+
+<tspan x="10" y="22602">apidocCreate - libFile apply.js</tspan>
+
+<tspan x="10" y="22618">apidocCreate - libFile asyncify.js</tspan>
+
+<tspan x="10" y="22634">apidocCreate - libFile autoInject.js</tspan>
+
+<tspan x="10" y="22650">apidocCreate - libFile auto.js</tspan>
+
+<tspan x="10" y="22666">apidocCreate - libFile cargo.js</tspan>
+
+<tspan x="10" y="22682">apidocCreate - libFile compose.js</tspan>
+
+<tspan x="10" y="22698">apidocCreate - libFile concat.js</tspan>
+
+<tspan x="10" y="22714">apidocCreate - libFile concatLimit.js</tspan>
+
+<tspan x="10" y="22730">apidocCreate - libFile concatSeries.js</tspan>
+
+<tspan x="10" y="22746">apidocCreate - libFile constant.js</tspan>
+
+<tspan x="10" y="22762">apidocCreate - libFile detect.js</tspan>
+
+<tspan x="10" y="22778">apidocCreate - libFile detectLimit.js</tspan>
+
+<tspan x="10" y="22794">apidocCreate - libFile detectSeries.js</tspan>
+
+<tspan x="10" y="22810">apidocCreate - libFile dir.js</tspan>
+
+<tspan x="10" y="22826">apidocCreate - libFile doDuring.js</tspan>
+
+<tspan x="10" y="22842">apidocCreate - libFile doUntil.js</tspan>
+
+<tspan x="10" y="22858">apidocCreate - libFile doWhilst.js</tspan>
+
+<tspan x="10" y="22874">apidocCreate - libFile during.js</tspan>
+
+<tspan x="10" y="22890">apidocCreate - libFile each.js</tspan>
+
+<tspan x="10" y="22906">apidocCreate - libFile eachLimit.js</tspan>
+
+<tspan x="10" y="22922">apidocCreate - libFile eachOf.js</tspan>
+
+<tspan x="10" y="22938">apidocCreate - libFile eachOfLimit.js</tspan>
+
+<tspan x="10" y="22954">apidocCreate - libFile eachOfSeries.js</tspan>
+
+<tspan x="10" y="22970">apidocCreate - libFile eachSeries.js</tspan>
+
+<tspan x="10" y="22986">apidocCreate - libFile ensureAsync.js</tspan>
+
+<tspan x="10" y="23002">apidocCreate - libFile every.js</tspan>
+
+<tspan x="10" y="23018">apidocCreate - libFile everyLimit.js</tspan>
+
+<tspan x="10" y="23034">apidocCreate - libFile everySeries.js</tspan>
+
+<tspan x="10" y="23050">apidocCreate - libFile filter.js</tspan>
+
+<tspan x="10" y="23066">apidocCreate - libFile filterLimit.js</tspan>
+
+<tspan x="10" y="23082">apidocCreate - libFile filterSeries.js</tspan>
+
+<tspan x="10" y="23098">apidocCreate - libFile find.js</tspan>
+
+<tspan x="10" y="23114">apidocCreate - libFile findLimit.js</tspan>
+
+<tspan x="10" y="23130">apidocCreate - libFile findSeries.js</tspan>
+
+<tspan x="10" y="23146">apidocCreate - libFile foldl.js</tspan>
+
+<tspan x="10" y="23162">apidocCreate - libFile foldr.js</tspan>
+
+<tspan x="10" y="23178">apidocCreate - libFile forEach.js</tspan>
+
+<tspan x="10" y="23194">apidocCreate - libFile forEachLimit.js</tspan>
+
+<tspan x="10" y="23210">apidocCreate - libFile forEachOf.js</tspan>
+
+<tspan x="10" y="23226">apidocCreate - libFile forEachOfLimit.js</tspan>
+
+<tspan x="10" y="23242">apidocCreate - libFile forEachOfSeries.js</tspan>
+
+<tspan x="10" y="23258">apidocCreate - libFile forEachSeries.js</tspan>
+
+<tspan x="10" y="23274">apidocCreate - libFile forever.js</tspan>
+
+<tspan x="10" y="23290">apidocCreate - libFile groupBy.js</tspan>
+
+<tspan x="10" y="23306">apidocCreate - libFile groupByLimit.js</tspan>
+
+<tspan x="10" y="23322">apidocCreate - libFile groupBySeries.js</tspan>
+
+<tspan x="10" y="23338">apidocCreate - libFile index.js</tspan>
+
+<tspan x="10" y="23354">apidocCreate - libFile inject.js</tspan>
+
+<tspan x="10" y="23370">apidocCreate - libFile map.js</tspan>
+
+<tspan x="10" y="23386">apidocCreate - libFile mapLimit.js</tspan>
+
+<tspan x="10" y="23402">apidocCreate - libFile mapSeries.js</tspan>
+
+<tspan x="10" y="23418">apidocCreate - libFile mapValues.js</tspan>
+
+<tspan x="10" y="23434">apidocCreate - libFile mapValuesLimit.js</tspan>
+
+<tspan x="10" y="23450">apidocCreate - libFile mapValuesSeries.js</tspan>
+
+<tspan x="10" y="23466">apidocCreate - libFile memoize.js</tspan>
+
+<tspan x="10" y="23482">apidocCreate - libFile nextTick.js</tspan>
+
+<tspan x="10" y="23498">apidocCreate - libFile parallel.js</tspan>
+
+<tspan x="10" y="23514">apidocCreate - libFile parallelLimit.js</tspan>
+
+<tspan x="10" y="23530">apidocCreate - libFile priorityQueue.js</tspan>
+
+<tspan x="10" y="23546">apidocCreate - libFile queue.js</tspan>
+
+<tspan x="10" y="23562">apidocCreate - libFile race.js</tspan>
+
+<tspan x="10" y="23578">apidocCreate - libFile reduce.js</tspan>
+
+<tspan x="10" y="23594">apidocCreate - libFile reduceRight.js</tspan>
+
+<tspan x="10" y="23610">apidocCreate - libFile reflectAll.js</tspan>
+
+<tspan x="10" y="23626">apidocCreate - libFile reflect.js</tspan>
+
+<tspan x="10" y="23642">apidocCreate - libFile reject.js</tspan>
+
+<tspan x="10" y="23658">apidocCreate - libFile rejectLimit.js</tspan>
+
+<tspan x="10" y="23674">apidocCreate - libFile rejectSeries.js</tspan>
+
+<tspan x="10" y="23690">apidocCreate - libFile retryable.js</tspan>
+
+<tspan x="10" y="23706">apidocCreate - libFile retry.js</tspan>
+
+<tspan x="10" y="23722">apidocCreate - libFile select.js</tspan>
+
+<tspan x="10" y="23738">apidocCreate - libFile selectLimit.js</tspan>
+
+<tspan x="10" y="23754">apidocCreate - libFile selectSeries.js</tspan>
+
+<tspan x="10" y="23770">apidocCreate - libFile seq.js</tspan>
+
+<tspan x="10" y="23786">apidocCreate - libFile series.js</tspan>
+
+<tspan x="10" y="23802">apidocCreate - libFile setImmediate.js</tspan>
+
+<tspan x="10" y="23818">apidocCreate - libFile some.js</tspan>
+
+<tspan x="10" y="23834">apidocCreate - libFile someLimit.js</tspan>
+
+<tspan x="10" y="23850">apidocCreate - libFile someSeries.js</tspan>
+
+<tspan x="10" y="23866">apidocCreate - libFile sortBy.js</tspan>
+
+<tspan x="10" y="23882">apidocCreate - libFile timeout.js</tspan>
+
+<tspan x="10" y="23898">apidocCreate - libFile times.js</tspan>
+
+<tspan x="10" y="23914">apidocCreate - libFile timesLimit.js</tspan>
+
+<tspan x="10" y="23930">apidocCreate - libFile timesSeries.js</tspan>
+
+<tspan x="10" y="23946">apidocCreate - libFile transform.js</tspan>
+
+<tspan x="10" y="23962">apidocCreate - libFile tryEach.js</tspan>
+
+<tspan x="10" y="23978">apidocCreate - libFile unmemoize.js</tspan>
+
+<tspan x="10" y="23994">apidocCreate - libFile until.js</tspan>
+
+<tspan x="10" y="24010">apidocCreate - libFile waterfall.js</tspan>
+
+<tspan x="10" y="24026">apidocCreate - libFile whilst.js</tspan>
+
+<tspan x="10" y="24042">apidocCreate - libFile wrapSync.js</tspan>
+
+<tspan x="10" y="24058">apidocCreate - libFile internal/breakLoop.js</tspan>
+
+<tspan x="10" y="24074">apidocCreate - libFile internal/consoleFunc.js</tspan>
+
+<tspan x="10" y="24090">apidocCreate - libFile internal/createTester.js</tspan>
+
+<tspan x="10" y="24106">apidocCreate - libFile internal/doLimit.js</tspan>
+
+<tspan x="10" y="24122">apidocCreate - libFile internal/doParallel.js</tspan>
+
+<tspan x="10" y="24138">apidocCreate - libFile internal/doParallelLimit.js</tspan>
+
+<tspan x="10" y="24154">apidocCreate - libFile internal/DoublyLinkedList.js</tspan>
+
+<tspan x="10" y="24170">apidocCreate - libFile internal/findGetResult.js</tspan>
+
+<tspan x="10" y="24186">apidocCreate - libFile internal/getIterator.js</tspan>
+
+<tspan x="10" y="24202">apidocCreate - libFile internal/initialParams.js</tspan>
+
+<tspan x="10" y="24218">apidocCreate - libFile internal/iterator.js</tspan>
+
+<tspan x="10" y="24234">apidocCreate - libFile internal/notId.js</tspan>
+
+<tspan x="10" y="24250">apidocCreate - libFile internal/once.js</tspan>
+
+<tspan x="10" y="24266">apidocCreate - libFile internal/onlyOnce.js</tspan>
+
+<tspan x="10" y="24282">apidocCreate - libFile internal/slice.js</tspan>
+
+<tspan x="10" y="24298">apidocCreate - libFile internal/withoutIndex.js</tspan>
+
+<tspan x="10" y="24314">apidocCreate - libFile internal/wrapAsync.js</tspan>
+
+<tspan x="10" y="24330">created customOrg file /home/travis/build/npmdoc/node-npmdoc-async/README.md</tspan>
+
+<tspan x="10" y="24346"></tspan>
+
+<tspan x="10" y="24362">[node test-case 2 of 8 passed] - testCase_buildLib_default</tspan>
+
+<tspan x="10" y="24378">[node test-case 3 of 8 passed] - testCase_buildReadme_default</tspan>
+
+<tspan x="10" y="24394">[node test-case 4 of 8 passed] - testCase_buildTest_default</tspan>
+
+<tspan x="10" y="24410">[node test-case 5 of 8 passed] - testCase_nop_default</tspan>
+
+<tspan x="10" y="24426"></tspan>
+
+<tspan x="10" y="24442">browserTest - created electron entry-page /home/travis/build/npmdoc/node-npmdoc-async/tmp/electr\</tspan>
+<tspan x="10" y="24458">on.163eaea5cb50.937166593847e.html</tspan>
+
+<tspan x="10" y="24474"></tspan>
+
+<tspan x="10" y="24490">(node:4576) DeprecationWarning: _linklist module is deprecated. Please use a userland alternativ\</tspan>
+<tspan x="10" y="24506">e.</tspan>
+
+<tspan x="10" y="24522">(node:4576) DeprecationWarning: sys is deprecated. Use util instead.</tspan>
+
+<tspan x="10" y="24538">[node test-case 6 of 8 passed] - testCase_buildCustomOrg_default</tspan>
+
+<tspan x="10" y="24554">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
+
+<tspan x="10" y="24570">&gt; server listening on http-port 52258</tspan>
+
+<tspan x="10" y="24586">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
+
+<tspan x="10" y="24602">[4793:0610/181658.864687:WARNING:audio_manager.cc(295)] Multiple instances of AudioManager detec\</tspan>
+<tspan x="10" y="24618">ted</tspan>
+
+<tspan x="10" y="24634">[4793:0610/181658.864756:WARNING:audio_manager.cc(254)] Multiple instances of AudioManager detec\</tspan>
+<tspan x="10" y="24650">ted</tspan>
+
+<tspan x="10" y="24666">[4829:0610/181658.901497:ERROR:sandbox_linux.cc(343)] InitializeSandbox() called with multiple t\</tspan>
+<tspan x="10" y="24682">hreads in process gpu-process. </tspan>
+
+<tspan x="10" y="24698">[4793:0610/181659.006358:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="24714">l.</tspan>
+
+<tspan x="10" y="24730">[4793:0610/181659.007304:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="24746">l.</tspan>
+
+<tspan x="10" y="24762">[4793:0610/181659.008338:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="24778">l.</tspan>
+
+<tspan x="10" y="24794">[4793:0610/181659.009031:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="24810">l.</tspan>
+
+<tspan x="10" y="24826">[4793:0610/181659.009734:ERROR:browser_gpu_channel_host_factory.cc(125)] Failed to create channe\</tspan>
+<tspan x="10" y="24842">l.</tspan>
+
+<tspan x="10" y="24858"></tspan>
+
+<tspan x="10" y="24874">browserTest - opened http://127.0.0.1:39407?modeTest=1&amp;timeoutDefault=120000</tspan>
+
+<tspan x="10" y="24890"></tspan>
+
+<tspan x="10" y="24906">[4793:0610/181659.704560:INFO:CONSOLE(266)] "[browser test-case 1 of 8 passed] - testCase_buildA\</tspan>
+<tspan x="10" y="24922">pidoc_default", source: file:///home/travis/build/npmdoc/node-npmdoc-async/tmp/electron.163eaea5\</tspan>
+<tspan x="10" y="24938">cb50.937166593847e.html (266)</tspan>
+
+<tspan x="10" y="24954">[4793:0610/181659.713742:INFO:CONSOLE(266)] "[browser test-case 2 of 8 passed] - testCase_buildA\</tspan>
+<tspan x="10" y="24970">pp_default", source: file:///home/travis/build/npmdoc/node-npmdoc-async/tmp/electron.163eaea5cb5\</tspan>
+<tspan x="10" y="24986">0.937166593847e.html (266)</tspan>
+
+<tspan x="10" y="25002">[4793:0610/181659.715690:INFO:CONSOLE(266)] "[browser test-case 3 of 8 passed] - testCase_buildC\</tspan>
+<tspan x="10" y="25018">ustomOrg_default", source: file:///home/travis/build/npmdoc/node-npmdoc-async/tmp/electron.163ea\</tspan>
+<tspan x="10" y="25034">ea5cb50.937166593847e.html (266)</tspan>
+
+<tspan x="10" y="25050">[4793:0610/181659.717187:INFO:CONSOLE(266)] "[browser test-case 4 of 8 passed] - testCase_buildL\</tspan>
+<tspan x="10" y="25066">ib_default", source: file:///home/travis/build/npmdoc/node-npmdoc-async/tmp/electron.163eaea5cb5\</tspan>
+<tspan x="10" y="25082">0.937166593847e.html (266)</tspan>
+
+<tspan x="10" y="25098">[4793:0610/181659.718676:INFO:CONSOLE(266)] "[browser test-case 5 of 8 passed] - testCase_buildR\</tspan>
+<tspan x="10" y="25114">eadme_default", source: file:///home/travis/build/npmdoc/node-npmdoc-async/tmp/electron.163eaea5\</tspan>
+<tspan x="10" y="25130">cb50.937166593847e.html (266)</tspan>
+
+<tspan x="10" y="25146">[4793:0610/181659.720874:INFO:CONSOLE(266)] "[browser test-case 6 of 8 passed] - testCase_buildT\</tspan>
+<tspan x="10" y="25162">est_default", source: file:///home/travis/build/npmdoc/node-npmdoc-async/tmp/electron.163eaea5cb\</tspan>
+<tspan x="10" y="25178">50.937166593847e.html (266)</tspan>
+
+<tspan x="10" y="25194">[4793:0610/181659.722647:INFO:CONSOLE(266)] "[browser test-case 7 of 8 passed] - testCase_nop_de\</tspan>
+<tspan x="10" y="25210">fault", source: file:///home/travis/build/npmdoc/node-npmdoc-async/tmp/electron.163eaea5cb50.937\</tspan>
+<tspan x="10" y="25226">166593847e.html (266)</tspan>
+
+<tspan x="10" y="25242">[4793:0610/181659.725365:INFO:CONSOLE(266)] "domStyleValidateUnmatched 0. 0 .testReportDiv .test\</tspan>
+<tspan x="10" y="25258">Failed {", source: file:///home/travis/build/npmdoc/node-npmdoc-async/tmp/electron.163eaea5cb50.\</tspan>
+<tspan x="10" y="25274">937166593847e.html (266)</tspan>
+
+<tspan x="10" y="25290">[4793:0610/181659.726987:INFO:CONSOLE(266)] "domStyleValidateUnmatched 1. 0 .testReportDiv img {\</tspan>
+<tspan x="10" y="25306">", source: file:///home/travis/build/npmdoc/node-npmdoc-async/tmp/electron.163eaea5cb50.93716659\</tspan>
+<tspan x="10" y="25322">3847e.html (266)</tspan>
+
+<tspan x="10" y="25338">[4793:0610/181659.728372:INFO:CONSOLE(266)] "domStyleValidateUnmatched 2. 1 .testReportDiv .disp\</tspan>
+<tspan x="10" y="25354">layNone {", source: file:///home/travis/build/npmdoc/node-npmdoc-async/tmp/electron.163eaea5cb50\</tspan>
+<tspan x="10" y="25370">.937166593847e.html (266)</tspan>
+
+<tspan x="10" y="25386">[4793:0610/181659.730119:INFO:CONSOLE(266)] "domStyleValidateUnmatched 3. 1 .testReportDiv .foot\</tspan>
+<tspan x="10" y="25402">er {", source: file:///home/travis/build/npmdoc/node-npmdoc-async/tmp/electron.163eaea5cb50.9371\</tspan>
+<tspan x="10" y="25418">66593847e.html (266)</tspan>
+
+<tspan x="10" y="25434">[4793:0610/181659.731792:INFO:CONSOLE(266)] "domStyleValidateUnmatched 4. 1 .testReportDiv .summ\</tspan>
+<tspan x="10" y="25450">ary {", source: file:///home/travis/build/npmdoc/node-npmdoc-async/tmp/electron.163eaea5cb50.937\</tspan>
+<tspan x="10" y="25466">166593847e.html (266)</tspan>
+
+<tspan x="10" y="25482">[4793:0610/181659.733221:INFO:CONSOLE(266)] "domStyleValidateUnmatched 5. 1 .testReportDiv pre {\</tspan>
+<tspan x="10" y="25498">", source: file:///home/travis/build/npmdoc/node-npmdoc-async/tmp/electron.163eaea5cb50.93716659\</tspan>
+<tspan x="10" y="25514">3847e.html (266)</tspan>
+
+<tspan x="10" y="25530">[4793:0610/181659.734771:INFO:CONSOLE(266)] "domStyleValidateUnmatched 6. 1 body &gt; pre,", source\</tspan>
+<tspan x="10" y="25546">: file:///home/travis/build/npmdoc/node-npmdoc-async/tmp/electron.163eaea5cb50.937166593847e.htm\</tspan>
+<tspan x="10" y="25562">l (266)</tspan>
+
+<tspan x="10" y="25578">[4793:0610/181659.736279:INFO:CONSOLE(266)] "domStyleValidateUnmatched 7. 1 body &gt; pre,", source\</tspan>
+<tspan x="10" y="25594">: file:///home/travis/build/npmdoc/node-npmdoc-async/tmp/electron.163eaea5cb50.937166593847e.htm\</tspan>
+<tspan x="10" y="25610">l (266)</tspan>
+
+<tspan x="10" y="25626">[4793:0610/181659.737888:INFO:CONSOLE(266)] "domStyleValidateUnmatched 8. 1 body {", source: fil\</tspan>
+<tspan x="10" y="25642">e:///home/travis/build/npmdoc/node-npmdoc-async/tmp/electron.163eaea5cb50.937166593847e.html (26\</tspan>
+<tspan x="10" y="25658">6)</tspan>
+
+<tspan x="10" y="25674">[4793:0610/181659.739458:INFO:CONSOLE(266)] "domStyleValidateUnmatched 9. 1 body {", source: fil\</tspan>
+<tspan x="10" y="25690">e:///home/travis/build/npmdoc/node-npmdoc-async/tmp/electron.163eaea5cb50.937166593847e.html (26\</tspan>
+<tspan x="10" y="25706">6)</tspan>
+
+<tspan x="10" y="25722">[4793:0610/181659.743058:INFO:CONSOLE(266)] "[browser test-case 8 of 8 passed] - testCase_webpag\</tspan>
+<tspan x="10" y="25738">e_default", source: file:///home/travis/build/npmdoc/node-npmdoc-async/tmp/electron.163eaea5cb50\</tspan>
+<tspan x="10" y="25754">.937166593847e.html (266)</tspan>
+
+<tspan x="10" y="25770">[node test-case 7 of 8 passed] - testCase_buildApp_default</tspan>
+
+<tspan x="10" y="25786"></tspan>
+
+<tspan x="10" y="25802">browserTest - created screenshot file /home/travis/build/npmdoc/node-npmdoc-async/tmp/build/scre\</tspan>
+<tspan x="10" y="25818">enshot.npmTest.browser.%2F.png</tspan>
+
+<tspan x="10" y="25834"></tspan>
+
+<tspan x="10" y="25850">browserTest - created screenshot file /home/travis/build/npmdoc/node-npmdoc-async/tmp/build/scre\</tspan>
+<tspan x="10" y="25866">enshot.npmTest.browser.%2F.html</tspan>
+
+<tspan x="10" y="25882"></tspan>
+
+<tspan x="10" y="25898">browserTest - exit-code 0 - http://127.0.0.1:39407?modeTest=1&amp;timeoutDefault=120000</tspan>
+
+<tspan x="10" y="25914"></tspan>
+
+<tspan x="10" y="25930"></tspan>
+
+<tspan x="10" y="25946">browserTest - merged coverage from file /home/travis/build/npmdoc/node-npmdoc-async/tmp/coverage\</tspan>
+<tspan x="10" y="25962">.npmTest.browser.%2F.json</tspan>
+
+<tspan x="10" y="25978"></tspan>
+
+<tspan x="10" y="25994"></tspan>
+
+<tspan x="10" y="26010">browserTest - merged test-report from file /home/travis/build/npmdoc/node-npmdoc-async/tmp/test-\</tspan>
+<tspan x="10" y="26026">report.npmTest.browser.%2F.json</tspan>
+
+<tspan x="10" y="26042"></tspan>
+
+<tspan x="10" y="26058">[node test-case 8 of 8 passed] - testCase_webpage_default</tspan>
+
+<tspan x="10" y="26074"></tspan>
+
+<tspan x="10" y="26090">npmTest - merged test-report from file /home/travis/build/npmdoc/node-npmdoc-async/tmp/build/tes\</tspan>
+<tspan x="10" y="26106">t-report.json</tspan>
+
+<tspan x="10" y="26122"></tspan>
+
+<tspan x="10" y="26138">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="26154">| test-report - buildApp - node - linux v6.14.2 - 2018-06-10T18:16:41.566Z</tspan>
+
+<tspan x="10" y="26170">|   32729 ms            0 failed        8 passed      |</tspan>
+
+<tspan x="10" y="26186">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="26202">| test-report - npmTest - browser - / - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTM\</tspan>
+<tspan x="10" y="26218">L, like Gecko) Chrome/58.0.3029.110 Electron/1.7.15 Safari/537.36 - 2018-06-10T18:16:59.651Z</tspan>
+
+<tspan x="10" y="26234">|      47 ms            0 failed        8 passed      |</tspan>
+
+<tspan x="10" y="26250">-------------------------------------------------------</tspan>
+
+<tspan x="10" y="26266"></tspan>
+
+<tspan x="10" y="26282">created test-report file /home/travis/build/npmdoc/node-npmdoc-async/tmp/build/test-report.html</tspan>
+
+<tspan x="10" y="26298"></tspan>
+
+<tspan x="10" y="26314"></tspan>
+
+<tspan x="10" y="26330">npmTest - 0 failed tests</tspan>
+
+<tspan x="10" y="26346"></tspan>
+
+<tspan x="10" y="26362"></tspan>
+
+<tspan x="10" y="26378">[MODE_BUILD=npmTest] - 2018-06-10T18:17:15.829Z - EXIT_CODE - 0</tspan>
+
+</text>
+</svg>

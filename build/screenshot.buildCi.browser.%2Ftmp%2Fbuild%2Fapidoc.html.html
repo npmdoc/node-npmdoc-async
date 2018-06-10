@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -48,17 +48,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://caolan.github.io/async/"
-
-    >async (2.6.1)</a>
+    <a href="https://caolan.github.io/async/">async (2.6.1)</a>
 </h1>
 <h4>Higher-order functions and common patterns for asynchronous code</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.async">module async</a><ol>
 
@@ -3051,7 +3044,7 @@ exports.default = function (fn /*, ...args*/) {
     };
 };
 
-var _slice = require(&apos;./internal/slice&apos;);
+var _slice = require('./internal/slice');
 
 var _slice2 = _interopRequireDefault(_slice);
 ...</pre></li>
@@ -3089,7 +3082,7 @@ var _slice2 = _interopRequireDefault(_slice);
 * arguments, `callback` is required.
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">applyEach</span>([enableSearch, updateSchema], &apos;bucket&apos;, callback);
+* async.<span class="apidocCodeKeywordSpan">applyEach</span>([enableSearch, updateSchema], 'bucket', callback);
 *
 * // partial application example:
 * async.each(
@@ -3145,7 +3138,7 @@ var _slice2 = _interopRequireDefault(_slice);
             return callback(e);
         }
         // if result is Promise object
-        if (isObject(result) &amp;&amp; typeof result.then === &apos;function&apos;) {
+        if (isObject(result) &amp;&amp; typeof result.then === 'function') {
             result.then(function(value) {
                 invokeCallback(callback, null, value);
             }, function(err) {
@@ -3163,7 +3156,7 @@ var _slice2 = _interopRequireDefault(_slice);
 *
 * // passing a regular synchronous function
 * async.waterfall([
-*     async.apply(fs.readFile, filename, &quot;utf8&quot;),
+*     async.apply(fs.readFile, filename, "utf8"),
 *     async.<span class="apidocCodeKeywordSpan">asyncify</span>(JSON.parse),
 *     function (data, next) {
 *         // data is the result of parsing the text.
@@ -3185,7 +3178,7 @@ var _slice2 = _interopRequireDefault(_slice);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">auto = function (tasks, concurrency, callback) {
-    if (typeof concurrency === &apos;function&apos;) {
+    if (typeof concurrency === 'function') {
         // concurrency is optional, shift the args.
         callback = concurrency;
         concurrency = null;
@@ -3232,10 +3225,10 @@ var _slice2 = _interopRequireDefault(_slice);
 
         arrayEach(dependencies, function (dependencyName) {
             if (!tasks[dependencyName]) {
-                throw new Error(&apos;async.auto task `&apos; + key +
-                    &apos;` has a non-existent dependency `&apos; +
-                    dependencyName + &apos;` in &apos; +
-                    dependencies.join(&apos;, &apos;));
+                throw new Error('async.auto task `' + key +
+                    '` has a non-existent dependency `' +
+                    dependencyName + '` in ' +
+                    dependencies.join(', '));
             }
             addListener(dependencyName, function () {
                 remainingDependencies--;
@@ -3318,7 +3311,7 @@ var _slice2 = _interopRequireDefault(_slice);
     }
 
     function checkForDeadlocks() {
-        // Kahn&apos;s algorithm
+        // Kahn's algorithm
         // https://en.wikipedia.org/wiki/Topological_sorting#Kahn.27s_algorithm
         // http://connalle.blogspot.com/2013/10/topological-sortingkahn-algorithm.html
         var currentTask;
@@ -3333,9 +3326,9 @@ var _slice2 = _interopRequireDefault(_slice);
 *
 * async.<span class="apidocCodeKeywordSpan">auto</span>({
 *     // this function will just be passed a callback
-*     readData: async.apply(fs.readFile, &apos;data.txt&apos;, &apos;utf-8&apos;),
-*     showData: [&apos;readData&apos;, function(results, cb) {
-*         // results.readData is the file&apos;s contents
+*     readData: async.apply(fs.readFile, 'data.txt', 'utf-8'),
+*     showData: ['readData', function(results, cb) {
+*         // results.readData is the file's contents
 *         // ...
 *     }]
 * }, callback);
@@ -3372,7 +3365,7 @@ var _slice2 = _interopRequireDefault(_slice);
         } else {
             params = parseParams(taskFn);
             if (taskFn.length === 0 &amp;&amp; !fnIsAsync &amp;&amp; params.length === 0) {
-                throw new Error(&quot;autoInject task functions require explicit parameters.&quot;);
+                throw new Error("autoInject task functions require explicit parameters.");
             }
 
             // remove callback param
@@ -3403,7 +3396,7 @@ var _slice2 = _interopRequireDefault(_slice);
 * async.<span class="apidocCodeKeywordSpan">autoInject</span>({
 *     get_data: function(callback) {
 *         // async code to get some data
-*         callback(null, &apos;data&apos;, &apos;converted to array&apos;);
+*         callback(null, 'data', 'converted to array');
 *     },
 *     make_folder: function(callback) {
 *         // async code to create a directory to store a file in
@@ -3433,7 +3426,7 @@ var _slice2 = _interopRequireDefault(_slice);
 * // create a cargo object with payload 2
 * var cargo = async.<span class="apidocCodeKeywordSpan">cargo</span>(function(tasks, callback) {
 *     for (var i=0; i&lt;tasks.length; i++) {
-*         console.log(&apos;hello &apos; + tasks[i].name);
+*         console.log('hello ' + tasks[i].name);
 *     }
 *     callback();
 * }, 2);
@@ -3467,7 +3460,7 @@ var _slice2 = _interopRequireDefault(_slice);
  *     // result now equals 15
  * });
  */
-module.exports = exports[&apos;default&apos;];
+module.exports = exports['default'];
 ...</pre></li>
     </ul>
 
@@ -3495,7 +3488,7 @@ exports.default = function (fn /*, ...args*/) {
     };
 };
 
-var _slice = require(&apos;./internal/slice&apos;);
+var _slice = require('./internal/slice');
 
 var _slice2 = _interopRequireDefault(_slice);
 ...</pre></li>
@@ -3603,7 +3596,7 @@ var _slice2 = _interopRequireDefault(_slice);
 * (err, result).
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">detect</span>([&apos;file1&apos;,&apos;file2&apos;,&apos;file3&apos;], function(filePath
+* async.<span class="apidocCodeKeywordSpan">detect</span>(['file1','file2','file3'], function(filePath
 , callback) {
 *     fs.access(filePath, function(err) {
 *         callback(null, !err)
@@ -3658,7 +3651,7 @@ var _slice2 = _interopRequireDefault(_slice);
     var args = slice(arguments, 1);
     args.push(function (err/*, ...args*/) {
         var args = slice(arguments, 1);
-        if (typeof console === &apos;object&apos;) {
+        if (typeof console === 'object') {
             if (err) {
                 if (console.error) {
                     console.error(err);
@@ -3680,11 +3673,11 @@ var _slice2 = _interopRequireDefault(_slice);
  * };
  *
  * // in the node repl
- * node&gt; async.<span class="apidocCodeKeywordSpan">dir</span>(hello, &apos;world&apos;);
- * {hello: &apos;world&apos;}
+ * node&gt; async.<span class="apidocCodeKeywordSpan">dir</span>(hello, 'world');
+ * {hello: 'world'}
  */
-exports.default = (0, _consoleFunc2.default)(&apos;dir&apos;);
-module.exports = exports[&apos;default&apos;];
+exports.default = (0, _consoleFunc2.default)('dir');
+module.exports = exports['default'];
 ...</pre></li>
     </ul>
 
@@ -3824,7 +3817,7 @@ module.exports = exports[&apos;default&apos;];
  * arguments, `callback` is required.
  * @example
  *
- * async.applyEach([enableSearch, updateSchema], &apos;bucket&apos;, callback);
+ * async.applyEach([enableSearch, updateSchema], 'bucket', callback);
  *
  * // partial application example:
  * async.<span class="apidocCodeKeywordSpan">each</span>(
@@ -3834,7 +3827,7 @@ module.exports = exports[&apos;default&apos;];
  * );
  */
 exports.default = (0, _applyEach2.default)(_map2.default);
-module.exports = exports[&apos;default&apos;];
+module.exports = exports['default'];
 ...</pre></li>
     </ul>
 
@@ -3944,7 +3937,7 @@ module.exports = exports[&apos;default&apos;];
     <li>example usage<pre class="apidocCodePre">...
 3. The callback can accept any number of arguments
 4. The first argument passed to the callback will be treated as an error result, if the argument is truthy
-5. Any number of result arguments can be passed after the &quot;error&quot; argument
+5. Any number of result arguments can be passed after the "error" argument
 6. The callback is called once and exactly once, either on the same tick or later tick of the JavaScript event loop.
 
 There were several cases where Async accepted some functions that did not strictly have these properties, most notably `auto`, `
@@ -3956,8 +3949,7 @@ Another theme is performance. We have eliminated internal deferrals in all cases
  a HTTP request, for example. Nearly all asynchronous functions that do I/O already have some sort of deferral built in, so the
 extra deferral is unnecessary. The trade-off of this change is removing our built-in stack-overflow defense. Many synchronous callback
  calls in series can quickly overflow the JS call stack. If you do have a function that is sometimes synchronous (calling its callback
- on the same tick), and are running into stack overflows, wrap it with `async.<span class="apidocCodeKeywordSpan">ensureAsync</span
->()`.
+ on the same tick), and are running into stack overflows, wrap it with `async.<span class="apidocCodeKeywordSpan">ensureAsync</span>()`.
 
 Another big performance win has been re-implementing `queue`, `cargo`, and `priorityQueue` with [doubly linked lists](https://en
 .wikipedia.org/wiki/Doubly_linked_list) instead of arrays. This has lead to queues being an order of [magnitude faster on large
@@ -3965,10 +3957,10 @@ sets of tasks](https://github.com/caolan/async/pull/1205).
 
 ## New Features
 
-- Async is now modularized. Individual functions can be `require()`d from the main package. (`require(&apos;async/auto&apos;)`) ([#
+- Async is now modularized. Individual functions can be `require()`d from the main package. (`require('async/auto')`) ([#
 984](https://github.com/caolan/async/issues/984), [#996](https://github.com/caolan/async/issues/996))
-- Async is also available as a collection of ES2015 modules in the new `async-es` package. (`import {forEachSeries} from &apos;async
--es&apos;`) ([#984](https://github.com/caolan/async/issues/984), [#996](https://github.com/caolan/async/issues/996))
+- Async is also available as a collection of ES2015 modules in the new `async-es` package. (`import {forEachSeries} from 'async
+-es'`) ([#984](https://github.com/caolan/async/issues/984), [#996](https://github.com/caolan/async/issues/996))
 ...</pre></li>
     </ul>
 
@@ -3992,7 +3984,7 @@ sets of tasks](https://github.com/caolan/async/pull/1205).
 * depending on the values of the async tests. Invoked with (err, result).
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">every</span>([&apos;file1&apos;,&apos;file2&apos;,&apos;file3&apos;], function(filePath
+* async.<span class="apidocCodeKeywordSpan">every</span>(['file1','file2','file3'], function(filePath
 , callback) {
 *     fs.access(filePath, function(err) {
 *         callback(null, !err)
@@ -4054,7 +4046,7 @@ sets of tasks](https://github.com/caolan/async/pull/1205).
 * `iteratee` functions have finished. Invoked with (err, results).
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">filter</span>([&apos;file1&apos;,&apos;file2&apos;,&apos;file3&apos;], function(filePath
+* async.<span class="apidocCodeKeywordSpan">filter</span>(['file1','file2','file3'], function(filePath
 , callback) {
 *     fs.access(filePath, function(err) {
 *         callback(null, !err)
@@ -4229,11 +4221,11 @@ sets of tasks](https://github.com/caolan/async/pull/1205).
 * `iteratee` functions have finished, or an error occurs. Invoked with (err).
 * @example
 *
-* var obj = {dev: &quot;/dev.json&quot;, test: &quot;/test.json&quot;, prod: &quot;/prod.json&quot;};
+* var obj = {dev: "/dev.json", test: "/test.json", prod: "/prod.json"};
 * var configs = {};
 *
 * async.<span class="apidocCodeKeywordSpan">forEachOf</span>(obj, function (value, key, callback) {
-*     fs.readFile(__dirname + value, &quot;utf8&quot;, function (err, data) {
+*     fs.readFile(__dirname + value, "utf8", function (err, data) {
 *         if (err) return callback(err);
 *         try {
 *             configs[key] = JSON.parse(data);
@@ -4311,7 +4303,7 @@ sets of tasks](https://github.com/caolan/async/pull/1205).
 * @category Control Flow
 * @param {AsyncFunction} fn - an async function to call repeatedly.
 * Invoked with (next).
-* @param {Function} [errback] - when `fn` passes an error to it&apos;s callback,
+* @param {Function} [errback] - when `fn` passes an error to it's callback,
 * this function will be called, and execution stops. Invoked with (err).
 * @example
 *
@@ -4322,7 +4314,7 @@ sets of tasks](https://github.com/caolan/async/pull/1205).
 *     },
 *     function(err) {
 *         // if next is called with a value in its first parameter, it will appear
-*         // in here as &apos;err&apos;, and execution will stop.
+*         // in here as 'err', and execution will stop.
 ...</pre></li>
     </ul>
 
@@ -4346,7 +4338,7 @@ sets of tasks](https://github.com/caolan/async/pull/1205).
 * properties are arrays of values which returned the corresponding key.
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">groupBy</span>([&apos;userId1&apos;, &apos;userId2&apos;, &apos;userId3&apos;], function
+* async.<span class="apidocCodeKeywordSpan">groupBy</span>(['userId1', 'userId2', 'userId3'], function
 (userId, callback) {
 *     db.findById(userId, function(err, user) {
 *         if (err) return callback(err);
@@ -4354,7 +4346,7 @@ sets of tasks](https://github.com/caolan/async/pull/1205).
 *     });
 * }, function(err, result) {
 *     // result is object containing the userIds grouped by age
-*     // e.g. { 30: [&apos;userId1&apos;, &apos;userId3&apos;], 42: [&apos;userId2&apos;]};
+*     // e.g. { 30: ['userId1', 'userId3'], 42: ['userId2']};
 ...</pre></li>
     </ul>
 
@@ -4451,7 +4443,7 @@ sets of tasks](https://github.com/caolan/async/pull/1205).
     var args = slice(arguments, 1);
     args.push(function (err/*, ...args*/) {
         var args = slice(arguments, 1);
-        if (typeof console === &apos;object&apos;) {
+        if (typeof console === 'object') {
             if (err) {
                 if (console.error) {
                     console.error(err);
@@ -4468,13 +4460,13 @@ sets of tasks](https://github.com/caolan/async/pull/1205).
     <li>example usage<pre class="apidocCodePre">...
 *     },
 *     email_link: function(write_file, callback) {
-*         // once the file is written let&apos;s email a link to it...
+*         // once the file is written let's email a link to it...
 *         // write_file contains the filename returned by write_file.
-*         callback(null, {&apos;file&apos;:write_file, &apos;email&apos;:&apos;user@example.com&apos;});
+*         callback(null, {'file':write_file, 'email':'user@example.com'});
 *     }
 * }, function(err, results) {
-*     console.<span class="apidocCodeKeywordSpan">log</span>(&apos;err = &apos;, err);
-*     console.log(&apos;email_link = &apos;, results.email_link);
+*     console.<span class="apidocCodeKeywordSpan">log</span>('err = ', err);
+*     console.log('email_link = ', results.email_link);
 * });
 *
 * // If you are using a JS minifier that mangles parameter names, `autoInject`
@@ -4501,11 +4493,11 @@ var FN_ARG = /(=.+)?(\s*)$/;
 var STRIP_COMMENTS = /((\/\/.*$)|(\/\*[\s\S]*?\*\/))/mg;
 
 function parseParams(func) {
-   func = func.toString().replace(STRIP_COMMENTS, &apos;&apos;);
-   func = func.match(FN_ARGS)[2].replace(&apos; &apos;, &apos;&apos;);
+   func = func.toString().replace(STRIP_COMMENTS, '');
+   func = func.match(FN_ARGS)[2].replace(' ', '');
    func = func ? func.split(FN_ARG_SPLIT) : [];
    func = func.<span class="apidocCodeKeywordSpan">map</span>(function (arg) {
-       return (0, _trim2.default)(arg.replace(FN_ARG, &apos;&apos;));
+       return (0, _trim2.default)(arg.replace(FN_ARG, ''));
    });
    return func;
 }
@@ -4532,7 +4524,7 @@ function parseParams(func) {
 ```
 
 ```javascript
-var async = require(&quot;async&quot;);
+var async = require("async");
 
 // ...or ES2017 async functions
 async.<span class="apidocCodeKeywordSpan">mapLimit</span>(urls, 5, async function(url) {
@@ -4568,7 +4560,7 @@ async.<span class="apidocCodeKeywordSpan">mapLimit</span>(urls, 5, async functio
  * // this has a risk of stack overflows if many results are cached in a row
  * async.<span class="apidocCodeKeywordSpan">mapSeries</span>(args, sometimesAsync, done);
  *
- * // this will defer sometimesAsync&apos;s callback if necessary,
+ * // this will defer sometimesAsync's callback if necessary,
  * // preventing stack overflows
  * async.mapSeries(args, async.ensureAsync(sometimesAsync), done);
  */
@@ -4598,9 +4590,9 @@ if ((0, _wrapAsync.isAsync)(fn)) return fn;
 * @example
 *
 * async.<span class="apidocCodeKeywordSpan">mapValues</span>({
-*     f1: &apos;file1&apos;,
-*     f2: &apos;file2&apos;,
-*     f3: &apos;file3&apos;
+*     f1: 'file1',
+*     f2: 'file2',
+*     f3: 'file3'
 * }, function (file, key, callback) {
 *   fs.stat(file, callback);
 * }, function(err, result) {
@@ -4699,7 +4691,7 @@ if ((0, _wrapAsync.isAsync)(fn)) return fn;
  * var fn = async.<span class="apidocCodeKeywordSpan">memoize</span>(slow_fn);
  *
  * // fn can now be used as if it were slow_fn
- * fn(&apos;some name&apos;, function() {
+ * fn('some name', function() {
  *     // callback
  * });
  */
@@ -4762,8 +4754,8 @@ function reduce(coll, memo, iteratee, callback) {
 *
 * // using apply
 * async.<span class="apidocCodeKeywordSpan">parallel</span>([
-*     async.apply(fs.writeFile, &apos;testfile1&apos;, &apos;test1&apos;),
-*     async.apply(fs.writeFile, &apos;testfile2&apos;, &apos;test2&apos;)
+*     async.apply(fs.writeFile, 'testfile1', 'test1'),
+*     async.apply(fs.writeFile, 'testfile2', 'test2')
 * ]);
 *
 *
@@ -4803,8 +4795,8 @@ function reduce(coll, memo, iteratee, callback) {
     // Override push to accept second parameter representing priority
     q.push = function(data, priority, callback) {
         if (callback == null) callback = noop;
-        if (typeof callback !== &apos;function&apos;) {
-            throw new Error(&apos;task callback must be a function&apos;);
+        if (typeof callback !== 'function') {
+            throw new Error('task callback must be a function');
         }
         q.started = true;
         if (!isArray(data)) {
@@ -4892,7 +4884,7 @@ function asyncify(func) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function race(tasks, callback) {
     callback = once(callback || noop);
-    if (!isArray(tasks)) return callback(new TypeError(&apos;First argument to race must be an array of functions&apos;));
+    if (!isArray(tasks)) return callback(new TypeError('First argument to race must be an array of functions'));
     if (!tasks.length) return callback();
     for (var i = 0, l = tasks.length; i &lt; l; i++) {
         wrapAsync(tasks[i])(callback);
@@ -4906,10 +4898,10 @@ sets of tasks](https://github.com/caolan/async/pull/1205).
 
 ## New Features
 
-- Async is now modularized. Individual functions can be `require()`d from the main package. (`require(&apos;async/auto&apos;)`) ([#
+- Async is now modularized. Individual functions can be `require()`d from the main package. (`require('async/auto')`) ([#
 984](https://github.com/caolan/async/issues/984), [#996](https://github.com/caolan/async/issues/996))
-- Async is also available as a collection of ES2015 modules in the new `async-es` package. (`import {forEachSeries} from &apos;async
--es&apos;`) ([#984](https://github.com/caolan/async/issues/984), [#996](https://github.com/caolan/async/issues/996))
+- Async is also available as a collection of ES2015 modules in the new `async-es` package. (`import {forEachSeries} from 'async
+-es'`) ([#984](https://github.com/caolan/async/issues/984), [#996](https://github.com/caolan/async/issues/996))
 - Added `race`, analogous to `Promise.<span class="apidocCodeKeywordSpan">race</span>()`. It will run an array of async tasks in
  parallel and will call its callback with the result of the first task to respond. ([#568](https://github.com/caolan/async/issues
 /568), [#1038](https://github.com/caolan/async/issues/1038))
@@ -4927,7 +4919,7 @@ directly to `each`, `map`, `parallel`, etc.. ([#579](https://github.com/caolan/a
 /caolan/async/issues/1016), [#1052](https://github.com/caolan/async/issues/1052))
 - `setImmediate` and `nextTick` now support arguments to partially apply to the deferred function, like the node-native versions
  do. ([#940](https://github.com/caolan/async/issues/940), [#1053](https://github.com/caolan/async/issues/1053))
-- `auto` now supports resolving cyclic dependencies using [Kahn&apos;s algorithm](https://en.wikipedia.org/wiki/Topological_sorting
+- `auto` now supports resolving cyclic dependencies using [Kahn's algorithm](https://en.wikipedia.org/wiki/Topological_sorting
 #Kahn.27s_algorithm) ([#1140](https://github.com/caolan/async/issues/1140)).
 ...</pre></li>
     </ul>
@@ -5019,10 +5011,10 @@ directly to `each`, `map`, `parallel`, etc.. ([#579](https://github.com/caolan/a
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-- Async is now modularized. Individual functions can be `require()`d from the main package. (`require(&apos;async/auto&apos;)`) ([#
+- Async is now modularized. Individual functions can be `require()`d from the main package. (`require('async/auto')`) ([#
 984](https://github.com/caolan/async/issues/984), [#996](https://github.com/caolan/async/issues/996))
-- Async is also available as a collection of ES2015 modules in the new `async-es` package. (`import {forEachSeries} from &apos;async
--es&apos;`) ([#984](https://github.com/caolan/async/issues/984), [#996](https://github.com/caolan/async/issues/996))
+- Async is also available as a collection of ES2015 modules in the new `async-es` package. (`import {forEachSeries} from 'async
+-es'`) ([#984](https://github.com/caolan/async/issues/984), [#996](https://github.com/caolan/async/issues/996))
 - Added `race`, analogous to `Promise.race()`. It will run an array of async tasks in parallel and will call its callback with the
  result of the first task to respond. ([#568](https://github.com/caolan/async/issues/568), [#1038](https://github.com/caolan/async
 /issues/1038))
@@ -5041,9 +5033,9 @@ directly to `each`, `map`, `parallel`, etc.. ([#579](https://github.com/caolan/a
 /caolan/async/issues/1016), [#1052](https://github.com/caolan/async/issues/1052))
 - `setImmediate` and `nextTick` now support arguments to partially apply to the deferred function, like the node-native versions
  do. ([#940](https://github.com/caolan/async/issues/940), [#1053](https://github.com/caolan/async/issues/1053))
-- `auto` now supports resolving cyclic dependencies using [Kahn&apos;s algorithm](https://en.wikipedia.org/wiki/Topological_sorting
+- `auto` now supports resolving cyclic dependencies using [Kahn's algorithm](https://en.wikipedia.org/wiki/Topological_sorting
 #Kahn.27s_algorithm) ([#1140](https://github.com/caolan/async/issues/1140)).
-- Added `autoInject`, a relative of `auto` that automatically spreads a task&apos;s dependencies as arguments to the task function
+- Added `autoInject`, a relative of `auto` that automatically spreads a task's dependencies as arguments to the task function
 . ([#608](https://github.com/caolan/async/issues/608), [#1055](https://github.com/caolan/async/issues/1055), [#1099](https://github
 .com/caolan/async/issues/1099), [#1100](https://github.com/caolan/async/issues/1100))
 - You can now limit the concurrency of `auto` tasks. ([#635](https://github.com/caolan/async/issues/635), [#637](https://github.
@@ -5079,7 +5071,7 @@ com/caolan/async/issues/637))
     <li>example usage<pre class="apidocCodePre">...
 *     function(callback) {
 *         setTimeout(function() {
-*             callback(null, &apos;two&apos;);
+*             callback(null, 'two');
 *         }, 100);
 *     }
 * ];
@@ -5088,9 +5080,9 @@ com/caolan/async/issues/637))
 * // optional callback
 * function(err, results) {
 *     // values
-*     // results[0].value = &apos;one&apos;
-*     // results[1].error = Error(&apos;bad stuff happened&apos;)
-*     // results[2].value = &apos;two&apos;
+*     // results[0].value = 'one'
+*     // results[1].error = Error('bad stuff happened')
+*     // results[2].value = 'two'
 * });
 ...</pre></li>
     </ul>
@@ -5115,7 +5107,7 @@ com/caolan/async/issues/637))
 * `iteratee` functions have finished. Invoked with (err, results).
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">reject</span>([&apos;file1&apos;,&apos;file2&apos;,&apos;file3&apos;], function(filePath
+* async.<span class="apidocCodeKeywordSpan">reject</span>(['file1','file2','file3'], function(filePath
 , callback) {
 *     fs.access(filePath, function(err) {
 *         callback(null, !err)
@@ -5176,22 +5168,22 @@ com/caolan/async/issues/637))
     };
 
     function parseTimes(acc, t) {
-        if (typeof t === &apos;object&apos;) {
+        if (typeof t === 'object') {
             acc.times = +t.times || DEFAULT_TIMES;
 
-            acc.intervalFunc = typeof t.interval === &apos;function&apos; ?
+            acc.intervalFunc = typeof t.interval === 'function' ?
                 t.interval :
                 constant$1(+t.interval || DEFAULT_INTERVAL);
 
             acc.errorFilter = t.errorFilter;
-        } else if (typeof t === &apos;number&apos; || typeof t === &apos;string&apos;) {
+        } else if (typeof t === 'number' || typeof t === 'string') {
             acc.times = +t || DEFAULT_TIMES;
         } else {
-            throw new Error(&quot;Invalid arguments for async.retry&quot;);
+            throw new Error("Invalid arguments for async.retry");
         }
     }
 
-    if (arguments.length &lt; 3 &amp;&amp; typeof opts === &apos;function&apos;) {
+    if (arguments.length &lt; 3 &amp;&amp; typeof opts === 'function') {
         callback = task || noop;
         task = opts;
     } else {
@@ -5199,8 +5191,8 @@ com/caolan/async/issues/637))
         callback = callback || noop;
     }
 
-    if (typeof task !== &apos;function&apos;) {
-        throw new Error(&quot;Invalid arguments for async.retry&quot;);
+    if (typeof task !== 'function') {
+        throw new Error("Invalid arguments for async.retry");
     }
 
     var _task = wrapAsync(task);
@@ -5209,7 +5201,7 @@ com/caolan/async/issues/637))
     function retryAttempt() {
         _task(function(err) {
             if (err &amp;&amp; attempt++ &lt; options.times &amp;&amp;
-                (typeof options.errorFilter != &apos;function&apos; ||
+                (typeof options.errorFilter != 'function' ||
                     options.errorFilter(err))) {
                 setTimeout(retryAttempt, options.intervalFunc(attempt));
             } else {
@@ -5273,7 +5265,7 @@ com/caolan/async/issues/637))
 *
 * async.auto({
 *     dep1: async.<span class="apidocCodeKeywordSpan">retryable</span>(3, getFromFlakyService),
-*     process: [&quot;dep1&quot;, async.retryable(3, function (results, cb) {
+*     process: ["dep1", async.retryable(3, function (results, cb) {
 *         maybeProcessData(results.dep1, cb);
 *     })]
 * }, callback);
@@ -5342,7 +5334,7 @@ com/caolan/async/issues/637))
         var that = this;
 
         var cb = args[args.length - 1];
-        if (typeof cb == &apos;function&apos;) {
+        if (typeof cb == 'function') {
             args.pop();
         } else {
             cb = noop;
@@ -5361,16 +5353,16 @@ com/caolan/async/issues/637))
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 *
-* // Requires lodash (or underscore), express3 and dresende&apos;s orm2.
+* // Requires lodash (or underscore), express3 and dresende's orm2.
 * // Part of an app, that fetches cats of the logged user.
 * // This example uses `seq` function to avoid overnesting and error
 * // handling clutter.
-* app.get(&apos;/cats&apos;, function(request, response) {
+* app.get('/cats', function(request, response) {
 *     var User = request.models.User;
 *     async.<span class="apidocCodeKeywordSpan">seq</span>(
-*         _.bind(User.get, User),  // &apos;User.get&apos; has signature (id, callback(err, data))
+*         _.bind(User.get, User),  // 'User.get' has signature (id, callback(err, data))
 *         function(user, fn) {
-*             user.getCats(fn);      // &apos;getCats&apos; has signature (callback(err, data))
+*             user.getCats(fn);      // 'getCats' has signature (callback(err, data))
 *         }
 *     )(req.session.user_id, function (err, cats) {
 *         if (err) {
@@ -5401,11 +5393,11 @@ com/caolan/async/issues/637))
 * async.<span class="apidocCodeKeywordSpan">series</span>([
 *     function(callback) {
 *         // do some stuff ...
-*         callback(null, &apos;one&apos;);
+*         callback(null, 'one');
 *     },
 *     function(callback) {
 *         // do some more stuff ...
-*         callback(null, &apos;two&apos;);
+*         callback(null, 'two');
 ...</pre></li>
     </ul>
 
@@ -5427,10 +5419,10 @@ com/caolan/async/issues/637))
     <li>example usage<pre class="apidocCodePre">...
  * var call_order = [];
  * async.nextTick(function() {
- *     call_order.push(&apos;two&apos;);
- *     // call_order now equals [&apos;one&apos;,&apos;two&apos;]
+ *     call_order.push('two');
+ *     // call_order now equals ['one','two']
  * });
- * call_order.push(&apos;one&apos;);
+ * call_order.push('one');
  *
  * async.<span class="apidocCodeKeywordSpan">setImmediate</span>(function (a, b, c) {
  *     // a, b, and c equal 1, 2, and 3
@@ -5463,7 +5455,7 @@ _defer = process.nextTick;
 * tests. Invoked with (err, result).
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">some</span>([&apos;file1&apos;,&apos;file2&apos;,&apos;file3&apos;], function(filePath
+* async.<span class="apidocCodeKeywordSpan">some</span>(['file1','file2','file3'], function(filePath
 , callback) {
 *     fs.access(filePath, function(err) {
 *         callback(null, !err)
@@ -5523,7 +5515,7 @@ _defer = process.nextTick;
         });
     }, function (err, results) {
         if (err) return callback(err);
-        callback(null, arrayMap(results.sort(comparator), baseProperty(&apos;value&apos;)));
+        callback(null, arrayMap(results.sort(comparator), baseProperty('value')));
     });
 
     function comparator(left, right) {
@@ -5539,7 +5531,7 @@ _defer = process.nextTick;
 * calls. Invoked with (err, results).
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">sortBy</span>([&apos;file1&apos;,&apos;file2&apos;,&apos;file3&apos;], function(file
+* async.<span class="apidocCodeKeywordSpan">sortBy</span>(['file1','file2','file3'], function(file
 , callback) {
 *     fs.stat(file, function(err, stats) {
 *         callback(err, stats.mtime);
@@ -5568,9 +5560,9 @@ _defer = process.nextTick;
         var timer;
 
         function timeoutCallback() {
-            var name = asyncFn.name || &apos;anonymous&apos;;
-            var error  = new Error(&apos;Callback function &quot;&apos; + name + &apos;&quot; timed out.&apos;);
-            error.code = &apos;ETIMEDOUT&apos;;
+            var name = asyncFn.name || 'anonymous';
+            var error  = new Error('Callback function "' + name + '" timed out.');
+            error.code = 'ETIMEDOUT';
             if (info) {
                 error.info = info;
             }
@@ -5601,11 +5593,11 @@ _defer = process.nextTick;
 * var wrapped = async.<span class="apidocCodeKeywordSpan">timeout</span>(myFunction, 1000);
 *
 * // call `wrapped` as you would `myFunction`
-* wrapped({ bar: &apos;bar&apos; }, function(err, data) {
+* wrapped({ bar: 'bar' }, function(err, data) {
 *     // if `myFunction` takes &lt; 1000 ms to execute, `err`
 *     // and `data` will have their expected values
 *
-*     // else `err` will be an Error with the code &apos;ETIMEDOUT&apos;
+*     // else `err` will be an Error with the code 'ETIMEDOUT'
 ...</pre></li>
     </ul>
 
@@ -5624,7 +5616,7 @@ _defer = process.nextTick;
     <li>example usage<pre class="apidocCodePre">...
 * var createUser = function(id, callback) {
 *     callback(null, {
-*         id: &apos;user&apos; + id
+*         id: 'user' + id
 *     });
 * };
 *
@@ -5805,7 +5797,7 @@ _defer = process.nextTick;
     <ul>
     <li>description and source-code<pre class="apidocCodePre">waterfall = function (tasks, callback) {
     callback = once(callback || noop);
-    if (!isArray(tasks)) return callback(new Error(&apos;First argument to waterfall must be an array of functions&apos;));
+    if (!isArray(tasks)) return callback(new Error('First argument to waterfall must be an array of functions'));
     if (!tasks.length) return callback();
     var taskIndex = 0;
 
@@ -5833,7 +5825,7 @@ _defer = process.nextTick;
 *
 * // passing a regular synchronous function
 * async.<span class="apidocCodeKeywordSpan">waterfall</span>([
-*     async.apply(fs.readFile, filename, &quot;utf8&quot;),
+*     async.apply(fs.readFile, filename, "utf8"),
 *     async.asyncify(JSON.parse),
 *     function (data, next) {
 *         // data is the result of parsing the text.
@@ -5866,7 +5858,7 @@ _defer = process.nextTick;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 * function has failed and repeated execution of `iteratee` has stopped. `callback`
-* will be passed an error and any arguments passed to the final `iteratee`&apos;s
+* will be passed an error and any arguments passed to the final `iteratee`'s
 * callback. Invoked with (err, [results]);
 * @returns undefined
 * @example
@@ -5901,7 +5893,7 @@ _defer = process.nextTick;
             return callback(e);
         }
         // if result is Promise object
-        if (isObject(result) &amp;&amp; typeof result.then === &apos;function&apos;) {
+        if (isObject(result) &amp;&amp; typeof result.then === 'function') {
             result.then(function(value) {
                 invokeCallback(callback, null, value);
             }, function(err) {
@@ -5972,7 +5964,7 @@ _defer = process.nextTick;
 github.com/caolan/async/issues/1391))
 - Fixed using `eval`, preventing Async from running in pages with Content Security Policy ([#1404](https://github.com/caolan/async
 /issues/1404), [#1403](https://github.com/caolan/async/issues/1403))
-- Fixed errors thrown in an `asyncify`ed function&apos;s callback being caught by the underlying Promise ([#1408](https://github
+- Fixed errors thrown in an `asyncify`ed function's callback being caught by the underlying Promise ([#1408](https://github
 .com/caolan/async/issues/1408))
 - Fixed timing of `queue.<span class="apidocCodeKeywordSpan">empty</span>()` ([#1367](https://github.com/caolan/async/issues/1367
 ))
@@ -5982,7 +5974,7 @@ github.com/caolan/async/issues/1391))
 # v2.3.0
 - Added support for ES2017 `async` functions.  Wherever you can pass a Node-style/CPS function that uses a callback, you can also
  pass an `async` function.  Previously, you had to wrap `async` functions with `asyncify`.  The caveat is that it will only work
- if `async` functions are supported natively in your environment, transpiled implementations can&apos;t be detected.  ([#1386](https
+ if `async` functions are supported natively in your environment, transpiled implementations can't be detected.  ([#1386](https
 ://github.com/caolan/async/issues/1386), [#1390](https://github.com/caolan/async/issues/1390))
 - Small doc fix ([#1392](https://github.com/caolan/async/issues/1392))
 
@@ -6074,7 +6066,7 @@ DLL.prototype.shift = function() {
 } else {
     params = parseParams(taskFn);
     if (taskFn.length === 0 &amp;&amp; !fnIsAsync &amp;&amp; params.length === 0) {
-        throw new Error(&quot;autoInject task functions require explicit parameters.&quot;);
+        throw new Error("autoInject task functions require explicit parameters.");
     }
 
     // remove callback param
@@ -6154,7 +6146,7 @@ return (0, _initialParams2.default)(function (args, callback) {
 /caolan/async/issues/1397), [#1391](https://github.com/caolan/async/issues/1391))
 - Fixed using `eval`, preventing Async from running in pages with Content Security Policy ([#1404](https://github.com/caolan/async
 /issues/1404), [#1403](https://github.com/caolan/async/issues/1403))
-- Fixed errors thrown in an `asyncify`ed function&apos;s callback being caught by the underlying Promise ([#1408](https://github
+- Fixed errors thrown in an `asyncify`ed function's callback being caught by the underlying Promise ([#1408](https://github
 .com/caolan/async/issues/1408))
 - Fixed timing of `queue.empty()` ([#1367](https://github.com/caolan/async/issues/1367))
 - Various doc fixes ([#1314](https://github.com/caolan/async/issues/1314), [#1394](https://github.com/caolan/async/issues/1394), [#
@@ -6163,7 +6155,7 @@ return (0, _initialParams2.default)(function (args, callback) {
 # v2.3.0
 - Added support for ES2017 `async` functions.  Wherever you can pass a Node-style/CPS function that uses a callback, you can also
  pass an `async` function.  Previously, you had to wrap `async` functions with `asyncify`.  The caveat is that it will only work
- if `async` functions are supported natively in your environment, transpiled implementations can&apos;t be detected.  ([#1386](https
+ if `async` functions are supported natively in your environment, transpiled implementations can't be detected.  ([#1386](https
 ://github.com/caolan/async/issues/1386), [#1390](https://github.com/caolan/async/issues/1390))
 ...</pre></li>
     </ul>
@@ -6410,7 +6402,7 @@ exports.default = function (fn /*, ...args*/) {
     };
 };
 
-var _slice = require(&apos;./internal/slice&apos;);
+var _slice = require('./internal/slice');
 
 var _slice2 = _interopRequireDefault(_slice);
 ...</pre></li>
@@ -6448,7 +6440,7 @@ var _slice2 = _interopRequireDefault(_slice);
 * arguments, `callback` is required.
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">applyEach</span>([enableSearch, updateSchema], &apos;bucket&apos;, callback);
+* async.<span class="apidocCodeKeywordSpan">applyEach</span>([enableSearch, updateSchema], 'bucket', callback);
 *
 * // partial application example:
 * async.each(
@@ -6504,7 +6496,7 @@ var _slice2 = _interopRequireDefault(_slice);
             return callback(e);
         }
         // if result is Promise object
-        if (isObject(result) &amp;&amp; typeof result.then === &apos;function&apos;) {
+        if (isObject(result) &amp;&amp; typeof result.then === 'function') {
             result.then(function(value) {
                 invokeCallback(callback, null, value);
             }, function(err) {
@@ -6522,7 +6514,7 @@ var _slice2 = _interopRequireDefault(_slice);
 *
 * // passing a regular synchronous function
 * async.waterfall([
-*     async.apply(fs.readFile, filename, &quot;utf8&quot;),
+*     async.apply(fs.readFile, filename, "utf8"),
 *     async.<span class="apidocCodeKeywordSpan">asyncify</span>(JSON.parse),
 *     function (data, next) {
 *         // data is the result of parsing the text.
@@ -6544,7 +6536,7 @@ var _slice2 = _interopRequireDefault(_slice);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">auto = function (tasks, concurrency, callback) {
-    if (typeof concurrency === &apos;function&apos;) {
+    if (typeof concurrency === 'function') {
         // concurrency is optional, shift the args.
         callback = concurrency;
         concurrency = null;
@@ -6591,10 +6583,10 @@ var _slice2 = _interopRequireDefault(_slice);
 
         arrayEach(dependencies, function (dependencyName) {
             if (!tasks[dependencyName]) {
-                throw new Error(&apos;async.auto task `&apos; + key +
-                    &apos;` has a non-existent dependency `&apos; +
-                    dependencyName + &apos;` in &apos; +
-                    dependencies.join(&apos;, &apos;));
+                throw new Error('async.auto task `' + key +
+                    '` has a non-existent dependency `' +
+                    dependencyName + '` in ' +
+                    dependencies.join(', '));
             }
             addListener(dependencyName, function () {
                 remainingDependencies--;
@@ -6677,7 +6669,7 @@ var _slice2 = _interopRequireDefault(_slice);
     }
 
     function checkForDeadlocks() {
-        // Kahn&apos;s algorithm
+        // Kahn's algorithm
         // https://en.wikipedia.org/wiki/Topological_sorting#Kahn.27s_algorithm
         // http://connalle.blogspot.com/2013/10/topological-sortingkahn-algorithm.html
         var currentTask;
@@ -6692,9 +6684,9 @@ var _slice2 = _interopRequireDefault(_slice);
 *
 * async.<span class="apidocCodeKeywordSpan">auto</span>({
 *     // this function will just be passed a callback
-*     readData: async.apply(fs.readFile, &apos;data.txt&apos;, &apos;utf-8&apos;),
-*     showData: [&apos;readData&apos;, function(results, cb) {
-*         // results.readData is the file&apos;s contents
+*     readData: async.apply(fs.readFile, 'data.txt', 'utf-8'),
+*     showData: ['readData', function(results, cb) {
+*         // results.readData is the file's contents
 *         // ...
 *     }]
 * }, callback);
@@ -6731,7 +6723,7 @@ var _slice2 = _interopRequireDefault(_slice);
         } else {
             params = parseParams(taskFn);
             if (taskFn.length === 0 &amp;&amp; !fnIsAsync &amp;&amp; params.length === 0) {
-                throw new Error(&quot;autoInject task functions require explicit parameters.&quot;);
+                throw new Error("autoInject task functions require explicit parameters.");
             }
 
             // remove callback param
@@ -6762,7 +6754,7 @@ var _slice2 = _interopRequireDefault(_slice);
 * async.<span class="apidocCodeKeywordSpan">autoInject</span>({
 *     get_data: function(callback) {
 *         // async code to get some data
-*         callback(null, &apos;data&apos;, &apos;converted to array&apos;);
+*         callback(null, 'data', 'converted to array');
 *     },
 *     make_folder: function(callback) {
 *         // async code to create a directory to store a file in
@@ -6792,7 +6784,7 @@ var _slice2 = _interopRequireDefault(_slice);
 * // create a cargo object with payload 2
 * var cargo = async.<span class="apidocCodeKeywordSpan">cargo</span>(function(tasks, callback) {
 *     for (var i=0; i&lt;tasks.length; i++) {
-*         console.log(&apos;hello &apos; + tasks[i].name);
+*         console.log('hello ' + tasks[i].name);
 *     }
 *     callback();
 * }, 2);
@@ -6826,7 +6818,7 @@ var _slice2 = _interopRequireDefault(_slice);
  *     // result now equals 15
  * });
  */
-module.exports = exports[&apos;default&apos;];
+module.exports = exports['default'];
 ...</pre></li>
     </ul>
 
@@ -6854,7 +6846,7 @@ exports.default = function (fn /*, ...args*/) {
     };
 };
 
-var _slice = require(&apos;./internal/slice&apos;);
+var _slice = require('./internal/slice');
 
 var _slice2 = _interopRequireDefault(_slice);
 ...</pre></li>
@@ -6962,7 +6954,7 @@ var _slice2 = _interopRequireDefault(_slice);
 * (err, result).
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">detect</span>([&apos;file1&apos;,&apos;file2&apos;,&apos;file3&apos;], function(filePath
+* async.<span class="apidocCodeKeywordSpan">detect</span>(['file1','file2','file3'], function(filePath
 , callback) {
 *     fs.access(filePath, function(err) {
 *         callback(null, !err)
@@ -7017,7 +7009,7 @@ var _slice2 = _interopRequireDefault(_slice);
     var args = slice(arguments, 1);
     args.push(function (err/*, ...args*/) {
         var args = slice(arguments, 1);
-        if (typeof console === &apos;object&apos;) {
+        if (typeof console === 'object') {
             if (err) {
                 if (console.error) {
                     console.error(err);
@@ -7039,11 +7031,11 @@ var _slice2 = _interopRequireDefault(_slice);
  * };
  *
  * // in the node repl
- * node&gt; async.<span class="apidocCodeKeywordSpan">dir</span>(hello, &apos;world&apos;);
- * {hello: &apos;world&apos;}
+ * node&gt; async.<span class="apidocCodeKeywordSpan">dir</span>(hello, 'world');
+ * {hello: 'world'}
  */
-exports.default = (0, _consoleFunc2.default)(&apos;dir&apos;);
-module.exports = exports[&apos;default&apos;];
+exports.default = (0, _consoleFunc2.default)('dir');
+module.exports = exports['default'];
 ...</pre></li>
     </ul>
 
@@ -7183,7 +7175,7 @@ module.exports = exports[&apos;default&apos;];
  * arguments, `callback` is required.
  * @example
  *
- * async.applyEach([enableSearch, updateSchema], &apos;bucket&apos;, callback);
+ * async.applyEach([enableSearch, updateSchema], 'bucket', callback);
  *
  * // partial application example:
  * async.<span class="apidocCodeKeywordSpan">each</span>(
@@ -7193,7 +7185,7 @@ module.exports = exports[&apos;default&apos;];
  * );
  */
 exports.default = (0, _applyEach2.default)(_map2.default);
-module.exports = exports[&apos;default&apos;];
+module.exports = exports['default'];
 ...</pre></li>
     </ul>
 
@@ -7303,7 +7295,7 @@ module.exports = exports[&apos;default&apos;];
     <li>example usage<pre class="apidocCodePre">...
 3. The callback can accept any number of arguments
 4. The first argument passed to the callback will be treated as an error result, if the argument is truthy
-5. Any number of result arguments can be passed after the &quot;error&quot; argument
+5. Any number of result arguments can be passed after the "error" argument
 6. The callback is called once and exactly once, either on the same tick or later tick of the JavaScript event loop.
 
 There were several cases where Async accepted some functions that did not strictly have these properties, most notably `auto`, `
@@ -7315,8 +7307,7 @@ Another theme is performance. We have eliminated internal deferrals in all cases
  a HTTP request, for example. Nearly all asynchronous functions that do I/O already have some sort of deferral built in, so the
 extra deferral is unnecessary. The trade-off of this change is removing our built-in stack-overflow defense. Many synchronous callback
  calls in series can quickly overflow the JS call stack. If you do have a function that is sometimes synchronous (calling its callback
- on the same tick), and are running into stack overflows, wrap it with `async.<span class="apidocCodeKeywordSpan">ensureAsync</span
->()`.
+ on the same tick), and are running into stack overflows, wrap it with `async.<span class="apidocCodeKeywordSpan">ensureAsync</span>()`.
 
 Another big performance win has been re-implementing `queue`, `cargo`, and `priorityQueue` with [doubly linked lists](https://en
 .wikipedia.org/wiki/Doubly_linked_list) instead of arrays. This has lead to queues being an order of [magnitude faster on large
@@ -7324,10 +7315,10 @@ sets of tasks](https://github.com/caolan/async/pull/1205).
 
 ## New Features
 
-- Async is now modularized. Individual functions can be `require()`d from the main package. (`require(&apos;async/auto&apos;)`) ([#
+- Async is now modularized. Individual functions can be `require()`d from the main package. (`require('async/auto')`) ([#
 984](https://github.com/caolan/async/issues/984), [#996](https://github.com/caolan/async/issues/996))
-- Async is also available as a collection of ES2015 modules in the new `async-es` package. (`import {forEachSeries} from &apos;async
--es&apos;`) ([#984](https://github.com/caolan/async/issues/984), [#996](https://github.com/caolan/async/issues/996))
+- Async is also available as a collection of ES2015 modules in the new `async-es` package. (`import {forEachSeries} from 'async
+-es'`) ([#984](https://github.com/caolan/async/issues/984), [#996](https://github.com/caolan/async/issues/996))
 ...</pre></li>
     </ul>
 
@@ -7351,7 +7342,7 @@ sets of tasks](https://github.com/caolan/async/pull/1205).
 * depending on the values of the async tests. Invoked with (err, result).
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">every</span>([&apos;file1&apos;,&apos;file2&apos;,&apos;file3&apos;], function(filePath
+* async.<span class="apidocCodeKeywordSpan">every</span>(['file1','file2','file3'], function(filePath
 , callback) {
 *     fs.access(filePath, function(err) {
 *         callback(null, !err)
@@ -7413,7 +7404,7 @@ sets of tasks](https://github.com/caolan/async/pull/1205).
 * `iteratee` functions have finished. Invoked with (err, results).
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">filter</span>([&apos;file1&apos;,&apos;file2&apos;,&apos;file3&apos;], function(filePath
+* async.<span class="apidocCodeKeywordSpan">filter</span>(['file1','file2','file3'], function(filePath
 , callback) {
 *     fs.access(filePath, function(err) {
 *         callback(null, !err)
@@ -7588,11 +7579,11 @@ sets of tasks](https://github.com/caolan/async/pull/1205).
 * `iteratee` functions have finished, or an error occurs. Invoked with (err).
 * @example
 *
-* var obj = {dev: &quot;/dev.json&quot;, test: &quot;/test.json&quot;, prod: &quot;/prod.json&quot;};
+* var obj = {dev: "/dev.json", test: "/test.json", prod: "/prod.json"};
 * var configs = {};
 *
 * async.<span class="apidocCodeKeywordSpan">forEachOf</span>(obj, function (value, key, callback) {
-*     fs.readFile(__dirname + value, &quot;utf8&quot;, function (err, data) {
+*     fs.readFile(__dirname + value, "utf8", function (err, data) {
 *         if (err) return callback(err);
 *         try {
 *             configs[key] = JSON.parse(data);
@@ -7670,7 +7661,7 @@ sets of tasks](https://github.com/caolan/async/pull/1205).
 * @category Control Flow
 * @param {AsyncFunction} fn - an async function to call repeatedly.
 * Invoked with (next).
-* @param {Function} [errback] - when `fn` passes an error to it&apos;s callback,
+* @param {Function} [errback] - when `fn` passes an error to it's callback,
 * this function will be called, and execution stops. Invoked with (err).
 * @example
 *
@@ -7681,7 +7672,7 @@ sets of tasks](https://github.com/caolan/async/pull/1205).
 *     },
 *     function(err) {
 *         // if next is called with a value in its first parameter, it will appear
-*         // in here as &apos;err&apos;, and execution will stop.
+*         // in here as 'err', and execution will stop.
 ...</pre></li>
     </ul>
 
@@ -7705,7 +7696,7 @@ sets of tasks](https://github.com/caolan/async/pull/1205).
 * properties are arrays of values which returned the corresponding key.
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">groupBy</span>([&apos;userId1&apos;, &apos;userId2&apos;, &apos;userId3&apos;], function
+* async.<span class="apidocCodeKeywordSpan">groupBy</span>(['userId1', 'userId2', 'userId3'], function
 (userId, callback) {
 *     db.findById(userId, function(err, user) {
 *         if (err) return callback(err);
@@ -7713,7 +7704,7 @@ sets of tasks](https://github.com/caolan/async/pull/1205).
 *     });
 * }, function(err, result) {
 *     // result is object containing the userIds grouped by age
-*     // e.g. { 30: [&apos;userId1&apos;, &apos;userId3&apos;], 42: [&apos;userId2&apos;]};
+*     // e.g. { 30: ['userId1', 'userId3'], 42: ['userId2']};
 ...</pre></li>
     </ul>
 
@@ -7810,7 +7801,7 @@ sets of tasks](https://github.com/caolan/async/pull/1205).
     var args = slice(arguments, 1);
     args.push(function (err/*, ...args*/) {
         var args = slice(arguments, 1);
-        if (typeof console === &apos;object&apos;) {
+        if (typeof console === 'object') {
             if (err) {
                 if (console.error) {
                     console.error(err);
@@ -7827,13 +7818,13 @@ sets of tasks](https://github.com/caolan/async/pull/1205).
     <li>example usage<pre class="apidocCodePre">...
 *     },
 *     email_link: function(write_file, callback) {
-*         // once the file is written let&apos;s email a link to it...
+*         // once the file is written let's email a link to it...
 *         // write_file contains the filename returned by write_file.
-*         callback(null, {&apos;file&apos;:write_file, &apos;email&apos;:&apos;user@example.com&apos;});
+*         callback(null, {'file':write_file, 'email':'user@example.com'});
 *     }
 * }, function(err, results) {
-*     console.<span class="apidocCodeKeywordSpan">log</span>(&apos;err = &apos;, err);
-*     console.log(&apos;email_link = &apos;, results.email_link);
+*     console.<span class="apidocCodeKeywordSpan">log</span>('err = ', err);
+*     console.log('email_link = ', results.email_link);
 * });
 *
 * // If you are using a JS minifier that mangles parameter names, `autoInject`
@@ -7860,11 +7851,11 @@ var FN_ARG = /(=.+)?(\s*)$/;
 var STRIP_COMMENTS = /((\/\/.*$)|(\/\*[\s\S]*?\*\/))/mg;
 
 function parseParams(func) {
-   func = func.toString().replace(STRIP_COMMENTS, &apos;&apos;);
-   func = func.match(FN_ARGS)[2].replace(&apos; &apos;, &apos;&apos;);
+   func = func.toString().replace(STRIP_COMMENTS, '');
+   func = func.match(FN_ARGS)[2].replace(' ', '');
    func = func ? func.split(FN_ARG_SPLIT) : [];
    func = func.<span class="apidocCodeKeywordSpan">map</span>(function (arg) {
-       return (0, _trim2.default)(arg.replace(FN_ARG, &apos;&apos;));
+       return (0, _trim2.default)(arg.replace(FN_ARG, ''));
    });
    return func;
 }
@@ -7891,7 +7882,7 @@ function parseParams(func) {
 ```
 
 ```javascript
-var async = require(&quot;async&quot;);
+var async = require("async");
 
 // ...or ES2017 async functions
 async.<span class="apidocCodeKeywordSpan">mapLimit</span>(urls, 5, async function(url) {
@@ -7927,7 +7918,7 @@ async.<span class="apidocCodeKeywordSpan">mapLimit</span>(urls, 5, async functio
  * // this has a risk of stack overflows if many results are cached in a row
  * async.<span class="apidocCodeKeywordSpan">mapSeries</span>(args, sometimesAsync, done);
  *
- * // this will defer sometimesAsync&apos;s callback if necessary,
+ * // this will defer sometimesAsync's callback if necessary,
  * // preventing stack overflows
  * async.mapSeries(args, async.ensureAsync(sometimesAsync), done);
  */
@@ -7957,9 +7948,9 @@ if ((0, _wrapAsync.isAsync)(fn)) return fn;
 * @example
 *
 * async.<span class="apidocCodeKeywordSpan">mapValues</span>({
-*     f1: &apos;file1&apos;,
-*     f2: &apos;file2&apos;,
-*     f3: &apos;file3&apos;
+*     f1: 'file1',
+*     f2: 'file2',
+*     f3: 'file3'
 * }, function (file, key, callback) {
 *   fs.stat(file, callback);
 * }, function(err, result) {
@@ -8058,7 +8049,7 @@ if ((0, _wrapAsync.isAsync)(fn)) return fn;
  * var fn = async.<span class="apidocCodeKeywordSpan">memoize</span>(slow_fn);
  *
  * // fn can now be used as if it were slow_fn
- * fn(&apos;some name&apos;, function() {
+ * fn('some name', function() {
  *     // callback
  * });
  */
@@ -8121,8 +8112,8 @@ function reduce(coll, memo, iteratee, callback) {
 *
 * // using apply
 * async.<span class="apidocCodeKeywordSpan">parallel</span>([
-*     async.apply(fs.writeFile, &apos;testfile1&apos;, &apos;test1&apos;),
-*     async.apply(fs.writeFile, &apos;testfile2&apos;, &apos;test2&apos;)
+*     async.apply(fs.writeFile, 'testfile1', 'test1'),
+*     async.apply(fs.writeFile, 'testfile2', 'test2')
 * ]);
 *
 *
@@ -8162,8 +8153,8 @@ function reduce(coll, memo, iteratee, callback) {
     // Override push to accept second parameter representing priority
     q.push = function(data, priority, callback) {
         if (callback == null) callback = noop;
-        if (typeof callback !== &apos;function&apos;) {
-            throw new Error(&apos;task callback must be a function&apos;);
+        if (typeof callback !== 'function') {
+            throw new Error('task callback must be a function');
         }
         q.started = true;
         if (!isArray(data)) {
@@ -8251,7 +8242,7 @@ function asyncify(func) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function race(tasks, callback) {
     callback = once(callback || noop);
-    if (!isArray(tasks)) return callback(new TypeError(&apos;First argument to race must be an array of functions&apos;));
+    if (!isArray(tasks)) return callback(new TypeError('First argument to race must be an array of functions'));
     if (!tasks.length) return callback();
     for (var i = 0, l = tasks.length; i &lt; l; i++) {
         wrapAsync(tasks[i])(callback);
@@ -8265,10 +8256,10 @@ sets of tasks](https://github.com/caolan/async/pull/1205).
 
 ## New Features
 
-- Async is now modularized. Individual functions can be `require()`d from the main package. (`require(&apos;async/auto&apos;)`) ([#
+- Async is now modularized. Individual functions can be `require()`d from the main package. (`require('async/auto')`) ([#
 984](https://github.com/caolan/async/issues/984), [#996](https://github.com/caolan/async/issues/996))
-- Async is also available as a collection of ES2015 modules in the new `async-es` package. (`import {forEachSeries} from &apos;async
--es&apos;`) ([#984](https://github.com/caolan/async/issues/984), [#996](https://github.com/caolan/async/issues/996))
+- Async is also available as a collection of ES2015 modules in the new `async-es` package. (`import {forEachSeries} from 'async
+-es'`) ([#984](https://github.com/caolan/async/issues/984), [#996](https://github.com/caolan/async/issues/996))
 - Added `race`, analogous to `Promise.<span class="apidocCodeKeywordSpan">race</span>()`. It will run an array of async tasks in
  parallel and will call its callback with the result of the first task to respond. ([#568](https://github.com/caolan/async/issues
 /568), [#1038](https://github.com/caolan/async/issues/1038))
@@ -8286,7 +8277,7 @@ directly to `each`, `map`, `parallel`, etc.. ([#579](https://github.com/caolan/a
 /caolan/async/issues/1016), [#1052](https://github.com/caolan/async/issues/1052))
 - `setImmediate` and `nextTick` now support arguments to partially apply to the deferred function, like the node-native versions
  do. ([#940](https://github.com/caolan/async/issues/940), [#1053](https://github.com/caolan/async/issues/1053))
-- `auto` now supports resolving cyclic dependencies using [Kahn&apos;s algorithm](https://en.wikipedia.org/wiki/Topological_sorting
+- `auto` now supports resolving cyclic dependencies using [Kahn's algorithm](https://en.wikipedia.org/wiki/Topological_sorting
 #Kahn.27s_algorithm) ([#1140](https://github.com/caolan/async/issues/1140)).
 ...</pre></li>
     </ul>
@@ -8378,10 +8369,10 @@ directly to `each`, `map`, `parallel`, etc.. ([#579](https://github.com/caolan/a
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-- Async is now modularized. Individual functions can be `require()`d from the main package. (`require(&apos;async/auto&apos;)`) ([#
+- Async is now modularized. Individual functions can be `require()`d from the main package. (`require('async/auto')`) ([#
 984](https://github.com/caolan/async/issues/984), [#996](https://github.com/caolan/async/issues/996))
-- Async is also available as a collection of ES2015 modules in the new `async-es` package. (`import {forEachSeries} from &apos;async
--es&apos;`) ([#984](https://github.com/caolan/async/issues/984), [#996](https://github.com/caolan/async/issues/996))
+- Async is also available as a collection of ES2015 modules in the new `async-es` package. (`import {forEachSeries} from 'async
+-es'`) ([#984](https://github.com/caolan/async/issues/984), [#996](https://github.com/caolan/async/issues/996))
 - Added `race`, analogous to `Promise.race()`. It will run an array of async tasks in parallel and will call its callback with the
  result of the first task to respond. ([#568](https://github.com/caolan/async/issues/568), [#1038](https://github.com/caolan/async
 /issues/1038))
@@ -8400,9 +8391,9 @@ directly to `each`, `map`, `parallel`, etc.. ([#579](https://github.com/caolan/a
 /caolan/async/issues/1016), [#1052](https://github.com/caolan/async/issues/1052))
 - `setImmediate` and `nextTick` now support arguments to partially apply to the deferred function, like the node-native versions
  do. ([#940](https://github.com/caolan/async/issues/940), [#1053](https://github.com/caolan/async/issues/1053))
-- `auto` now supports resolving cyclic dependencies using [Kahn&apos;s algorithm](https://en.wikipedia.org/wiki/Topological_sorting
+- `auto` now supports resolving cyclic dependencies using [Kahn's algorithm](https://en.wikipedia.org/wiki/Topological_sorting
 #Kahn.27s_algorithm) ([#1140](https://github.com/caolan/async/issues/1140)).
-- Added `autoInject`, a relative of `auto` that automatically spreads a task&apos;s dependencies as arguments to the task function
+- Added `autoInject`, a relative of `auto` that automatically spreads a task's dependencies as arguments to the task function
 . ([#608](https://github.com/caolan/async/issues/608), [#1055](https://github.com/caolan/async/issues/1055), [#1099](https://github
 .com/caolan/async/issues/1099), [#1100](https://github.com/caolan/async/issues/1100))
 - You can now limit the concurrency of `auto` tasks. ([#635](https://github.com/caolan/async/issues/635), [#637](https://github.
@@ -8438,7 +8429,7 @@ com/caolan/async/issues/637))
     <li>example usage<pre class="apidocCodePre">...
 *     function(callback) {
 *         setTimeout(function() {
-*             callback(null, &apos;two&apos;);
+*             callback(null, 'two');
 *         }, 100);
 *     }
 * ];
@@ -8447,9 +8438,9 @@ com/caolan/async/issues/637))
 * // optional callback
 * function(err, results) {
 *     // values
-*     // results[0].value = &apos;one&apos;
-*     // results[1].error = Error(&apos;bad stuff happened&apos;)
-*     // results[2].value = &apos;two&apos;
+*     // results[0].value = 'one'
+*     // results[1].error = Error('bad stuff happened')
+*     // results[2].value = 'two'
 * });
 ...</pre></li>
     </ul>
@@ -8474,7 +8465,7 @@ com/caolan/async/issues/637))
 * `iteratee` functions have finished. Invoked with (err, results).
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">reject</span>([&apos;file1&apos;,&apos;file2&apos;,&apos;file3&apos;], function(filePath
+* async.<span class="apidocCodeKeywordSpan">reject</span>(['file1','file2','file3'], function(filePath
 , callback) {
 *     fs.access(filePath, function(err) {
 *         callback(null, !err)
@@ -8535,22 +8526,22 @@ com/caolan/async/issues/637))
     };
 
     function parseTimes(acc, t) {
-        if (typeof t === &apos;object&apos;) {
+        if (typeof t === 'object') {
             acc.times = +t.times || DEFAULT_TIMES;
 
-            acc.intervalFunc = typeof t.interval === &apos;function&apos; ?
+            acc.intervalFunc = typeof t.interval === 'function' ?
                 t.interval :
                 constant$1(+t.interval || DEFAULT_INTERVAL);
 
             acc.errorFilter = t.errorFilter;
-        } else if (typeof t === &apos;number&apos; || typeof t === &apos;string&apos;) {
+        } else if (typeof t === 'number' || typeof t === 'string') {
             acc.times = +t || DEFAULT_TIMES;
         } else {
-            throw new Error(&quot;Invalid arguments for async.retry&quot;);
+            throw new Error("Invalid arguments for async.retry");
         }
     }
 
-    if (arguments.length &lt; 3 &amp;&amp; typeof opts === &apos;function&apos;) {
+    if (arguments.length &lt; 3 &amp;&amp; typeof opts === 'function') {
         callback = task || noop;
         task = opts;
     } else {
@@ -8558,8 +8549,8 @@ com/caolan/async/issues/637))
         callback = callback || noop;
     }
 
-    if (typeof task !== &apos;function&apos;) {
-        throw new Error(&quot;Invalid arguments for async.retry&quot;);
+    if (typeof task !== 'function') {
+        throw new Error("Invalid arguments for async.retry");
     }
 
     var _task = wrapAsync(task);
@@ -8568,7 +8559,7 @@ com/caolan/async/issues/637))
     function retryAttempt() {
         _task(function(err) {
             if (err &amp;&amp; attempt++ &lt; options.times &amp;&amp;
-                (typeof options.errorFilter != &apos;function&apos; ||
+                (typeof options.errorFilter != 'function' ||
                     options.errorFilter(err))) {
                 setTimeout(retryAttempt, options.intervalFunc(attempt));
             } else {
@@ -8632,7 +8623,7 @@ com/caolan/async/issues/637))
 *
 * async.auto({
 *     dep1: async.<span class="apidocCodeKeywordSpan">retryable</span>(3, getFromFlakyService),
-*     process: [&quot;dep1&quot;, async.retryable(3, function (results, cb) {
+*     process: ["dep1", async.retryable(3, function (results, cb) {
 *         maybeProcessData(results.dep1, cb);
 *     })]
 * }, callback);
@@ -8701,7 +8692,7 @@ com/caolan/async/issues/637))
         var that = this;
 
         var cb = args[args.length - 1];
-        if (typeof cb == &apos;function&apos;) {
+        if (typeof cb == 'function') {
             args.pop();
         } else {
             cb = noop;
@@ -8720,16 +8711,16 @@ com/caolan/async/issues/637))
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 *
-* // Requires lodash (or underscore), express3 and dresende&apos;s orm2.
+* // Requires lodash (or underscore), express3 and dresende's orm2.
 * // Part of an app, that fetches cats of the logged user.
 * // This example uses `seq` function to avoid overnesting and error
 * // handling clutter.
-* app.get(&apos;/cats&apos;, function(request, response) {
+* app.get('/cats', function(request, response) {
 *     var User = request.models.User;
 *     async.<span class="apidocCodeKeywordSpan">seq</span>(
-*         _.bind(User.get, User),  // &apos;User.get&apos; has signature (id, callback(err, data))
+*         _.bind(User.get, User),  // 'User.get' has signature (id, callback(err, data))
 *         function(user, fn) {
-*             user.getCats(fn);      // &apos;getCats&apos; has signature (callback(err, data))
+*             user.getCats(fn);      // 'getCats' has signature (callback(err, data))
 *         }
 *     )(req.session.user_id, function (err, cats) {
 *         if (err) {
@@ -8760,11 +8751,11 @@ com/caolan/async/issues/637))
 * async.<span class="apidocCodeKeywordSpan">series</span>([
 *     function(callback) {
 *         // do some stuff ...
-*         callback(null, &apos;one&apos;);
+*         callback(null, 'one');
 *     },
 *     function(callback) {
 *         // do some more stuff ...
-*         callback(null, &apos;two&apos;);
+*         callback(null, 'two');
 ...</pre></li>
     </ul>
 
@@ -8786,10 +8777,10 @@ com/caolan/async/issues/637))
     <li>example usage<pre class="apidocCodePre">...
  * var call_order = [];
  * async.nextTick(function() {
- *     call_order.push(&apos;two&apos;);
- *     // call_order now equals [&apos;one&apos;,&apos;two&apos;]
+ *     call_order.push('two');
+ *     // call_order now equals ['one','two']
  * });
- * call_order.push(&apos;one&apos;);
+ * call_order.push('one');
  *
  * async.<span class="apidocCodeKeywordSpan">setImmediate</span>(function (a, b, c) {
  *     // a, b, and c equal 1, 2, and 3
@@ -8822,7 +8813,7 @@ _defer = process.nextTick;
 * tests. Invoked with (err, result).
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">some</span>([&apos;file1&apos;,&apos;file2&apos;,&apos;file3&apos;], function(filePath
+* async.<span class="apidocCodeKeywordSpan">some</span>(['file1','file2','file3'], function(filePath
 , callback) {
 *     fs.access(filePath, function(err) {
 *         callback(null, !err)
@@ -8882,7 +8873,7 @@ _defer = process.nextTick;
         });
     }, function (err, results) {
         if (err) return callback(err);
-        callback(null, arrayMap(results.sort(comparator), baseProperty(&apos;value&apos;)));
+        callback(null, arrayMap(results.sort(comparator), baseProperty('value')));
     });
 
     function comparator(left, right) {
@@ -8898,7 +8889,7 @@ _defer = process.nextTick;
 * calls. Invoked with (err, results).
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">sortBy</span>([&apos;file1&apos;,&apos;file2&apos;,&apos;file3&apos;], function(file
+* async.<span class="apidocCodeKeywordSpan">sortBy</span>(['file1','file2','file3'], function(file
 , callback) {
 *     fs.stat(file, function(err, stats) {
 *         callback(err, stats.mtime);
@@ -8927,9 +8918,9 @@ _defer = process.nextTick;
         var timer;
 
         function timeoutCallback() {
-            var name = asyncFn.name || &apos;anonymous&apos;;
-            var error  = new Error(&apos;Callback function &quot;&apos; + name + &apos;&quot; timed out.&apos;);
-            error.code = &apos;ETIMEDOUT&apos;;
+            var name = asyncFn.name || 'anonymous';
+            var error  = new Error('Callback function "' + name + '" timed out.');
+            error.code = 'ETIMEDOUT';
             if (info) {
                 error.info = info;
             }
@@ -8960,11 +8951,11 @@ _defer = process.nextTick;
 * var wrapped = async.<span class="apidocCodeKeywordSpan">timeout</span>(myFunction, 1000);
 *
 * // call `wrapped` as you would `myFunction`
-* wrapped({ bar: &apos;bar&apos; }, function(err, data) {
+* wrapped({ bar: 'bar' }, function(err, data) {
 *     // if `myFunction` takes &lt; 1000 ms to execute, `err`
 *     // and `data` will have their expected values
 *
-*     // else `err` will be an Error with the code &apos;ETIMEDOUT&apos;
+*     // else `err` will be an Error with the code 'ETIMEDOUT'
 ...</pre></li>
     </ul>
 
@@ -8983,7 +8974,7 @@ _defer = process.nextTick;
     <li>example usage<pre class="apidocCodePre">...
 * var createUser = function(id, callback) {
 *     callback(null, {
-*         id: &apos;user&apos; + id
+*         id: 'user' + id
 *     });
 * };
 *
@@ -9164,7 +9155,7 @@ _defer = process.nextTick;
     <ul>
     <li>description and source-code<pre class="apidocCodePre">waterfall = function (tasks, callback) {
     callback = once(callback || noop);
-    if (!isArray(tasks)) return callback(new Error(&apos;First argument to waterfall must be an array of functions&apos;));
+    if (!isArray(tasks)) return callback(new Error('First argument to waterfall must be an array of functions'));
     if (!tasks.length) return callback();
     var taskIndex = 0;
 
@@ -9192,7 +9183,7 @@ _defer = process.nextTick;
 *
 * // passing a regular synchronous function
 * async.<span class="apidocCodeKeywordSpan">waterfall</span>([
-*     async.apply(fs.readFile, filename, &quot;utf8&quot;),
+*     async.apply(fs.readFile, filename, "utf8"),
 *     async.asyncify(JSON.parse),
 *     function (data, next) {
 *         // data is the result of parsing the text.
@@ -9225,7 +9216,7 @@ _defer = process.nextTick;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 * function has failed and repeated execution of `iteratee` has stopped. `callback`
-* will be passed an error and any arguments passed to the final `iteratee`&apos;s
+* will be passed an error and any arguments passed to the final `iteratee`'s
 * callback. Invoked with (err, [results]);
 * @returns undefined
 * @example
@@ -9260,7 +9251,7 @@ _defer = process.nextTick;
             return callback(e);
         }
         // if result is Promise object
-        if (isObject(result) &amp;&amp; typeof result.then === &apos;function&apos;) {
+        if (isObject(result) &amp;&amp; typeof result.then === 'function') {
             result.then(function(value) {
                 invokeCallback(callback, null, value);
             }, function(err) {
@@ -9397,7 +9388,7 @@ exports.default = function (fn /*, ...args*/) {
     };
 };
 
-var _slice = require(&apos;./internal/slice&apos;);
+var _slice = require('./internal/slice');
 
 var _slice2 = _interopRequireDefault(_slice);
 ...</pre></li>
@@ -9434,7 +9425,7 @@ var _slice2 = _interopRequireDefault(_slice);
 * arguments, `callback` is required.
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">applyEach</span>([enableSearch, updateSchema], &apos;bucket&apos;, callback);
+* async.<span class="apidocCodeKeywordSpan">applyEach</span>([enableSearch, updateSchema], 'bucket', callback);
 *
 * // partial application example:
 * async.each(
@@ -9489,7 +9480,7 @@ var _slice2 = _interopRequireDefault(_slice);
             return callback(e);
         }
         // if result is Promise object
-        if ((0, _isObject2.default)(result) &amp;&amp; typeof result.then === &apos;function&apos;) {
+        if ((0, _isObject2.default)(result) &amp;&amp; typeof result.then === 'function') {
             result.then(function (value) {
                 invokeCallback(callback, null, value);
             }, function (err) {
@@ -9507,7 +9498,7 @@ var _slice2 = _interopRequireDefault(_slice);
 *
 * // passing a regular synchronous function
 * async.waterfall([
-*     async.apply(fs.readFile, filename, &quot;utf8&quot;),
+*     async.apply(fs.readFile, filename, "utf8"),
 *     async.<span class="apidocCodeKeywordSpan">asyncify</span>(JSON.parse),
 *     function (data, next) {
 *         // data is the result of parsing the text.
@@ -9529,7 +9520,7 @@ var _slice2 = _interopRequireDefault(_slice);
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">auto = function (tasks, concurrency, callback) {
-    if (typeof concurrency === &apos;function&apos;) {
+    if (typeof concurrency === 'function') {
         // concurrency is optional, shift the args.
         callback = concurrency;
         concurrency = null;
@@ -9576,8 +9567,8 @@ var _slice2 = _interopRequireDefault(_slice);
 
         (0, _arrayEach2.default)(dependencies, function (dependencyName) {
             if (!tasks[dependencyName]) {
-                throw new Error(&apos;async.auto task `&apos; + key + &apos;` has a non-existent dependency `&apos; + dependencyName + &apos;` in &apos; + dependencies
-.join(&apos;, &apos;));
+                throw new Error('async.auto task `' + key + '` has a non-existent dependency `' + dependencyName + '` in ' + dependencies
+.join(', '));
             }
             addListener(dependencyName, function () {
                 remainingDependencies--;
@@ -9658,7 +9649,7 @@ var _slice2 = _interopRequireDefault(_slice);
     }
 
     function checkForDeadlocks() {
-        // Kahn&apos;s algorithm
+        // Kahn's algorithm
         // https://en.wikipedia.org/wiki/Topological_sorting#Kahn.27s_algorithm
         // http://connalle.blogspot.com/2013...</pre></li>
     <li>example usage<pre class="apidocCodePre">...
@@ -9671,9 +9662,9 @@ var _slice2 = _interopRequireDefault(_slice);
 *
 * async.<span class="apidocCodeKeywordSpan">auto</span>({
 *     // this function will just be passed a callback
-*     readData: async.apply(fs.readFile, &apos;data.txt&apos;, &apos;utf-8&apos;),
-*     showData: [&apos;readData&apos;, function(results, cb) {
-*         // results.readData is the file&apos;s contents
+*     readData: async.apply(fs.readFile, 'data.txt', 'utf-8'),
+*     showData: ['readData', function(results, cb) {
+*         // results.readData is the file's contents
 *         // ...
 *     }]
 * }, callback);
@@ -9708,7 +9699,7 @@ var _slice2 = _interopRequireDefault(_slice);
         } else {
             params = parseParams(taskFn);
             if (taskFn.length === 0 &amp;&amp; !fnIsAsync &amp;&amp; params.length === 0) {
-                throw new Error(&quot;autoInject task functions require explicit parameters.&quot;);
+                throw new Error("autoInject task functions require explicit parameters.");
             }
 
             // remove callback param
@@ -9739,7 +9730,7 @@ var _slice2 = _interopRequireDefault(_slice);
 * async.<span class="apidocCodeKeywordSpan">autoInject</span>({
 *     get_data: function(callback) {
 *         // async code to get some data
-*         callback(null, &apos;data&apos;, &apos;converted to array&apos;);
+*         callback(null, 'data', 'converted to array');
 *     },
 *     make_folder: function(callback) {
 *         // async code to create a directory to store a file in
@@ -9769,7 +9760,7 @@ var _slice2 = _interopRequireDefault(_slice);
 * // create a cargo object with payload 2
 * var cargo = async.<span class="apidocCodeKeywordSpan">cargo</span>(function(tasks, callback) {
 *     for (var i=0; i&lt;tasks.length; i++) {
-*         console.log(&apos;hello &apos; + tasks[i].name);
+*         console.log('hello ' + tasks[i].name);
 *     }
 *     callback();
 * }, 2);
@@ -9803,7 +9794,7 @@ var _slice2 = _interopRequireDefault(_slice);
  *     // result now equals 15
  * });
  */
-module.exports = exports[&apos;default&apos;];
+module.exports = exports['default'];
 ...</pre></li>
     </ul>
 
@@ -9831,7 +9822,7 @@ exports.default = function (fn /*, ...args*/) {
     };
 };
 
-var _slice = require(&apos;./internal/slice&apos;);
+var _slice = require('./internal/slice');
 
 var _slice2 = _interopRequireDefault(_slice);
 ...</pre></li>
@@ -9939,7 +9930,7 @@ var _slice2 = _interopRequireDefault(_slice);
 * (err, result).
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">detect</span>([&apos;file1&apos;,&apos;file2&apos;,&apos;file3&apos;], function(filePath
+* async.<span class="apidocCodeKeywordSpan">detect</span>(['file1','file2','file3'], function(filePath
 , callback) {
 *     fs.access(filePath, function(err) {
 *         callback(null, !err)
@@ -9994,7 +9985,7 @@ var _slice2 = _interopRequireDefault(_slice);
     var args = (0, _slice2.default)(arguments, 1);
     args.push(function (err /*, ...args*/) {
         var args = (0, _slice2.default)(arguments, 1);
-        if (typeof console === &apos;object&apos;) {
+        if (typeof console === 'object') {
             if (err) {
                 if (console.error) {
                     console.error(err);
@@ -10016,11 +10007,11 @@ var _slice2 = _interopRequireDefault(_slice);
  * };
  *
  * // in the node repl
- * node&gt; async.<span class="apidocCodeKeywordSpan">dir</span>(hello, &apos;world&apos;);
- * {hello: &apos;world&apos;}
+ * node&gt; async.<span class="apidocCodeKeywordSpan">dir</span>(hello, 'world');
+ * {hello: 'world'}
  */
-exports.default = (0, _consoleFunc2.default)(&apos;dir&apos;);
-module.exports = exports[&apos;default&apos;];
+exports.default = (0, _consoleFunc2.default)('dir');
+module.exports = exports['default'];
 ...</pre></li>
     </ul>
 
@@ -10159,7 +10150,7 @@ module.exports = exports[&apos;default&apos;];
  * arguments, `callback` is required.
  * @example
  *
- * async.applyEach([enableSearch, updateSchema], &apos;bucket&apos;, callback);
+ * async.applyEach([enableSearch, updateSchema], 'bucket', callback);
  *
  * // partial application example:
  * async.<span class="apidocCodeKeywordSpan">each</span>(
@@ -10169,7 +10160,7 @@ module.exports = exports[&apos;default&apos;];
  * );
  */
 exports.default = (0, _applyEach2.default)(_map2.default);
-module.exports = exports[&apos;default&apos;];
+module.exports = exports['default'];
 ...</pre></li>
     </ul>
 
@@ -10279,7 +10270,7 @@ module.exports = exports[&apos;default&apos;];
     <li>example usage<pre class="apidocCodePre">...
 3. The callback can accept any number of arguments
 4. The first argument passed to the callback will be treated as an error result, if the argument is truthy
-5. Any number of result arguments can be passed after the &quot;error&quot; argument
+5. Any number of result arguments can be passed after the "error" argument
 6. The callback is called once and exactly once, either on the same tick or later tick of the JavaScript event loop.
 
 There were several cases where Async accepted some functions that did not strictly have these properties, most notably `auto`, `
@@ -10291,8 +10282,7 @@ Another theme is performance. We have eliminated internal deferrals in all cases
  a HTTP request, for example. Nearly all asynchronous functions that do I/O already have some sort of deferral built in, so the
 extra deferral is unnecessary. The trade-off of this change is removing our built-in stack-overflow defense. Many synchronous callback
  calls in series can quickly overflow the JS call stack. If you do have a function that is sometimes synchronous (calling its callback
- on the same tick), and are running into stack overflows, wrap it with `async.<span class="apidocCodeKeywordSpan">ensureAsync</span
->()`.
+ on the same tick), and are running into stack overflows, wrap it with `async.<span class="apidocCodeKeywordSpan">ensureAsync</span>()`.
 
 Another big performance win has been re-implementing `queue`, `cargo`, and `priorityQueue` with [doubly linked lists](https://en
 .wikipedia.org/wiki/Doubly_linked_list) instead of arrays. This has lead to queues being an order of [magnitude faster on large
@@ -10300,10 +10290,10 @@ sets of tasks](https://github.com/caolan/async/pull/1205).
 
 ## New Features
 
-- Async is now modularized. Individual functions can be `require()`d from the main package. (`require(&apos;async/auto&apos;)`) ([#
+- Async is now modularized. Individual functions can be `require()`d from the main package. (`require('async/auto')`) ([#
 984](https://github.com/caolan/async/issues/984), [#996](https://github.com/caolan/async/issues/996))
-- Async is also available as a collection of ES2015 modules in the new `async-es` package. (`import {forEachSeries} from &apos;async
--es&apos;`) ([#984](https://github.com/caolan/async/issues/984), [#996](https://github.com/caolan/async/issues/996))
+- Async is also available as a collection of ES2015 modules in the new `async-es` package. (`import {forEachSeries} from 'async
+-es'`) ([#984](https://github.com/caolan/async/issues/984), [#996](https://github.com/caolan/async/issues/996))
 ...</pre></li>
     </ul>
 
@@ -10327,7 +10317,7 @@ sets of tasks](https://github.com/caolan/async/pull/1205).
 * depending on the values of the async tests. Invoked with (err, result).
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">every</span>([&apos;file1&apos;,&apos;file2&apos;,&apos;file3&apos;], function(filePath
+* async.<span class="apidocCodeKeywordSpan">every</span>(['file1','file2','file3'], function(filePath
 , callback) {
 *     fs.access(filePath, function(err) {
 *         callback(null, !err)
@@ -10389,7 +10379,7 @@ sets of tasks](https://github.com/caolan/async/pull/1205).
 * `iteratee` functions have finished. Invoked with (err, results).
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">filter</span>([&apos;file1&apos;,&apos;file2&apos;,&apos;file3&apos;], function(filePath
+* async.<span class="apidocCodeKeywordSpan">filter</span>(['file1','file2','file3'], function(filePath
 , callback) {
 *     fs.access(filePath, function(err) {
 *         callback(null, !err)
@@ -10564,11 +10554,11 @@ sets of tasks](https://github.com/caolan/async/pull/1205).
 * `iteratee` functions have finished, or an error occurs. Invoked with (err).
 * @example
 *
-* var obj = {dev: &quot;/dev.json&quot;, test: &quot;/test.json&quot;, prod: &quot;/prod.json&quot;};
+* var obj = {dev: "/dev.json", test: "/test.json", prod: "/prod.json"};
 * var configs = {};
 *
 * async.<span class="apidocCodeKeywordSpan">forEachOf</span>(obj, function (value, key, callback) {
-*     fs.readFile(__dirname + value, &quot;utf8&quot;, function (err, data) {
+*     fs.readFile(__dirname + value, "utf8", function (err, data) {
 *         if (err) return callback(err);
 *         try {
 *             configs[key] = JSON.parse(data);
@@ -10646,7 +10636,7 @@ sets of tasks](https://github.com/caolan/async/pull/1205).
 * @category Control Flow
 * @param {AsyncFunction} fn - an async function to call repeatedly.
 * Invoked with (next).
-* @param {Function} [errback] - when `fn` passes an error to it&apos;s callback,
+* @param {Function} [errback] - when `fn` passes an error to it's callback,
 * this function will be called, and execution stops. Invoked with (err).
 * @example
 *
@@ -10657,7 +10647,7 @@ sets of tasks](https://github.com/caolan/async/pull/1205).
 *     },
 *     function(err) {
 *         // if next is called with a value in its first parameter, it will appear
-*         // in here as &apos;err&apos;, and execution will stop.
+*         // in here as 'err', and execution will stop.
 ...</pre></li>
     </ul>
 
@@ -10681,7 +10671,7 @@ sets of tasks](https://github.com/caolan/async/pull/1205).
 * properties are arrays of values which returned the corresponding key.
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">groupBy</span>([&apos;userId1&apos;, &apos;userId2&apos;, &apos;userId3&apos;], function
+* async.<span class="apidocCodeKeywordSpan">groupBy</span>(['userId1', 'userId2', 'userId3'], function
 (userId, callback) {
 *     db.findById(userId, function(err, user) {
 *         if (err) return callback(err);
@@ -10689,7 +10679,7 @@ sets of tasks](https://github.com/caolan/async/pull/1205).
 *     });
 * }, function(err, result) {
 *     // result is object containing the userIds grouped by age
-*     // e.g. { 30: [&apos;userId1&apos;, &apos;userId3&apos;], 42: [&apos;userId2&apos;]};
+*     // e.g. { 30: ['userId1', 'userId3'], 42: ['userId2']};
 ...</pre></li>
     </ul>
 
@@ -10786,7 +10776,7 @@ sets of tasks](https://github.com/caolan/async/pull/1205).
     var args = (0, _slice2.default)(arguments, 1);
     args.push(function (err /*, ...args*/) {
         var args = (0, _slice2.default)(arguments, 1);
-        if (typeof console === &apos;object&apos;) {
+        if (typeof console === 'object') {
             if (err) {
                 if (console.error) {
                     console.error(err);
@@ -10803,13 +10793,13 @@ sets of tasks](https://github.com/caolan/async/pull/1205).
     <li>example usage<pre class="apidocCodePre">...
 *     },
 *     email_link: function(write_file, callback) {
-*         // once the file is written let&apos;s email a link to it...
+*         // once the file is written let's email a link to it...
 *         // write_file contains the filename returned by write_file.
-*         callback(null, {&apos;file&apos;:write_file, &apos;email&apos;:&apos;user@example.com&apos;});
+*         callback(null, {'file':write_file, 'email':'user@example.com'});
 *     }
 * }, function(err, results) {
-*     console.<span class="apidocCodeKeywordSpan">log</span>(&apos;err = &apos;, err);
-*     console.log(&apos;email_link = &apos;, results.email_link);
+*     console.<span class="apidocCodeKeywordSpan">log</span>('err = ', err);
+*     console.log('email_link = ', results.email_link);
 * });
 *
 * // If you are using a JS minifier that mangles parameter names, `autoInject`
@@ -10836,11 +10826,11 @@ var FN_ARG = /(=.+)?(\s*)$/;
 var STRIP_COMMENTS = /((\/\/.*$)|(\/\*[\s\S]*?\*\/))/mg;
 
 function parseParams(func) {
-   func = func.toString().replace(STRIP_COMMENTS, &apos;&apos;);
-   func = func.match(FN_ARGS)[2].replace(&apos; &apos;, &apos;&apos;);
+   func = func.toString().replace(STRIP_COMMENTS, '');
+   func = func.match(FN_ARGS)[2].replace(' ', '');
    func = func ? func.split(FN_ARG_SPLIT) : [];
    func = func.<span class="apidocCodeKeywordSpan">map</span>(function (arg) {
-       return (0, _trim2.default)(arg.replace(FN_ARG, &apos;&apos;));
+       return (0, _trim2.default)(arg.replace(FN_ARG, ''));
    });
    return func;
 }
@@ -10867,7 +10857,7 @@ function parseParams(func) {
 ```
 
 ```javascript
-var async = require(&quot;async&quot;);
+var async = require("async");
 
 // ...or ES2017 async functions
 async.<span class="apidocCodeKeywordSpan">mapLimit</span>(urls, 5, async function(url) {
@@ -10903,7 +10893,7 @@ async.<span class="apidocCodeKeywordSpan">mapLimit</span>(urls, 5, async functio
  * // this has a risk of stack overflows if many results are cached in a row
  * async.<span class="apidocCodeKeywordSpan">mapSeries</span>(args, sometimesAsync, done);
  *
- * // this will defer sometimesAsync&apos;s callback if necessary,
+ * // this will defer sometimesAsync's callback if necessary,
  * // preventing stack overflows
  * async.mapSeries(args, async.ensureAsync(sometimesAsync), done);
  */
@@ -10933,9 +10923,9 @@ if ((0, _wrapAsync.isAsync)(fn)) return fn;
 * @example
 *
 * async.<span class="apidocCodeKeywordSpan">mapValues</span>({
-*     f1: &apos;file1&apos;,
-*     f2: &apos;file2&apos;,
-*     f3: &apos;file3&apos;
+*     f1: 'file1',
+*     f2: 'file2',
+*     f3: 'file3'
 * }, function (file, key, callback) {
 *   fs.stat(file, callback);
 * }, function(err, result) {
@@ -11034,7 +11024,7 @@ if ((0, _wrapAsync.isAsync)(fn)) return fn;
  * var fn = async.<span class="apidocCodeKeywordSpan">memoize</span>(slow_fn);
  *
  * // fn can now be used as if it were slow_fn
- * fn(&apos;some name&apos;, function() {
+ * fn('some name', function() {
  *     // callback
  * });
  */
@@ -11097,8 +11087,8 @@ function reduce(coll, memo, iteratee, callback) {
 *
 * // using apply
 * async.<span class="apidocCodeKeywordSpan">parallel</span>([
-*     async.apply(fs.writeFile, &apos;testfile1&apos;, &apos;test1&apos;),
-*     async.apply(fs.writeFile, &apos;testfile2&apos;, &apos;test2&apos;)
+*     async.apply(fs.writeFile, 'testfile1', 'test1'),
+*     async.apply(fs.writeFile, 'testfile2', 'test2')
 * ]);
 *
 *
@@ -11138,8 +11128,8 @@ function reduce(coll, memo, iteratee, callback) {
     // Override push to accept second parameter representing priority
     q.push = function (data, priority, callback) {
         if (callback == null) callback = _noop2.default;
-        if (typeof callback !== &apos;function&apos;) {
-            throw new Error(&apos;task callback must be a function&apos;);
+        if (typeof callback !== 'function') {
+            throw new Error('task callback must be a function');
         }
         q.started = true;
         if (!(0, _isArray2.default)(data)) {
@@ -11227,7 +11217,7 @@ function asyncify(func) {
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function race(tasks, callback) {
     callback = (0, _once2.default)(callback || _noop2.default);
-    if (!(0, _isArray2.default)(tasks)) return callback(new TypeError(&apos;First argument to race must be an array of functions&apos;));
+    if (!(0, _isArray2.default)(tasks)) return callback(new TypeError('First argument to race must be an array of functions'));
     if (!tasks.length) return callback();
     for (var i = 0, l = tasks.length; i &lt; l; i++) {
         (0, _wrapAsync2.default)(tasks[i])(callback);
@@ -11241,10 +11231,10 @@ sets of tasks](https://github.com/caolan/async/pull/1205).
 
 ## New Features
 
-- Async is now modularized. Individual functions can be `require()`d from the main package. (`require(&apos;async/auto&apos;)`) ([#
+- Async is now modularized. Individual functions can be `require()`d from the main package. (`require('async/auto')`) ([#
 984](https://github.com/caolan/async/issues/984), [#996](https://github.com/caolan/async/issues/996))
-- Async is also available as a collection of ES2015 modules in the new `async-es` package. (`import {forEachSeries} from &apos;async
--es&apos;`) ([#984](https://github.com/caolan/async/issues/984), [#996](https://github.com/caolan/async/issues/996))
+- Async is also available as a collection of ES2015 modules in the new `async-es` package. (`import {forEachSeries} from 'async
+-es'`) ([#984](https://github.com/caolan/async/issues/984), [#996](https://github.com/caolan/async/issues/996))
 - Added `race`, analogous to `Promise.<span class="apidocCodeKeywordSpan">race</span>()`. It will run an array of async tasks in
  parallel and will call its callback with the result of the first task to respond. ([#568](https://github.com/caolan/async/issues
 /568), [#1038](https://github.com/caolan/async/issues/1038))
@@ -11262,7 +11252,7 @@ directly to `each`, `map`, `parallel`, etc.. ([#579](https://github.com/caolan/a
 /caolan/async/issues/1016), [#1052](https://github.com/caolan/async/issues/1052))
 - `setImmediate` and `nextTick` now support arguments to partially apply to the deferred function, like the node-native versions
  do. ([#940](https://github.com/caolan/async/issues/940), [#1053](https://github.com/caolan/async/issues/1053))
-- `auto` now supports resolving cyclic dependencies using [Kahn&apos;s algorithm](https://en.wikipedia.org/wiki/Topological_sorting
+- `auto` now supports resolving cyclic dependencies using [Kahn's algorithm](https://en.wikipedia.org/wiki/Topological_sorting
 #Kahn.27s_algorithm) ([#1140](https://github.com/caolan/async/issues/1140)).
 ...</pre></li>
     </ul>
@@ -11354,10 +11344,10 @@ directly to `each`, `map`, `parallel`, etc.. ([#579](https://github.com/caolan/a
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 
-- Async is now modularized. Individual functions can be `require()`d from the main package. (`require(&apos;async/auto&apos;)`) ([#
+- Async is now modularized. Individual functions can be `require()`d from the main package. (`require('async/auto')`) ([#
 984](https://github.com/caolan/async/issues/984), [#996](https://github.com/caolan/async/issues/996))
-- Async is also available as a collection of ES2015 modules in the new `async-es` package. (`import {forEachSeries} from &apos;async
--es&apos;`) ([#984](https://github.com/caolan/async/issues/984), [#996](https://github.com/caolan/async/issues/996))
+- Async is also available as a collection of ES2015 modules in the new `async-es` package. (`import {forEachSeries} from 'async
+-es'`) ([#984](https://github.com/caolan/async/issues/984), [#996](https://github.com/caolan/async/issues/996))
 - Added `race`, analogous to `Promise.race()`. It will run an array of async tasks in parallel and will call its callback with the
  result of the first task to respond. ([#568](https://github.com/caolan/async/issues/568), [#1038](https://github.com/caolan/async
 /issues/1038))
@@ -11376,9 +11366,9 @@ directly to `each`, `map`, `parallel`, etc.. ([#579](https://github.com/caolan/a
 /caolan/async/issues/1016), [#1052](https://github.com/caolan/async/issues/1052))
 - `setImmediate` and `nextTick` now support arguments to partially apply to the deferred function, like the node-native versions
  do. ([#940](https://github.com/caolan/async/issues/940), [#1053](https://github.com/caolan/async/issues/1053))
-- `auto` now supports resolving cyclic dependencies using [Kahn&apos;s algorithm](https://en.wikipedia.org/wiki/Topological_sorting
+- `auto` now supports resolving cyclic dependencies using [Kahn's algorithm](https://en.wikipedia.org/wiki/Topological_sorting
 #Kahn.27s_algorithm) ([#1140](https://github.com/caolan/async/issues/1140)).
-- Added `autoInject`, a relative of `auto` that automatically spreads a task&apos;s dependencies as arguments to the task function
+- Added `autoInject`, a relative of `auto` that automatically spreads a task's dependencies as arguments to the task function
 . ([#608](https://github.com/caolan/async/issues/608), [#1055](https://github.com/caolan/async/issues/1055), [#1099](https://github
 .com/caolan/async/issues/1099), [#1100](https://github.com/caolan/async/issues/1100))
 - You can now limit the concurrency of `auto` tasks. ([#635](https://github.com/caolan/async/issues/635), [#637](https://github.
@@ -11414,7 +11404,7 @@ com/caolan/async/issues/637))
     <li>example usage<pre class="apidocCodePre">...
 *     function(callback) {
 *         setTimeout(function() {
-*             callback(null, &apos;two&apos;);
+*             callback(null, 'two');
 *         }, 100);
 *     }
 * ];
@@ -11423,9 +11413,9 @@ com/caolan/async/issues/637))
 * // optional callback
 * function(err, results) {
 *     // values
-*     // results[0].value = &apos;one&apos;
-*     // results[1].error = Error(&apos;bad stuff happened&apos;)
-*     // results[2].value = &apos;two&apos;
+*     // results[0].value = 'one'
+*     // results[1].error = Error('bad stuff happened')
+*     // results[2].value = 'two'
 * });
 ...</pre></li>
     </ul>
@@ -11450,7 +11440,7 @@ com/caolan/async/issues/637))
 * `iteratee` functions have finished. Invoked with (err, results).
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">reject</span>([&apos;file1&apos;,&apos;file2&apos;,&apos;file3&apos;], function(filePath
+* async.<span class="apidocCodeKeywordSpan">reject</span>(['file1','file2','file3'], function(filePath
 , callback) {
 *     fs.access(filePath, function(err) {
 *         callback(null, !err)
@@ -11511,21 +11501,21 @@ com/caolan/async/issues/637))
     };
 
     function parseTimes(acc, t) {
-        if (typeof t === &apos;object&apos;) {
+        if (typeof t === 'object') {
             acc.times = +t.times || DEFAULT_TIMES;
 
-            acc.intervalFunc = typeof t.interval === &apos;function&apos; ? t.interval : (0, _constant2.default)(+t.interval || DEFAULT_INTERVAL
+            acc.intervalFunc = typeof t.interval === 'function' ? t.interval : (0, _constant2.default)(+t.interval || DEFAULT_INTERVAL
 );
 
             acc.errorFilter = t.errorFilter;
-        } else if (typeof t === &apos;number&apos; || typeof t === &apos;string&apos;) {
+        } else if (typeof t === 'number' || typeof t === 'string') {
             acc.times = +t || DEFAULT_TIMES;
         } else {
-            throw new Error(&quot;Invalid arguments for async.retry&quot;);
+            throw new Error("Invalid arguments for async.retry");
         }
     }
 
-    if (arguments.length &lt; 3 &amp;&amp; typeof opts === &apos;function&apos;) {
+    if (arguments.length &lt; 3 &amp;&amp; typeof opts === 'function') {
         callback = task || _noop2.default;
         task = opts;
     } else {
@@ -11533,8 +11523,8 @@ com/caolan/async/issues/637))
         callback = callback || _noop2.default;
     }
 
-    if (typeof task !== &apos;function&apos;) {
-        throw new Error(&quot;Invalid arguments for async.retry&quot;);
+    if (typeof task !== 'function') {
+        throw new Error("Invalid arguments for async.retry");
     }
 
     var _task = (0, _wrapAsync2.default)(task);
@@ -11542,7 +11532,7 @@ com/caolan/async/issues/637))
     var attempt = 1;
     function retryAttempt() {
         _task(function (err) {
-            if (err &amp;&amp; attempt++ &lt; options.times &amp;&amp; (typeof options.errorFilter != &apos;function&apos; || options.errorFilter(err))) {
+            if (err &amp;&amp; attempt++ &lt; options.times &amp;&amp; (typeof options.errorFilter != 'function' || options.errorFilter(err))) {
                 setTimeout(retryAttempt, options.intervalFunc(attempt));
             } else {
                 callback.apply(null, arguments);
@@ -11603,7 +11593,7 @@ com/caolan/async/issues/637))
 *
 * async.auto({
 *     dep1: async.<span class="apidocCodeKeywordSpan">retryable</span>(3, getFromFlakyService),
-*     process: [&quot;dep1&quot;, async.retryable(3, function (results, cb) {
+*     process: ["dep1", async.retryable(3, function (results, cb) {
 *         maybeProcessData(results.dep1, cb);
 *     })]
 * }, callback);
@@ -11672,7 +11662,7 @@ com/caolan/async/issues/637))
         var that = this;
 
         var cb = args[args.length - 1];
-        if (typeof cb == &apos;function&apos;) {
+        if (typeof cb == 'function') {
             args.pop();
         } else {
             cb = _noop2.default;
@@ -11690,16 +11680,16 @@ com/caolan/async/issues/637))
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 *
-* // Requires lodash (or underscore), express3 and dresende&apos;s orm2.
+* // Requires lodash (or underscore), express3 and dresende's orm2.
 * // Part of an app, that fetches cats of the logged user.
 * // This example uses `seq` function to avoid overnesting and error
 * // handling clutter.
-* app.get(&apos;/cats&apos;, function(request, response) {
+* app.get('/cats', function(request, response) {
 *     var User = request.models.User;
 *     async.<span class="apidocCodeKeywordSpan">seq</span>(
-*         _.bind(User.get, User),  // &apos;User.get&apos; has signature (id, callback(err, data))
+*         _.bind(User.get, User),  // 'User.get' has signature (id, callback(err, data))
 *         function(user, fn) {
-*             user.getCats(fn);      // &apos;getCats&apos; has signature (callback(err, data))
+*             user.getCats(fn);      // 'getCats' has signature (callback(err, data))
 *         }
 *     )(req.session.user_id, function (err, cats) {
 *         if (err) {
@@ -11730,11 +11720,11 @@ com/caolan/async/issues/637))
 * async.<span class="apidocCodeKeywordSpan">series</span>([
 *     function(callback) {
 *         // do some stuff ...
-*         callback(null, &apos;one&apos;);
+*         callback(null, 'one');
 *     },
 *     function(callback) {
 *         // do some more stuff ...
-*         callback(null, &apos;two&apos;);
+*         callback(null, 'two');
 ...</pre></li>
     </ul>
 
@@ -11756,10 +11746,10 @@ com/caolan/async/issues/637))
     <li>example usage<pre class="apidocCodePre">...
  * var call_order = [];
  * async.nextTick(function() {
- *     call_order.push(&apos;two&apos;);
- *     // call_order now equals [&apos;one&apos;,&apos;two&apos;]
+ *     call_order.push('two');
+ *     // call_order now equals ['one','two']
  * });
- * call_order.push(&apos;one&apos;);
+ * call_order.push('one');
  *
  * async.<span class="apidocCodeKeywordSpan">setImmediate</span>(function (a, b, c) {
  *     // a, b, and c equal 1, 2, and 3
@@ -11792,7 +11782,7 @@ _defer = process.nextTick;
 * tests. Invoked with (err, result).
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">some</span>([&apos;file1&apos;,&apos;file2&apos;,&apos;file3&apos;], function(filePath
+* async.<span class="apidocCodeKeywordSpan">some</span>(['file1','file2','file3'], function(filePath
 , callback) {
 *     fs.access(filePath, function(err) {
 *         callback(null, !err)
@@ -11852,7 +11842,7 @@ _defer = process.nextTick;
         });
     }, function (err, results) {
         if (err) return callback(err);
-        callback(null, (0, _arrayMap2.default)(results.sort(comparator), (0, _baseProperty2.default)(&apos;value&apos;)));
+        callback(null, (0, _arrayMap2.default)(results.sort(comparator), (0, _baseProperty2.default)('value')));
     });
 
     function comparator(left, right) {
@@ -11869,7 +11859,7 @@ _defer = process.nextTick;
 * calls. Invoked with (err, results).
 * @example
 *
-* async.<span class="apidocCodeKeywordSpan">sortBy</span>([&apos;file1&apos;,&apos;file2&apos;,&apos;file3&apos;], function(file
+* async.<span class="apidocCodeKeywordSpan">sortBy</span>(['file1','file2','file3'], function(file
 , callback) {
 *     fs.stat(file, function(err, stats) {
 *         callback(err, stats.mtime);
@@ -11898,9 +11888,9 @@ _defer = process.nextTick;
         var timer;
 
         function timeoutCallback() {
-            var name = asyncFn.name || &apos;anonymous&apos;;
-            var error = new Error(&apos;Callback function &quot;&apos; + name + &apos;&quot; timed out.&apos;);
-            error.code = &apos;ETIMEDOUT&apos;;
+            var name = asyncFn.name || 'anonymous';
+            var error = new Error('Callback function "' + name + '" timed out.');
+            error.code = 'ETIMEDOUT';
             if (info) {
                 error.info = info;
             }
@@ -11931,11 +11921,11 @@ _defer = process.nextTick;
 * var wrapped = async.<span class="apidocCodeKeywordSpan">timeout</span>(myFunction, 1000);
 *
 * // call `wrapped` as you would `myFunction`
-* wrapped({ bar: &apos;bar&apos; }, function(err, data) {
+* wrapped({ bar: 'bar' }, function(err, data) {
 *     // if `myFunction` takes &lt; 1000 ms to execute, `err`
 *     // and `data` will have their expected values
 *
-*     // else `err` will be an Error with the code &apos;ETIMEDOUT&apos;
+*     // else `err` will be an Error with the code 'ETIMEDOUT'
 ...</pre></li>
     </ul>
 
@@ -11954,7 +11944,7 @@ _defer = process.nextTick;
     <li>example usage<pre class="apidocCodePre">...
 * var createUser = function(id, callback) {
 *     callback(null, {
-*         id: &apos;user&apos; + id
+*         id: 'user' + id
 *     });
 * };
 *
@@ -12135,7 +12125,7 @@ _defer = process.nextTick;
     <ul>
     <li>description and source-code<pre class="apidocCodePre">waterfall = function (tasks, callback) {
     callback = (0, _once2.default)(callback || _noop2.default);
-    if (!(0, _isArray2.default)(tasks)) return callback(new Error(&apos;First argument to waterfall must be an array of functions&apos;));
+    if (!(0, _isArray2.default)(tasks)) return callback(new Error('First argument to waterfall must be an array of functions'));
     if (!tasks.length) return callback();
     var taskIndex = 0;
 
@@ -12163,7 +12153,7 @@ _defer = process.nextTick;
 *
 * // passing a regular synchronous function
 * async.<span class="apidocCodeKeywordSpan">waterfall</span>([
-*     async.apply(fs.readFile, filename, &quot;utf8&quot;),
+*     async.apply(fs.readFile, filename, "utf8"),
 *     async.asyncify(JSON.parse),
 *     function (data, next) {
 *         // data is the result of parsing the text.
@@ -12196,7 +12186,7 @@ _defer = process.nextTick;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 * function has failed and repeated execution of `iteratee` has stopped. `callback`
-* will be passed an error and any arguments passed to the final `iteratee`&apos;s
+* will be passed an error and any arguments passed to the final `iteratee`'s
 * callback. Invoked with (err, [results]);
 * @returns undefined
 * @example
@@ -12231,7 +12221,7 @@ _defer = process.nextTick;
             return callback(e);
         }
         // if result is Promise object
-        if ((0, _isObject2.default)(result) &amp;&amp; typeof result.then === &apos;function&apos;) {
+        if ((0, _isObject2.default)(result) &amp;&amp; typeof result.then === 'function') {
             result.then(function (value) {
                 invokeCallback(callback, null, value);
             }, function (err) {
@@ -12293,7 +12283,7 @@ var q = {
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function isAsync(fn) {
-    return supportsSymbol &amp;&amp; fn[Symbol.toStringTag] === &apos;AsyncFunction&apos;;
+    return supportsSymbol &amp;&amp; fn[Symbol.toStringTag] === 'AsyncFunction';
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -12307,3 +12297,4 @@ var q = {
     ]
 </div>
 </div>
+</body></html>
