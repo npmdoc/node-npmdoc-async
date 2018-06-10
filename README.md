@@ -1,6 +1,6 @@
 # npmdoc-async
 
-#### basic api documentation for  [async (v2.3.0)](https://github.com/caolan/async#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-async.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-async) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-async.svg)](https://travis-ci.org/npmdoc/node-npmdoc-async)
+#### basic api documentation for  [async (2.6.1)](https://caolan.github.io/async/)  [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-async.svg)](https://travis-ci.org/npmdoc/node-npmdoc-async)
 
 #### Higher-order functions and common patterns for asynchronous code
 
@@ -8,11 +8,11 @@
 
 - [https://npmdoc.github.io/node-npmdoc-async/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-async/build/apidoc.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-async/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-async/build/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-async/build/screenshot.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-async/build/apidoc.html)
 
-![npmPackageListing](https://npmdoc.github.io/node-npmdoc-async/build/screenCapture.npmPackageListing.svg)
+![npmPackageListing](https://npmdoc.github.io/node-npmdoc-async/build/screenshot.npmPackageListing.svg)
 
-![npmPackageDependencyTree](https://npmdoc.github.io/node-npmdoc-async/build/screenCapture.npmPackageDependencyTree.svg)
+![npmPackageDependencyTree](https://npmdoc.github.io/node-npmdoc-async/build/screenshot.npmPackageDependencyTree.svg)
 
 
 
@@ -28,58 +28,59 @@
         "url": "https://github.com/caolan/async/issues"
     },
     "dependencies": {
-        "lodash": "^4.14.0"
+        "lodash": "^4.17.10"
     },
     "description": "Higher-order functions and common patterns for asynchronous code",
     "devDependencies": {
         "babel-cli": "^6.24.0",
-        "babel-core": "^6.24.0",
+        "babel-core": "^6.26.3",
         "babel-plugin-add-module-exports": "^0.2.1",
         "babel-plugin-istanbul": "^2.0.1",
-        "babel-plugin-transform-es2015-modules-commonjs": "^6.3.16",
+        "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
         "babel-preset-es2015": "^6.3.13",
         "babel-preset-es2017": "^6.22.0",
-        "babelify": "^7.2.0",
+        "babelify": "^8.0.0",
         "benchmark": "^2.1.1",
         "bluebird": "^3.4.6",
-        "chai": "^3.1.0",
+        "browserify": "^16.2.2",
+        "chai": "^4.1.2",
         "cheerio": "^0.22.0",
-        "coveralls": "^2.11.2",
+        "coveralls": "^3.0.1",
         "es6-promise": "^2.3.0",
         "eslint": "^2.13.1",
         "fs-extra": "^0.26.7",
-        "gh-pages-deploy": "^0.4.2",
+        "gh-pages-deploy": "^0.5.0",
         "jsdoc": "^3.4.0",
-        "karma": "^1.3.0",
-        "karma-browserify": "^5.1.0",
-        "karma-firefox-launcher": "^1.0.0",
+        "karma": "^2.0.2",
+        "karma-browserify": "^5.2.0",
+        "karma-firefox-launcher": "^1.1.0",
         "karma-mocha": "^1.2.0",
         "karma-mocha-reporter": "^2.2.0",
-        "mocha": "^3.1.2",
+        "mocha": "^5.2.0",
         "native-promise-only": "^0.8.0-a",
-        "nyc": "^7.0.0",
-        "recursive-readdir": "^1.3.0",
+        "nyc": "^11.8.0",
         "rimraf": "^2.5.0",
         "rollup": "^0.36.3",
         "rollup-plugin-node-resolve": "^2.0.0",
         "rollup-plugin-npm": "^2.0.0",
         "rsvp": "^3.0.18",
-        "semver": "^4.3.6",
+        "semver": "^5.5.0",
         "uglify-js": "~2.7.3",
-        "vinyl-buffer": "^1.0.0",
-        "vinyl-source-stream": "^1.1.0",
-        "watchify": "^3.7.0",
-        "yargs": "~3.9.1"
+        "yargs": "^11.0.0"
     },
     "directories": {},
     "dist": {
-        "shasum": "1013d1051047dd320fe24e494d5c66ecaf6147d9",
-        "tarball": "https://registry.npmjs.org/async/-/async-2.3.0.tgz"
+        "integrity": "sha512-fNEiL2+AZt6AlAw/29Cr0UDe4sRAHCpEHh54WMz+Bb7QfNcFw4h3loofyJpLeQs4Yx7yuqu/2dLgM5hKOs6HlQ==",
+        "shasum": "b245a23ca71930044ec53fa46aa00a3e87c6a610",
+        "tarball": "https://registry.npmjs.org/async/-/async-2.6.1.tgz",
+        "fileCount": 133,
+        "unpackedSize": 540920,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbAkxWCRA9TVsSAnZWagAAMogQAJxPRPcF4lY8dlEv78Vm\nrE88f6xFuMnVUgJunHn43+mYg36DDYpKB5VQ3jaHjAaK1WHJYepuPzQSIRFr\ndNgRs62K6s5zC+q07rbv7KyrYOKfHpLOC+PGtpRcKEuMVTQ5lzps6cYYZu5x\njtjmYcTI3t0EuJpaTZgVygtQ8iyvXFBJyt1zzqMAsRRxQx4A8VvytLw96Arl\n97x1BirrYsaamseE0AcoCpOKnSBM5AGiO4A/SeTNFWbPx7eM8Pf2rEgV5ohz\n2z5bjj6zOWpL8jyFMPBblRE82YXeMvEp14tgaruLrb15+xE7QapfjZuk6AQZ\n+DofFTGQSdHk4PZKx7OhUZTNiWbbVvBxtLBAOeStod3BP7C+dCTsFre0R8Yu\nmgrQ+l94TGSBc1xK8uqyHtBT61UGly0v85eVfe3MXT8YsAWY0MiMEsuJVz8d\n9QCjecg21j3oyJAe6F05OMaRZe7yJdgalCO9sq/W42ZztIwqDGS+GbNTRFiu\nDfZh13rSqZIakyYoBXQTXzhaCeDrsJKblYlC+kCkbo71P9M2xBsDFnUF7byC\nLWMo4xC0xUypHFdOi2lVF+FvpLTld8OPXGZOjSlX82LI93jhciNYxeydxL1T\nbr0OJDiW09zNJR7H0ISNwcJK2tPqdmw6C8aMSzNYQnuCVX0MVhaWvhiJ7IlD\nHEkH\r\n=4QoQ\r\n-----END PGP SIGNATURE-----\r\n"
     },
     "gh-pages-deploy": {
         "staticpath": "docs"
     },
-    "homepage": "https://github.com/caolan/async#readme",
+    "homepage": "https://caolan.github.io/async/",
     "keywords": [
         "async",
         "callback",
@@ -90,13 +91,16 @@
     "main": "dist/async.js",
     "maintainers": [
         {
-            "name": "caolan"
+            "name": "aearly"
         },
         {
             "name": "beaugunderson"
         },
         {
-            "name": "aearly"
+            "name": "caolan"
+        },
+        {
+            "name": "hargasinski"
         },
         {
             "name": "megawac"
@@ -123,7 +127,7 @@
         "mocha-test": "npm run mocha-node-test && npm run mocha-browser-test",
         "test": "npm run lint && npm run mocha-node-test"
     },
-    "version": "2.3.0",
+    "version": "2.6.1",
     "bin": {}
 }
 ```
